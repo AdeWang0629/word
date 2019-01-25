@@ -62,8 +62,9 @@
         </div>
 
         <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title"><strong>ログイン</strong></div>
+            <div class="panel-heading" style="text-align: center;">
+                <div class="panel-title" style="display: inline-block; float: left;"><strong>ログイン</strong></div>
+                <div class="panel-title" style="display: inline-block; font-size: "><strong>ワープロ</strong></div>
             </div>
 
             <div style="padding-top:30px;" class="panel-body">
