@@ -39,6 +39,13 @@
 
 </head>
 <body>
+<?php
+if($_SERVER['SERVER_NAME'] === 'localhost'){
+    $mother_url = 'http://localhost/keipro_all/';
+}else{
+    $mother_url = 'https://keipro.development.dhaka10.dev.jacos.jp/';
+}
+?>
 <div class="" style="width:100%; margin: 0 auto">
 
     <div class="col-lg-3"></div>
@@ -64,13 +71,18 @@
         <div class="panel panel-default">
             <div class="panel-heading" style="text-align: center;">
                 <div class="panel-title" style="display: inline-block; float: left;"><strong>ログイン</strong></div>
-                <div class="panel-title" style="display: inline-block; font-size: "><strong>ワープロ</strong></div>
+                <div class="panel-title" style="display: inline-block; font-size: 20px;"><strong>ワープロ</strong></div>
+                <div class="panel-title" style="display: inline-block; float: right;">
+                    <button type="button" class="btn btn-warning" id="return_to_home_page" onclick="window.location.href = $('#mother_url').val();" >戻る
+                    </button>
+                </div>
             </div>
 
             <div style="padding-top:30px;" class="panel-body">
                 <?php echo form_open(base_url('index.php/account/sign_in/userAuthorization') . ($this->input->get('continue') ? '/?continue=' . urlencode($this->input->get('continue')) : ''), 'class="form-horizontal" id ="login-form"'); ?>
                 <?php echo form_fieldset(); ?>
-                <input type="hidden" id="base_url" name="base_url" value="<?= base_url() ?>">
+                <input type="hidden" id="base_url" name="base_url" value="<?= base_url(); ?>">
+                <input type="hidden" id="mother_url" name="mother_url" value="<?= $mother_url; ?>">
                 <input type="hidden" id="login_menu_type" name="login_menu_type" value="1">
 
                 <?php if (isset($sign_in_error)) : ?>
