@@ -99,9 +99,9 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
 }else{
     // Development Server
      $db['default']['hostname'] = '10.128.10.10';
-     $db['default']['username'] = 'word_app';
+     $db['default']['username'] = 'word';
      $db['default']['password'] = 'l7Il8hdMDCM7CtSE';
-     $db['default']['database'] = 'word_app';
+     $db['default']['database'] = 'word';
     // Development Server
 //    $db['default']['hostname'] = '10.128.21.10';
 //    $db['default']['username'] = 'keipro';
