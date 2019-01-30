@@ -156,10 +156,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         });
 
 
-        var notificationInterval = setInterval(function () {
-            var counter = 0;
-            email_check_for_user();
-        }, 15000);
+//        var notificationInterval = setInterval(function () {
+//            var counter = 0;
+//            email_check_for_user();
+//        }, 15000);
 
         function view_settlement_form_home(id) {
             var settlement_id = $("#settlement_id_home").val();
