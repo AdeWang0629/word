@@ -36,11 +36,11 @@ class Sign_in extends CI_Controller {
 				{
 					$firebase_token = $login_data->firebase_token;
 				}
-                $get_sign_in_username_email = $this->account_model->get_username_by_id($this->session->userdata('account_id'));
-                $login_menu_type = $get_sign_in_username_email->login_menu_type;
+//                $get_sign_in_username_email = $this->account_model->get_username_by_id($this->session->userdata('account_id'));
+//                $login_menu_type = $get_sign_in_username_email->login_menu_type;
 
                 // Get user by username / email
-				if ( ! $user = $this->account_model->get_by_username_email(base64_decode($login_data->user_name),$login_menu_type))
+				if ( ! $user = $this->account_model->get_by_username_email(base64_decode($login_data->user_name)))
 				{
 					//echo base64_decode($this->input->post('user_name', TRUE));
 					$response["success"] = 0;

@@ -74,10 +74,10 @@ class Forgot_password extends CI_Controller {
 				
 				// Remove recaptcha pass
 				$this->session->unset_userdata('forget_password_recaptcha_pass');
-                $get_sign_in_username_email = $this->account_model->get_username_by_id($this->session->userdata('account_id'));
-                $login_menu_type = $get_sign_in_username_email->login_menu_type;
+//                $get_sign_in_username_email = $this->account_model->get_username_by_id($this->session->userdata('account_id'));
+//                $login_menu_type = $get_sign_in_username_email->login_menu_type;
 				// Username does not exist
-				if ( ! $account = $this->account_model->get_by_username_email($this->input->post('forgot_password_username_email', TRUE),$login_menu_type))
+				if ( ! $account = $this->account_model->get_by_username_email($this->input->post('forgot_password_username_email', TRUE)))
 				{
 					$data['forgot_password_username_email_error'] = lang('forgot_password_username_email_does_not_exist');
 				}

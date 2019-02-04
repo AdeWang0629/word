@@ -80,15 +80,15 @@ class Account_model extends CI_Model
     {
         //return $this->db->get_where('a3m_account', array('id' => $account_id))->row();
 
-        $this->db->select('username,name,email,id,login_menu_type');
+        $this->db->select('username,name,email,id');
         $this->db->from('a3m_account');
         $this->db->where('id', $account_id);
         $result_set = $this->db->get();
         if ($from == 1)
             return $result_set->row();
         else
-            return $result_set->row();
-//            return $result_set->row()->username;
+//            return $result_set->row();
+            return $result_set->row()->username;
         //echo $result_set;
 
     }
@@ -101,7 +101,7 @@ class Account_model extends CI_Model
      * @param string $username
      * @return object account object
      */
-    function get_by_username($username, $receiver_name = '', $user_account_id = 0, $login_menu_type)
+    function get_by_username($username, $receiver_name = '', $user_account_id = 0)
     {
 //        echo $this->db->last_query();
 //	    return $this->db->get_where('a3m_account', array('username' => $username))->row();
@@ -111,14 +111,14 @@ class Account_model extends CI_Model
             return $this->db->from('a3m_account')->where(array('username' => $username, 'id !=' => $user_account_id))->or_where('email', $username)->get()->row();
         else{
             //$this->db->select('id,username,password');
-            $this->db->from('a3m_account');
+//            $this->db->from('a3m_account');
 //            $this->db->where('login_menu_type', $login_menu_type);
-            $this->db->where("(login_menu_type='$login_menu_type') AND (username='$username' OR email='$username')");
-
-            $query = $this->db->get();
+//            $this->db->where("(login_menu_type='$login_menu_type') AND (username='$username' OR email='$username')");
+//
+//            $query = $this->db->get();
         //echo $this->db->last_query();
-            return $query->row();
-//            return $this->db->from('a3m_account')->where('username', $username)->or_where('email', $username)->where('login_menu_type', $login_menu_type)->get()->row();
+//            return $query->row();
+            return $this->db->from('a3m_account')->where('username', $username)->or_where('email', $username)->get()->row();
 
         }
 
@@ -152,17 +152,17 @@ class Account_model extends CI_Model
      * @param string $username_email
      * @return object account object
      */
-    function get_by_username_email($username_email, $login_menu_type)
+    function get_by_username_email($username_email)
     {
-        $this->db->select('id,name,username,email,password,login_menu_type');
-        $this->db->from('a3m_account');
-        $this->db->where("(login_menu_type='$login_menu_type') AND (username='$username_email' OR email='$username_email')");
+//        $this->db->select('id,name,username,email,password');
+//        $this->db->from('a3m_account');
+//        $this->db->where("(login_menu_type='$login_menu_type') AND (username='$username_email' OR email='$username_email')");
+//
+//        $query = $this->db->get();
+//        //echo $this->db->last_query();
+//        return $query->row();
 
-        $query = $this->db->get();
-        //echo $this->db->last_query();
-        return $query->row();
-
-//        return $this->db->from('a3m_account')->where(array('username' => $username_email, 'login_menu_type' => $login_menu_type))->or_where('email', $username_email)->get()->row();
+        return $this->db->from('a3m_account')->where(array('username' => $username_email))->or_where('email', $username_email)->get()->row();
     }
 
     // --------------------------------------------------------------------
@@ -175,7 +175,7 @@ class Account_model extends CI_Model
      * @param string $hashed_password
      * @return int insert id
      */
-    function create($username, $email = NULL, $password = NULL, $sign_up_name = NULL, $user_type, $company_id, $user_id, $company_name = NULL,$login_menu_type)
+    function create($username, $email = NULL, $password = NULL, $sign_up_name = NULL, $user_type, $company_id, $user_id, $company_name = NULL)
     {
         // Create password hash using phpass
         if ($password !== NULL) {
@@ -189,7 +189,7 @@ class Account_model extends CI_Model
             $this->db->update('a3m_account', array('username' => $username, 'name' => $sign_up_name, 'company_name' => $company_name, 'password' => isset($hashed_password) ? $hashed_password : NULL), array('id' => $user_id));
             return $this->db->affected_rows();
         } else {
-            $this->db->insert('a3m_account', array('username' => $username, 'name' => $sign_up_name, 'company_name' => $company_name, 'company_id' => $company_id, 'user_type' => $user_type, 'email' => $email, 'login_menu_type' => $login_menu_type, 'password' => isset($hashed_password) ? $hashed_password : NULL, 'createdon' => mdate('%Y-%m-%d %H:%i:%s', now())));
+            $this->db->insert('a3m_account', array('username' => $username, 'name' => $sign_up_name, 'company_name' => $company_name, 'company_id' => $company_id, 'user_type' => $user_type, 'email' => $email, 'password' => isset($hashed_password) ? $hashed_password : NULL, 'createdon' => mdate('%Y-%m-%d %H:%i:%s', now())));
 
             return $this->db->insert_id();
         }

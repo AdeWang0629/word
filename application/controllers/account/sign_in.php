@@ -57,13 +57,13 @@ class Sign_in extends CI_Controller
                 ),
             )
         ));
-        $get_login_menu_type = $this->account_model->get_login_menu_type($this->input->post('sign_in_username_email'));
-        $login_menu_type = $get_login_menu_type->login_menu_type;
+//        $get_login_menu_type = $this->account_model->get_login_menu_type($this->input->post('sign_in_username_email'));
+//        $login_menu_type = $get_login_menu_type->login_menu_type;
         // Run form validation
         if ($this->form_validation->run() === TRUE) {
             // Get user by username / email
             $sign_in_username_email = mb_convert_kana($this->input->post('sign_in_username_email', TRUE), 'a', 'UTF-8');
-            if (!$user = $this->account_model->get_by_username_email($sign_in_username_email,$login_menu_type)) {
+            if (!$user = $this->account_model->get_by_username_email($sign_in_username_email)) {
                 // Username / email doesn't exist
                 $data['sign_in_username_email_error'] = "電話番号登録がありません。";
             } else {
@@ -170,18 +170,18 @@ class Sign_in extends CI_Controller
         maintain_ssl($this->config->item("ssl_enabled"));
         $username = mb_convert_kana($this->input->post('sign_in_username_email'), 'a', 'UTF-8');
 
-        $get_login_menu_type = $this->account_model->get_login_menu_type($this->input->post('sign_in_username_email'));
-        if (!$get_login_menu_type) {
-            // Username / email doesn't exist
-            $data['message'] = "電話番号登録がありません。";
-        } else {
-            $login_menu_type_from_db = $get_login_menu_type->login_menu_type;
-            if ($login_menu_type_from_db == 0) {
-                $login_menu_type = 0;
-            } else {
-                $login_menu_type = $_POST['login_menu_type'];
-            }
-            $user = $this->account_model->get_by_username_email($this->input->post('sign_in_username_email'), $login_menu_type);
+//        $get_login_menu_type = $this->account_model->get_login_menu_type($this->input->post('sign_in_username_email'));
+//        if (!$get_login_menu_type) {
+//            // Username / email doesn't exist
+//            $data['message'] = "電話番号登録がありません。";
+//        } else {
+//            $login_menu_type_from_db = $get_login_menu_type->login_menu_type;
+//            if ($login_menu_type_from_db == 0) {
+//                $login_menu_type = 0;
+//            } else {
+//                $login_menu_type = $_POST['login_menu_type'];
+//            }
+            $user = $this->account_model->get_by_username_email($this->input->post('sign_in_username_email'));
 
             if (!$user) {
                 // Username / email doesn't exist
@@ -203,7 +203,7 @@ class Sign_in extends CI_Controller
                     $data['message'] = 'success';
                 }
             }
-        }
+//        }
 
 //        $this->session->set_userdata('account_id', $user->id);
 //        echo $this->session->userdata('account_id');

@@ -593,10 +593,10 @@ class Emailing extends CI_Controller
         if (!empty($user_data)) {
             if ($this->config->item("api_key") === base64_decode($user_data->api_key)) {
                 $user_id = base64_decode($user_data->user_id);
-//                $sign_in_username_email = $this->account_model->get_username_by_id($user_id);
-                $get_sign_in_username_email = $this->account_model->get_username_by_id($user_id);
-                $sign_in_username_email = $get_sign_in_username_email->username;
-                $login_menu_type = $get_sign_in_username_email->login_menu_type;
+                $sign_in_username_email = $this->account_model->get_username_by_id($user_id);
+//                $get_sign_in_username_email = $this->account_model->get_username_by_id($user_id);
+//                $sign_in_username_email = $get_sign_in_username_email->username;
+//                $login_menu_type = $get_sign_in_username_email->login_menu_type;
 
                 $user_last_email = $this->emailing_model->get_user_last_mail($user_id, $sign_in_username_email);
 //                echo "<pre>";

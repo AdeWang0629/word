@@ -370,69 +370,117 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         var form = $("#login-form");
         form.submit(function (event) {
             event.preventDefault();
-                var username = $("#sign_in_username_email").val();
-                var password = $("#sign_in_password").val();
-                var login_menu_type = $("#login_menu_type").val();
-                if(login_menu_type==0){
-                    $("#select_login_menu_message").show();
-                }else{
-                    $("#select_login_menu_message").show();
-                localStorage.setItem("user_login_password", password);
+            var username = $("#sign_in_username_email").val();
+            var password = $("#sign_in_password").val();
+            localStorage.setItem("user_login_password", password);
 
-                var base_url = $("#base_url").val();
-                var url = base_url + "index.php/account/sign_in/userAuthorization";
-                $.ajax({
-                    url: url,
-                    type: 'POST',
-                    beforeSend: function () {
-                        $("#ajax_loading_aria").show();
-                    },
-                    data: {sign_in_username_email: username, sign_in_password: password, login_menu_type: login_menu_type},
-                })
-                    .done(function (data) {
+            var base_url = $("#base_url").val();
+            var url = base_url + "index.php/account/sign_in/userAuthorization";
+            $.ajax({
+                url: url,
+                type: 'POST',
+                beforeSend: function () {
+                    $("#ajax_loading_aria").show();
+                },
+                data: {sign_in_username_email: username, sign_in_password: password},
+            })
+                .done(function (data) {
 //                        alert(data);console.log(data);die();
-                        var resposnse = JSON.parse(data);
-                        if (resposnse.message == 'success') {
+                    var resposnse = JSON.parse(data);
+                    if (resposnse.message == 'success') {
 
-                            localStorage['username'] = username;
-                            localStorage['password'] = password;
-                            if (login_menu_type == 1)//'word_app'
-                                window.location.href = base_url;//'https://google.com'
-                            else if (login_menu_type == 2)//'settlement_page'
-                                window.location.href = base_url + 'index.php/wordapp/view_settlement_form/';
-                            else if (login_menu_type == 3)//'email_screen'
-                                window.location.href = base_url + 'index.php/emailing/view_email_screen/';
-                        } else {
-                            if(resposnse.message == '電話番号登録がありません。'){
+                        localStorage['username'] = username;
+                        localStorage['password'] = password;
+                        window.location.href = base_url;
+                    } else {
+                        if(resposnse.message == '電話番号登録がありません。'){
                                 document.getElementById('error_display_message').innerText = resposnse.message;
                             }
                             if(resposnse.message == 'パスワードが正しくありません。'){
                                 document.getElementById('error_display_message').innerText = resposnse.message;
                             }
-                            $("#ajax_loading_aria").hide();
-                            $("#error_display").show();
-
-                        }
-                    })
-                    .fail(function () {
-                        console.log("error");
-                    })
-                    .always(function () {
                         $("#ajax_loading_aria").hide();
-                        console.log("complete");
-                    });
-                }
+                        $("#error_display").show();
+                    }
+                })
+                .fail(function () {
+                    console.log("error");
+                })
+                .always(function () {
+                    $("#ajax_loading_aria").hide();
+                    console.log("complete");
+                });
         });
+
+//        $("#sign_in_username_email").val(localStorage['username']);
+//        $("#sign_in_password").val(localStorage['password']);
+//        var form = $("#login-form");
+//        form.submit(function (event) {
+//            event.preventDefault();
+//                var username = $("#sign_in_username_email").val();
+//                var password = $("#sign_in_password").val();
+////                var login_menu_type = $("#login_menu_type").val();
+////                if(login_menu_type==0){
+////                    $("#select_login_menu_message").show();
+////                }else{
+////                    $("#select_login_menu_message").show();
+//                localStorage.setItem("user_login_password", password);
+//
+//                var base_url = $("#base_url").val();
+//                var url = base_url + "index.php/account/sign_in/userAuthorization";
+//                $.ajax({
+//                    url: url,
+//                    type: 'POST',
+//                    beforeSend: function () {
+//                        $("#ajax_loading_aria").show();
+//                    },
+//                    data: {sign_in_username_email: username, sign_in_password: password},
+//                })
+//                    .done(function (data) {
+////                        alert(data);console.log(data);die();
+//                        var resposnse = JSON.parse(data);
+//                        if (resposnse.message == 'success') {
+//
+//                            localStorage['username'] = username;
+//                            localStorage['password'] = password;
+//                            window.location.href = base_url;//'https://google.com'
+////                            if (login_menu_type == 1)//'word_app'
+////                                window.location.href = base_url;//'https://google.com'
+////                            else if (login_menu_type == 2)//'settlement_page'
+////                                window.location.href = base_url + 'index.php/wordapp/view_settlement_form/';
+////                            else if (login_menu_type == 3)//'email_screen'
+////                                window.location.href = base_url + 'index.php/emailing/view_email_screen/';
+//                        } else {
+//                            if(resposnse.message == '電話番号登録がありません。'){
+//                                document.getElementById('error_display_message').innerText = resposnse.message;
+//                            }
+//                            if(resposnse.message == 'パスワードが正しくありません。'){
+//                                document.getElementById('error_display_message').innerText = resposnse.message;
+//                            }
+//                            $("#ajax_loading_aria").hide();
+//                            $("#error_display").show();
+//
+//                        }
+//                    })
+//                    .fail(function () {
+//                        console.log("error");
+//                    })
+//                    .always(function () {
+//                        $("#ajax_loading_aria").hide();
+//                        console.log("complete");
+//                    });
+//                }
+//        });
 
 //        $("#singlebutton").click(function (event) {
 ////            alert('hi');
 //            $("#login_options_div").show();
 //        });
         $("#sign_up").click(function (event) {
-            var login_menu_type = $("#login_menu_type").val();
-            if(login_menu_type==0){
-                $("#select_login_menu_message").show();
-            }else{
+//            var login_menu_type = $("#login_menu_type").val();
+//            if(login_menu_type==0){
+//                $("#select_login_menu_message").show();
+//            }else{
                 $("#sign_up_aria").removeClass("hide").addClass("show");
                 $("#change_pass_aria").removeClass("show").addClass("hide");
                 $("#change_pass_form").removeClass("show").addClass("hide");
@@ -440,7 +488,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                 $("#sign_up_name").val("");
                 $("#company_name").val("");
                 $("#sign_up_password").val("");
-            }
+//            }
 
 
             /* Act on the event */
@@ -493,7 +541,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
             var sign_up_name = $("#sign_up_name").val();
             var company_name = $("#company_name").val();
             var user_type = $("#user_type").val();
-            var login_menu_type = $("#login_menu_type").val();
+//            var login_menu_type = $("#login_menu_type").val();
 
             if (username == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
@@ -523,10 +571,9 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                 company_name: company_name,
                 user_type: user_type,
                 company_id: 0,
-                user_id: 0,
-                login_menu_type: login_menu_type
+                user_id: 0
             }, function (resposnse) {
-//                console.log(resposnse);
+                console.log(resposnse);
                 var res_data = JSON.parse(resposnse);
                 if (res_data.message == "success") {
                     $("#user_change_pass_error_message").removeClass("show").addClass("hide");
@@ -644,12 +691,12 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         $('div.btn-success').removeClass("menu_button_selected");
         $(btn).addClass("menu_button_selected");
 
-        if (id == 'word_app')
-            $("#login_menu_type").val(1);
-        else if (id == 'settlement_page')
-            $("#login_menu_type").val(2);
-        else if (id == 'email_screen')
-            $("#login_menu_type").val(3);
+//        if (id == 'word_app')
+//            $("#login_menu_type").val(1);
+//        else if (id == 'settlement_page')
+//            $("#login_menu_type").val(2);
+//        else if (id == 'email_screen')
+//            $("#login_menu_type").val(3);
 
 
 //        var username = $("#sign_in_username_email").val();

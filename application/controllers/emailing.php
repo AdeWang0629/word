@@ -180,11 +180,11 @@ class Emailing extends CI_Controller
         $user_data = json_decode($get_user_json);
         if (!empty($user_data)) {
             $user_id = base64_decode($user_data->user_id);
-            $get_sign_in_username_email = $this->account_model->get_username_by_id($user_id);
-            $sign_in_username_email = $get_sign_in_username_email->username;
-            $login_menu_type = $get_sign_in_username_email->login_menu_type;
+//            $get_sign_in_username_email = $this->account_model->get_username_by_id($user_id);
+//            $sign_in_username_email = $get_sign_in_username_email->username;
+//            $login_menu_type = $get_sign_in_username_email->login_menu_type;
 
-//            $sign_in_username_email = $this->account_model->get_username_by_id($user_id);
+            $sign_in_username_email = $this->account_model->get_username_by_id($user_id);
             $user_emails = $this->emailing_model->get_email_by_user_id($user_id, 0, 30, $sign_in_username_email);
 //            print_r($user_emails);
 //            exit();
@@ -574,11 +574,11 @@ class Emailing extends CI_Controller
             $user_id = base64_decode($user_data->user_id);
             $partner_type = $user_data->partner_type; //partner create from: 0 for normal email form; 1 for requisition form
 
-            $get_sign_in_username_email = $this->account_model->get_username_by_id($user_id);
-            $sign_in_username_email = $get_sign_in_username_email->username;
-            $login_menu_type = $get_sign_in_username_email->login_menu_type;
+            $sign_in_username_email = $this->account_model->get_username_by_id($user_id);
+//            $sign_in_username_email = $get_sign_in_username_email->username;
+//            $login_menu_type = $get_sign_in_username_email->login_menu_type;
 //            echo $sign_in_username_email;die();
-            $user = $this->account_model->get_by_username_email($sign_in_username_email,$login_menu_type);
+            $user = $this->account_model->get_by_username_email($sign_in_username_email);
             $result_user_send_email = $this->emailing_model->check_if_this_user_send_email($this->session->userdata('account_id'), $user->username, $user->email, $partner_type);
             $result_user_recieve_email = $this->emailing_model->check_if_this_user_receive_email($this->session->userdata('account_id'), $user->username, $user->email, $partner_type);
 //                    print_r($result_user_send_email);

@@ -75,13 +75,13 @@ class Account_password extends CI_Controller
         $user_current_password = $_POST['user_current_password'];
         $username = $_POST['username'];
 
-        $get_sign_in_username_email = $this->account_model->get_username_by_id($this->session->userdata('account_id'));
-        $login_menu_type = $get_sign_in_username_email->login_menu_type;
+//        $get_sign_in_username_email = $this->account_model->get_username_by_id($this->session->userdata('account_id'));
+//        $login_menu_type = $get_sign_in_username_email->login_menu_type;
 
         $sign_up_username = mb_convert_kana($this->input->post('username', TRUE), 'a', 'UTF-8');
         if ($this->username_check($sign_up_username) === TRUE) {
             $sign_in_username_email = mb_convert_kana($this->input->post('username', TRUE), 'a', 'UTF-8');
-            $user = $this->account_model->get_by_username_email($sign_in_username_email,$login_menu_type);
+            $user = $this->account_model->get_by_username_email($sign_in_username_email);
 //            echo "<pre>";
 //            print_r($user);
 //            exit();

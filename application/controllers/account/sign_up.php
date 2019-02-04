@@ -46,25 +46,25 @@ class Sign_up extends CI_Controller
         $this->form_validation->set_error_delimiters('<span class="field_error">', '</span>');
         $this->form_validation->set_rules(array(array('field' => 'sign_up_username', 'label' => 'lang:sign_up_username', 'rules' => 'trim|required|min_length[2]|max_length[24]'), array('field' => 'sign_up_name', 'label' => 'lang:sign_up_name', 'rules' => 'trim|required|min_length[1]|max_length[24]'), array('field' => 'company_name', 'label' => 'lang:company_name', 'rules' => 'trim|required|min_length[1]|max_length[24]'), array('field' => 'sign_up_password', 'label' => 'lang:sign_up_password', 'rules' => 'trim|required|min_length[4]')));
 
-        $get_login_menu_type = $this->account_model->get_login_menu_type($sign_up_username);
-        if (!$get_login_menu_type) {
-            // Username / email doesn't exist
-            $login_menu_type = $_POST['login_menu_type'];
-        } else {
-            $login_menu_type_from_db = $get_login_menu_type->login_menu_type;
-            if ($login_menu_type_from_db == 0) {
-                $login_menu_type = 0;
-            } else {
-                $login_menu_type = $_POST['login_menu_type'];
-            }
-        }
+//        $get_login_menu_type = $this->account_model->get_login_menu_type($sign_up_username);
+//        if (!$get_login_menu_type) {
+//            // Username / email doesn't exist
+//            $login_menu_type = $_POST['login_menu_type'];
+//        } else {
+//            $login_menu_type_from_db = $get_login_menu_type->login_menu_type;
+//            if ($login_menu_type_from_db == 0) {
+//                $login_menu_type = 0;
+//            } else {
+//                $login_menu_type = $_POST['login_menu_type'];
+//            }
+//        }
 
         // Run form validation
         $data[] = "";
         if (($this->form_validation->run() === TRUE)) {
             // Check if user name is taken
 
-            if ($this->username_check($sign_up_username, '', $user_account_id, $login_menu_type) === TRUE) {
+            if ($this->username_check($sign_up_username, '', $user_account_id) === TRUE) {
                 $data['message'] = "exist";
             } else {
                 if ($user_type == 1)
@@ -72,7 +72,7 @@ class Sign_up extends CI_Controller
                 else
                     $company_id = $_POST['company_id'];
                 // Create user
-                $user_id = $this->account_model->create($sign_up_username, $sign_up_username . "@domain.com", $this->input->post('sign_up_password', TRUE), $this->input->post('sign_up_name', TRUE), $user_type, $company_id, $user_account_id, $this->input->post('company_name', TRUE), $login_menu_type);
+                $user_id = $this->account_model->create($sign_up_username, $sign_up_username . "@domain.com", $this->input->post('sign_up_password', TRUE), $this->input->post('sign_up_name', TRUE), $user_type, $company_id, $user_account_id, $this->input->post('company_name', TRUE));
 
 
                 // Add user details (auto detected country, language, timezone)
@@ -98,9 +98,9 @@ class Sign_up extends CI_Controller
      * @param string
      * @return bool
      */
-    function username_check($username, $receiver_name = '', $user_account_id = 0, $login_menu_type)
+    function username_check($username, $receiver_name = '', $user_account_id = 0)
     {
-        return $this->account_model->get_by_username($username, $receiver_name = '', $user_account_id, $login_menu_type) ? TRUE : FALSE;
+        return $this->account_model->get_by_username($username, $receiver_name = '', $user_account_id) ? TRUE : FALSE;
     }
 
     /**
