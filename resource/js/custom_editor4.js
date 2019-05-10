@@ -54,7 +54,8 @@ for (var i = 2; i <= 4; i++) {
 total_doc = '#print_content,#doc_content,' + total_doc;
 // total_doc = '#print_content,#doc_content';
 total_doc = total_doc.replace(/,(\s+)?$/, '');
-// console.log(total_doc);
+console.log('#doc_content');
+
 // Word app
 tinymce.init({
     selector: total_doc,  // change this value according to your HTML
@@ -65,10 +66,13 @@ tinymce.init({
     branding: false,
     language: 'ja',
     body_class: 'my_class',
-    plugins: "print searchreplace charmap image imagetools pagebreak autoresize table",
-    autoresize_min_height: 842, //1112,
-    // width: 595,
-//    max_width: 500,
+    plugins: "print searchreplace charmap image imagetools pagebreak autoresize table noneditable", //visualblocks
+    //pagebreak_split_block: true,
+    //visualblocks_default_state: true,
+    autoresize_min_height: 1112, //1112,842
+    height: 1112,
+    width: 720,
+    // max_width: 595,
     toolbar: false,
     table_default_styles: {
         fontWeight: 'bold',
@@ -77,12 +81,20 @@ tinymce.init({
     visual_table_class: 'custom_table',
     valid_child_elements: "td/th[a|#text]",
     // contextmenu: "link image inserttable | cell row column deletetable",
-    content_css: 'resource/tinymce/skins/lightgray/content.css',
+    content_css: 'resource/tinymce/skins/lightgray/content.css, resource/css/tinymce.css',
     // extended_valid_elements : "a[name|href|target|title|onclick|class], jbtag[id|class]",
     // content_style: "p {line-height:100%}",
     // extended_valid_elements: "*[*]",
     setup: function (editor) {
         var DELAY = 400, clicks = 0, timer = null;
+
+        var vjeObj = null;
+        //var jsim_vje = JS_IM_vje;
+        vjeObj = new JS_IM( document.getElementById('doc_content'), JS_IM_vje );
+
+        // tinymce.DOM.bind(document, 'keydown', function(e) {
+        //     console.debug(e.keyCode);
+        // });
 
         // editor.on('ExecCommand', function (event) {
         //     // window.close();die();
@@ -96,105 +108,128 @@ tinymce.init({
         //         // window.open(base_url+'index.php/balance_sheet', "New Window", "height=600,width=1100, left=100, top=10");
         //     // }
         // });
+        
+        function setPageBreak() {
+            // add page-break
+            var mce_body = tinymce.activeEditor.getBody();
+            var p_tag_arr = tinymce.activeEditor.dom.select('p');
+            var sep_arr = [];
+            //var span_tag_arr = tinymce.activeEditor.dom.select('span');
+            if (p_tag_arr != '') {
+                //tinymce.activeEditor.dom.setStyle(tinymce.activeEditor.dom.select('p'), 'font-size', '18.666667px');
+                //mce_body.style.overflow = 'visible';
+                $(mce_body).children('p.mceNonEditable').remove();
+                var page_height = 0, page_number = 1, page_count = 0;
+                for (var i = 0; i < p_tag_arr.length; i++) {
+                    //var get_font_size = tinymce.activeEditor.dom.getStyle(tinymce.activeEditor.dom.select('p')[i], 'font-size', false);
+                    //var p = $(tinymce.activeEditor.dom.select('p')[i]);
+                    //page_height += p.height();
+                    page_height += p_tag_arr[i].offsetHeight;
+                    if(page_height > 1112) {
+                        //var new_paragraph = tinymce.activeEditor.dom.add(tinymce.activeEditor.dom.select('p')[i], 'p', {class: 'mceNonEditable', style: style}, 'ページ ' + page_number + ' / ' + page_count);
+                        sep_arr.push($('<p class="mceNonEditable page_separator" contentEditable="false">ページ '+page_number+' / '+'</p>').insertAfter(p_tag_arr[i]));
+                        page_number++;
+                        page_count++;
+                        page_height = 0;
+                        //tinymce.activeEditor.insertContent('<!-- pagebreak -->');
+                    }
+                }
+                for (var j = 0; j < sep_arr.length; j++) {
+                    $(sep_arr[j]).text($(sep_arr[j]).text()+page_count);
+                }
+                localStorage.setItem("page_count", page_count);
+            
+                //var tinymce_height = $(tinymce.activeEditor.getContainer()).height();
+                //alert(tinymce_height);
+                //var val = autoPageBreak(add_font_size, 306);//previous value 413
+            }
+            console.log('setPageBreak:page_count='+page_count);
+        }
+
+        editor.on('keyup paste redo undo', function (event) {
+            if(event.keyCode == 8 || event.keyCode == 46) { //backspace, delete
+                setPageBreak();
+            }
+            if (event.keyCode == 13) { //enter
+                //selNode = tinymce.activeEditor.selection.getRng(true).startContainer;
+                setPageBreak();
+            }
+            
+        });
+        editor.on('paste redo undo', function (event) {
+            setPageBreak();
+        });
+
+        /*editor.on('keypress', function (event) {
+            if( JS_IM_Common.Browser.Gecko ){ // Gecko
+                $(vjeObj.imeBox).trigger(event);
+            }
+        });*/
+
+        editor.on('keyup', function (event) {
+
+            if(event.keyCode == 13) {
+                var rng = tinymce.activeEditor.selection.getRng(true);
+				var txt = rng.startContainer.textContent;
+				if ( (txt.substring(rng.startOffset - 1, rng.startOffset) == '') &&
+                        (txt.substring(rng.startOffset, rng.startOffset + 1) == '') ) {
+                
+                    $("#font_1").removeClass('checked');
+                    $("#font_2").removeClass('checked');
+                    $("#font_3").removeClass('checked');
+                    $("#font_4").removeClass('checked');
+                    $("#font_5").removeClass('checked');
+                    $("#font_1").addClass('checked');
+                    tinymce.get('doc_content').execCommand("fontName", false, "ms mincho, ｍｓ 明朝");
+                    $("#font_family_mapping").val(0);
+                    
+                    change_font_size('18.666667px', 14);
+                    tinymce.get('doc_content').execCommand('ForeColor', false, '#000000');
+
+                    var curNode = tinymce.activeEditor.selection.getNode();
+                    if(curNode.nodeName.toLowerCase() != 'p') //$(beforeNode).prop('tagName')
+                        curNode = $(curNode).closest('p')[0];
+                    //$(curNode).find('span[data-mce-style]').css({'font-weight':'normal', 'font-size':'18.6667px', 'color': '#000', 'font-family': 'ms mincho, ｍｓ 明朝'}).attr('data-mce-style',"font-family: 'ms mincho', 'ｍｓ 明朝'; font-size: 18.6667px; color: #000;");
+                    $(curNode).html('<span style="font-size: 18.6667px; color: rgb(0, 0, 0); font-weight: normal; font-family: &quot;ms mincho&quot;, &quot;ｍｓ 明朝&quot;;" data-mce-style="font-family: \'ms mincho\', \'ｍｓ 明朝\'; font-size: 18.6667px; color: #000;"><br data-mce-bogus="1"></span>');
+                }
+            }
+        });
 
         editor.on('keydown', function (event) {
 
-            if (event.keyCode == 13) {
-                // tinymce.get('doc_content').getBody().focus();
-//                 var html_string = tinymce.activeEditor.getContent();
-//                 if(html_string==''){
-//                     $("#blank_document_pagination_error").removeClass('hide').addClass('show');
-//                     $("#close_blank_document_pagination_error").focus();
-//                 }
-//
-//                 var text_content = tinymce.activeEditor.getContent({format: 'raw'});
-// // alert(text_content);die();
-//                 var containsJapanese = text_content.match(/[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/);
-//                 if (containsJapanese)
-//                     var text_content_array = text_content.match(/(<[^>]*>|\w+|[\u30a0-\u30ff\u3040-\u309f\u3005-\u3006\u30e0-\u9fcf]+|["%&():;@\-',.!?=/]|[「」’％＆”。、！？（）])/g);
-//                 //     var text_content_array = text_content;
-//                 else
-//                     var text_content_array = text_content.match(/(<[^>]*>|\w+)/g);
-//
-//                 // console.log(text_content_array);
-//                 var container_height = $(tinymce.activeEditor.getContainer()).height();
-//
-//                 var page_count = Math.ceil(container_height / 842);
-//                 // localStorage.setItem("page_count", page_count);
-//
-//                 // console.log(container_height+'===='+text_content_array.length);
-//
-//                 var text_content_length = Math.ceil(text_content_array.length / page_count);
-//                 // text_content_length = text_content_length+1;
-//                 var text_content_length1 = text_content_length;
-//                 var final_text = '';
-//                 var limit = 50;
-//
-//
-//                 if (page_count > 1) {
-//                     // console.log(container_height);
-//                     // var page_count =page_count+1;
-//                     // $('#page_count1').text('PAGE 1 OF ' + page_count);
-//                     $('#page_count1').text('ページ 1 / ' + page_count);
-//                     paginatedText9999(2, page_count, text_content_array, text_content_length, 0, 1, containsJapanese, text_content_length1);
-//                 }
-//////////////////////////////////////////////
+            var selNode = tinymce.activeEditor.selection.getNode();
+            // if(!vjeObj) {
+            //     vjeObj = new JS_IM( selNode, jsim_vje ); //tinymce.activeEditor.getBody()
+            //     Caret.tinymce = tinymce;
+            // } else if(vjeObj.imeBox != selNode) {
+            //     //vjeObj.imeBox = selNode;
+            //     vjeObj.initialize(selNode, jsim_vje);
+            // }
+            
+            $(vjeObj.imeBox).trigger(event);
 
-                // $('#doc_content').html('Some contents...');
-                // var str = tinymce.activeEditor.getContent({format: 'raw'});
-                // var container_height = $(tinyMCE.activeEditor.getContainer()).height();
-                // // alert(container_height);
-                //
-                // var final_height = parseInt(container_height / 842);
-                // var value='';
-                // for (var i = 0; i < final_height; i++) {
-                //
-                //     value += '<p>'+str+'</p><!-- pagebreak -->';
-                // }
-                // tinymce.activeEditor.setContent(value);
-
-
-                // prevent press enter on table cell
-                // var arr = tinymce.activeEditor.dom.select('td.amount_a_col1');
-                // if (arr != '') {
-                //     event.preventDefault();
-                //     event.stopPropagation();
-                //     return false;
-                // }
-                //
-                // // start another pagebreak function
-                //
-                // var p_tag_arr = tinymce.activeEditor.dom.select('p');
-                // var span_tag_arr = tinymce.activeEditor.dom.select('span');
-                // if (p_tag_arr != '') {
-                //     tinymce.activeEditor.dom.setStyle(tinymce.activeEditor.dom.select('p'), 'font-size', '18.666667px');
-                //
-                //
-                //     var add_font_size = 0;
-                //     for (var i = 0; i < p_tag_arr.length; i++) {
-                //         var get_font_size = tinymce.activeEditor.dom.getStyle(tinymce.activeEditor.dom.select('p')[i], 'font-size', false);
-                //
-                //         if (get_font_size)
-                //             add_font_size += parseInt(get_font_size);
-                //     } //end for loop
-                //
-                //     // var tinymce_height = $(tinymce.activeEditor.getContainer()).height();
-                //     // alert(tinymce_height);
-                //     // var val = autoPageBreak(add_font_size, 306);//previous value 413
-                // }
-                // if(span_tag_arr!=''){
-                //     var add_font_size = 0;
-                //     for (var i = 0; i < p_tag_arr.length; i++) {
-                //         var get_font_size = tinymce.activeEditor.dom.getStyle(tinymce.activeEditor.dom.select('span')[i], 'font-size', false);
-                //
-                //         if (get_font_size)
-                //             add_font_size += parseInt(get_font_size);
-                //     } //end for loop
-                //
-                //     var val = autoPageBreak(add_font_size, 42);
-                // }
-                // end another pagebreak function
-
+            if(event.keyCode == 13) {
+              
+                /*//detect to add empty line when enter
+                var rng = editor.selection.getRng(true);
+				var txt = rng.startContainer.textContent;
+				//console.log("before cur pos = [" + txt.substring(rng.startOffset - 1, rng.startOffset) + "]");
+                //console.log("after cur pos = [" + txt.substring(rng.startOffset, rng.startOffset + 1) + "]");
+                if ( (txt.substring(rng.startOffset - 1, rng.startOffset) == '') &&
+                        (txt.substring(rng.startOffset, rng.startOffset + 1) == '') ) {
+                console.log('empty line !');
+                }*/
+                
+                var rng = tinymce.activeEditor.selection.getRng(true);
+                var txt = rng.startContainer.textContent;
+                var endNode = tinymce.activeEditor.selection.getEnd();
+                
+                if (  txt.substring(rng.startOffset, rng.startOffset + 1).length != '' 
+                    || ($(endNode).parent()[0].nodeName != "BODY" && ($(endNode).next().text() != '')/* || $(endNode).next('#text').length > 0  */)
+                ) {
+                    clicks = 0;
+                    return;
+                }
 
                 // Double Pressing Enter Key
                 var apply_style = $("#apply_style").val();
@@ -207,77 +242,130 @@ tinymce.init({
                 // }
 
                 clicks++;
-                // alert(clicks);
-                if ((clicks == 1) && (apply_style == 1)) {
-                    event.preventDefault();
-                    event.stopPropagation();
+                console.log('clicks='+clicks);
+                // console.log('apply_style='+apply_style);
+
+                if ((clicks == 1)) { // && (apply_style == 1)
+                     event.preventDefault();
+                     event.stopPropagation();
                     // alert(apply_style+"======"+clicks);
                     // return false;
+                    
+                    //console.log(beforeNode);
+
+                    // var beforeNode = tinymce.activeEditor.selection.getNode();
+                    // if(beforeNode.nodeName.toLowerCase() != 'p') //$(beforeNode).prop('tagName')
+                    //     beforeNode = $(beforeNode).closest('p')[0];
+                    
+                    // var ed = tinymce.activeEditor;
+                    // //add an empty span with a unique id
+                    // var endId = tinymce.DOM.uniqueId();
+                    // ed.dom.add(beforeNode, 'span', {'id': endId}, '');
+                    // //console.log(beforeNode);
+                    // //select that span
+                    // var newNode = ed.dom.select('span#' + endId);
+                    // ed.selection.select(newNode[0]);
+                    // $(newNode[0]).css({'font-size':'18.6667px', 'color': '#000', 'font-family': 'ms mincho, ｍｓ 明朝'})
+                    //                 .attr('data-mce-style',"font-family: 'ms mincho', 'ｍｓ 明朝'; font-size: 18.6667px; color: #000;")
+                    //                 .html('<br data-mce-bogus="1">');
+                                    
                     timer = setTimeout(function () {
+                        //$("#word_bold_mapping").val(0);
+                        $("#font_1").removeClass('checked');
+                        $("#font_2").removeClass('checked');
+                        $("#font_3").removeClass('checked');
+                        $("#font_4").removeClass('checked');
+                        $("#font_5").removeClass('checked');
+                        $("#font_1").addClass('checked');
+                        tinymce.get('doc_content').execCommand("fontName", false, "ms mincho, ｍｓ 明朝");
+                        $("#font_family_mapping").val(0);
+                        
+                        change_font_size('18.666667px', 14);
+                        tinymce.get('doc_content').execCommand('ForeColor', false, '#000000');
+                        
+                        // var beforeNode = tinymce.activeEditor.selection.getNode();
+                        // if(beforeNode.nodeName.toLowerCase() != 'p') //$(beforeNode).prop('tagName')
+                        // beforeNode = $(beforeNode).closest('p')[0];
 
-                        $("#apply_style").val(0);
-                        clicks = 0;  //after action performed, reset counter
-                        var word_bold_mapping = $("#word_bold_mapping").val();
-                        var font_family_mapping = $("#font_family_mapping").val();
-                        var font_color_mapping = $("#font_color_mapping").val();
-                        var font_color_code_mapping = $("#font_color_code_mapping").val();
-                        var font_size_mapping = $("#font_size_mapping").val();
-                        var font_size_number_mapping = $("#font_size_number_mapping").val();
-                        // alert(word_bold_mapping+':word:1'+font_size_mapping);
 
-                        if (word_bold_mapping == 1) {
-                            $("#word_bold_mapping").val(0);
-                            tinymce.get('doc_content').execCommand('Bold', false, 'doc_content');
+                        
 
-                        }
-                        if (font_family_mapping == 1) {
-                            $("#font_1").removeClass('checked');
-                            $("#font_2").removeClass('checked');
-                            $("#font_3").removeClass('checked');
-                            $("#font_4").removeClass('checked');
-                            $("#font_5").removeClass('checked');
-                            $("#font_1").addClass('checked');
-                            tinymce.get('doc_content').execCommand("fontName", false, "ms mincho, �搾ｽ� 譏取悃");
-                            $("#font_family_mapping").val(0);
-                        }
-                        if (font_color_mapping == 1) {
-                            tinymce.get('doc_content').execCommand('ForeColor', false, font_color_code_mapping);
-                            $("#font_color_mapping").val(0);
-                            // tinymce.get('doc_content').execCommand('ForeColor', false, '#000000');
-                        }
-                        if (font_size_mapping == 1) {
-                            // alert('font_size_mapping1');
-                            $(".font_size").removeClass('checked');
-                            // $("#font_size_12").addClass('checked');
-                            tinymce.get('doc_content').execCommand("fontSize", false, font_size_number_mapping);
-                            // $("#font_size_number_mapping").val("16px");
-                            $("#font_size_mapping").val(0);
-                            // tinymce.get('doc_content').execCommand("fontSize", false, '18.6667px');
-                        }
+                        
+                        
+                        //tinymce.activeEditor.selection.getRng().startOffset = beforeNode.innerText.length;
+                        
+                        //var newLineNode = $(beforeNode).next('p');
+                        //console.log(newLineNode[0]);
+                        //newLineNode.find('span[data-mce-style]').css({'font-weight':'normal', 'font-size':'18.6667px', 'color': '#000', 'font-family': 'ms mincho, ｍｓ 明朝'}).attr('data-mce-style',"font-family: 'ms mincho', 'ｍｓ 明朝'; font-size: 18.6667px; color: #000;");
+                        // var strongNode = newLineNode.find('strong');
+                        // if(strongNode.length) {
+                        //     strongNode[0].outerHTML = '<br data-mce-bogus="1">';
+                        // }
 
-                    }, DELAY);
+                     }, DELAY);
+                 }
+                 else {
+
+                    // $("#font_1").removeClass('checked');
+                    // $("#font_2").removeClass('checked');
+                    // $("#font_3").removeClass('checked');
+                    // $("#font_4").removeClass('checked');
+                    // $("#font_5").removeClass('checked');
+                    // $("#font_1").addClass('checked');
+                    // tinymce.get('doc_content').execCommand("fontName", false, "ms mincho, ｍｓ 明朝");
+                    // $("#font_family_mapping").val(0);
+                    
+                    // change_font_size('18.666667px', 14);
+                    // tinymce.get('doc_content').execCommand('ForeColor', false, '#000000');
+
+                    // var newLineNode = $(beforeNode).next('p');
+                    // console.log(newLineNode[0]);
+                    // newLineNode.find('span[data-mce-style]').css({'font-weight':'normal', 'font-size':'18.6667px', 'color': '#000', 'font-family': 'ms mincho, ｍｓ 明朝'}).attr('data-mce-style',"font-family: 'ms mincho', 'ｍｓ 明朝'; font-size: 18.6667px; color: #000;");
+                    // var strongNode = newLineNode.find('strong');
+                    // if(strongNode.length) {
+                    //     strongNode[0].outerHTML = '<br data-mce-bogus="1">';
+                    // }
+
+                //     // alert('clik:' + clicks);
+                //     // var e = $.Event("keypress");
+                //     // $(".alt_keypress").trigger('click');
+                //     // $(".shift_keypress").trigger('click');
+
+                //     // $("#alt-n").trigger('click');
+                //     // $(window).focus();
+                //     // var car = tinymce.activeEditor.getContent({format: 'text'});
+                //     // var car = tinymce.activeEditor.getContent({format: 'text'});
+                //     // alert(car);
+                //     // car = car.replace(/su/g, "ã™");
+                //     //$("#font_size_14").addClass('checked');
+                //     // $(tinymce.activeEditor.selection.getNode()).after('<span style="font-size:18.6667px;color:black; ime-mode: active; font-family: ms mincho, ｍｓ 明朝">&nbsp;</span>');
+                //     // tinymce.get("doc_content").execCommand('mceInsertContent', false, '<span style="font-size:18.6667px;color:black; ime-mode: active; font-family: ms mincho, ｍｓ 明朝">test&nbsp;<br>test2</span>');
+                //     // document.execCommand('insertHTML', false, '<span style="font-size:18.6667px;color:black; ime-mode: active; font-family: ms mincho, ｍｓ 明朝">&nbsp;</span>');
+
+                     clearTimeout(timer);
+                     clicks = 0;
+                 }
+            }
+            else {
+                //clicks = 0;
+                if (/* event.keyCode == 37 ||  */event.keyCode <= 38) {
+                    if($(tinymce.activeEditor.dom.getPrev(tinymce.activeEditor.selection.getNode(), '*')).hasClass('page_separator')) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        return false;
+                    }
                 }
-                else {
-                    // alert('clik:' + clicks);
-                    // var e = $.Event("keypress");
-                    // $(".alt_keypress").trigger('click');
-                    // $(".shift_keypress").trigger('click');
-
-                    // $("#alt-n").trigger('click');
-                    // $(window).focus();
-                    // var car = tinymce.activeEditor.getContent({format: 'text'});
-                    // var car = tinymce.activeEditor.getContent({format: 'text'});
-                    // alert(car);
-                    // car = car.replace(/su/g, "ã™");
-                    $("#font_size_14").addClass('checked');
-                    // $(tinymce.activeEditor.selection.getNode()).after('<span style="font-size:18.6667px;color:black; ime-mode: active; font-family: ms mincho, ｍｓ 明朝">&nbsp;</span>');
-                    // tinymce.get("doc_content").execCommand('mceInsertContent', false, '<span style="font-size:18.6667px;color:black; ime-mode: active; font-family: ms mincho, ｍｓ 明朝">test&nbsp;<br>test2</span>');
-                    // document.execCommand('insertHTML', false, '<span style="font-size:18.6667px;color:black; ime-mode: active; font-family: ms mincho, ｍｓ 明朝">&nbsp;</span>');
-                    clearTimeout(timer);
-                    clicks = 0;
+                else if (/* event.keyCode == 39 ||  */event.keyCode <= 40) {
+                    if($(tinymce.activeEditor.dom.getNext(tinymce.activeEditor.selection.getNode(), '*')).hasClass('page_separator')) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        return false;
+                    }
                 }
             }
-            console.log('Editor was clicked');
+            
+            console.log('Editor was keypressed');
+            console.log(event.keyCode);
         });
 
         // editor.execCommand("fontName", false, "ms mincho, �搾ｽ� 譏取悃");
@@ -587,6 +675,13 @@ tinymce.init({
         // });
 
         editor.on('click', function (event) {
+            var selNode = tinymce.activeEditor.selection.getNode();
+            if($(selNode).hasClass('page_separator') || ($(selNode).attr('data-mce-bogus')=="all" && $(selNode).children('br').length > 0)) {
+                tinymce.activeEditor.selection.select(tinymce.activeEditor.dom.select('p')[0]);
+                event.preventDefault();
+                event.stopPropagation();
+                return false;
+            }
 
             var img = tinymce.activeEditor.selection.getNode();
             var parent  = tinymce.activeEditor.dom.getParent(img,'span');
@@ -1236,6 +1331,7 @@ function save_autometically() {
         var content = '';
         var get_page_count = localStorage.getItem("page_count");
 
+        /*
         if (get_page_count != null) {
             var plus_num = 1;
             var page_count = Number(get_page_count) + Number(plus_num);
@@ -1249,10 +1345,11 @@ function save_autometically() {
         }
         console.log(get_page_count + '==save::page_count==' + page_count);
         // console.log(content);
+        */
+        content = tinymce.activeEditor.getContent();
         var temp_title = strip(content);
         temp_title = temp_title.replace(/&nbsp;/gi, '');
         temp_title = temp_title.replace(/\n|\r/g, "").trim();
-
         var post_title = temp_title.substring(0, 10);
         var base_url = $("#base_url").val();
         var url = base_url + 'index.php/wordapp/save';
