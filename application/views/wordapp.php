@@ -22,16 +22,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }else{
     ?>
         <script src="<?= base_url('resource/tinymce/tinymce.min.js') ?>"></script>
-
-        <link rel="stylesheet" media="screen" type="text/css" href="resource/css/jsim.css"/>
-        <script type="text/javascript" src="resource/js/jsim/jsim_common.js"></script>
-        <script type="text/javascript" src="resource/js/jsim/jsim_caret.js"></script>
-        <script type="text/javascript" src="resource/js/jsim/jsim_keycode.js"></script>
-        <script type="text/javascript" src="resource/js/jsim/jsim.js"></script>
-        <script type="text/javascript" src="resource/js/jsim/roma.js"></script>
-
-        <script type="text/javascript" src="resource/js/jsim/jsim_vje.js"></script>
-        
         <script src="<?= base_url('resource/js/custom_editor4.js') ?>"></script>
 
         <?php
@@ -44,10 +34,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <style>
         .mce-tinymce.mce-container.mce-panel {
             border: 0;
-        }
-
-        .mce-content-body *[contentEditable=false][data-mce-selected]{
-            outline: none;
         }
 
         .mce-edit-area.mce-container.mce-panel.mce-stack-layout-item.mce-first.mce-last {
@@ -95,7 +81,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </style>
     <script>
         jQuery(document).ready(function ($) {
-
             setTimeout(function () {
                 $('#preloader').fadeOut('slow', function () {
                     $(this).remove();
@@ -663,16 +648,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <!--                    <span contenteditable="false" id="page_count1" style="width:5%;text-align: right; position: absolute; right:8px ;bottom: 15px; ">1/1</span>-->
                 </div>
-                <div id="explanation">
-                    <div class="title">【日本語IME操作方法】</div>
-                    
-                        On / Off : Shift + Space<br>
-                        変換開始 : Space<br>
-                        候補選択 : Space ↑ ↓<br>
-                        文節移動 : ← →, 確定 : Enter<br>
-                        強制かな : F6, 強制カナ : F7
-                    
-                </div>
                 <div class="clearfix"></div>
 
                 <!-- Japanies -->
@@ -689,16 +664,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <input type="hidden" id="number_of_page" value="1" name="number_of_page">
                 <input type="hidden" name="post_id" id="post_id" value="">
                 <input type="hidden" id="event_mapping" name="event_mapping" value="1">
-                <textarea class="form-control" id="doc_content" name="doc_content" style="ime-mode:active;">
+                <textarea class="form-control" id="doc_content" name="doc_content">
 
                 </textarea>
-                <!--<span contenteditable="false" id="page_count1"
-                      style="width:17%;float: right; right:1px ;bottom: 15px; font-family: ms mincho, ｍｓ 明朝; font-weight: bold;"> ページ 1 / 1</span>-->
+                <span contenteditable="false" id="page_count1"
+                      style="width:17%;float: right; right:1px ;bottom: 15px; font-family: ms mincho, ｍｓ 明朝; font-weight: bold;"> ページ 1 / 1</span>
                 <!--                <textarea class="form-control" id="doc_content2" name="doc_content2">-->
                 <!--                </textarea>-->
             </div>
             <?php
-            /*for ($x = 2; $x <= 4; $x++) {
+            for ($x = 2; $x <= 4; $x++) {
                 ?>
                 <div style="margin-top: 20px; display: none;" class="fixed-editor" id="fixed_editor<?php echo $x; ?>">
                 <textarea class="form-control" id="doc_content<?php echo $x; ?>" name="doc_content<?php echo $x; ?>">
@@ -707,7 +682,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                           style="width:17%;float: right; right:1px ;bottom: 15px; font-family: ms mincho, ｍｓ 明朝; font-weight: bold;"> ページ 2 / 2</span>
                 </div>
                 <?php
-            }*/
+            }
             ?>
         </div>
 
