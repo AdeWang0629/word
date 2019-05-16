@@ -1251,12 +1251,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <button type="button" class="btn btn-info popup_button" title="文例">文例</button>
             <button type="button" class="btn btn-info popup_button" id="word_color" title="カラー">カラー</button>
             <button type="button" id="search_replace" class="btn btn-info popup_button" title="見出">見出</button>
-            <!--            <button type="button" onclick="print_word()" id="print_word" class="btn btn-info popup_button" title="印刷">-->
-            <!--                印刷-->
-            <!--            </button>-->
-            <button type="button" id="print_word" class="btn btn-info popup_button" title="印刷">
+            <!-- <button type="button" onclick="print_word()" id="print_word" class="btn btn-info popup_button" title="印刷">
                 印刷
+            </button> -->
+            <button class="btn btn-info print_word popup_button" title="印刷" type="button"
+                    onClick="javascript: print_word();">印刷
             </button>
+            <!-- <button type="button" id="print_word" class="btn btn-info popup_button" title="印刷">
+                印刷
+            </button> -->
             <div class="clearfix"></div>
         </div>
         <div class="clearfix"></div>
