@@ -1212,14 +1212,15 @@ function font_width() {
 }
 
 function print_word() {
-    tinymce.get('print_content').execCommand('mcePrint');
+    console.log("test");
+    //tinymce.get('print_content').execCommand('mcePrint');
     // for (i=1; i < tinyMCE.editors.length; i++){
     //     var content = tinyMCE.editors[i].getContent();
     //     alert('Editor-Id(' + tinyMCE.editors[i].id + '):' + content);
     // }die();
 
 
-    // tinymce.get('doc_content').execCommand('mcePrint');
+    tinymce.get('doc_content').execCommand('mcePrint');
     // var editor_length = tinymce.editors.length - 1;
     // for (var j = 2; j < editor_length; j++) {
     //     tinymce.get('doc_content' + j).execCommand('mcePrint');
