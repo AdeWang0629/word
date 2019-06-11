@@ -342,14 +342,16 @@ jQuery(document).ready(function ($) {
         // var content = tinyMCE.activeEditor.getContent();
         var content = '';
         var get_page_count = localStorage.getItem("page_count");
+
         if (get_page_count != null) {
             var plus_num = 1;
             var page_count = Number(get_page_count) + Number(plus_num);
 
-            for (var i = 1; i < page_count; i++) {
+            for (var i = 0; i < page_count; i++) {
                 var content_array = tinymce.editors[i].getContent();
                 content += content_array;
             }
+            console.log(content);
         } else {
             var content = tinyMCE.activeEditor.getContent();
         }
