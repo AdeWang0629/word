@@ -33,6 +33,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script type="text/javascript" src="resource/js/jsim/jsim_vje.js"></script>
         
         <script src="<?= base_url('resource/js/custom_editor4.js') ?>"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+        <script src="resource/js/html2canvas.js"></script>
+        <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
 
         <?php
     }
@@ -499,6 +502,61 @@ defined('BASEPATH') OR exit('No direct script access allowed');
      style="position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: transparent url('resource/img/ajax/ajax_load_6.gif') no-repeat center center;">
 
 </div>
+<style>
+    #print-preview-popup{
+        position: fixed;
+        width: 90%;
+        left: 5%;
+        border: 1px solid gainsboro;
+        height: 95%;
+        z-index: 999;
+        bottom: 5%;
+        background: white;
+        box-shadow: 1px 2px 5px 0px;
+    }
+    .print-preview-settings{
+        width: 20%;
+        padding:1em;
+        float:left;
+    }
+    .print-preview-content{
+        width: 80%;
+        background: gainsboro;
+        height: 100%;
+        float:left;
+    }
+    .print-preview-pdfcontent{
+        width:100%;
+        height: 100%;
+    }
+
+
+
+</style>
+<div id="print-preview-popup" style="display:none;">
+    <div class="print-preview-settings">
+        <label class="pull-left" style="margin-top:5px;">Print</label>
+        <button class="btn btn-default pull-right btn-sm print-preview-cancel">Cancel</button>
+        <button style="margin-right:1em;" class="btn btn-primary pull-right btn-sm print-preview-print">Print</button>
+
+        <div class="clearfix"></div>
+        <hr>
+        <select class="form-control print-preview-paper-size">
+            <option value="">Paper Size</option>
+            <option value="a4">A4</option>
+            <option value="b4">B4</option>
+            <option value="letter">Letter</option>
+        </select>
+    </div>
+
+    <div class="print-preview-content">
+
+            <iframe class="print-preview-pdfcontent" src="" style></iframe>
+
+    </div>
+</div>
+
+
 
 <div style="width: 100%; background-color: #5cb85c; margin-top: 0; margin-bottom: 7px;">
     <!--    <div style="width: 90%; ">-->

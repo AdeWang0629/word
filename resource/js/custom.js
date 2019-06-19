@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
 //         script_url : 'resource/tiny_mce/tiny_mce.js',
 // });
 
+
     $("#show_table_of_content").click(function (event) {
         event.preventDefault();
         $("#table_of_contantes").removeClass("hide").addClass("show");

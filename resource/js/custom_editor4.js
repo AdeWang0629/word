@@ -54,7 +54,6 @@ for (var i = 2; i <= 4; i++) {
 total_doc = '#print_content,#doc_content,' + total_doc;
 // total_doc = '#print_content,#doc_content';
 total_doc = total_doc.replace(/,(\s+)?$/, '');
-console.log('#doc_content');
 
 // Word app
 tinymce.init({
@@ -1220,12 +1219,38 @@ function print_word() {
     // }die();
 
 
-    tinymce.get('doc_content').execCommand('mcePrint');
+    //tinymce.get('doc_content').execCommand('mcePrint');
     // var editor_length = tinymce.editors.length - 1;
     // for (var j = 2; j < editor_length; j++) {
     //     tinymce.get('doc_content' + j).execCommand('mcePrint');
     // }
+    custom_print();
 }
+
+function custom_print(size='a4') {
+    var doc = new jsPDF('p','mm',size);
+    var fileName = 'a4.pdf';
+    var stringHtml = tinymce.get('doc_content').getContent();
+    doc.fromHTML(stringHtml, 15, 15, {'width': 180});
+    var url = doc.output('bloburl', {filename: fileName}) + '#toolbar=0&navpanes=0';
+    $(".print-preview-pdfcontent").attr('src', url);
+    $("#print-preview-popup").show();
+}
+$(document).on("click", ".print-preview-cancel", function() {
+    $("#print-preview-popup").fadeOut();
+});
+
+$(document).on("change", ".print-preview-paper-size", function(){
+    var size = $(this).val();
+    if(size=='' || size==undefined)
+        return;
+    else {
+        custom_print(size);
+    }
+});
+
+
+
 
 function word_font_color(color_code) {
     $("#font_color_mapping").val(1);

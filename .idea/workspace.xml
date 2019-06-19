@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f8600646-3b69-4ebf-be50-e0dc6664fdeb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/development/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/development/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/wordapp.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/wordapp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/wordapp.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/wordapp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/resource/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/js/custom_editor4.js" beforeDir="false" afterPath="$PROJECT_DIR$/resource/js/custom_editor4.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +17,61 @@
   <component name="ComposerSettings" doNotAsk="true" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/development/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
-              <caret line="25" column="65" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="80" />
+              <caret line="25" column="65" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom_editor4.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/js/custom_editor4.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="1236" column="37" selection-start-line="1236" selection-start-column="37" selection-end-line="1236" selection-end-column="37" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/js/custom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4125">
+              <caret line="165" column="43" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#77#83#0" expanded="true" />
+                <element signature="e#90#96#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#74#80#0" expanded="true" />
+                <element signature="e#87#93#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wordapp.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/wordapp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#23256#23277#0#HTML" expanded="true" />
+                <element signature="e#22984#23007#0#HTML" expanded="true" />
+                <element signature="e#23473#23497#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,11 +80,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btn-mail-files</find>
-      <find>pdf</find>
-      <find>upload_pdf</find>
-      <find>email_startUpload</find>
-      <find>email_main_modal</find>
       <find>window.location.href = $(&quot;#base_url&quot;).val() + &quot;index.php/account/sign_out&quot;;</find>
       <find>uploadFile</find>
       <find>$this-&gt;load-&gt;library('upload', $config);</find>
@@ -59,6 +105,11 @@
       <find>save_sign_up</find>
       <find>get_username_by_id</find>
       <find>get_by_username_email</find>
+      <find>print_word</find>
+      <find>save_autometically</find>
+      <find>create_new_doc</find>
+      <find>getContent</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>name=&quot;amount_a_col1&quot; onblur=&quot;totalAdd(this.name);&quot;</replace>
@@ -141,7 +192,6 @@
         <option value="$PROJECT_DIR$/foo.js" />
         <option value="$PROJECT_DIR$/sw.js" />
         <option value="$PROJECT_DIR$/application/views/account/manage_users_new.php" />
-        <option value="$PROJECT_DIR$/resource/js/custom_editor4.js" />
         <option value="$PROJECT_DIR$/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/controllers/wordapp.php" />
@@ -153,10 +203,8 @@
         <option value="$PROJECT_DIR$/application/views/components/partner_registration.php" />
         <option value="$PROJECT_DIR$/application/views/components/settlement_letter_mail.php" />
         <option value="$PROJECT_DIR$/application/views/components/settlement_letter_mail_2.php" />
-        <option value="$PROJECT_DIR$/resource/js/custom.js" />
         <option value="$PROJECT_DIR$/application/views/components/email_modal.php" />
         <option value="$PROJECT_DIR$/application/views/components/email_screen.php" />
-        <option value="$PROJECT_DIR$/application/views/wordapp.php" />
         <option value="$PROJECT_DIR$/application/views/account/sign_in.php" />
         <option value="$PROJECT_DIR$/application/controllers/account/sign_up.php" />
         <option value="$PROJECT_DIR$/application/models/account/account_model.php" />
@@ -166,6 +214,9 @@
         <option value="$PROJECT_DIR$/application/controllers/api/sign_in.php" />
         <option value="$PROJECT_DIR$/application/controllers/api/emailing.php" />
         <option value="$PROJECT_DIR$/application/controllers/account/sign_in.php" />
+        <option value="$PROJECT_DIR$/resource/js/custom.js" />
+        <option value="$PROJECT_DIR$/application/views/wordapp.php" />
+        <option value="$PROJECT_DIR$/resource/js/custom_editor4.js" />
       </list>
     </option>
   </component>
@@ -183,8 +234,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="285" />
-    <option name="width" value="1082" />
-    <option name="height" value="729" />
+    <option name="width" value="1083" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -217,6 +268,17 @@
               <item name="config" type="462c0819:PsiDirectoryNode" />
               <item name="development" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="word" type="b2602c69:ProjectViewProjectNode" />
+              <item name="word" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="word" type="b2602c69:ProjectViewProjectNode" />
+              <item name="word" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -224,9 +286,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../keipro_test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -285,12 +347,13 @@
       <workItem from="1547097726406" duration="85608000" />
       <workItem from="1548052969054" duration="9991000" />
       <workItem from="1548082632530" duration="3452000" />
-      <workItem from="1560223194797" duration="1634000" />
+      <workItem from="1560223194797" duration="5696000" />
+      <workItem from="1560830206480" duration="18087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3201251000" />
+    <option name="totallyTimeSpent" value="3223400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -303,14 +366,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22214764" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22550336" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49092284" weight="0.32767403" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50907713" side_tool="true" weight="0.32767403" />
       <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49092284" weight="0.32767403" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="top" id="Structure" order="0" side_tool="true" weight="0.24962178" />
@@ -327,19 +389,19 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17397882" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4969743" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329653" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.46369138" weight="0.23567921" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.53630865" side_tool="true" weight="0.42062193" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329653" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -396,13 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/js/custom_editor4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -540,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52206">
-          <caret line="2373" column="25" selection-start-line="2373" selection-start-column="25" selection-end-line="2373" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/components/head.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -554,13 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1716">
           <caret line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/wordapp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2225">
-          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -652,7 +693,51 @@
     <entry file="file://$PROJECT_DIR$/application/config/development/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="25" column="65" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="80" />
+          <caret line="25" column="65" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4125">
+          <caret line="165" column="43" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#77#83#0" expanded="true" />
+            <element signature="e#90#96#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#74#80#0" expanded="true" />
+            <element signature="e#87#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/js/custom_editor4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="1236" column="37" selection-start-line="1236" selection-start-column="37" selection-end-line="1236" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/wordapp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#23256#23277#0#HTML" expanded="true" />
+            <element signature="e#22984#23007#0#HTML" expanded="true" />
+            <element signature="e#23473#23497#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
