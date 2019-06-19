@@ -35,7 +35,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="<?= base_url('resource/js/custom_editor4.js') ?>"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
         <script src="resource/js/html2canvas.js"></script>
-        <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
 
         <?php
     }
@@ -513,11 +512,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         bottom: 5%;
         background: white;
         box-shadow: 1px 2px 5px 0px;
+
     }
     .print-preview-settings{
         width: 20%;
         padding:1em;
         float:left;
+        padding-top:2em;
     }
     .print-preview-content{
         width: 80%;
@@ -530,30 +531,54 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         height: 100%;
     }
 
+    .pp-navi{
+        position: fixed;
+        width: 300px;
+        right: 8%;
+        border: 1px solid gainsboro;
+        border-radius: 7px;
+        height: 150px;
+        z-index: 9999;
+        bottom: 8%;
+        background: #FFFFCC;
+        box-shadow: 1px 2px 5px 0px;
+        padding: 15px;
+    }
+
 
 
 </style>
 <div id="print-preview-popup" style="display:none;">
     <div class="print-preview-settings">
-        <label class="pull-left" style="margin-top:5px;">Print</label>
-        <button class="btn btn-default pull-right btn-sm print-preview-cancel">Cancel</button>
-        <button style="margin-right:1em;" class="btn btn-primary pull-right btn-sm print-preview-print">Print</button>
-
+        <label class="pull-left" style="margin-top:5px;">印刷する</label>
+        <button class="btn btn-danger pull-right btn-sm print-preview-cancel">いいえ</button>
         <div class="clearfix"></div>
         <hr>
+        <br>
         <select class="form-control print-preview-paper-size">
-            <option value="">Paper Size</option>
-            <option value="a4">A4</option>
-            <option value="b4">B4</option>
-            <option value="letter">Letter</option>
+            <option value="a4">サイズ A4</option>
+            <option value="b4">サイズ B4</option>
+            <option value="b5">サイズ B5</option>
         </select>
-    </div>
+        <br>
+        <button class="btn btn-default form-control print-preview-selection">部分印刷優先</button>
+        <br><br>
+        <button class="btn btn-default form-control print-preview-pagecount">部数（ページ）</button>
+        <br><br>
+        <button class="btn btn-success form-control print-preview-printout">印刷実行</button>
 
+    </div>
     <div class="print-preview-content">
-
-            <iframe class="print-preview-pdfcontent" src="" style></iframe>
-
+        <iframe class="print-preview-pdfcontent" src="" style></iframe>
     </div>
+
+</div>
+
+<div class="pp-navi text-center" style="display:none;">
+    <label style="margin-top:1.5em;"><data id="pp-navi-page-count">000</data> ページですが、よろしいですか？</label>
+    <br>
+    <button style="margin-right:10px;margin-top:1em;" class="btn btn-success pp-navi-success">はい</button>
+    <button style="margin-right:10px;margin-top:1em;" class="btn btn-danger pp-navi-cancel">いいえ</button>
 </div>
 
 

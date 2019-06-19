@@ -1227,6 +1227,10 @@ function print_word() {
     custom_print();
 }
 
+function CountPagesPDF(pageCount){
+    console.log(pageCount);
+}
+
 function custom_print(size='a4') {
     var doc = new jsPDF('p','mm',size);
     var fileName = 'a4.pdf';
@@ -1235,9 +1239,28 @@ function custom_print(size='a4') {
     var url = doc.output('bloburl', {filename: fileName}) + '#toolbar=0&navpanes=0';
     $(".print-preview-pdfcontent").attr('src', url);
     $("#print-preview-popup").show();
+    console.log(url);
+    PDFPageCount.getPageCount(url, CountPagesPDF);
 }
 $(document).on("click", ".print-preview-cancel", function() {
     $("#print-preview-popup").fadeOut();
+});
+
+$(document).on("click", ".print-preview-pagecount", function() {
+    $(".pp-navi").fadeIn();
+});
+
+$(document).on("click", ".pp-navi-cancel", function() {
+    $(this).parents(".pp-navi").fadeOut();
+});
+
+$(document).on("click", ".pp-navi-success", function() {
+    $(this).parents(".pp-navi").fadeOut();
+});
+
+$(document).on("click", ".print-preview-cancel", function() {
+    $(".pp-navi").hide();
+    $(this).parents(".print-preview-popup").fadeOut();
 });
 
 $(document).on("change", ".print-preview-paper-size", function(){
