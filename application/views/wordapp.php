@@ -35,6 +35,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="<?= base_url('resource/js/custom_editor4.js') ?>"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
         <script src="resource/js/html2canvas.js"></script>
+        <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+        <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
 
         <?php
     }
@@ -544,10 +546,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         box-shadow: 1px 2px 5px 0px;
         padding: 15px;
     }
+    .pp-navi-finish{
+        position: fixed;
+        width: 300px;
+        right: 8%;
+        border: 1px solid gainsboro;
+        border-radius: 7px;
+        height: 70px;
+        z-index: 9999;
+        bottom: 8%;
+        background: #FEEBFF;
+        box-shadow: 1px 2px 5px 0px;
+        padding: 15px;
+    }
 
 
 
 </style>
+
 <div id="print-preview-popup" style="display:none;">
     <div class="print-preview-settings">
         <label class="pull-left" style="margin-top:5px;">印刷する</label>
@@ -565,7 +581,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <br><br>
         <button class="btn btn-default form-control print-preview-pagecount">部数（ページ）</button>
         <br><br>
-        <button class="btn btn-success form-control print-preview-printout">印刷実行</button>
+        <button class="btn btn-success form-control print-preview-printout" disabled>印刷実行</button>
 
     </div>
     <div class="print-preview-content">
@@ -579,6 +595,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <br>
     <button style="margin-right:10px;margin-top:1em;" class="btn btn-success pp-navi-success">はい</button>
     <button style="margin-right:10px;margin-top:1em;" class="btn btn-danger pp-navi-cancel">いいえ</button>
+</div>
+
+<div class="pp-navi-finish text-center" style="display:none;">
+    <label style="margin-top:.5em;">印刷完子しました</label>
 </div>
 
 

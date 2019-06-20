@@ -1211,7 +1211,6 @@ function font_width() {
 }
 
 function print_word() {
-    console.log("test");
     //tinymce.get('print_content').execCommand('mcePrint');
     // for (i=1; i < tinyMCE.editors.length; i++){
     //     var content = tinyMCE.editors[i].getContent();
@@ -1227,8 +1226,25 @@ function print_word() {
     custom_print();
 }
 
-function CountPagesPDF(pageCount){
-    console.log(pageCount);
+
+/*Start Saif Programming Update*/
+
+function CountPagesPDF(url){
+    var count = 0;
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    // The workerSrc property shall be specified.
+    pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
+
+    // Asynchronous download of PDF
+    var loadingTask = pdfjsLib.getDocument(url);
+    loadingTask.promise.then(function(pdf) {
+        count = pdf.numPages;
+        $("#pp-navi-page-count").text(count);
+    }, function (reason) {
+        console.error(reason);
+    });
+
 }
 
 function custom_print(size='a4') {
@@ -1239,15 +1255,21 @@ function custom_print(size='a4') {
     var url = doc.output('bloburl', {filename: fileName}) + '#toolbar=0&navpanes=0';
     $(".print-preview-pdfcontent").attr('src', url);
     $("#print-preview-popup").show();
-    console.log(url);
-    PDFPageCount.getPageCount(url, CountPagesPDF);
+    CountPagesPDF(url);
 }
-$(document).on("click", ".print-preview-cancel", function() {
-    $("#print-preview-popup").fadeOut();
-});
 
+
+
+//Sidebar btn Page Count
 $(document).on("click", ".print-preview-pagecount", function() {
     $(".pp-navi").fadeIn();
+});
+
+//Sidebar btn Print out
+$(document).on("click", ".print-preview-printout", function() {
+    $(".pp-navi-finish").fadeIn();
+    var url = $(".print-preview-pdfcontent").attr('src');
+    printJS(url);
 });
 
 $(document).on("click", ".pp-navi-cancel", function() {
@@ -1256,11 +1278,15 @@ $(document).on("click", ".pp-navi-cancel", function() {
 
 $(document).on("click", ".pp-navi-success", function() {
     $(this).parents(".pp-navi").fadeOut();
+    $(".print-preview-printout").removeAttr('disabled');
 });
 
+//Sidebar btn Cancel
 $(document).on("click", ".print-preview-cancel", function() {
+    console.log('heelo');
     $(".pp-navi").hide();
-    $(this).parents(".print-preview-popup").fadeOut();
+    $(".pp-navi-finish").hide();
+    $(this).parents("#print-preview-popup").fadeOut();
 });
 
 $(document).on("change", ".print-preview-paper-size", function(){
@@ -1272,6 +1298,9 @@ $(document).on("change", ".print-preview-paper-size", function(){
     }
 });
 
+
+
+/*End Saif Programming*/
 
 
 
