@@ -1218,11 +1218,13 @@ function print_word() {
     // }die();
 
 
+
     //tinymce.get('doc_content').execCommand('mcePrint');
     // var editor_length = tinymce.editors.length - 1;
     // for (var j = 2; j < editor_length; j++) {
     //     tinymce.get('doc_content' + j).execCommand('mcePrint');
     // }
+    sel_content = tinymce.activeEditor.selection.getContent();
     custom_print();
 }
 
@@ -1247,10 +1249,13 @@ function CountPagesPDF(url){
 
 }
 
-function custom_print(size='a4') {
+function custom_print(size='a4',partial=0) {
     var doc = new jsPDF('p','mm',size);
     var fileName = 'a4.pdf';
-    var stringHtml = tinymce.get('doc_content').getContent();
+    if(partial==0)
+        var stringHtml = tinymce.get('doc_content').getContent();
+    else
+        var stringHtml = sel_content;
     doc.fromHTML(stringHtml, 15, 15, {'width': 180});
     var url = doc.output('bloburl', {filename: fileName}) + '#toolbar=0&navpanes=0';
     $(".print-preview-pdfcontent").attr('src', url);
@@ -1259,6 +1264,15 @@ function custom_print(size='a4') {
 }
 
 
+var sel_content = '';
+var page_size = 'a4';
+
+
+
+//Sidebar btn Partial Print
+$(document).on("click", ".print-preview-selection", function() {
+    $(".pp-navi-partial").fadeIn();
+});
 
 //Sidebar btn Page Count
 $(document).on("click", ".print-preview-pagecount", function() {
@@ -1281,20 +1295,30 @@ $(document).on("click", ".pp-navi-success", function() {
     $(".print-preview-printout").removeAttr('disabled');
 });
 
+$(document).on("click", ".pp-navi-partial-cancel", function() {
+    $(this).parents(".pp-navi-partial").fadeOut();
+    custom_print(page_size);
+});
+
+$(document).on("click", ".pp-navi-partial-success", function() {
+    $(this).parents(".pp-navi-partial").fadeOut();
+    custom_print(page_size,1);
+});
+
 //Sidebar btn Cancel
 $(document).on("click", ".print-preview-cancel", function() {
-    console.log('heelo');
     $(".pp-navi").hide();
     $(".pp-navi-finish").hide();
+    $(".pp-navi-partial").hide();
     $(this).parents("#print-preview-popup").fadeOut();
 });
 
 $(document).on("change", ".print-preview-paper-size", function(){
-    var size = $(this).val();
-    if(size=='' || size==undefined)
+    page_size = $(this).val();
+    if(page_size=='' || page_size==undefined)
         return;
     else {
-        custom_print(size);
+        custom_print(page_size);
     }
 });
 

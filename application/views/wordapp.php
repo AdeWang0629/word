@@ -533,7 +533,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         height: 100%;
     }
 
-    .pp-navi{
+    .pp-navi,.pp-navi-partial{
         position: fixed;
         width: 300px;
         right: 8%;
@@ -558,6 +558,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         background: #FEEBFF;
         box-shadow: 1px 2px 5px 0px;
         padding: 15px;
+    }
+
+    .mce-tinymce.mce-container.mce-panel {
+        margin: 0 auto;
     }
 
 
@@ -595,6 +599,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <br>
     <button style="margin-right:10px;margin-top:1em;" class="btn btn-success pp-navi-success">はい</button>
     <button style="margin-right:10px;margin-top:1em;" class="btn btn-danger pp-navi-cancel">いいえ</button>
+</div>
+
+<div class="pp-navi-partial text-center" style="display:none;">
+    <label style="margin-top:1.5em;">選択した部分の印刷をします。よろしいですか？</label>
+    <br>
+    <button style="margin-right:10px;margin-top:1em;" class="btn btn-success pp-navi-partial-success">はい</button>
+    <button style="margin-right:10px;margin-top:1em;" class="btn btn-danger pp-navi-partial-cancel">いいえ</button>
 </div>
 
 <div class="pp-navi-finish text-center" style="display:none;">
@@ -788,7 +799,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <div class="content_maindiv col-lg-8 col-sm-10 col-md-10 col-xs-12" id="doc_content_maindiv"
              style="display:none;">
-            <div class="fixed-editor" id="fixed-editor">
+            <div class="fixed-editor" id="fixed-editor" style="margin-left:0">
                 <input type="hidden" id="number_of_page" value="1" name="number_of_page">
                 <input type="hidden" name="post_id" id="post_id" value="">
                 <input type="hidden" id="event_mapping" name="event_mapping" value="1">

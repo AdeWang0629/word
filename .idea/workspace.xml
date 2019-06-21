@@ -28,8 +28,8 @@
       <file leaf-file-name="custom_editor4.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resource/js/custom_editor4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="1283" column="20" lean-forward="true" selection-start-line="1283" selection-start-column="20" selection-end-line="1283" selection-end-column="20" />
+            <state relative-caret-position="631">
+              <caret line="1310" column="32" lean-forward="true" selection-start-line="1310" selection-start-column="32" selection-end-line="1310" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -50,11 +50,14 @@
       <file leaf-file-name="wordapp.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/wordapp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="566" column="9" lean-forward="true" selection-start-line="566" selection-start-column="9" selection-end-line="566" selection-end-column="28" />
+            <state relative-caret-position="-446">
+              <caret line="535" column="29" selection-start-line="535" selection-start-column="29" selection-end-line="535" selection-end-column="29" />
               <folding>
-                <element signature="e#25099#25120#0#HTML" expanded="true" />
-                <element signature="e#25133#25158#0#HTML" expanded="true" />
+                <element signature="e#25562#25583#0#HTML" expanded="true" />
+                <element signature="e#25708#25749#0#HTML" expanded="true" />
+                <element signature="e#25814#25855#0#HTML" expanded="true" />
+                <element signature="e#36327#36348#0#HTML" expanded="true" />
+                <element signature="e#36590#36614#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,9 +67,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>window.location.href = $(&quot;#base_url&quot;).val() + &quot;index.php/account/sign_out&quot;;</find>
       <find>uploadFile</find>
-      <find>$this-&gt;load-&gt;library('upload', $config);</find>
+      <find />
       <find>check_password</find>
       <find>hidde</find>
       <find>singlebutton</find>
@@ -94,9 +96,10 @@
       <find>create_new_doc</find>
       <find>getContent</find>
       <find>print</find>
+      <find>doc_content_maindiv</find>
     </findStrings>
     <replaceStrings>
-      <replace>name=&quot;amount_a_col1&quot; onblur=&quot;totalAdd(this.name);&quot;</replace>
+      <replace />
       <replace>align=&quot;right&quot;&gt;&lt;/td&gt;</replace>
       <replace>bgcolor=&quot;#99FF99&quot;</replace>
       <replace>$total_data</replace>
@@ -226,6 +229,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,7 +270,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,11 +338,12 @@
       <workItem from="1560830206480" duration="18087000" />
       <workItem from="1560916876237" duration="11000000" />
       <workItem from="1561001750624" duration="4971000" />
+      <workItem from="1561087918783" duration="6892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3239371000" />
+    <option name="totallyTimeSpent" value="3246263000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,7 +358,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23221476" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23557048" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49092284" weight="0.32767403" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50907713" side_tool="true" weight="0.32767403" />
@@ -377,18 +381,18 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17397882" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4969743" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329653" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.46369138" weight="0.23567921" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.53630865" side_tool="true" weight="0.42062193" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329653" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -693,19 +697,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/wordapp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="566" column="9" lean-forward="true" selection-start-line="566" selection-start-column="9" selection-end-line="566" selection-end-column="28" />
+        <state relative-caret-position="-446">
+          <caret line="535" column="29" selection-start-line="535" selection-start-column="29" selection-end-line="535" selection-end-column="29" />
           <folding>
-            <element signature="e#25099#25120#0#HTML" expanded="true" />
-            <element signature="e#25133#25158#0#HTML" expanded="true" />
+            <element signature="e#25562#25583#0#HTML" expanded="true" />
+            <element signature="e#25708#25749#0#HTML" expanded="true" />
+            <element signature="e#25814#25855#0#HTML" expanded="true" />
+            <element signature="e#36327#36348#0#HTML" expanded="true" />
+            <element signature="e#36590#36614#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/js/custom_editor4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="1283" column="20" lean-forward="true" selection-start-line="1283" selection-start-column="20" selection-end-line="1283" selection-end-column="20" />
+        <state relative-caret-position="631">
+          <caret line="1310" column="32" lean-forward="true" selection-start-line="1310" selection-start-column="32" selection-end-line="1310" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
