@@ -1255,8 +1255,8 @@ function html2pdf(size = 'a4', partial=0){
     if(partial==0){body = tinymce.get('doc_content').getContent();}
     else { body = sel_content;}
     var base_url = $("#base_url").val();
-    var url = base_url + "pdfconverter/dopdf.php";
-
+    //var url = base_url + "pdfconverter/dopdf.php";
+    var url = "https://www.codexwp.com/projects/pdfconverter/index.php";
     $.ajax({
         url: url,
         type: 'POST',
@@ -1276,7 +1276,7 @@ function html2pdf(size = 'a4', partial=0){
 
             if(resp.status=='success')
             {
-                url = base_url + 'pdfconverter/print_log/' + resp.url + '#toolbar=0&navpanes=0';
+                url = 'https://www.codexwp.com/projects/pdfconverter/print_log/' + resp.url + '#toolbar=0&navpanes=0';
                 $(".print-preview-pdfcontent").attr('src', url);
                 CountPagesPDF(url);
             }
@@ -1295,7 +1295,7 @@ function custom_print(size='a4',partial=0) {
     else
         var stringHtml = sel_content;
 
-    stringHtml = '<html lang="jp"><head><meta charset="utf-8"><style>@font-face { font-family: "Noto Sans JP", sans-serif; font-weight: normal; src: url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap") format("truetype"); }  body{font-family: "Noto Sans JP", sans-serif;}</style></head><body>下左右中大aaa</body>';
+    stringHtml = '<html lang="jp"><head><meta charset="utf-8"><style>@font-face {font-family: "ms mincho"; src: url("MSMINCHO.TTF") format("truetype"); font-weight: normal;}</style></head><body style="font-family : \'ms mincho\'">下左右中大aaa</body>';
 
 
 
