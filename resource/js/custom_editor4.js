@@ -1255,7 +1255,7 @@ function html2pdf(size = 'a4', partial=0){
     if(partial==0){body = tinymce.get('doc_content').getContent();}
     else { body = sel_content;}
     var base_url = $("#base_url").val();
-    var url = base_url + "pdfconverter/index.php";
+    var url = base_url + "pdfconverter/dopdf.php";
 
     $.ajax({
         url: url,
