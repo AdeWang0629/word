@@ -5871,3 +5871,3709 @@ DEBUG - 2019-06-21 17:53:23 --> Language file loaded: language/english/form_vali
 DEBUG - 2019-06-21 17:53:23 --> XSS Filtering completed
 DEBUG - 2019-06-21 17:53:23 --> Final output sent to browser
 DEBUG - 2019-06-21 17:53:23 --> Total execution time: 0.4050
+DEBUG - 2019-06-21 11:49:28 --> Config Class Initialized
+DEBUG - 2019-06-21 11:49:28 --> Hooks Class Initialized
+DEBUG - 2019-06-21 11:49:28 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 11:49:28 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 11:49:28 --> URI Class Initialized
+DEBUG - 2019-06-21 11:49:28 --> Router Class Initialized
+DEBUG - 2019-06-21 11:49:28 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 11:49:28 --> Output Class Initialized
+DEBUG - 2019-06-21 11:49:28 --> Security Class Initialized
+DEBUG - 2019-06-21 11:49:28 --> Input Class Initialized
+DEBUG - 2019-06-21 11:49:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 11:49:28 --> Language Class Initialized
+DEBUG - 2019-06-21 11:49:28 --> Loader Class Initialized
+DEBUG - 2019-06-21 11:49:28 --> Session Class Initialized
+DEBUG - 2019-06-21 11:49:28 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 11:49:28 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 11:49:29 --> Session routines successfully run
+DEBUG - 2019-06-21 11:49:29 --> Controller Class Initialized
+DEBUG - 2019-06-21 18:49:29 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 18:49:29 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 18:49:29 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 18:49:29 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 18:49:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:49:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:49:29 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 18:49:29 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 18:49:29 --> Model Class Initialized
+DEBUG - 2019-06-21 18:49:29 --> Model Class Initialized
+DEBUG - 2019-06-21 18:49:29 --> Model Class Initialized
+DEBUG - 2019-06-21 18:49:29 --> Model Class Initialized
+DEBUG - 2019-06-21 18:49:29 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 18:49:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 881
+ERROR - 2019-06-21 18:49:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 909
+ERROR - 2019-06-21 18:49:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 938
+DEBUG - 2019-06-21 18:49:29 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 18:49:29 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 18:49:29 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 18:49:29 --> Final output sent to browser
+DEBUG - 2019-06-21 18:49:29 --> Total execution time: 0.5053
+DEBUG - 2019-06-21 11:49:35 --> Config Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> Hooks Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 11:49:35 --> URI Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> Router Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> Output Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> Security Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> Input Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 11:49:35 --> Language Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> Loader Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> Session Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 11:49:35 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 11:49:35 --> Session routines successfully run
+DEBUG - 2019-06-21 11:49:35 --> Controller Class Initialized
+DEBUG - 2019-06-21 18:49:35 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 18:49:35 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 18:49:35 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 18:49:35 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 18:49:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:49:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:49:35 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 18:49:35 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 18:49:35 --> Model Class Initialized
+DEBUG - 2019-06-21 18:49:35 --> Model Class Initialized
+DEBUG - 2019-06-21 18:49:35 --> Model Class Initialized
+DEBUG - 2019-06-21 18:49:35 --> Model Class Initialized
+DEBUG - 2019-06-21 18:49:35 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 18:49:35 --> XSS Filtering completed
+DEBUG - 2019-06-21 18:49:35 --> XSS Filtering completed
+DEBUG - 2019-06-21 18:49:35 --> Final output sent to browser
+DEBUG - 2019-06-21 18:49:35 --> Total execution time: 0.4478
+DEBUG - 2019-06-21 11:54:08 --> Config Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> Hooks Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 11:54:08 --> URI Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> Router Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 11:54:08 --> Output Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> Security Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> Input Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 11:54:08 --> Language Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> Loader Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> Session Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 11:54:08 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 11:54:08 --> Session routines successfully run
+DEBUG - 2019-06-21 11:54:08 --> Controller Class Initialized
+DEBUG - 2019-06-21 18:54:08 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 18:54:08 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 18:54:08 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 18:54:08 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 18:54:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:54:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:54:08 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 18:54:08 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 18:54:08 --> Model Class Initialized
+DEBUG - 2019-06-21 18:54:08 --> Model Class Initialized
+DEBUG - 2019-06-21 18:54:08 --> Model Class Initialized
+DEBUG - 2019-06-21 18:54:08 --> Model Class Initialized
+DEBUG - 2019-06-21 18:54:08 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 18:54:08 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 882
+ERROR - 2019-06-21 18:54:08 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 910
+ERROR - 2019-06-21 18:54:08 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 939
+DEBUG - 2019-06-21 18:54:08 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 18:54:08 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 18:54:08 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 18:54:08 --> Final output sent to browser
+DEBUG - 2019-06-21 18:54:08 --> Total execution time: 0.5002
+DEBUG - 2019-06-21 11:56:22 --> Config Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> Hooks Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 11:56:22 --> URI Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> Router Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 11:56:22 --> Output Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> Security Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> Input Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 11:56:22 --> Language Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> Loader Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> Session Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 11:56:22 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 11:56:22 --> Session routines successfully run
+DEBUG - 2019-06-21 11:56:22 --> Controller Class Initialized
+DEBUG - 2019-06-21 18:56:22 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 18:56:22 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 18:56:22 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 18:56:22 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 18:56:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:56:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:56:22 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 18:56:22 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 18:56:22 --> Model Class Initialized
+DEBUG - 2019-06-21 18:56:22 --> Model Class Initialized
+DEBUG - 2019-06-21 18:56:22 --> Model Class Initialized
+DEBUG - 2019-06-21 18:56:22 --> Model Class Initialized
+DEBUG - 2019-06-21 18:56:22 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 18:56:22 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 882
+ERROR - 2019-06-21 18:56:22 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 910
+ERROR - 2019-06-21 18:56:22 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 939
+DEBUG - 2019-06-21 18:56:22 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 18:56:22 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 18:56:22 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 18:56:22 --> Final output sent to browser
+DEBUG - 2019-06-21 18:56:22 --> Total execution time: 0.6427
+DEBUG - 2019-06-21 11:57:07 --> Config Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> Hooks Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 11:57:07 --> URI Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> Router Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 11:57:07 --> Output Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> Security Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> Input Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 11:57:07 --> Language Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> Loader Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> Session Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 11:57:07 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 11:57:07 --> Session routines successfully run
+DEBUG - 2019-06-21 11:57:07 --> Controller Class Initialized
+DEBUG - 2019-06-21 18:57:07 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 18:57:07 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 18:57:07 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 18:57:07 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 18:57:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:57:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:57:07 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 18:57:07 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 18:57:07 --> Model Class Initialized
+DEBUG - 2019-06-21 18:57:07 --> Model Class Initialized
+DEBUG - 2019-06-21 18:57:07 --> Model Class Initialized
+DEBUG - 2019-06-21 18:57:07 --> Model Class Initialized
+DEBUG - 2019-06-21 18:57:07 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 18:57:07 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 882
+ERROR - 2019-06-21 18:57:07 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 910
+ERROR - 2019-06-21 18:57:07 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 939
+DEBUG - 2019-06-21 18:57:07 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 18:57:07 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 18:57:07 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 18:57:07 --> Final output sent to browser
+DEBUG - 2019-06-21 18:57:07 --> Total execution time: 0.5095
+DEBUG - 2019-06-21 11:57:59 --> Config Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> Hooks Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 11:57:59 --> URI Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> Router Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 11:57:59 --> Output Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> Security Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> Input Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 11:57:59 --> Language Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> Loader Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> Session Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 11:57:59 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 11:57:59 --> Session routines successfully run
+DEBUG - 2019-06-21 11:57:59 --> Controller Class Initialized
+DEBUG - 2019-06-21 18:57:59 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 18:57:59 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 18:57:59 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 18:57:59 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 18:57:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:57:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 18:57:59 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 18:57:59 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 18:57:59 --> Model Class Initialized
+DEBUG - 2019-06-21 18:57:59 --> Model Class Initialized
+DEBUG - 2019-06-21 18:57:59 --> Model Class Initialized
+DEBUG - 2019-06-21 18:57:59 --> Model Class Initialized
+DEBUG - 2019-06-21 18:57:59 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 18:57:59 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 882
+ERROR - 2019-06-21 18:57:59 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 910
+ERROR - 2019-06-21 18:57:59 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 939
+DEBUG - 2019-06-21 18:57:59 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 18:57:59 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 18:57:59 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 18:57:59 --> Final output sent to browser
+DEBUG - 2019-06-21 18:57:59 --> Total execution time: 0.5408
+DEBUG - 2019-06-21 12:02:07 --> Config Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:02:07 --> URI Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> Router Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:02:07 --> Output Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> Security Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> Input Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:02:07 --> Language Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> Session Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:02:07 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:02:07 --> Session routines successfully run
+DEBUG - 2019-06-21 12:02:07 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:02:07 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:02:07 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:02:07 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:02:07 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:02:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:02:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:02:07 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:02:07 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:02:07 --> Model Class Initialized
+DEBUG - 2019-06-21 19:02:07 --> Model Class Initialized
+DEBUG - 2019-06-21 19:02:07 --> Model Class Initialized
+DEBUG - 2019-06-21 19:02:07 --> Model Class Initialized
+DEBUG - 2019-06-21 19:02:07 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:02:07 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 882
+ERROR - 2019-06-21 19:02:07 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 910
+ERROR - 2019-06-21 19:02:07 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 939
+DEBUG - 2019-06-21 19:02:07 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:02:07 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:02:08 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:02:08 --> Final output sent to browser
+DEBUG - 2019-06-21 19:02:08 --> Total execution time: 0.5144
+DEBUG - 2019-06-21 12:02:57 --> Config Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:02:57 --> URI Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> Router Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:02:57 --> Output Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> Security Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> Input Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:02:57 --> Language Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> Session Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:02:57 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:02:57 --> Session routines successfully run
+DEBUG - 2019-06-21 12:02:57 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:02:57 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:02:57 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:02:57 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:02:57 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:02:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:02:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:02:57 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:02:57 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:02:57 --> Model Class Initialized
+DEBUG - 2019-06-21 19:02:57 --> Model Class Initialized
+DEBUG - 2019-06-21 19:02:58 --> Model Class Initialized
+DEBUG - 2019-06-21 19:02:58 --> Model Class Initialized
+DEBUG - 2019-06-21 19:02:58 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:02:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 882
+ERROR - 2019-06-21 19:02:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 910
+ERROR - 2019-06-21 19:02:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 939
+DEBUG - 2019-06-21 19:02:58 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:02:58 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:02:58 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:02:58 --> Final output sent to browser
+DEBUG - 2019-06-21 19:02:58 --> Total execution time: 0.5594
+DEBUG - 2019-06-21 12:03:27 --> Config Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:03:27 --> URI Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> Router Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:03:27 --> Output Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> Security Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> Input Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:03:27 --> Language Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> Session Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:03:27 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:03:27 --> Session routines successfully run
+DEBUG - 2019-06-21 12:03:27 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:03:27 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:03:27 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:03:27 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:03:27 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:03:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:03:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:03:27 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:03:27 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:03:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:27 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:03:27 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 882
+ERROR - 2019-06-21 19:03:28 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 910
+ERROR - 2019-06-21 19:03:28 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 939
+DEBUG - 2019-06-21 19:03:28 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:03:28 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:03:28 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:03:28 --> Final output sent to browser
+DEBUG - 2019-06-21 19:03:28 --> Total execution time: 0.4929
+DEBUG - 2019-06-21 12:03:36 --> Config Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:03:36 --> URI Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> Router Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> Output Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> Security Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> Input Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:03:36 --> Language Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> Session Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:03:36 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:03:36 --> Session routines successfully run
+DEBUG - 2019-06-21 12:03:36 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:03:36 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:03:36 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:03:36 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:03:36 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:03:36 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:03:36 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:03:36 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:03:36 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:03:36 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:36 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:36 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:36 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:36 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:03:36 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:03:36 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:03:36 --> Final output sent to browser
+DEBUG - 2019-06-21 19:03:36 --> Total execution time: 0.4705
+DEBUG - 2019-06-21 12:03:38 --> Config Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:03:38 --> URI Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> Router Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> Output Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> Security Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> Input Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:03:38 --> Language Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> Session Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:03:38 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:03:38 --> Session routines successfully run
+DEBUG - 2019-06-21 12:03:38 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:03:38 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:03:38 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:03:38 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:03:38 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:03:38 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:03:38 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:03:38 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:03:38 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:03:38 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:38 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:38 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:38 --> Model Class Initialized
+DEBUG - 2019-06-21 19:03:38 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:03:38 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:03:38 --> Final output sent to browser
+DEBUG - 2019-06-21 19:03:38 --> Total execution time: 0.5552
+DEBUG - 2019-06-21 12:05:51 --> Config Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:05:51 --> URI Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> Router Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:05:51 --> Output Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> Security Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> Input Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:05:51 --> Language Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> Session Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:05:51 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:05:51 --> Session routines successfully run
+DEBUG - 2019-06-21 12:05:51 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:05:51 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:05:51 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:05:51 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:05:51 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:05:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:05:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:05:51 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:05:52 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:05:52 --> Model Class Initialized
+DEBUG - 2019-06-21 19:05:52 --> Model Class Initialized
+DEBUG - 2019-06-21 19:05:52 --> Model Class Initialized
+DEBUG - 2019-06-21 19:05:52 --> Model Class Initialized
+DEBUG - 2019-06-21 19:05:52 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:05:52 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 882
+ERROR - 2019-06-21 19:05:52 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 910
+ERROR - 2019-06-21 19:05:52 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 939
+DEBUG - 2019-06-21 19:05:52 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:05:52 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:05:52 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:05:52 --> Final output sent to browser
+DEBUG - 2019-06-21 19:05:52 --> Total execution time: 0.5247
+DEBUG - 2019-06-21 12:05:59 --> Config Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:05:59 --> URI Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> Router Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> Output Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> Security Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> Input Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:05:59 --> Language Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> Session Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:05:59 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:05:59 --> Session routines successfully run
+DEBUG - 2019-06-21 12:05:59 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:05:59 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:05:59 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:05:59 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:05:59 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:05:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:05:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:05:59 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:05:59 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:05:59 --> Model Class Initialized
+DEBUG - 2019-06-21 19:05:59 --> Model Class Initialized
+DEBUG - 2019-06-21 19:05:59 --> Model Class Initialized
+DEBUG - 2019-06-21 19:05:59 --> Model Class Initialized
+DEBUG - 2019-06-21 19:05:59 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:05:59 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:05:59 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:05:59 --> Final output sent to browser
+DEBUG - 2019-06-21 19:05:59 --> Total execution time: 0.4606
+DEBUG - 2019-06-21 12:09:13 --> Config Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:09:14 --> URI Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> Router Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:09:14 --> Output Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> Security Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> Input Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:09:14 --> Language Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> Session Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:09:14 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:09:14 --> Session routines successfully run
+DEBUG - 2019-06-21 12:09:14 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:09:14 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:09:14 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:09:14 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:09:14 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:09:14 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:09:14 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:09:14 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:09:14 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:09:14 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:14 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:14 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:14 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:15 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:09:15 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:09:15 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:09:15 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:09:15 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:09:15 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:09:15 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:09:15 --> Final output sent to browser
+DEBUG - 2019-06-21 19:09:15 --> Total execution time: 1.4129
+DEBUG - 2019-06-21 12:09:22 --> Config Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:09:23 --> URI Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> Router Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> Output Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> Security Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> Input Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:09:23 --> Language Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> Session Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:09:23 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:09:23 --> Session routines successfully run
+DEBUG - 2019-06-21 12:09:23 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:09:23 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:09:23 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:09:23 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:09:23 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:09:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:09:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:09:23 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:09:23 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:09:23 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:23 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:23 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:23 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:23 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:09:23 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:09:23 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:09:23 --> Final output sent to browser
+DEBUG - 2019-06-21 19:09:23 --> Total execution time: 1.0085
+DEBUG - 2019-06-21 12:09:45 --> Config Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:09:45 --> URI Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> Router Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:09:45 --> Output Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> Security Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> Input Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:09:45 --> Language Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> Session Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:09:45 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:09:45 --> Session routines successfully run
+DEBUG - 2019-06-21 12:09:45 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:09:45 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:09:45 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:09:45 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:09:45 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:09:45 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:09:45 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:09:45 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:09:45 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:09:45 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:45 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:45 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:45 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:45 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:09:45 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:09:45 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:09:45 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:09:45 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:09:45 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:09:45 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:09:45 --> Final output sent to browser
+DEBUG - 2019-06-21 19:09:45 --> Total execution time: 0.5565
+DEBUG - 2019-06-21 12:09:52 --> Config Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:09:52 --> URI Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> Router Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> Output Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> Security Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> Input Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:09:52 --> Language Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> Session Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:09:52 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:09:52 --> Session routines successfully run
+DEBUG - 2019-06-21 12:09:52 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:09:52 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:09:52 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:09:52 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:09:52 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:09:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:09:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:09:52 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:09:52 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:09:52 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:52 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:52 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:52 --> Model Class Initialized
+DEBUG - 2019-06-21 19:09:52 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:09:52 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:09:52 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:09:52 --> Final output sent to browser
+DEBUG - 2019-06-21 19:09:52 --> Total execution time: 0.4649
+DEBUG - 2019-06-21 12:12:17 --> Config Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:12:17 --> URI Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> Router Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:12:17 --> Output Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> Security Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> Input Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:12:17 --> Language Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> Session Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:12:17 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:12:17 --> Session routines successfully run
+DEBUG - 2019-06-21 12:12:17 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:12:17 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:12:17 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:12:17 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:12:17 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:12:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:12:18 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:12:18 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:12:18 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:12:18 --> Model Class Initialized
+DEBUG - 2019-06-21 19:12:18 --> Model Class Initialized
+DEBUG - 2019-06-21 19:12:18 --> Model Class Initialized
+DEBUG - 2019-06-21 19:12:18 --> Model Class Initialized
+DEBUG - 2019-06-21 19:12:18 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:12:18 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:12:18 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:12:18 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:12:18 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:12:18 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:12:18 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:12:18 --> Final output sent to browser
+DEBUG - 2019-06-21 19:12:18 --> Total execution time: 0.5504
+DEBUG - 2019-06-21 12:12:31 --> Config Class Initialized
+DEBUG - 2019-06-21 12:12:31 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:12:31 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:12:31 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:12:31 --> URI Class Initialized
+DEBUG - 2019-06-21 12:12:31 --> Router Class Initialized
+DEBUG - 2019-06-21 12:12:31 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:12:31 --> Output Class Initialized
+DEBUG - 2019-06-21 12:12:31 --> Security Class Initialized
+DEBUG - 2019-06-21 12:12:31 --> Input Class Initialized
+DEBUG - 2019-06-21 12:12:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:12:31 --> Language Class Initialized
+DEBUG - 2019-06-21 12:12:31 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:12:31 --> Session Class Initialized
+DEBUG - 2019-06-21 12:12:31 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:12:31 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:12:32 --> Session routines successfully run
+DEBUG - 2019-06-21 12:12:32 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:12:32 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:12:32 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:12:32 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:12:32 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:12:32 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:12:32 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:12:32 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:12:32 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:12:32 --> Model Class Initialized
+DEBUG - 2019-06-21 19:12:32 --> Model Class Initialized
+DEBUG - 2019-06-21 19:12:32 --> Model Class Initialized
+DEBUG - 2019-06-21 19:12:32 --> Model Class Initialized
+DEBUG - 2019-06-21 19:12:32 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:12:32 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:12:32 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:12:32 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:12:32 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:12:32 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:12:32 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:12:32 --> Final output sent to browser
+DEBUG - 2019-06-21 19:12:32 --> Total execution time: 0.5943
+DEBUG - 2019-06-21 12:13:01 --> Config Class Initialized
+DEBUG - 2019-06-21 12:13:01 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:13:01 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:13:01 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:13:01 --> URI Class Initialized
+DEBUG - 2019-06-21 12:13:01 --> Router Class Initialized
+DEBUG - 2019-06-21 12:13:01 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:13:01 --> Output Class Initialized
+DEBUG - 2019-06-21 12:13:01 --> Security Class Initialized
+DEBUG - 2019-06-21 12:13:01 --> Input Class Initialized
+DEBUG - 2019-06-21 12:13:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:13:01 --> Language Class Initialized
+DEBUG - 2019-06-21 12:13:01 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:13:01 --> Session Class Initialized
+DEBUG - 2019-06-21 12:13:01 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:13:01 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:13:02 --> Session garbage collection performed.
+DEBUG - 2019-06-21 12:13:02 --> Session routines successfully run
+DEBUG - 2019-06-21 12:13:02 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:13:02 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:13:02 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:13:02 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:13:02 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:13:02 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:13:02 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:13:02 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:13:02 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:13:02 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:02 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:02 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:02 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:02 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:13:02 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:13:02 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:13:02 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:13:02 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:13:02 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:13:02 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:13:02 --> Final output sent to browser
+DEBUG - 2019-06-21 19:13:02 --> Total execution time: 0.5499
+DEBUG - 2019-06-21 12:13:06 --> Config Class Initialized
+DEBUG - 2019-06-21 12:13:06 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:13:06 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:13:06 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:13:06 --> URI Class Initialized
+DEBUG - 2019-06-21 12:13:06 --> Router Class Initialized
+DEBUG - 2019-06-21 12:13:07 --> Output Class Initialized
+DEBUG - 2019-06-21 12:13:07 --> Security Class Initialized
+DEBUG - 2019-06-21 12:13:07 --> Input Class Initialized
+DEBUG - 2019-06-21 12:13:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:13:07 --> Language Class Initialized
+DEBUG - 2019-06-21 12:13:07 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:13:07 --> Session Class Initialized
+DEBUG - 2019-06-21 12:13:07 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:13:07 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:13:07 --> Session routines successfully run
+DEBUG - 2019-06-21 12:13:07 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:13:07 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:13:07 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:13:07 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:13:07 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:13:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:13:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:13:07 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:13:07 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:13:07 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:07 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:07 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:07 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:07 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:13:07 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:13:07 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:13:07 --> Final output sent to browser
+DEBUG - 2019-06-21 19:13:07 --> Total execution time: 0.5014
+DEBUG - 2019-06-21 12:13:10 --> Config Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:13:10 --> URI Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> Router Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> Output Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> Security Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> Input Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:13:10 --> Language Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> Session Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:13:10 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:13:10 --> Session routines successfully run
+DEBUG - 2019-06-21 12:13:10 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:13:10 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:13:10 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:13:10 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:13:10 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:13:10 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:13:10 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:13:10 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:13:10 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:13:10 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:10 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:10 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:10 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:10 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:13:10 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:13:10 --> Final output sent to browser
+DEBUG - 2019-06-21 19:13:10 --> Total execution time: 0.7138
+DEBUG - 2019-06-21 12:13:21 --> Config Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:13:21 --> URI Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> Router Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:13:21 --> Output Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> Security Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> Input Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:13:21 --> Language Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> Session Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:13:21 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:13:21 --> Session routines successfully run
+DEBUG - 2019-06-21 12:13:21 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:13:21 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:13:21 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:13:21 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:13:21 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:13:21 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:13:21 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:13:21 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:13:21 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:13:21 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:21 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:21 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:21 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:21 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:13:21 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:13:21 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:13:21 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:13:21 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:13:21 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:13:21 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:13:21 --> Final output sent to browser
+DEBUG - 2019-06-21 19:13:21 --> Total execution time: 0.6357
+DEBUG - 2019-06-21 12:13:27 --> Config Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:13:27 --> URI Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> Router Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> Output Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> Security Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> Input Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:13:27 --> Language Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> Session Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:13:27 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:13:27 --> Session routines successfully run
+DEBUG - 2019-06-21 12:13:27 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:13:27 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:13:27 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:13:27 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:13:27 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:13:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:13:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:13:27 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:13:27 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:13:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:13:28 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:13:28 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:13:28 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:13:28 --> Final output sent to browser
+DEBUG - 2019-06-21 19:13:28 --> Total execution time: 0.4727
+DEBUG - 2019-06-21 12:44:07 --> Config Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:44:07 --> URI Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> Router Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:44:07 --> Output Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> Security Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> Input Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:44:07 --> Language Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> Session Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:44:07 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:44:07 --> Session routines successfully run
+DEBUG - 2019-06-21 12:44:07 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:44:07 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:44:07 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:44:07 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:44:07 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:44:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:44:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:44:07 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:44:07 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:44:07 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:07 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:07 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:08 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:08 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:44:08 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:44:08 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:44:08 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:44:08 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:44:08 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:44:08 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:44:08 --> Final output sent to browser
+DEBUG - 2019-06-21 19:44:08 --> Total execution time: 0.5291
+DEBUG - 2019-06-21 12:44:11 --> Config Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:44:11 --> URI Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> Router Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> Output Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> Security Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> Input Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:44:11 --> Language Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> Session Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:44:11 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:44:11 --> Session routines successfully run
+DEBUG - 2019-06-21 12:44:11 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:44:11 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:44:11 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:44:11 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:44:11 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:44:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:44:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:44:12 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:44:12 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:44:12 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:12 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:12 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:12 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:12 --> Final output sent to browser
+DEBUG - 2019-06-21 19:44:12 --> Total execution time: 0.4951
+DEBUG - 2019-06-21 12:44:26 --> Config Class Initialized
+DEBUG - 2019-06-21 12:44:26 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:44:26 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:44:26 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:44:26 --> URI Class Initialized
+DEBUG - 2019-06-21 12:44:26 --> Router Class Initialized
+DEBUG - 2019-06-21 12:44:26 --> Output Class Initialized
+DEBUG - 2019-06-21 12:44:26 --> Security Class Initialized
+DEBUG - 2019-06-21 12:44:26 --> Input Class Initialized
+DEBUG - 2019-06-21 12:44:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:44:26 --> Language Class Initialized
+DEBUG - 2019-06-21 12:44:26 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:44:26 --> Session Class Initialized
+DEBUG - 2019-06-21 12:44:26 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:44:26 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:44:27 --> Session garbage collection performed.
+DEBUG - 2019-06-21 12:44:27 --> Session routines successfully run
+DEBUG - 2019-06-21 12:44:27 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:44:27 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:44:27 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:44:27 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:44:27 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:44:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:44:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:44:27 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:44:27 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:44:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:27 --> Model Class Initialized
+DEBUG - 2019-06-21 19:44:27 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:44:27 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:44:27 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:44:27 --> Final output sent to browser
+DEBUG - 2019-06-21 19:44:27 --> Total execution time: 0.5102
+DEBUG - 2019-06-21 12:45:47 --> Config Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:45:47 --> URI Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> Router Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> Output Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> Security Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> Input Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:45:47 --> Language Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> Session Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:45:47 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:45:47 --> Session routines successfully run
+DEBUG - 2019-06-21 12:45:47 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:45:47 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:45:47 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:45:47 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:45:47 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:45:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:45:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:45:47 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:45:47 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:45:47 --> Model Class Initialized
+DEBUG - 2019-06-21 19:45:47 --> Model Class Initialized
+DEBUG - 2019-06-21 19:45:47 --> Model Class Initialized
+DEBUG - 2019-06-21 19:45:47 --> Model Class Initialized
+DEBUG - 2019-06-21 19:45:47 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:45:47 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:45:47 --> Final output sent to browser
+DEBUG - 2019-06-21 19:45:47 --> Total execution time: 0.4512
+DEBUG - 2019-06-21 12:45:54 --> Config Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:45:54 --> URI Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> Router Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:45:54 --> Output Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> Security Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> Input Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:45:54 --> Language Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> Session Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:45:54 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:45:54 --> Session routines successfully run
+DEBUG - 2019-06-21 12:45:54 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:45:54 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:45:54 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:45:54 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:45:54 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:45:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:45:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:45:54 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:45:54 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:45:54 --> Model Class Initialized
+DEBUG - 2019-06-21 19:45:54 --> Model Class Initialized
+DEBUG - 2019-06-21 19:45:54 --> Model Class Initialized
+DEBUG - 2019-06-21 19:45:55 --> Model Class Initialized
+DEBUG - 2019-06-21 19:45:55 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:45:55 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:45:55 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:45:55 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:45:55 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:45:55 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:45:55 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:45:55 --> Final output sent to browser
+DEBUG - 2019-06-21 19:45:55 --> Total execution time: 0.5460
+DEBUG - 2019-06-21 12:48:53 --> Config Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:48:54 --> URI Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> Router Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:48:54 --> Output Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> Security Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> Input Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:48:54 --> Language Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> Session Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:48:54 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:48:54 --> Session routines successfully run
+DEBUG - 2019-06-21 12:48:54 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:48:54 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:48:54 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:48:54 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:48:54 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:48:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:48:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:48:54 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:48:54 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:48:54 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:54 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:54 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:54 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:54 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:48:54 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:48:54 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:48:54 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:48:54 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:48:54 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:48:54 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:48:54 --> Final output sent to browser
+DEBUG - 2019-06-21 19:48:54 --> Total execution time: 0.5585
+DEBUG - 2019-06-21 12:48:57 --> Config Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:48:57 --> URI Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Router Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Output Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Security Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Input Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:48:57 --> Language Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Session Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:48:57 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Session routines successfully run
+DEBUG - 2019-06-21 12:48:57 --> Config Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 12:48:57 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 19:48:57 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 12:48:57 --> URI Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 12:48:57 --> Router Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 12:48:57 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 19:48:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:48:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 12:48:57 --> Output Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Security Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:48:57 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Input Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 19:48:57 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Language Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Loader Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Session Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Config Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Hooks Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Final output sent to browser
+DEBUG - 2019-06-21 12:48:57 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 19:48:57 --> Total execution time: 0.4444
+DEBUG - 2019-06-21 12:48:57 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:48:57 --> Session routines successfully run
+DEBUG - 2019-06-21 12:48:57 --> Controller Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> URI Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 12:48:57 --> Router Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 19:48:57 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:48:57 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 12:48:57 --> Output Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 12:48:57 --> Security Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 12:48:57 --> Input Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 19:48:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 12:48:57 --> Language Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:48:57 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Config Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Hooks Class Initialized
+DEBUG - 2019-06-21 19:48:57 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Session Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 19:48:57 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 19:48:57 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:48:57 --> URI Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Session routines successfully run
+DEBUG - 2019-06-21 12:48:58 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/head.php
+DEBUG - 2019-06-21 12:48:58 --> Router Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 12:48:58 --> No URI present. Default controller set.
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 12:48:58 --> Output Class Initialized
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 12:48:58 --> Security Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 12:48:58 --> Input Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:48:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 12:48:58 --> Language Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 12:48:58 --> Config Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Hooks Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Final output sent to browser
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 12:48:58 --> Loader Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Total execution time: 0.5637
+DEBUG - 2019-06-21 19:48:58 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Session Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:48:58 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> URI Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Router Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Session routines successfully run
+DEBUG - 2019-06-21 12:48:58 --> Controller Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 12:48:58 --> Output Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/head.php
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: account/ssl_helper
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+DEBUG - 2019-06-21 12:48:58 --> Security Class Initialized
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 12:48:58 --> Input Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Global POST and COOKIE data sanitized
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 12:48:58 --> Language Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:48:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 12:48:58 --> Loader Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 12:48:58 --> Session Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:48:58 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Final output sent to browser
+DEBUG - 2019-06-21 12:48:58 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 19:48:58 --> Total execution time: 0.5655
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Session routines successfully run
+DEBUG - 2019-06-21 12:48:58 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/head.php
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: account/ssl_helper
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+DEBUG - 2019-06-21 12:48:58 --> Config Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Hooks Class Initialized
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: url_helper
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 12:48:58 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 12:48:58 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:48:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 12:48:58 --> URI Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 12:48:58 --> Router Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:48:58 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 19:48:58 --> Final output sent to browser
+DEBUG - 2019-06-21 19:48:58 --> Total execution time: 0.5761
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Output Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Security Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Input Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Language Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+DEBUG - 2019-06-21 12:48:58 --> Loader Class Initialized
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+DEBUG - 2019-06-21 12:48:58 --> Session Class Initialized
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 12:48:58 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 12:48:58 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 12:48:58 --> Session routines successfully run
+DEBUG - 2019-06-21 12:48:58 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Final output sent to browser
+DEBUG - 2019-06-21 19:48:58 --> Total execution time: 0.5808
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:48:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:48:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:48:58 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:48:58 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Config Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Hooks Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 19:48:58 --> Model Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> URI Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/head.php
+DEBUG - 2019-06-21 12:48:58 --> Router Class Initialized
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+DEBUG - 2019-06-21 12:48:58 --> Output Class Initialized
+ERROR - 2019-06-21 19:48:58 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 12:48:58 --> Security Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 12:48:58 --> Input Class Initialized
+DEBUG - 2019-06-21 12:48:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:48:58 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 12:48:58 --> Language Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Final output sent to browser
+DEBUG - 2019-06-21 12:48:58 --> Loader Class Initialized
+DEBUG - 2019-06-21 19:48:58 --> Total execution time: 0.5600
+DEBUG - 2019-06-21 12:48:58 --> Session Class Initialized
+DEBUG - 2019-06-21 12:48:59 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:48:59 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:48:59 --> Session routines successfully run
+DEBUG - 2019-06-21 12:48:59 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:48:59 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:48:59 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:48:59 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:48:59 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:48:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:48:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:48:59 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:48:59 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:48:59 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:59 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:59 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:59 --> Model Class Initialized
+DEBUG - 2019-06-21 19:48:59 --> Final output sent to browser
+DEBUG - 2019-06-21 19:48:59 --> Total execution time: 0.5879
+DEBUG - 2019-06-21 12:49:01 --> Config Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:49:01 --> URI Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> Router Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:49:01 --> Output Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> Security Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> Input Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:49:01 --> Language Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> Session Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:49:01 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:49:01 --> Session routines successfully run
+DEBUG - 2019-06-21 12:49:01 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:49:01 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:49:01 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:49:01 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:49:01 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:49:01 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:49:01 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:49:01 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:49:01 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:49:01 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:01 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:01 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:01 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:01 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:49:01 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:49:01 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:49:01 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:49:01 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:49:01 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:49:01 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:49:01 --> Final output sent to browser
+DEBUG - 2019-06-21 19:49:01 --> Total execution time: 0.5397
+DEBUG - 2019-06-21 12:49:25 --> Config Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:49:25 --> URI Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> Router Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> Output Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> Security Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> Input Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:49:25 --> Language Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> Session Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:49:25 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:49:25 --> Session routines successfully run
+DEBUG - 2019-06-21 12:49:25 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:49:25 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:49:25 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:49:25 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:49:25 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:49:25 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:49:25 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:49:25 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:49:25 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:49:25 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:25 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:25 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:25 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:25 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:49:25 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:49:25 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:49:25 --> Final output sent to browser
+DEBUG - 2019-06-21 19:49:25 --> Total execution time: 0.4542
+DEBUG - 2019-06-21 12:49:30 --> Config Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:49:30 --> URI Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> Router Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> Output Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> Security Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> Input Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:49:30 --> Language Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> Session Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:49:30 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:49:30 --> Session routines successfully run
+DEBUG - 2019-06-21 12:49:30 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:49:30 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:49:30 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:49:30 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:49:30 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:49:30 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:49:30 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:49:30 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:49:30 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:49:30 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:30 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:30 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:30 --> Model Class Initialized
+DEBUG - 2019-06-21 19:49:30 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:49:30 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:49:30 --> Final output sent to browser
+DEBUG - 2019-06-21 19:49:30 --> Total execution time: 0.5665
+DEBUG - 2019-06-21 12:50:06 --> Config Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:50:06 --> URI Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> Router Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> Output Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> Security Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> Input Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:50:06 --> Language Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> Session Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:50:06 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:50:06 --> Session routines successfully run
+DEBUG - 2019-06-21 12:50:06 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:50:06 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:50:06 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:50:06 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:50:06 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:50:06 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:50:06 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:50:06 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:50:06 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:50:06 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:06 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:06 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:06 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:06 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:50:06 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:50:06 --> Final output sent to browser
+DEBUG - 2019-06-21 19:50:07 --> Total execution time: 0.4205
+DEBUG - 2019-06-21 12:50:08 --> Config Class Initialized
+DEBUG - 2019-06-21 12:50:08 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:50:08 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:50:08 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:50:08 --> URI Class Initialized
+DEBUG - 2019-06-21 12:50:08 --> Router Class Initialized
+DEBUG - 2019-06-21 12:50:09 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:50:09 --> Output Class Initialized
+DEBUG - 2019-06-21 12:50:09 --> Security Class Initialized
+DEBUG - 2019-06-21 12:50:09 --> Input Class Initialized
+DEBUG - 2019-06-21 12:50:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:50:09 --> Language Class Initialized
+DEBUG - 2019-06-21 12:50:09 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:50:09 --> Session Class Initialized
+DEBUG - 2019-06-21 12:50:09 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:50:09 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:50:09 --> Session routines successfully run
+DEBUG - 2019-06-21 12:50:09 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:50:09 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:50:09 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:50:09 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:50:09 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:50:09 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:50:09 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:50:09 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:50:09 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:50:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:09 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:50:09 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:50:09 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:50:09 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:50:09 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:50:09 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:50:09 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:50:09 --> Final output sent to browser
+DEBUG - 2019-06-21 19:50:09 --> Total execution time: 0.5427
+DEBUG - 2019-06-21 12:50:12 --> Config Class Initialized
+DEBUG - 2019-06-21 12:50:12 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:50:12 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:50:12 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:50:12 --> URI Class Initialized
+DEBUG - 2019-06-21 12:50:12 --> Router Class Initialized
+DEBUG - 2019-06-21 12:50:12 --> Output Class Initialized
+DEBUG - 2019-06-21 12:50:12 --> Security Class Initialized
+DEBUG - 2019-06-21 12:50:12 --> Input Class Initialized
+DEBUG - 2019-06-21 12:50:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:50:12 --> Language Class Initialized
+DEBUG - 2019-06-21 12:50:12 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:50:12 --> Session Class Initialized
+DEBUG - 2019-06-21 12:50:12 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:50:13 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:50:13 --> Session routines successfully run
+DEBUG - 2019-06-21 12:50:13 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:50:13 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:50:13 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:50:13 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:50:13 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:50:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:50:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:50:13 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:50:13 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:50:13 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:13 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:13 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:13 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:13 --> Final output sent to browser
+DEBUG - 2019-06-21 19:50:13 --> Total execution time: 0.4308
+DEBUG - 2019-06-21 12:50:22 --> Config Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:50:22 --> URI Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> Router Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> Output Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> Security Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> Input Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:50:22 --> Language Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> Session Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:50:22 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:50:22 --> Session routines successfully run
+DEBUG - 2019-06-21 12:50:22 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:50:22 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:50:22 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:50:22 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:50:22 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:50:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:50:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:50:22 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:50:22 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:50:22 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:22 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:23 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:23 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:23 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:50:23 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:50:23 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:50:23 --> Final output sent to browser
+DEBUG - 2019-06-21 19:50:23 --> Total execution time: 0.4433
+DEBUG - 2019-06-21 12:50:58 --> Config Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:50:58 --> URI Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> Router Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> Output Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> Security Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> Input Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:50:58 --> Language Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> Session Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:50:58 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:50:58 --> Session routines successfully run
+DEBUG - 2019-06-21 12:50:58 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:50:58 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:50:58 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:50:58 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:50:58 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:50:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:50:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:50:58 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:50:58 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:50:58 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:58 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:58 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:59 --> Model Class Initialized
+DEBUG - 2019-06-21 19:50:59 --> Final output sent to browser
+DEBUG - 2019-06-21 19:50:59 --> Total execution time: 0.4698
+DEBUG - 2019-06-21 12:51:09 --> Config Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:51:09 --> URI Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> Router Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> Output Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> Security Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> Input Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:51:09 --> Language Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> Session Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:51:09 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:51:09 --> Session routines successfully run
+DEBUG - 2019-06-21 12:51:09 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:51:09 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:51:09 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:51:09 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:51:09 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:51:09 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:51:09 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:51:09 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:51:09 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:51:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:51:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:51:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:51:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:51:09 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:51:09 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:51:09 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:51:09 --> Final output sent to browser
+DEBUG - 2019-06-21 19:51:09 --> Total execution time: 0.4856
+DEBUG - 2019-06-21 12:54:09 --> Config Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:54:09 --> URI Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> Router Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> Output Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> Security Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> Input Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:54:09 --> Language Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> Session Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:54:09 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:54:09 --> Session routines successfully run
+DEBUG - 2019-06-21 12:54:09 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:54:09 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:54:09 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:54:09 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:54:09 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:54:09 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:54:09 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:54:09 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:54:09 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:54:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:54:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:54:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:54:09 --> Model Class Initialized
+DEBUG - 2019-06-21 19:54:09 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:54:09 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:54:09 --> Final output sent to browser
+DEBUG - 2019-06-21 19:54:09 --> Total execution time: 0.4800
+DEBUG - 2019-06-21 12:54:12 --> Config Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:54:12 --> URI Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> Router Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> Output Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> Security Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> Input Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:54:12 --> Language Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> Session Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:54:12 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:54:12 --> Session routines successfully run
+DEBUG - 2019-06-21 12:54:12 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:54:12 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:54:12 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:54:12 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:54:12 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:54:12 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:54:12 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:54:12 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:54:12 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:54:12 --> Model Class Initialized
+DEBUG - 2019-06-21 19:54:12 --> Model Class Initialized
+DEBUG - 2019-06-21 19:54:12 --> Model Class Initialized
+DEBUG - 2019-06-21 19:54:12 --> Model Class Initialized
+DEBUG - 2019-06-21 19:54:12 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:54:12 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:54:12 --> Final output sent to browser
+DEBUG - 2019-06-21 19:54:12 --> Total execution time: 0.5077
+DEBUG - 2019-06-21 12:55:05 --> Config Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:55:05 --> URI Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> Router Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:55:05 --> Output Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> Security Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> Input Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:55:05 --> Language Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> Session Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:55:05 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:55:05 --> Session routines successfully run
+DEBUG - 2019-06-21 12:55:05 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:55:05 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:55:05 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:55:05 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:55:05 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:55:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:55:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:55:05 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:55:05 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:55:05 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:05 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:05 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:05 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:05 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:55:05 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:55:05 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:55:05 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:55:05 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:55:05 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:55:05 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:55:05 --> Final output sent to browser
+DEBUG - 2019-06-21 19:55:05 --> Total execution time: 0.6111
+DEBUG - 2019-06-21 12:55:13 --> Config Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:55:13 --> URI Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> Router Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> Output Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> Security Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> Input Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:55:13 --> Language Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> Session Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:55:13 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:55:13 --> Session routines successfully run
+DEBUG - 2019-06-21 12:55:13 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:55:13 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:55:13 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:55:13 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:55:13 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:55:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:55:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:55:13 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:55:13 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:55:14 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:14 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:14 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:14 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:14 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:55:14 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:55:14 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:55:14 --> Final output sent to browser
+DEBUG - 2019-06-21 19:55:14 --> Total execution time: 0.4911
+DEBUG - 2019-06-21 12:55:15 --> Config Class Initialized
+DEBUG - 2019-06-21 12:55:15 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:55:15 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:55:15 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:55:15 --> URI Class Initialized
+DEBUG - 2019-06-21 12:55:15 --> Router Class Initialized
+DEBUG - 2019-06-21 12:55:15 --> Output Class Initialized
+DEBUG - 2019-06-21 12:55:15 --> Security Class Initialized
+DEBUG - 2019-06-21 12:55:15 --> Input Class Initialized
+DEBUG - 2019-06-21 12:55:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:55:15 --> Language Class Initialized
+DEBUG - 2019-06-21 12:55:15 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:55:15 --> Session Class Initialized
+DEBUG - 2019-06-21 12:55:16 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:55:16 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:55:16 --> Session routines successfully run
+DEBUG - 2019-06-21 12:55:16 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:55:16 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:55:16 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:55:16 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:55:16 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:55:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:55:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:55:16 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:55:16 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:55:16 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:16 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:16 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:16 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:16 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:55:16 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:55:16 --> Final output sent to browser
+DEBUG - 2019-06-21 19:55:16 --> Total execution time: 0.5200
+DEBUG - 2019-06-21 12:55:34 --> Config Class Initialized
+DEBUG - 2019-06-21 12:55:34 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:55:34 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:55:34 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:55:34 --> URI Class Initialized
+DEBUG - 2019-06-21 12:55:34 --> Router Class Initialized
+DEBUG - 2019-06-21 12:55:34 --> Output Class Initialized
+DEBUG - 2019-06-21 12:55:34 --> Security Class Initialized
+DEBUG - 2019-06-21 12:55:34 --> Input Class Initialized
+DEBUG - 2019-06-21 12:55:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:55:34 --> Language Class Initialized
+DEBUG - 2019-06-21 12:55:34 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:55:34 --> Session Class Initialized
+DEBUG - 2019-06-21 12:55:35 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:55:35 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:55:35 --> Session routines successfully run
+DEBUG - 2019-06-21 12:55:35 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:55:35 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:55:35 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:55:35 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:55:35 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:55:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:55:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:55:35 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:55:35 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:55:35 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:35 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:35 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:35 --> Model Class Initialized
+DEBUG - 2019-06-21 19:55:35 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 19:55:35 --> XSS Filtering completed
+DEBUG - 2019-06-21 19:55:35 --> Final output sent to browser
+DEBUG - 2019-06-21 19:55:35 --> Total execution time: 0.4676
+DEBUG - 2019-06-21 12:58:17 --> Config Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:58:17 --> URI Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> Router Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:58:17 --> Output Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> Security Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> Input Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:58:17 --> Language Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> Session Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:58:17 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:58:17 --> Session routines successfully run
+DEBUG - 2019-06-21 12:58:17 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:58:17 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:58:17 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:58:17 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:58:17 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:58:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:58:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:58:17 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:58:17 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:58:17 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:17 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:17 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:17 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:17 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:58:17 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:58:17 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:58:17 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:58:17 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:58:17 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:58:17 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:58:17 --> Final output sent to browser
+DEBUG - 2019-06-21 19:58:17 --> Total execution time: 0.5882
+DEBUG - 2019-06-21 12:58:28 --> Config Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:58:28 --> URI Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Router Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:58:28 --> Config Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Output Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Security Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:58:28 --> Input Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:58:28 --> URI Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Language Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Router Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:58:28 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Output Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Session Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:58:28 --> Security Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Input Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:58:28 --> Language Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Session routines successfully run
+DEBUG - 2019-06-21 12:58:28 --> Controller Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Config Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Hooks Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 12:58:28 --> Session Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 12:58:28 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:58:28 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 19:58:28 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 12:58:28 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 12:58:28 --> Session routines successfully run
+DEBUG - 2019-06-21 12:58:28 --> URI Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Controller Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Router Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:58:28 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 12:58:28 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 19:58:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:58:28 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 12:58:28 --> Output Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:58:28 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 12:58:28 --> Security Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 12:58:28 --> Input Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Model Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 19:58:28 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 12:58:28 --> Language Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:58:28 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 12:58:28 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Config Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Session Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> File loaded: application/views/components/head.php
+DEBUG - 2019-06-21 12:58:28 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Helper loaded: string_helper
+ERROR - 2019-06-21 19:58:28 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+DEBUG - 2019-06-21 19:58:28 --> Model Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> UTF-8 Support Enabled
+ERROR - 2019-06-21 19:58:28 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+DEBUG - 2019-06-21 19:58:28 --> Model Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Database Driver Class Initialized
+ERROR - 2019-06-21 19:58:28 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 12:58:28 --> URI Class Initialized
+DEBUG - 2019-06-21 19:58:28 --> Model Class Initialized
+DEBUG - 2019-06-21 12:58:28 --> Session routines successfully run
+DEBUG - 2019-06-21 12:58:28 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 12:58:29 --> Router Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 12:58:29 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 12:58:29 --> Output Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Final output sent to browser
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 12:58:29 --> Security Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Total execution time: 0.5940
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 12:58:29 --> Input Class Initialized
+DEBUG - 2019-06-21 12:58:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 19:58:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 12:58:29 --> Config Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/head.php
+DEBUG - 2019-06-21 12:58:29 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:58:29 --> Language Class Initialized
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+DEBUG - 2019-06-21 19:58:29 --> Session class already loaded. Second attempt ignored.
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+DEBUG - 2019-06-21 12:58:29 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 12:58:29 --> Loader Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 12:58:29 --> UTF-8 Support Enabled
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 12:58:29 --> Session Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 12:58:29 --> URI Class Initialized
+DEBUG - 2019-06-21 12:58:29 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 12:58:29 --> Router Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 12:58:29 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 12:58:29 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 12:58:29 --> Session routines successfully run
+DEBUG - 2019-06-21 19:58:29 --> Final output sent to browser
+DEBUG - 2019-06-21 12:58:29 --> Output Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 12:58:29 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Total execution time: 0.6267
+DEBUG - 2019-06-21 12:58:29 --> Security Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/head.php
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 12:58:29 --> Input Class Initialized
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+DEBUG - 2019-06-21 12:58:29 --> Global POST and COOKIE data sanitized
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: account/ssl_helper
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 12:58:29 --> Language Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 12:58:29 --> Loader Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:58:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 12:58:29 --> Session Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 12:58:29 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 19:58:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:58:29 --> Final output sent to browser
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 12:58:29 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Total execution time: 0.5773
+DEBUG - 2019-06-21 12:58:29 --> Session routines successfully run
+DEBUG - 2019-06-21 12:58:29 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/head.php
+DEBUG - 2019-06-21 19:58:29 --> Session class already loaded. Second attempt ignored.
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+DEBUG - 2019-06-21 19:58:29 --> Session class already loaded. Second attempt ignored.
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:58:29 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:58:29 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Final output sent to browser
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> Total execution time: 0.5898
+DEBUG - 2019-06-21 19:58:29 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:58:29 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:58:29 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:58:29 --> Final output sent to browser
+DEBUG - 2019-06-21 19:58:29 --> Total execution time: 0.5713
+DEBUG - 2019-06-21 12:58:39 --> Config Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:58:39 --> URI Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Router Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:58:39 --> Config Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Output Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Security Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 12:58:39 --> Input Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:58:39 --> URI Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Language Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Router Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 12:58:39 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Output Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Session Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:58:39 --> Security Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Input Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 12:58:39 --> Config Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Hooks Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Language Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Session routines successfully run
+DEBUG - 2019-06-21 12:58:39 --> Controller Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Loader Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 12:58:39 --> Session Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 12:58:39 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 12:58:39 --> URI Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Router Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 12:58:39 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 12:58:39 --> Session routines successfully run
+DEBUG - 2019-06-21 12:58:39 --> Controller Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 12:58:39 --> Output Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:58:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 12:58:39 --> Security Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 12:58:39 --> Input Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:58:39 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 12:58:39 --> Language Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 12:58:39 --> Loader Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Session Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:58:39 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:58:39 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 12:58:39 --> Session routines successfully run
+ERROR - 2019-06-21 19:58:39 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+DEBUG - 2019-06-21 12:58:39 --> Controller Class Initialized
+ERROR - 2019-06-21 19:58:39 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/components/head.php
+DEBUG - 2019-06-21 19:58:39 --> Final output sent to browser
+ERROR - 2019-06-21 19:58:39 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 19:58:39 --> Total execution time: 0.5884
+ERROR - 2019-06-21 19:58:39 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+DEBUG - 2019-06-21 19:58:39 --> Session class already loaded. Second attempt ignored.
+ERROR - 2019-06-21 19:58:39 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:58:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:58:39 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 19:58:39 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Final output sent to browser
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Total execution time: 0.5841
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> Model Class Initialized
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 19:58:39 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 19:58:39 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 19:58:39 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 19:58:39 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 19:58:40 --> Final output sent to browser
+DEBUG - 2019-06-21 19:58:40 --> Total execution time: 0.5880
+DEBUG - 2019-06-21 13:04:29 --> Config Class Initialized
+DEBUG - 2019-06-21 13:04:29 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:04:29 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:04:29 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:04:29 --> URI Class Initialized
+DEBUG - 2019-06-21 13:04:29 --> Router Class Initialized
+DEBUG - 2019-06-21 13:04:29 --> Output Class Initialized
+DEBUG - 2019-06-21 13:04:30 --> Security Class Initialized
+DEBUG - 2019-06-21 13:04:30 --> Input Class Initialized
+DEBUG - 2019-06-21 13:04:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:04:30 --> Language Class Initialized
+DEBUG - 2019-06-21 13:04:30 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:04:30 --> Session Class Initialized
+DEBUG - 2019-06-21 13:04:30 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:04:30 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:04:30 --> Session routines successfully run
+DEBUG - 2019-06-21 13:04:30 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:04:30 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:04:30 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:04:30 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:04:30 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:04:30 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:30 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:30 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:04:30 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:04:30 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:30 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:30 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:30 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:30 --> Final output sent to browser
+DEBUG - 2019-06-21 20:04:30 --> Total execution time: 0.4767
+DEBUG - 2019-06-21 13:04:31 --> Config Class Initialized
+DEBUG - 2019-06-21 13:04:31 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:04:31 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:04:31 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:04:31 --> URI Class Initialized
+DEBUG - 2019-06-21 13:04:31 --> Router Class Initialized
+DEBUG - 2019-06-21 13:04:31 --> Output Class Initialized
+DEBUG - 2019-06-21 13:04:31 --> Security Class Initialized
+DEBUG - 2019-06-21 13:04:31 --> Input Class Initialized
+DEBUG - 2019-06-21 13:04:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:04:31 --> Language Class Initialized
+DEBUG - 2019-06-21 13:04:31 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:04:31 --> Session Class Initialized
+DEBUG - 2019-06-21 13:04:31 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:04:31 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:04:32 --> Session garbage collection performed.
+DEBUG - 2019-06-21 13:04:32 --> Session routines successfully run
+DEBUG - 2019-06-21 13:04:32 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:04:32 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:04:32 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:04:32 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:04:32 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:04:32 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:32 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:32 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:04:32 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:04:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:32 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:04:32 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:04:32 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:04:32 --> Final output sent to browser
+DEBUG - 2019-06-21 20:04:32 --> Total execution time: 0.4924
+DEBUG - 2019-06-21 13:04:33 --> Config Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:04:33 --> URI Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> Router Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> Output Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> Security Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> Input Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:04:33 --> Language Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> Session Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:04:33 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:04:33 --> Session routines successfully run
+DEBUG - 2019-06-21 13:04:33 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:04:33 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:04:33 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:04:33 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:04:33 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:04:33 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:33 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:33 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:04:33 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:04:33 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:33 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:33 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:33 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:33 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:04:33 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:04:33 --> Final output sent to browser
+DEBUG - 2019-06-21 20:04:33 --> Total execution time: 0.4854
+DEBUG - 2019-06-21 13:04:36 --> Config Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:04:36 --> URI Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> Router Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> Output Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> Security Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> Input Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:04:36 --> Language Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> Session Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:04:36 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:04:36 --> Session routines successfully run
+DEBUG - 2019-06-21 13:04:36 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:04:36 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:04:36 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:04:36 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:04:36 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:04:36 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:36 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:36 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:04:36 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:04:36 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:36 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:36 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:36 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:36 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:04:36 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:04:36 --> Final output sent to browser
+DEBUG - 2019-06-21 20:04:36 --> Total execution time: 0.5405
+DEBUG - 2019-06-21 13:04:39 --> Config Class Initialized
+DEBUG - 2019-06-21 13:04:39 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:04:39 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:04:39 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:04:39 --> URI Class Initialized
+DEBUG - 2019-06-21 13:04:39 --> Router Class Initialized
+DEBUG - 2019-06-21 13:04:40 --> Output Class Initialized
+DEBUG - 2019-06-21 13:04:40 --> Security Class Initialized
+DEBUG - 2019-06-21 13:04:40 --> Input Class Initialized
+DEBUG - 2019-06-21 13:04:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:04:40 --> Language Class Initialized
+DEBUG - 2019-06-21 13:04:40 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:04:40 --> Session Class Initialized
+DEBUG - 2019-06-21 13:04:40 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:04:40 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:04:40 --> Session routines successfully run
+DEBUG - 2019-06-21 13:04:40 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:04:40 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:04:40 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:04:40 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:04:40 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:04:40 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:40 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:40 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:04:40 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:04:40 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:40 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:40 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:40 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:40 --> File loaded: application/views/balance_sheet.php
+DEBUG - 2019-06-21 20:04:40 --> Final output sent to browser
+DEBUG - 2019-06-21 20:04:40 --> Total execution time: 0.7370
+DEBUG - 2019-06-21 13:04:45 --> Config Class Initialized
+DEBUG - 2019-06-21 13:04:45 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:04:45 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:04:45 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:04:45 --> URI Class Initialized
+DEBUG - 2019-06-21 13:04:45 --> Router Class Initialized
+DEBUG - 2019-06-21 13:04:45 --> Output Class Initialized
+DEBUG - 2019-06-21 13:04:45 --> Security Class Initialized
+DEBUG - 2019-06-21 13:04:45 --> Input Class Initialized
+DEBUG - 2019-06-21 13:04:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:04:45 --> Language Class Initialized
+DEBUG - 2019-06-21 13:04:45 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:04:45 --> Session Class Initialized
+DEBUG - 2019-06-21 13:04:45 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:04:45 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:04:46 --> Session routines successfully run
+DEBUG - 2019-06-21 13:04:46 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:04:46 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:04:46 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:04:46 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:04:46 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:04:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:46 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:04:46 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:04:46 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:46 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:46 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:46 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:46 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:04:46 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:04:46 --> Final output sent to browser
+DEBUG - 2019-06-21 20:04:46 --> Total execution time: 0.4770
+DEBUG - 2019-06-21 13:04:53 --> Config Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:04:53 --> URI Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> Router Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> Output Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> Security Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> Input Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:04:53 --> Language Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> Session Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:04:53 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:04:53 --> Session routines successfully run
+DEBUG - 2019-06-21 13:04:53 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:04:53 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:04:53 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:04:53 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:04:53 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:04:53 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:53 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:53 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:04:53 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:04:53 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:53 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:53 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:53 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:53 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:04:53 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:04:53 --> Final output sent to browser
+DEBUG - 2019-06-21 20:04:53 --> Total execution time: 0.4927
+DEBUG - 2019-06-21 13:04:55 --> Config Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:04:55 --> URI Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> Router Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> Output Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> Security Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> Input Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:04:55 --> Language Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> Session Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:04:55 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:04:55 --> Session garbage collection performed.
+DEBUG - 2019-06-21 13:04:55 --> Session routines successfully run
+DEBUG - 2019-06-21 13:04:55 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:04:55 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:04:55 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:04:55 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:04:55 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:04:55 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:55 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:55 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:04:55 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:04:55 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:55 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:55 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:55 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:55 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:04:55 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:04:55 --> Final output sent to browser
+DEBUG - 2019-06-21 20:04:55 --> Total execution time: 0.4927
+DEBUG - 2019-06-21 13:04:57 --> Config Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:04:57 --> URI Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> Router Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> Output Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> Security Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> Input Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:04:57 --> Language Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> Session Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:04:57 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:04:57 --> Session routines successfully run
+DEBUG - 2019-06-21 13:04:57 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:04:57 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:04:57 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:04:57 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:04:57 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:04:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:04:57 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:04:57 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:04:57 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:57 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:57 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:57 --> Model Class Initialized
+DEBUG - 2019-06-21 20:04:57 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:04:57 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:04:57 --> Final output sent to browser
+DEBUG - 2019-06-21 20:04:57 --> Total execution time: 0.6258
+DEBUG - 2019-06-21 13:05:05 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:05 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:05 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:05 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:05 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:05 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:05 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:05 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:05 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:05 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:05 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:05 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:05 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:05 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:05 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:05 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:05 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:05 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:05 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:05 --> Total execution time: 0.4845
+DEBUG - 2019-06-21 13:05:08 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:08 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:08 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:08 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:08 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:08 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:08 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:08 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:08 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:08 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:08 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:08 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:08 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:08 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:08 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:08 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:08 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:08 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:08 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:08 --> Total execution time: 0.5154
+DEBUG - 2019-06-21 13:05:10 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:10 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:10 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:10 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:10 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:10 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:10 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:10 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:10 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:10 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:10 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:10 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:10 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:10 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:10 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:10 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:10 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:10 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:10 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:10 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:10 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:11 --> Total execution time: 0.4834
+DEBUG - 2019-06-21 13:05:12 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:12 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:12 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:12 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:12 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:12 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:12 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:12 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:12 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:12 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:12 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:12 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:12 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:12 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:12 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:12 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:12 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:12 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:12 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:12 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:12 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:12 --> Total execution time: 0.5480
+DEBUG - 2019-06-21 13:05:19 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:19 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:19 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:19 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:19 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:19 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:19 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:19 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:19 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:19 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:19 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:19 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:19 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:19 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:19 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:19 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:19 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:20 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:20 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:20 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:20 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:20 --> Total execution time: 0.4947
+DEBUG - 2019-06-21 13:05:23 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:23 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:23 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:23 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:23 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:23 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:23 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:23 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:23 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:23 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:23 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:23 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:23 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:23 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:23 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:23 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:23 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:23 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:23 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:23 --> Total execution time: 0.4683
+DEBUG - 2019-06-21 13:05:36 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:36 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:36 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:36 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:36 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:36 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:36 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:36 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:36 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:36 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:36 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:36 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:36 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:36 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:36 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:36 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:36 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:36 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:36 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:36 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:36 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:36 --> Total execution time: 0.5034
+DEBUG - 2019-06-21 13:05:42 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:42 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:42 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:42 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:42 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:42 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:42 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:42 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:42 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:42 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:42 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:42 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:42 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:42 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:42 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:42 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:42 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:42 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:42 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:42 --> Total execution time: 0.4644
+DEBUG - 2019-06-21 13:05:44 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:44 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:44 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:44 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:44 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:44 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:44 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:44 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:45 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:45 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:45 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:45 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:45 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:45 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:45 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:45 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:45 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:45 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:45 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:45 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:45 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:45 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:45 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:45 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:45 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:45 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:45 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:45 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:45 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:45 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:45 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:45 --> Total execution time: 0.4791
+DEBUG - 2019-06-21 13:05:46 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:46 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:46 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:46 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:46 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:46 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:46 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:46 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:46 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:46 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:46 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:46 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:46 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:47 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:47 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:47 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:47 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:47 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:47 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:47 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:47 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:47 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:47 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:47 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:47 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:47 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:47 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:47 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:47 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:47 --> Total execution time: 0.4563
+DEBUG - 2019-06-21 13:05:48 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:48 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:48 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:48 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:48 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:48 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:48 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:48 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:49 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:49 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:49 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:49 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:49 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:49 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:49 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:49 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:49 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:49 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:49 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:49 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:49 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:49 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:49 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:49 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:49 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:49 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:49 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:49 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:49 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:49 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:49 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:49 --> Total execution time: 0.4711
+DEBUG - 2019-06-21 13:05:50 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:50 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:50 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:50 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:51 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:51 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:51 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:51 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:51 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:51 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:51 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:51 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:51 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:51 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:51 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:51 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:51 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:51 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:51 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:51 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:51 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:51 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:51 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:51 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:51 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:51 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:51 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:51 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:51 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:51 --> Total execution time: 0.4702
+DEBUG - 2019-06-21 13:05:52 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:52 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:52 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:52 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:52 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:52 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:52 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:52 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:52 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:52 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:52 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:52 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:52 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:52 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:52 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:53 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:53 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:53 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:53 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:53 --> Total execution time: 0.4569
+DEBUG - 2019-06-21 13:05:54 --> Config Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:05:54 --> URI Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> Router Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> Output Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> Security Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> Input Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:05:54 --> Language Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> Session Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:05:54 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:05:54 --> Session routines successfully run
+DEBUG - 2019-06-21 13:05:54 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:05:54 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:05:54 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:05:54 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:05:54 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:05:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:05:54 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:05:54 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:05:54 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:54 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:54 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:54 --> Model Class Initialized
+DEBUG - 2019-06-21 20:05:54 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:05:54 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:05:55 --> Final output sent to browser
+DEBUG - 2019-06-21 20:05:55 --> Total execution time: 0.4435
+DEBUG - 2019-06-21 13:06:37 --> Config Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:06:37 --> URI Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> Router Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 13:06:37 --> Output Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> Security Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> Input Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:06:37 --> Language Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> Session Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:06:37 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:06:37 --> Session garbage collection performed.
+DEBUG - 2019-06-21 13:06:37 --> Session routines successfully run
+DEBUG - 2019-06-21 13:06:37 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:06:37 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:06:37 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:06:37 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:06:37 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:06:37 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:06:37 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:06:37 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:06:37 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:06:37 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:37 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:37 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:37 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:38 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 20:06:38 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 20:06:38 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 20:06:38 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 20:06:38 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 20:06:38 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 20:06:38 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 20:06:38 --> Final output sent to browser
+DEBUG - 2019-06-21 20:06:38 --> Total execution time: 0.6221
+DEBUG - 2019-06-21 13:06:48 --> Config Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:06:48 --> URI Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> Router Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> Output Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> Security Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> Input Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:06:48 --> Language Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> Session Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:06:48 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:06:48 --> Session routines successfully run
+DEBUG - 2019-06-21 13:06:48 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:06:48 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:06:48 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:06:48 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:06:48 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:06:48 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:06:48 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:06:48 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:06:48 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:06:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:48 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:06:48 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:06:48 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:06:48 --> Final output sent to browser
+DEBUG - 2019-06-21 20:06:48 --> Total execution time: 0.5113
+DEBUG - 2019-06-21 13:06:52 --> Config Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:06:52 --> URI Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> Router Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> Output Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> Security Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> Input Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:06:52 --> Language Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> Session Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:06:52 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:06:52 --> Session routines successfully run
+DEBUG - 2019-06-21 13:06:52 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:06:52 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:06:52 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:06:52 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:06:52 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:06:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:06:53 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:06:53 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:06:53 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:06:53 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:53 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:53 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:53 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:53 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:06:53 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:06:53 --> Final output sent to browser
+DEBUG - 2019-06-21 20:06:53 --> Total execution time: 0.5575
+DEBUG - 2019-06-21 13:06:55 --> Config Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:06:55 --> URI Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> Router Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> Output Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> Security Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> Input Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:06:55 --> Language Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> Session Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:06:55 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:06:55 --> Session routines successfully run
+DEBUG - 2019-06-21 13:06:55 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:06:55 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:06:55 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:06:55 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:06:55 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:06:55 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:06:55 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:06:55 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:06:55 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:06:55 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:55 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:55 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:55 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:55 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:06:56 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:06:56 --> Final output sent to browser
+DEBUG - 2019-06-21 20:06:56 --> Total execution time: 0.4973
+DEBUG - 2019-06-21 13:06:57 --> Config Class Initialized
+DEBUG - 2019-06-21 13:06:57 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:06:57 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:06:57 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:06:57 --> URI Class Initialized
+DEBUG - 2019-06-21 13:06:57 --> Router Class Initialized
+DEBUG - 2019-06-21 13:06:57 --> Output Class Initialized
+DEBUG - 2019-06-21 13:06:57 --> Security Class Initialized
+DEBUG - 2019-06-21 13:06:57 --> Input Class Initialized
+DEBUG - 2019-06-21 13:06:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:06:57 --> Language Class Initialized
+DEBUG - 2019-06-21 13:06:57 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:06:57 --> Session Class Initialized
+DEBUG - 2019-06-21 13:06:57 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:06:57 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:06:58 --> Session routines successfully run
+DEBUG - 2019-06-21 13:06:58 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:06:58 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:06:58 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:06:58 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:06:58 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:06:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:06:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:06:58 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:06:58 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:06:58 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:58 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:58 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:58 --> Model Class Initialized
+DEBUG - 2019-06-21 20:06:58 --> File loaded: application/views/balance_sheet.php
+DEBUG - 2019-06-21 20:06:58 --> Final output sent to browser
+DEBUG - 2019-06-21 20:06:58 --> Total execution time: 0.5448
+DEBUG - 2019-06-21 13:07:02 --> Config Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:07:02 --> URI Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> Router Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> Output Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> Security Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> Input Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:07:02 --> Language Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> Session Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:07:02 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:07:02 --> Session routines successfully run
+DEBUG - 2019-06-21 13:07:02 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:07:02 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:07:02 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:07:02 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:07:02 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:07:02 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:02 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:02 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:07:02 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:07:02 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:02 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:02 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:03 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:03 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:07:03 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:07:03 --> Final output sent to browser
+DEBUG - 2019-06-21 20:07:03 --> Total execution time: 0.5152
+DEBUG - 2019-06-21 13:07:24 --> Config Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:07:24 --> URI Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> Router Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> Output Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> Security Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> Input Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:07:24 --> Language Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> Session Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:07:24 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:07:24 --> Session routines successfully run
+DEBUG - 2019-06-21 13:07:24 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:07:24 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:07:24 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:07:24 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:07:24 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:07:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:24 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:07:24 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:07:24 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:24 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:24 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:24 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:24 --> Final output sent to browser
+DEBUG - 2019-06-21 20:07:24 --> Total execution time: 0.4597
+DEBUG - 2019-06-21 13:07:26 --> Config Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:07:26 --> URI Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> Router Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> Output Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> Security Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> Input Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:07:26 --> Language Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> Session Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:07:26 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:07:26 --> Session routines successfully run
+DEBUG - 2019-06-21 13:07:26 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:07:26 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:07:26 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:07:26 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:07:26 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:07:26 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:26 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:26 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:07:26 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:07:26 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:26 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:26 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:26 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:26 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:07:26 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:07:26 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:07:26 --> Final output sent to browser
+DEBUG - 2019-06-21 20:07:26 --> Total execution time: 0.4759
+DEBUG - 2019-06-21 13:07:27 --> Config Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:07:27 --> URI Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> Router Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> Output Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> Security Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> Input Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:07:27 --> Language Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> Session Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:07:27 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:07:27 --> Session routines successfully run
+DEBUG - 2019-06-21 13:07:27 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:07:28 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:07:28 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:07:28 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:07:28 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:07:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:28 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:07:28 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:07:28 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:28 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:28 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:28 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:28 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:07:28 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:07:28 --> Final output sent to browser
+DEBUG - 2019-06-21 20:07:28 --> Total execution time: 0.4765
+DEBUG - 2019-06-21 13:07:31 --> Config Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:07:31 --> URI Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> Router Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> Output Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> Security Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> Input Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:07:31 --> Language Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> Session Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:07:31 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:07:31 --> Session routines successfully run
+DEBUG - 2019-06-21 13:07:32 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:07:32 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:07:32 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:07:32 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:07:32 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:07:32 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:32 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:32 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:07:32 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:07:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:32 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:07:32 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:07:32 --> Final output sent to browser
+DEBUG - 2019-06-21 20:07:32 --> Total execution time: 0.5455
+DEBUG - 2019-06-21 13:07:35 --> Config Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:07:35 --> URI Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> Router Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> Output Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> Security Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> Input Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:07:35 --> Language Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> Session Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:07:35 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:07:35 --> Session routines successfully run
+DEBUG - 2019-06-21 13:07:35 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:07:35 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:07:35 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:07:35 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:07:35 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:07:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:07:35 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:07:35 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:07:35 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:35 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:35 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:35 --> Model Class Initialized
+DEBUG - 2019-06-21 20:07:35 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2019-06-21 20:07:35 --> XSS Filtering completed
+DEBUG - 2019-06-21 20:07:35 --> Final output sent to browser
+DEBUG - 2019-06-21 20:07:35 --> Total execution time: 0.4987
+DEBUG - 2019-06-21 13:46:41 --> Config Class Initialized
+DEBUG - 2019-06-21 13:46:41 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:46:41 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:46:41 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:46:41 --> URI Class Initialized
+DEBUG - 2019-06-21 13:46:41 --> Router Class Initialized
+DEBUG - 2019-06-21 13:46:41 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 13:46:41 --> Output Class Initialized
+DEBUG - 2019-06-21 13:46:41 --> Security Class Initialized
+DEBUG - 2019-06-21 13:46:41 --> Input Class Initialized
+DEBUG - 2019-06-21 13:46:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:46:42 --> Language Class Initialized
+DEBUG - 2019-06-21 13:46:42 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:46:42 --> Session Class Initialized
+DEBUG - 2019-06-21 13:46:42 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:46:42 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:46:42 --> Session routines successfully run
+DEBUG - 2019-06-21 13:46:42 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:46:42 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:46:42 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:46:42 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:46:42 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:46:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:46:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:46:42 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:46:42 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:46:42 --> Model Class Initialized
+DEBUG - 2019-06-21 20:46:42 --> Model Class Initialized
+DEBUG - 2019-06-21 20:46:42 --> Model Class Initialized
+DEBUG - 2019-06-21 20:46:42 --> Model Class Initialized
+DEBUG - 2019-06-21 20:46:43 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 20:46:43 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 20:46:43 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 20:46:43 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 20:46:43 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 20:46:43 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 20:46:43 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 20:46:43 --> Final output sent to browser
+DEBUG - 2019-06-21 20:46:43 --> Total execution time: 2.2922
+DEBUG - 2019-06-21 13:46:50 --> Config Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:46:50 --> URI Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> Router Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 13:46:50 --> Output Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> Security Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> Input Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:46:50 --> Language Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> Session Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:46:50 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:46:50 --> Session routines successfully run
+DEBUG - 2019-06-21 13:46:50 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:46:50 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:46:50 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:46:50 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:46:50 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:46:50 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:46:50 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:46:50 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:46:50 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:46:50 --> Model Class Initialized
+DEBUG - 2019-06-21 20:46:50 --> Model Class Initialized
+DEBUG - 2019-06-21 20:46:50 --> Model Class Initialized
+DEBUG - 2019-06-21 20:46:50 --> Model Class Initialized
+DEBUG - 2019-06-21 20:46:50 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 20:46:50 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 20:46:50 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 20:46:50 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 20:46:50 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 20:46:50 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 20:46:50 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 20:46:50 --> Final output sent to browser
+DEBUG - 2019-06-21 20:46:50 --> Total execution time: 0.5298
+DEBUG - 2019-06-21 13:47:31 --> Config Class Initialized
+DEBUG - 2019-06-21 13:47:31 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:47:31 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:47:31 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:47:31 --> URI Class Initialized
+DEBUG - 2019-06-21 13:47:32 --> Router Class Initialized
+DEBUG - 2019-06-21 13:47:32 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 13:47:32 --> Output Class Initialized
+DEBUG - 2019-06-21 13:47:32 --> Security Class Initialized
+DEBUG - 2019-06-21 13:47:32 --> Input Class Initialized
+DEBUG - 2019-06-21 13:47:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:47:32 --> Language Class Initialized
+DEBUG - 2019-06-21 13:47:32 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:47:32 --> Session Class Initialized
+DEBUG - 2019-06-21 13:47:32 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:47:32 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:47:32 --> Session routines successfully run
+DEBUG - 2019-06-21 13:47:32 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:47:32 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:47:32 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:47:32 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:47:32 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:47:32 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:47:32 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:47:32 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:47:32 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:47:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:47:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:47:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:47:32 --> Model Class Initialized
+DEBUG - 2019-06-21 20:47:32 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 20:47:32 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 20:47:32 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 20:47:32 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 20:47:32 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 20:47:32 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 20:47:32 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 20:47:32 --> Final output sent to browser
+DEBUG - 2019-06-21 20:47:32 --> Total execution time: 0.5357
+DEBUG - 2019-06-21 13:47:45 --> Config Class Initialized
+DEBUG - 2019-06-21 13:47:45 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:47:45 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:47:45 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:47:45 --> URI Class Initialized
+DEBUG - 2019-06-21 13:47:45 --> Router Class Initialized
+DEBUG - 2019-06-21 13:47:45 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 13:47:45 --> Output Class Initialized
+DEBUG - 2019-06-21 13:47:45 --> Security Class Initialized
+DEBUG - 2019-06-21 13:47:45 --> Input Class Initialized
+DEBUG - 2019-06-21 13:47:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:47:45 --> Language Class Initialized
+DEBUG - 2019-06-21 13:47:46 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:47:46 --> Session Class Initialized
+DEBUG - 2019-06-21 13:47:46 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:47:46 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:47:46 --> Session routines successfully run
+DEBUG - 2019-06-21 13:47:46 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:47:46 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:47:46 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:47:46 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:47:46 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:47:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:47:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:47:46 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:47:46 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:47:46 --> Model Class Initialized
+DEBUG - 2019-06-21 20:47:46 --> Model Class Initialized
+DEBUG - 2019-06-21 20:47:46 --> Model Class Initialized
+DEBUG - 2019-06-21 20:47:46 --> Model Class Initialized
+DEBUG - 2019-06-21 20:47:46 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 20:47:46 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 20:47:46 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 20:47:46 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 20:47:46 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 20:47:46 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 20:47:46 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 20:47:46 --> Final output sent to browser
+DEBUG - 2019-06-21 20:47:46 --> Total execution time: 0.5286
+DEBUG - 2019-06-21 13:48:48 --> Config Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:48:48 --> URI Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> Router Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 13:48:48 --> Output Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> Security Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> Input Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:48:48 --> Language Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> Session Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:48:48 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:48:48 --> Session routines successfully run
+DEBUG - 2019-06-21 13:48:48 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:48:48 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:48:48 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:48:48 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:48:48 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:48:48 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:48:48 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:48:48 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:48:48 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:48:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:48:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:48:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:48:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:48:48 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 20:48:48 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 20:48:48 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 20:48:48 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 20:48:48 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 20:48:48 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 20:48:48 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 20:48:48 --> Final output sent to browser
+DEBUG - 2019-06-21 20:48:48 --> Total execution time: 0.5326
+DEBUG - 2019-06-21 13:49:07 --> Config Class Initialized
+DEBUG - 2019-06-21 13:49:07 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:49:07 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:49:07 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:49:08 --> URI Class Initialized
+DEBUG - 2019-06-21 13:49:08 --> Router Class Initialized
+DEBUG - 2019-06-21 13:49:08 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 13:49:08 --> Output Class Initialized
+DEBUG - 2019-06-21 13:49:08 --> Security Class Initialized
+DEBUG - 2019-06-21 13:49:08 --> Input Class Initialized
+DEBUG - 2019-06-21 13:49:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:49:08 --> Language Class Initialized
+DEBUG - 2019-06-21 13:49:08 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:49:08 --> Session Class Initialized
+DEBUG - 2019-06-21 13:49:08 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:49:08 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:49:08 --> Session routines successfully run
+DEBUG - 2019-06-21 13:49:08 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:49:08 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:49:08 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:49:08 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:49:08 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:49:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:49:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:49:08 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:49:08 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:49:08 --> Model Class Initialized
+DEBUG - 2019-06-21 20:49:08 --> Model Class Initialized
+DEBUG - 2019-06-21 20:49:08 --> Model Class Initialized
+DEBUG - 2019-06-21 20:49:08 --> Model Class Initialized
+DEBUG - 2019-06-21 20:49:08 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 20:49:08 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 20:49:08 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 20:49:08 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 20:49:08 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 20:49:08 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 20:49:08 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 20:49:08 --> Final output sent to browser
+DEBUG - 2019-06-21 20:49:08 --> Total execution time: 0.5627
+DEBUG - 2019-06-21 13:49:47 --> Config Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:49:47 --> URI Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> Router Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 13:49:47 --> Output Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> Security Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> Input Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:49:47 --> Language Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> Session Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:49:47 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:49:47 --> Session routines successfully run
+DEBUG - 2019-06-21 13:49:47 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:49:47 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:49:47 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:49:47 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:49:47 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:49:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:49:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:49:47 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:49:47 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:49:47 --> Model Class Initialized
+DEBUG - 2019-06-21 20:49:47 --> Model Class Initialized
+DEBUG - 2019-06-21 20:49:47 --> Model Class Initialized
+DEBUG - 2019-06-21 20:49:47 --> Model Class Initialized
+DEBUG - 2019-06-21 20:49:47 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 20:49:47 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 20:49:47 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 20:49:47 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 20:49:47 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 20:49:47 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 20:49:47 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 20:49:47 --> Final output sent to browser
+DEBUG - 2019-06-21 20:49:47 --> Total execution time: 0.5697
+DEBUG - 2019-06-21 13:50:25 --> Config Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:50:26 --> URI Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> Router Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 13:50:26 --> Output Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> Security Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> Input Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:50:26 --> Language Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> Session Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:50:26 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:50:26 --> Session routines successfully run
+DEBUG - 2019-06-21 13:50:26 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:50:26 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:50:26 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:50:26 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:50:26 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:50:26 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:50:26 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:50:26 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:50:26 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:50:26 --> Model Class Initialized
+DEBUG - 2019-06-21 20:50:26 --> Model Class Initialized
+DEBUG - 2019-06-21 20:50:26 --> Model Class Initialized
+DEBUG - 2019-06-21 20:50:26 --> Model Class Initialized
+DEBUG - 2019-06-21 20:50:26 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 20:50:26 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 20:50:26 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 20:50:26 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 20:50:26 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 20:50:26 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 20:50:26 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 20:50:26 --> Final output sent to browser
+DEBUG - 2019-06-21 20:50:26 --> Total execution time: 0.5537
+DEBUG - 2019-06-21 13:50:48 --> Config Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> Hooks Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> Utf8 Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> UTF-8 Support Enabled
+DEBUG - 2019-06-21 13:50:48 --> URI Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> Router Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> No URI present. Default controller set.
+DEBUG - 2019-06-21 13:50:48 --> Output Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> Security Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> Input Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-06-21 13:50:48 --> Language Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> Loader Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> Session Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> Helper loaded: string_helper
+DEBUG - 2019-06-21 13:50:48 --> Database Driver Class Initialized
+DEBUG - 2019-06-21 13:50:48 --> Session routines successfully run
+DEBUG - 2019-06-21 13:50:48 --> Controller Class Initialized
+DEBUG - 2019-06-21 20:50:48 --> Helper loaded: language_helper
+DEBUG - 2019-06-21 20:50:48 --> Helper loaded: account/ssl_helper
+DEBUG - 2019-06-21 20:50:48 --> Helper loaded: url_helper
+DEBUG - 2019-06-21 20:50:48 --> Helper loaded: text_helper
+DEBUG - 2019-06-21 20:50:48 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:50:48 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-06-21 20:50:48 --> Helper loaded: form_helper
+DEBUG - 2019-06-21 20:50:48 --> Form Validation Class Initialized
+DEBUG - 2019-06-21 20:50:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:50:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:50:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:50:48 --> Model Class Initialized
+DEBUG - 2019-06-21 20:50:48 --> File loaded: application/views/components/head.php
+ERROR - 2019-06-21 20:50:48 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 883
+ERROR - 2019-06-21 20:50:48 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 911
+ERROR - 2019-06-21 20:50:48 --> Severity: Notice  --> Undefined variable: created_at D:\xampp\htdocs\word\application\views\wordapp.php 940
+DEBUG - 2019-06-21 20:50:48 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2019-06-21 20:50:48 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2019-06-21 20:50:48 --> File loaded: application/views/wordapp.php
+DEBUG - 2019-06-21 20:50:48 --> Final output sent to browser
+DEBUG - 2019-06-21 20:50:48 --> Total execution time: 0.5589

@@ -33,11 +33,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script type="text/javascript" src="resource/js/jsim/jsim_vje.js"></script>
         
         <script src="<?= base_url('resource/js/custom_editor4.js') ?>"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.0/jspdf.debug.js"></script>
         <script src="resource/js/html2canvas.js"></script>
         <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
         <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
 
+        <script src="resource/js/jspdf.customfonts.min.js"></script>
+        <script src="resource/js/default_vfs.js"></script>
         <?php
     }
 
@@ -563,6 +566,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     .mce-tinymce.mce-container.mce-panel {
         margin: 0 auto;
     }
+    .print-pdf-loading{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: gray;
+    }
+    .print-pdf-loading .loading-text{
+        position: absolute;
+        top:50%;
+        width:100%;
+        text-align: center;
+        color:white;
+        font-size:18px;
+    }
 
 
 
@@ -589,7 +606,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     </div>
     <div class="print-preview-content">
-        <iframe class="print-preview-pdfcontent" src="" style></iframe>
+        <iframe class="print-preview-pdfcontent" src="" style="display:none;"></iframe>
+        <div class="print-pdf-loading">
+            <span class="loading-text">Loading .... </span>
+        </div>
     </div>
 
 </div>
@@ -609,7 +629,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <div class="pp-navi-finish text-center" style="display:none;">
-    <label style="margin-top:.5em;">印刷完子しました</label>
+    <label style="margin-top:.5em;">印刷完了しました。</label>
 </div>
 
 

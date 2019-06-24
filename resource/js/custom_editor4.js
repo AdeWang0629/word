@@ -1225,7 +1225,8 @@ function print_word() {
     //     tinymce.get('doc_content' + j).execCommand('mcePrint');
     // }
     sel_content = tinymce.activeEditor.selection.getContent();
-    custom_print();
+    //custom_print();
+    html2pdf();
 }
 
 
@@ -1249,6 +1250,43 @@ function CountPagesPDF(url){
 
 }
 
+function html2pdf(size = 'a4', partial=0){
+    var body ='';
+    if(partial==0){body = tinymce.get('doc_content').getContent();}
+    else { body = sel_content;}
+    var base_url = $("#base_url").val();
+    var url = base_url + "pdfconverter/index.php";
+
+    $.ajax({
+        url: url,
+        type: 'POST',
+        data: { body: body, size: size },
+        dataType: 'json',
+        cache: false,
+        beforeSend: function(){
+            $("#print-preview-popup").show();
+            $(".print-preview-pdfcontent").hide();
+            $(".print-preview-pdfcontent").attr('src', "");
+            $(".print-pdf-loading").show();
+        },
+        success: function (resp) {
+
+            $(".print-preview-pdfcontent").show();
+            $(".print-pdf-loading").hide();
+
+            if(resp.status=='success')
+            {
+                url = base_url + 'pdfconverter/print_log/' + resp.url + '#toolbar=0&navpanes=0';
+                $(".print-preview-pdfcontent").attr('src', url);
+                CountPagesPDF(url);
+            }
+        },
+        error: function (x,t,e) {
+            console.log(x);
+        }
+    });
+}
+
 function custom_print(size='a4',partial=0) {
     var doc = new jsPDF('p','mm',size);
     var fileName = 'a4.pdf';
@@ -1256,7 +1294,15 @@ function custom_print(size='a4',partial=0) {
         var stringHtml = tinymce.get('doc_content').getContent();
     else
         var stringHtml = sel_content;
+
+    stringHtml = '<html lang="jp"><head><meta charset="utf-8"><style>@font-face { font-family: "Noto Sans JP", sans-serif; font-weight: normal; src: url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap") format("truetype"); }  body{font-family: "Noto Sans JP", sans-serif;}</style></head><body>下左右中大aaa</body>';
+
+
+
+    //doc.addFont('NotoSansCJKjp-Regular.ttf', 'NotoSansCJKjp', 'normal');
+    //doc.setFont('NotoSansCJKjp');
     doc.fromHTML(stringHtml, 15, 15, {'width': 180});
+    // doc.fromHTML("<h2>見出し表示</h2>", 15, 15, {'width': 180});
     var url = doc.output('bloburl', {filename: fileName}) + '#toolbar=0&navpanes=0';
     $(".print-preview-pdfcontent").attr('src', url);
     $("#print-preview-popup").show();
@@ -1297,12 +1343,14 @@ $(document).on("click", ".pp-navi-success", function() {
 
 $(document).on("click", ".pp-navi-partial-cancel", function() {
     $(this).parents(".pp-navi-partial").fadeOut();
-    custom_print(page_size);
+    //custom_print(page_size);
+    html2pdf(page_size);
 });
 
 $(document).on("click", ".pp-navi-partial-success", function() {
     $(this).parents(".pp-navi-partial").fadeOut();
-    custom_print(page_size,1);
+    //custom_print(page_size,1);
+    html2pdf(page_size,1);
 });
 
 //Sidebar btn Cancel
@@ -1318,7 +1366,7 @@ $(document).on("change", ".print-preview-paper-size", function(){
     if(page_size=='' || page_size==undefined)
         return;
     else {
-        custom_print(page_size);
+        html2pdf(page_size);
     }
 });
 
