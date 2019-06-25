@@ -1,5 +1,10 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+if(isset($_GET['checkpdf']))
+{
+    $_POST['body'] = 'Test Content';
+    $_POST['size'] = 'A4';
+}
 
 if(!isset($_POST['body'])){
     echo '{"status":"failed"}';
