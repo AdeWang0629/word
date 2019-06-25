@@ -1250,15 +1250,15 @@ function CountPagesPDF(url){
 
 }
 
-function html2pdf(size = 'a4', partial=0){
+function html2pdf(size = 'A4', partial=0){
     var body ='';
     if(partial==0){body = tinymce.get('doc_content').getContent();}
     else { body = sel_content;}
     var base_url = $("#base_url").val();
-    //var url = base_url + "pdfconverter/dopdf.php";
-    var url = "https://www.codexwp.com/projects/pdfconverter/index.php";
+    var aurl = base_url + "tcpdf/bin/generatepdf.php";
+
     $.ajax({
-        url: url,
+        url: aurl,
         type: 'POST',
         data: { body: body, size: size },
         dataType: 'json',
@@ -1276,7 +1276,7 @@ function html2pdf(size = 'a4', partial=0){
 
             if(resp.status=='success')
             {
-                url = 'https://www.codexwp.com/projects/pdfconverter/print_log/' + resp.url + '#toolbar=0&navpanes=0';
+                url = base_url+'tcpdf/bin/'+ resp.url + '#toolbar=0&navpanes=0';
                 $(".print-preview-pdfcontent").attr('src', url);
                 CountPagesPDF(url);
             }

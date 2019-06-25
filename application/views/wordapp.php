@@ -593,9 +593,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <hr>
         <br>
         <select class="form-control print-preview-paper-size">
-            <option value="a4">サイズ A4</option>
-            <option value="b4">サイズ B4</option>
-            <option value="b5">サイズ B5</option>
+            <option value="A4">サイズ A4</option>
+            <option value="A3">サイズ A3</option>
+            <option value="A2">サイズ A2</option>
+            <option value="B5">サイズ B5</option>
+            <option value="B4">サイズ B4</option>
         </select>
         <br>
         <button class="btn btn-default form-control print-preview-selection">部分印刷優先</button>
