@@ -588,7 +588,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div id="print-preview-popup" style="display:none;">
     <div class="print-preview-settings">
         <label class="pull-left" style="margin-top:5px;">印刷する</label>
-        <button class="btn btn-danger pull-right btn-sm print-preview-cancel">いいえ</button>
+        <button class="btn btn-danger pull-right btn-sm print-preview-cancel">戻る</button>
         <div class="clearfix"></div>
         <hr>
         <br>
