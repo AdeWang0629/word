@@ -100,7 +100,7 @@ else {
 
 
 
-    $path = 'download/word-'.uniqid().'.pdf';
+    $path = 'download/word_'.uniqid().'.pdf';
 
     file_put_contents($path, $string);
 

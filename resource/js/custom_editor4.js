@@ -1226,6 +1226,7 @@ function print_word() {
     // }
     sel_content = tinymce.activeEditor.selection.getContent();
     //custom_print();
+    $('.print-preview-paper-size').val("A4");
     html2pdf();
 }
 
