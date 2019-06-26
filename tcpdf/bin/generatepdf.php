@@ -1,5 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+
 if(isset($_GET['checkpdf']))
 {
     $_POST['body'] = 'Test Content';
@@ -62,11 +63,15 @@ else {
 
 // ---------------------------------------------------------
 
-    $font = TCPDF_FONTS::addTTFfont('fonts/msmincho.ttf', 'TrueTypeUnicode', '', 96);
+    $font1 = TCPDF_FONTS::addTTFfont('fonts/msmincho.ttf', 'TrueTypeUnicode', '', 96);
+    $font2 = TCPDF_FONTS::addTTFfont('fonts/msgothic.ttf', 'TrueTypeUnicode', '', 96);
 
 
     $pdf->SetFont('helvetica', '', 10);
-    $pdf->SetFont($font);
+
+    $pdf->SetFont($font2);
+
+    $pdf->SetFont($font1);
 
     $pdf->AddPage('P', $size);
 
@@ -82,7 +87,7 @@ else {
 
 </head>
 
-<body style="font-family : ms mincho">
+<body>
 <?=$body?>
 </body>
 </html>

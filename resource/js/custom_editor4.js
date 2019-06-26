@@ -1224,7 +1224,8 @@ function print_word() {
     // for (var j = 2; j < editor_length; j++) {
     //     tinymce.get('doc_content' + j).execCommand('mcePrint');
     // }
-    sel_content = tinymce.activeEditor.selection.getContent();
+    sel_content = tinymce.activeEditor.selection;
+    //console.log(sel_content);
     //custom_print();
     $('.print-preview-paper-size').val("A4");
     html2pdf();
