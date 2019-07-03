@@ -39,7 +39,7 @@ else {
 
     //$pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
     
-    $pdf->SetMargins(PDF_MARGIN_LEFT, 10, PDF_MARGIN_RIGHT);
+    $pdf->SetMargins(5, 0, 5);
     //$pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
     //$pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
 
@@ -84,7 +84,7 @@ else {
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-<style>.page_separator{text-align:right;display:none;}</style>
+<style>.page_separator{text-align:right;display:none;}p,span{margin-bottom:0px;}</style>
 </head>
 
 <body>
