@@ -799,7 +799,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <!--                    <span contenteditable="false" id="page_count1" style="width:5%;text-align: right; position: absolute; right:8px ;bottom: 15px; ">1/1</span>-->
                 </div>
-                <div id="explanation">
+                <!-- <div id="explanation">
                     <div class="title">【日本語IME操作方法】</div>
                     
                         On / Off : Shift + Space<br>
@@ -808,7 +808,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         文節移動 : ← →, 確定 : Enter<br>
                         強制かな : F6, 強制カナ : F7
                     
-                </div>
+                </div> -->
                 <div class="clearfix"></div>
 
                 <!-- Japanies -->
@@ -864,7 +864,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <strong>第１ナビ<br>
                 1. 自動保存されますので、保存操作は不要です。<br>
                 2. 新文書の先頭15文字が、目次に自動保存されます。<br>
-                3. メールおよび、ペーパーレスのボタンを押して使用できます。
+                <!-- 3. メールおよび、ペーパーレスのボタンを押して使用できます。 -->
             </strong>
         </div>
     </div>
