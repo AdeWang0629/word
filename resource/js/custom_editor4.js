@@ -1272,7 +1272,7 @@ function html2pdf(size = 'A4', partial=0){
             $(".print-pdf-loading").show();
         },
         success: function (resp) {
-
+            console.log(resp);
             $(".print-preview-pdfcontent").show();
             $(".print-pdf-loading").hide();
 

@@ -779,10 +779,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--                            data-content="メール<br>ペーパーレス促進のため、共有が出来ます。。" data-placement="left" data-trigger="hover">メール-->
 <!--                    </button>-->
 
-                    <button id="pagingTest" data-html="true" class="btn btn-success btn_keipro" role="button"
+                    <!-- <button id="pagingTest" data-html="true" class="btn btn-success btn_keipro" role="button"
                             data-toggle="popover" data-container="body" title=""
                             data-content="テスト" data-placement="left" data-trigger="hover">テスト
-                    </button>
+                    </button> -->
 
 <!--                    <button style="height:47px; font-size: 12px" class="btn btn-success btn_keipro"-->
 <!--                            id="settlement_letter_choice1"-->
