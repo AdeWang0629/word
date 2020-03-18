@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script type="text/javascript" src="resource/js/jsim/jsim_caret.js"></script>
         <script type="text/javascript" src="resource/js/jsim/jsim_keycode.js"></script>
         <script type="text/javascript" src="resource/js/jsim/jsim.js"></script>
-        <script type="text/javascript" src="resource/js/jsim/roma.js"></script>
+        <!-- <script type="text/javascript" src="resource/js/jsim/roma.js"></script> -->
 
         <script type="text/javascript" src="resource/js/jsim/jsim_vje.js"></script>
         

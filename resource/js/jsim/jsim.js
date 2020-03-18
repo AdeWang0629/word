@@ -90,8 +90,8 @@ JS_IM.prototype = {
     this.combiningStr = "";
 //    this.originalBackgroundColor = this.imeBox.style.background;
 //   this.imeBox.style.background = "#FFF0F0";
-    this.GUI.stateDisplay.show();
-    this.GUI.stateDisplay.elem.innerText = "日";
+    // this.GUI.stateDisplay.show();
+    // this.GUI.stateDisplay.elem.innerText = "日";
     this.imeBox.focus();
   },
   disable : function(){
@@ -99,7 +99,7 @@ JS_IM.prototype = {
     this.combiningStr = "";
 //    this.imeBox.style.background = this.originalBackgroundColor;
     //this.GUI.stateDisplay.hide();
-    this.GUI.stateDisplay.elem.innerText = "A";
+    // this.GUI.stateDisplay.elem.innerText = "A";
     this.imeBox.focus();
   },
   // On Offを切り替える
