@@ -2152,3 +2152,42 @@ DEBUG - 2020-03-19 16:46:57 --> Model Class Initialized
 DEBUG - 2020-03-19 16:46:57 --> Model Class Initialized
 DEBUG - 2020-03-19 16:46:58 --> Final output sent to browser
 DEBUG - 2020-03-19 16:46:58 --> Total execution time: 0.2919
+DEBUG - 2020-03-19 07:53:21 --> Config Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> Hooks Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> Utf8 Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> UTF-8 Support Enabled
+DEBUG - 2020-03-19 07:53:21 --> URI Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> Router Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> No URI present. Default controller set.
+DEBUG - 2020-03-19 07:53:21 --> Output Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> Security Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> Input Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2020-03-19 07:53:21 --> Language Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> Loader Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> Session Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> Helper loaded: string_helper
+DEBUG - 2020-03-19 07:53:21 --> Database Driver Class Initialized
+DEBUG - 2020-03-19 07:53:21 --> Session routines successfully run
+DEBUG - 2020-03-19 07:53:21 --> Controller Class Initialized
+DEBUG - 2020-03-19 16:53:21 --> Helper loaded: language_helper
+DEBUG - 2020-03-19 16:53:21 --> Helper loaded: account/ssl_helper
+DEBUG - 2020-03-19 16:53:21 --> Helper loaded: url_helper
+DEBUG - 2020-03-19 16:53:21 --> Helper loaded: text_helper
+DEBUG - 2020-03-19 16:53:21 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2020-03-19 16:53:21 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2020-03-19 16:53:21 --> Helper loaded: form_helper
+DEBUG - 2020-03-19 16:53:21 --> Form Validation Class Initialized
+DEBUG - 2020-03-19 16:53:21 --> Model Class Initialized
+DEBUG - 2020-03-19 16:53:21 --> Model Class Initialized
+DEBUG - 2020-03-19 16:53:21 --> Model Class Initialized
+DEBUG - 2020-03-19 16:53:21 --> Model Class Initialized
+DEBUG - 2020-03-19 16:53:21 --> File loaded: application/views/components/head.php
+ERROR - 2020-03-19 16:53:21 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 902
+ERROR - 2020-03-19 16:53:21 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 930
+ERROR - 2020-03-19 16:53:21 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 959
+DEBUG - 2020-03-19 16:53:21 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2020-03-19 16:53:21 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2020-03-19 16:53:21 --> File loaded: application/views/wordapp.php
+DEBUG - 2020-03-19 16:53:21 --> Final output sent to browser
+DEBUG - 2020-03-19 16:53:21 --> Total execution time: 0.4415
