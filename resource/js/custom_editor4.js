@@ -1211,24 +1211,11 @@ function font_width() {
 }
 
 function print_word() {
-    //tinymce.get('print_content').execCommand('mcePrint');
-    // for (i=1; i < tinyMCE.editors.length; i++){
-    //     var content = tinyMCE.editors[i].getContent();
-    //     alert('Editor-Id(' + tinyMCE.editors[i].id + '):' + content);
-    // }die();
-
-
-
-    //tinymce.get('doc_content').execCommand('mcePrint');
-    // var editor_length = tinymce.editors.length - 1;
-    // for (var j = 2; j < editor_length; j++) {
-    //     tinymce.get('doc_content' + j).execCommand('mcePrint');
-    // }
-    sel_content = tinymce.activeEditor.selection.getContent();
-    console.log(sel_content);
-    //custom_print();
-    $('.print-preview-paper-size').val("A4");
-    html2pdf();
+    tinymce.get('print_content').execCommand('mcePrint');
+    
+    // sel_content = tinymce.activeEditor.selection.getContent();
+    // $('.print-preview-paper-size').val("A4");
+    // html2pdf();
 }
 
 
@@ -1329,9 +1316,10 @@ $(document).on("click", ".print-preview-pagecount", function() {
 
 //Sidebar btn Print out
 $(document).on("click", ".print-preview-printout", function() {
-    $(".pp-navi-finish").fadeIn();
-    var url = $(".print-preview-pdfcontent").attr('src');
-    printJS(url);
+    tinymce.activeEditor.execCommand('mcePrint');
+    // $(".pp-navi-finish").fadeIn();
+    // var url = $(".print-preview-pdfcontent").attr('src');
+    // printJS(url);
 });
 
 $(document).on("click", ".pp-navi-cancel", function() {
