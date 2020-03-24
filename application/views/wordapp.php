@@ -1129,7 +1129,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="col-lg-10 col-md-10 col-sm-11 col-xs-11 pull-right table_of_contantes hide draggable_aria resp"
      id="table_of_trash_files">
     <div style="padding: 0px;" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 title_aria">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding: 10px 0px">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 10px 0px">
             <strong>ゴミ箱 <span class="span-title-list-files"
                               style="border: 1px red dashed; font-size: 16px;">（直近順に表示）</span></strong>
         </div>
