@@ -2308,3 +2308,120 @@ DEBUG - 2020-03-19 16:55:49 --> File loaded: application/views/components/income
 DEBUG - 2020-03-19 16:55:49 --> File loaded: application/views/wordapp.php
 DEBUG - 2020-03-19 16:55:49 --> Final output sent to browser
 DEBUG - 2020-03-19 16:55:49 --> Total execution time: 0.4702
+DEBUG - 2020-03-19 07:57:38 --> Config Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> Hooks Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> Utf8 Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> UTF-8 Support Enabled
+DEBUG - 2020-03-19 07:57:38 --> URI Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> Router Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> No URI present. Default controller set.
+DEBUG - 2020-03-19 07:57:38 --> Output Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> Security Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> Input Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2020-03-19 07:57:38 --> Language Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> Loader Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> Session Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> Helper loaded: string_helper
+DEBUG - 2020-03-19 07:57:38 --> Database Driver Class Initialized
+DEBUG - 2020-03-19 07:57:38 --> Session routines successfully run
+DEBUG - 2020-03-19 07:57:38 --> Controller Class Initialized
+DEBUG - 2020-03-19 16:57:38 --> Helper loaded: language_helper
+DEBUG - 2020-03-19 16:57:38 --> Helper loaded: account/ssl_helper
+DEBUG - 2020-03-19 16:57:38 --> Helper loaded: url_helper
+DEBUG - 2020-03-19 16:57:38 --> Helper loaded: text_helper
+DEBUG - 2020-03-19 16:57:38 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2020-03-19 16:57:38 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2020-03-19 16:57:38 --> Helper loaded: form_helper
+DEBUG - 2020-03-19 16:57:38 --> Form Validation Class Initialized
+DEBUG - 2020-03-19 16:57:38 --> Model Class Initialized
+DEBUG - 2020-03-19 16:57:38 --> Model Class Initialized
+DEBUG - 2020-03-19 16:57:38 --> Model Class Initialized
+DEBUG - 2020-03-19 16:57:38 --> Model Class Initialized
+DEBUG - 2020-03-19 16:57:38 --> File loaded: application/views/components/head.php
+ERROR - 2020-03-19 16:57:38 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 902
+ERROR - 2020-03-19 16:57:38 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 930
+ERROR - 2020-03-19 16:57:38 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 959
+DEBUG - 2020-03-19 16:57:38 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2020-03-19 16:57:38 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2020-03-19 16:57:38 --> File loaded: application/views/wordapp.php
+DEBUG - 2020-03-19 16:57:38 --> Final output sent to browser
+DEBUG - 2020-03-19 16:57:38 --> Total execution time: 0.4611
+DEBUG - 2020-03-19 07:57:46 --> Config Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> Hooks Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> Utf8 Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> UTF-8 Support Enabled
+DEBUG - 2020-03-19 07:57:46 --> URI Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> Router Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> No URI present. Default controller set.
+DEBUG - 2020-03-19 07:57:46 --> Output Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> Security Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> Input Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2020-03-19 07:57:46 --> Language Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> Loader Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> Session Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> Helper loaded: string_helper
+DEBUG - 2020-03-19 07:57:46 --> Database Driver Class Initialized
+DEBUG - 2020-03-19 07:57:46 --> Session routines successfully run
+DEBUG - 2020-03-19 07:57:46 --> Controller Class Initialized
+DEBUG - 2020-03-19 16:57:46 --> Helper loaded: language_helper
+DEBUG - 2020-03-19 16:57:46 --> Helper loaded: account/ssl_helper
+DEBUG - 2020-03-19 16:57:46 --> Helper loaded: url_helper
+DEBUG - 2020-03-19 16:57:46 --> Helper loaded: text_helper
+DEBUG - 2020-03-19 16:57:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2020-03-19 16:57:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2020-03-19 16:57:46 --> Helper loaded: form_helper
+DEBUG - 2020-03-19 16:57:46 --> Form Validation Class Initialized
+DEBUG - 2020-03-19 16:57:46 --> Model Class Initialized
+DEBUG - 2020-03-19 16:57:46 --> Model Class Initialized
+DEBUG - 2020-03-19 16:57:46 --> Model Class Initialized
+DEBUG - 2020-03-19 16:57:46 --> Model Class Initialized
+DEBUG - 2020-03-19 16:57:46 --> File loaded: application/views/components/head.php
+ERROR - 2020-03-19 16:57:46 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 902
+ERROR - 2020-03-19 16:57:46 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 930
+ERROR - 2020-03-19 16:57:46 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 959
+DEBUG - 2020-03-19 16:57:46 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2020-03-19 16:57:46 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2020-03-19 16:57:46 --> File loaded: application/views/wordapp.php
+DEBUG - 2020-03-19 16:57:46 --> Final output sent to browser
+DEBUG - 2020-03-19 16:57:46 --> Total execution time: 0.4513
+DEBUG - 2020-03-19 10:14:28 --> Config Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> Hooks Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> Utf8 Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> UTF-8 Support Enabled
+DEBUG - 2020-03-19 10:14:28 --> URI Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> Router Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> No URI present. Default controller set.
+DEBUG - 2020-03-19 10:14:28 --> Output Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> Security Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> Input Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2020-03-19 10:14:28 --> Language Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> Loader Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> Session Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> Helper loaded: string_helper
+DEBUG - 2020-03-19 10:14:28 --> Database Driver Class Initialized
+DEBUG - 2020-03-19 10:14:28 --> Session routines successfully run
+DEBUG - 2020-03-19 10:14:28 --> Controller Class Initialized
+DEBUG - 2020-03-19 19:14:28 --> Helper loaded: language_helper
+DEBUG - 2020-03-19 19:14:28 --> Helper loaded: account/ssl_helper
+DEBUG - 2020-03-19 19:14:28 --> Helper loaded: url_helper
+DEBUG - 2020-03-19 19:14:28 --> Helper loaded: text_helper
+DEBUG - 2020-03-19 19:14:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2020-03-19 19:14:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2020-03-19 19:14:28 --> Helper loaded: form_helper
+DEBUG - 2020-03-19 19:14:28 --> Form Validation Class Initialized
+DEBUG - 2020-03-19 19:14:28 --> Model Class Initialized
+DEBUG - 2020-03-19 19:14:28 --> Model Class Initialized
+DEBUG - 2020-03-19 19:14:28 --> Model Class Initialized
+DEBUG - 2020-03-19 19:14:28 --> Model Class Initialized
+DEBUG - 2020-03-19 19:14:28 --> File loaded: application/views/components/head.php
+ERROR - 2020-03-19 19:14:28 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 902
+ERROR - 2020-03-19 19:14:28 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 930
+ERROR - 2020-03-19 19:14:28 --> Severity: Notice  --> Undefined variable: created_at D:\wamp\www\word\application\views\wordapp.php 959
+DEBUG - 2020-03-19 19:14:28 --> File loaded: application/views/components/account_setting_modal.php
+DEBUG - 2020-03-19 19:14:28 --> File loaded: application/views/components/income_modal.php
+DEBUG - 2020-03-19 19:14:28 --> File loaded: application/views/wordapp.php
+DEBUG - 2020-03-19 19:14:28 --> Final output sent to browser
+DEBUG - 2020-03-19 19:14:28 --> Total execution time: 0.6966

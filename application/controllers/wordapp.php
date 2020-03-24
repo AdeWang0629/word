@@ -196,8 +196,9 @@ class Wordapp extends CI_Controller
 
             echo json_encode($data['post_details']);
         }
-
     }
+
+
 
     public function delete_post()
     {
@@ -1305,6 +1306,17 @@ class Wordapp extends CI_Controller
         foreach ($user_data->post_ids as $key => $post_id) {
             $this->restore_posts($post_id);
         }
+
+    }
+
+    public function permanent_delete_post_files()
+    {
+        if (!$this->authentication->is_signed_in()) {
+            redirect('account/sign_in');
+        }
+        $get_user_post_json = file_get_contents('php://input');
+        $posts = json_decode($get_user_post_json);
+        $result = $this->wordapp_model->permanent_delete($posts->post_ids);
 
     }
 

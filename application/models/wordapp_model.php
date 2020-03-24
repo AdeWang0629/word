@@ -41,14 +41,18 @@ class Wordapp_model extends MY_Model
         $this->db->set('is_deleted', 1);
         $this->db->where('post_id', $post_id);
         $this->db->update('post');
-        //echo $this->db->last_query();die;
         return $this->db->affected_rows();
+    }
 
-//        if ($this->db->delete('post', array('post_id' => $post_id))) {
-//            return true;
-//        } else {
-//            return false;
-//        }
+    public function permanent_delete($post_ids)
+    {
+        $this->db->where_in('post_id', (array) $post_ids);
+        $delete = $this->db->delete('post');
+        if ($delete) {
+           return ture;
+        }else{
+            return false;
+        }
     }
 
     function get_total_user_post($user_id,$deleted=0)

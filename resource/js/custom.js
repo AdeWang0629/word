@@ -522,26 +522,63 @@ jQuery(document).ready(function ($) {
                 data: JSON.stringify(request_data),
                 contentType: "application/json",
             })
-                .done(function (data) {
-                    $("#trash_folder").click();
-                    // location.reload();
-                    console.log("success");
-                })
-                .fail(function () {
-                    console.log("error");
-                })
-                .always(function () {
-                    console.log("complete");
-                });
+            .done(function (data) {
+                $("#trash_folder").click();
+                // location.reload();
+                console.log("success");
+                multiple_post_id = [];
+            })
+            .fail(function () {
+                console.log("error");
+            })
+            .always(function () {
+                console.log("complete");
+            });
         }, 1000);
+
+    });
+
+    $("#permanent_delete_file").click(function (event) {
+        event.preventDefault();
+        var base_url = $("#base_url").val();
+        var post_title = $(".content_title.checked").text();
+       
+        setTimeout(function () {
+            var request_data = {
+                'post_ids': toObject(multiple_post_id)
+            };
+
+            $.ajax({
+                url: base_url + "index.php/wordapp/permanent_delete_post_files",
+                type: 'POST',
+                beforeSend: function () {
+                    $(".ajax_email_load_aria").show();
+                },
+                data: JSON.stringify(request_data),
+                contentType: "application/json",
+            })
+            .done(function (data) {
+                $("#trash_folder").click();
+                // location.reload();
+                console.log(data);
+                multiple_post_id = [];
+            })
+            .fail(function () {
+                console.log("error");
+            })
+            .always(function () {
+                console.log("complete");
+            });
+        }, 1000);
+            
 
     });
 
 
     $("#delete_file").click(function () {
         var post_id = $(".checked").children('.word_id').val();
-        var post_title = $(".checked").text();
-
+        var post_title = $(".content_title.checked").text();
+        
         if (post_id === undefined) {
 
             $("#select_document").removeClass('hide').addClass('show');
@@ -581,71 +618,61 @@ jQuery(document).ready(function ($) {
                             },
                             data: {login_user_id: login_user_id},
                         })
-                            .done(function (html) {
-                                $("#ajax_loading_aria").hide();
-                                document.getElementById('post_list').innerHTML = html;
-                                $("td.content_title").each(function () {
-                                    var DELAY = 300, clicks = 0, timer = null;
-                                    $(this).on("click", function () {
-                                        var post_id = $(this).children('.word_id').val();
-                                        clicks++;  //count clicks
-                                        $('td.content_title').removeClass("checked");
-                                        $(this).addClass("checked");
-                                        if (clicks === 1) {
+                        .done(function (html) {
+                            $("#ajax_loading_aria").hide();
+                            document.getElementById('post_list').innerHTML = html;
+                            $("td.content_title").each(function () {
+                                var DELAY = 300, clicks = 0, timer = null;
+                                $(this).on("click", function () {
+                                    var post_id = $(this).children('.word_id').val();
+                                    clicks++;  //count clicks
+                                    $('td.content_title').removeClass("checked");
+                                    $(this).addClass("checked");
+                                    if (clicks === 1) {
 
-                                            timer = setTimeout(function () {
+                                        timer = setTimeout(function () {
 
-                                                clicks = 0;  //after action performed, reset counter
-                                                if (post_id !== undefined) {
-                                                    // alert(post_id);
-                                                    $(this).addClass("checked");
-                                                } else {
-                                                    $('td.content_title').removeClass("checked");
-                                                }
-                                            }, DELAY);
+                                            clicks = 0;  //after action performed, reset counter
+                                            if (post_id !== undefined) {
+                                                // alert(post_id);
+                                                $(this).addClass("checked");
+                                            } else {
+                                                $('td.content_title').removeClass("checked");
+                                            }
+                                        }, DELAY);
 
-                                        } else {
-                                            clearTimeout(timer);    //prevent single-click action
-                                            clicks = 0;
-                                            $.ajax({
-                                                url: "index.php/wordapp/get_post_by_id",
-                                                type: 'POST',
-                                                data: {post_id: post_id},
-                                            })
-                                                .done(function (data) {
-                                                    var post_data = JSON.parse(data);
-                                                    $(" #post_id ").val(post_data.post_id)
-                                                    $("#table_of_contantes").removeClass("show").addClass("hide");
-                                                    tinyMCE.get('doc_content').setContent(post_data.post_details);
+                                    } else {
+                                        clearTimeout(timer);    //prevent single-click action
+                                        clicks = 0;
+                                        $.ajax({
+                                            url: "index.php/wordapp/get_post_by_id",
+                                            type: 'POST',
+                                            data: {post_id: post_id},
+                                        })
+                                        .done(function (data) {
+                                            var post_data = JSON.parse(data);
+                                            $(" #post_id ").val(post_data.post_id)
+                                            $("#table_of_contantes").removeClass("show").addClass("hide");
+                                            tinyMCE.get('doc_content').setContent(post_data.post_details);
 
-                                                    console.log("success");
-                                                })
-                                                .fail(function () {
-                                                    console.log("error");
-                                                })
-                                                .always(function () {
-                                                    console.log("complete");
-                                                });
-                                            // $.get('index.php/wordapp/get_post_by_id/'+post_id, function(data) {
-                                            //     var post_details = JSON.parse(data);
-
-                                            //     // tinyMCE.activeEditor.setContent(post_details.post_details);
-                                            //     // tinyMCE.get('doc_content').setContent("");
-                                            //     tinyMCE.get('doc_content').setContent(post_details.post_details);
-                                            //     $(" #post_id ").val(post_details.post_id)
-                                            //     $("#tinymce").focus();
-                                            //     $( "#table_of_contantes" ).removeClass( "show" ).addClass( "hide" );
-                                            // });
-                                        }
-                                    });
+                                            console.log("success");
+                                        })
+                                        .fail(function () {
+                                            console.log("error");
+                                        })
+                                        .always(function () {
+                                            console.log("complete");
+                                        });
+                                    }
                                 });
-                            })
-                            .fail(function () {
-                                console.log("error");
-                            })
-                            .always(function () {
-                                console.log("complete");
                             });
+                        })
+                        .fail(function () {
+                            console.log("error");
+                        })
+                        .always(function () {
+                            console.log("complete");
+                        });
                     }
                 });
             });

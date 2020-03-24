@@ -1074,14 +1074,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
             <div class="panel-body">
-                <p style="font-size: 20px; font-weight: bold;">削除する文章: <span id="delete_title_show"></span></p>
+                <p ><center>削除する文章: <span id="delete_title_show" style="font-size: 20px !important; font-weight: bold  !important;"></span></center></p>
+                <p><center>削除しますか？</center></p>
                 <br>
-                <button style="margin-left: 0; box-shadow: none; border: none;" type="button" class="btn btn-danger"
-                        id="delete_confirm">削 除
-                </button>
-                <button type="button" class="btn btn-default" style="box-shadow: none; border: none;" id="delete_close">
-                    戻 る
-                </button>
+                <center>
+                    <button style="margin-left: 0; box-shadow: none; border: none;" type="button" class="btn btn-danger btn-lg"
+                            id="delete_confirm">削 除
+                    </button>
+                    <button type="button" class="btn btn-warning btn-lg" style="box-shadow: none; border: none;" id="delete_close">
+                        戻 る
+                    </button>
+                </center>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 pull-right hide draggable_aria permanent_delete_confirm_alirt" id=""
+         style="position: fixed; right: 30px; bottom: 10px; padding: 4px;">
+
+        <div class="panel panel-warning"
+             style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            <div class="panel-body">
+                <p ><center>削除する文章: <span id="permanent_delete_title_show" style="font-size: 20px !important; font-weight: bold  !important;"></span></center></p>
+                <p><center>削除しますか？</center></p>
+                <br>
+                <center>
+                    <button style="margin-left: 0; box-shadow: none; border: none;" type="button" class="btn btn-danger btn-lg" id="permanent_delete_confirmddd">削 除
+                    </button>
+                    <button type="button" class="btn btn-warning btn-lg" style="box-shadow: none; border: none;" id="delete_closeddd">
+                        戻 る
+                    </button>
+                </center>                
             </div>
         </div>
     </div>
@@ -1129,7 +1153,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!--        <button type="button" class="btn btn-warning btn_table1 pull-right" disabled="disabled" id="word_previous_page">-->
         <!--            前-->
         <!--        </button>-->
-        <!--        <button type="button" class="btn btn-primary btn_table1 pull-right" id="delete_file"> 削除</button>-->
+         <button type="button" class="btn btn-primary btn_table1 pull-right" id="permanent_delete_file"> 削除</button>
         <!-- Standard button -->
         <button type="button" class="btn btn-success btn_table1 pull-right" id="restore_file"> 回復</button>
     </div>
@@ -1146,7 +1170,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="clearfix"></div>
 
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 pull-right hide draggable_aria" id="delete_confirm_alirt"
+    <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 pull-right hide draggable_aria" id="delete_confirm_alirt"
          style="position: fixed; right: 30px; bottom: 10px; padding: 4px;">
 
         <div class="panel panel-warning"
@@ -1162,7 +1186,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </button>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="select_document"
          style="position: fixed; right: 30px; bottom: 15px; padding: 4px;">
