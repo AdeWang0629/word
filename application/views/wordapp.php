@@ -1879,7 +1879,8 @@ $this->load->view('components/income_modal')
 <link rel="stylesheet" media="screen" type="text/css" href="resource/color_picker/css/colorPicker.css"/>
 <script type="text/javascript" src="resource/color_picker/js/jquery.colorPicker.js"></script>
 <!-- color picker -->
-<script src="<?php echo base_url('resource/js/custom.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url().RES_DIR; ?>/js/custom.js?id=<?php echo rand(0,10000)?>"></script>
+<!-- <script src="<?php echo base_url('resource/js/custom.js?id=<?php echo rand(0,10000)?>'); ?>"></script> -->
 
 
 </body>
