@@ -1082,7 +1082,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             id="delete_confirm">削除
                     </button>
                     <button type="button" class="btn btn-warning btn-lg" style="box-shadow: none; border: none;" id="delete_close">
-                        戻 る
+                        戻る
                     </button>
                 </center>
                 
@@ -1845,7 +1845,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         id="restore_confirm">回復
                 </button>
                 <button type="button" class="btn btn-warning btn-lg" style="box-shadow: none; border: none;" id="restore_delete_close">
-                    戻 る
+                    戻る
                 </button>
             </center>                
         </div>
