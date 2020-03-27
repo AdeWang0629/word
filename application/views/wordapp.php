@@ -1189,19 +1189,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="clearfix"></div>
 </div>
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 pull-right hide draggable_aria close_aria" id="blanck_document_message"
+<div class="col-lg-4 col-md-5 col-sm-4 col-xs-10 pull-right hide draggable_aria close_aria" id="blanck_document_message"
      style="position: fixed; right: 210px; bottom: 5px; padding: 4px;">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-        <div class="panel-body">
+        <div class="panel-body" style="font-size: 20px;">
             <p>自動保存しますので保存操作は不要です。</p>
             <p>最初の１５文字が自動で目次（表題）になります。</p>
-
-            <!-- <h4><i style="color: #f1c40f" class="fa fa-warning"></i> 最小10文字を書いてください。</h4> -->
-            <button id="close_blanck_document_btn" class="btn btn-warning btn_keipro"
-                    style="box-shadow: none; border: none;">確認
-            </button>
+            <center><button id="close_blanck_document_btn" class="btn btn-warning btn-lg">確認</button></center>
         </div>
     </div>
 </div>
