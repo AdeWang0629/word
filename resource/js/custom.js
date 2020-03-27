@@ -589,7 +589,6 @@ jQuery(document).ready(function ($) {
             var request_data = {
                 'post_ids': toObject(multiple_post_id)
             };
-
             $.ajax({
                 url: base_url + "index.php/wordapp/permanent_delete_post_files",
                 type: 'POST',

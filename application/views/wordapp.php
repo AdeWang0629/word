@@ -1068,14 +1068,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="clearfix"></div>
 
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="delete_confirm_alirt"
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="delete_confirm_alirt"
          style="position: fixed; right: 30px; bottom: 10px; padding: 4px;">
 
         <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-            <div class="panel-body">
-                <p ><center>削除する文章: <span id="delete_title_show" style="font-size: 20px !important; font-weight: bold  !important;"></span></center></p>
-                <p><center>削除しますか？</center></p>
+            <div class="panel-body" style="font-size: 20px;">
+                <p style="color: black;">削除する文章 </p>
+                <p>: <span id="delete_title_show" style="font-weight: bold  !important; font-size: 20px !important; color: blue;"></span></p>
+                <p><center style="font-size: 24px !important; color: red;">削除しますか？</center></p>
                 <br>
                 <center>
                     <button style="margin-left: 0; box-shadow: none; border: none;" type="button" class="btn btn-danger btn-lg"
@@ -1831,15 +1832,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="restore_confirm_alirt"
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="restore_confirm_alirt"
          style="position: fixed; right: 30px; bottom: 10px; padding: 4px;">
 
     <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-        <div class="panel-body">
-            <p ><center>回復する文章： <span id="restore_title" style="font-size: 20px !important; font-weight: bold  !important;"></span></center></p>
-            <p><center>　回復しますか？</center></p>
-            <br>
+        <div class="panel-body" style="font-size: 20px;">
+            <p>回復する文章</p>
+            <p style="font-size: 20px !important; font-weight: bold  !important; color: blue;">： <span id="restore_title"></span></p>            
+            <p><center style="font-size: 24px !important; color: red;">　回復しますか？</center></p>
             <center>
                 <button style="margin-left: 0; box-shadow: none; border: none;" type="button" class="btn btn-danger btn-lg"
                         id="restore_confirm">回復
@@ -1866,15 +1867,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria " id="permanent_delete_confirm_alirt"
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right hide draggable_aria " id="permanent_delete_confirm_alirt"
          style="position: fixed; right: 30px; bottom: 10px; padding: 4px;">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-        <div class="panel-body">
-            <p ><center>削除する文章: <span id="permanent_delete_title" style="font-size: 20px !important; font-weight: bold  !important;"></span></center></p>
-            <p><center>削除しますか？</center></p>
-            <br>
+        <div class="panel-body" style="font-size: 20px;">
+            <p style="color: black;" >削除する文章</p>
+            <p>: <span id="permanent_delete_title" style="font-weight: bold  !important; font-size: 20px !important; color: blue;"></span></p>
+            <p><center style="font-size: 24px !important; color: red;">削除しますか？</center></p>
             <center>
                 <button style="margin-left: 0; box-shadow: none; border: none;" type="button" class="btn btn-danger btn-lg" id="permanent_delete_confirm">削除
                 </button>
