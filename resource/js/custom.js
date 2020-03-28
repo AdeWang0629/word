@@ -605,10 +605,9 @@ jQuery(document).ready(function ($) {
                 contentType: "application/json",
             })
             .done(function (data) {
-                $("#permanent_file_deleted").removeClass('hide').addClass('show')
+                
                 $("#trash_folder").click();
-                // location.reload();
-                console.log(data);
+                $("#permanent_file_deleted").removeClass('hide').addClass('show')
                 multiple_post_id = [];
             })
             .fail(function () {

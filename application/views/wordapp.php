@@ -1477,32 +1477,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <!-- Image Selection message -->
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-right hide draggable_aria word_image_selection_message"
-     id="word_image_selection_message" style="">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pull-right hide draggable_aria word_image_selection_message" id="word_image_selection_message" style="position: fixed; right: 20px; bottom: 15px;">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body">
             <div class="col-md-12" style="padding: 0">
-                <p class="pull-left" style="font-size: 18px;">
-                    何を挿入しますか？
-                </p>
+                <h5 class="pull-left" style="font-size: 20px;">何を挿入しますか？</h5> 
                 <button style="margin-left: 2px;" id="close_word_image_selection"
-                        class="btn btn-warning pull-right popup_button">戻る
+                        class="btn btn-warning btn-lg pull-right">戻る
                 </button>
+                <br>
             </div>
             <div class="clearfix"></div>
             <div class="col-md-12" style="padding: 0">
-                <form method="post" id="word_image_upload_form" enctype="multipart/form-data" action="#">
-                    <input type="hidden" name="word_uploaded_file_name" id="word_uploaded_file_name" value="">
-                    <input type="hidden" name="word_image_width" id="word_image_width" value="400">
-                    <input type="file" name="word_imgupload" id="word_imgupload" style="display:none"/>
-                    <button class="btn btn-success btn-sm pull-left popup_button" id="word_upload_image"
-                            style="margin-left: 0" title="写真・画像">写真・画像
-                    </button>
-                </form>
+                <center>
+                    <br>
 
-                <button class="btn btn-success popup_button pull-right" id="upload_pdf" title="エクセル">エクセル</button>
+                    <form method="post" id="word_image_upload_form" enctype="multipart/form-data" action="#">
+                        <input type="hidden" name="word_uploaded_file_name" id="word_uploaded_file_name" value="">
+                        <input type="hidden" name="word_image_width" id="word_image_width" value="400">
+                        <input type="file" name="word_imgupload" id="word_imgupload" style="display:none"/>
+                        <button class="btn btn-success btn-lg" id="word_upload_image"
+                                style="margin-left: 0; margin-right:20px !important; " title="写真・画像">写真・画像
+                        </button>
+                        <button class="btn btn-success btn-lg " id="upload_pdf" title="エクセル">エクセル</button>
+                    </form>
+
+                    
+                </center>
+                
             </div>
             <div class="clearfix"></div>
         </div>
@@ -1511,39 +1515,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- Cursor Confermation -->
 
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 pull-right hide draggable_aria" id="word_image_past_message"
-     style="position: fixed; right: 210px; bottom: 5px; padding: 4px;">
+     style="position: fixed; right: 20px; bottom: 5px; padding: 4px;">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body">
-            <p style="font-size: 18px;">
+            <p style="font-size: 24px;">
                 どこに貼り付けますか？ <br> カーソルで指定し、位置を決めて下さい。
             </p>
-            <button class="btn btn-success" id="word_cursor_ok" title="位置決定">位置決定</button>
-            <button class="btn btn-success" id="word_cursor_colse" title=" 戻る"> 戻る</button>
+            <center>
+                <button class="btn btn-success btn-lg" id="word_cursor_ok" style="margin-right: 20px;" title="位置決定">位置決定</button>
+                <button class="btn btn-warning btn-lg" id="word_cursor_colse" title="戻る"> 戻る</button>
+            </center>
+            
         </div>
     </div>
 </div>
 <!-- Image Past Confirmation -->
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 pull-right hide draggable_aria" id="word_image_past_confirmation"
-     style="position: fixed; right: 210px; bottom: 5px; padding: 4px;">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 pull-right hide draggable_aria" id="word_image_past_confirmation"
+     style="position: fixed; right: 20px; bottom: 5px; padding: 4px;">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body">
-            <p style="font-size: 18px;">
-                この場所にしますか？ <br>
-            </p>
-            <button class="btn btn-success" id="word_image_paste_ok" title="はい">はい</button>
-            <button class="btn btn-success" id="word_image_paste_colse" title="いいえ">いいえ</button>
+            <h5 style="font-size: 24px;">
+                <center>この場所にしますか？</center> 
+            </h5>
+            <center>
+                <button class="btn btn-success btn-lg" style="margin-right: 20px !important;" id="word_image_paste_ok" title="はい">はい</button>
+                <button class="btn btn-warning btn-lg" id="word_image_paste_colse" title="いいえ">いいえ</button>
+            </center>
+            
         </div>
     </div>
 </div>
 
 <!-- Image Zoom -->
-<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 pull-right hide draggable_aria" id="word_image_zooming"
-     style="position: fixed; right: 210px; bottom: 5px; padding: 4px;">
+<div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 pull-right hide draggable_aria" id="word_image_zooming"
+     style="position: fixed; right: 20px; bottom: 5px; padding: 4px;">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1552,38 +1562,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <p class="pull-left" style="font-size: 18px;">
                     サイズを選んで下さい。
                 </p>
-                <button id="word_image_zooming_close" style="margin-left: 2px;" class="btn btn-default pull-right">戻る
+                <button id="word_image_zooming_close" style="margin-left: 2px;" class="btn btn-warning btn-lg pull-right">戻る
                 </button>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <button style="margin-left: 0px;" class="btn btn-success" id="word_image_zoom_btn" title="拡大"><i
-                            class="fa fa-search-plus"></i> 拡大
-                </button>
-                <button style="margin-left: 10px;" class="btn btn-success" id="word_image_small_btn" title="縮小"><i
-                            class="fa fa-search-minus"></i> 縮小
-                </button>
-                <button style="margin-left: 10px;" class="btn btn-success" id="word_image_width_completed" title="完了">
-                    完了
-                </button>
+                <center>
+                    <br>
+                    <button style="" class="btn btn-success btn-lg" id="word_image_zoom_btn" title="拡大"><i
+                                class="fa fa-search-plus"></i> 拡大
+                    </button>
+                    <button style="" class="btn btn-success btn-lg" id="word_image_small_btn" title="縮小"><i
+                                class="fa fa-search-minus"></i> 縮小
+                    </button>
+                    <button style="" class="btn btn-success btn-lg" id="word_image_width_completed" title="完了">
+                        <i class="fa fa-check"></i> 完了
+                    </button>
+                </center>
+                
             </div>
 
         </div>
     </div>
 </div>
 <!-- Image Upload Completed -->
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pull-right hide draggable_aria close_aria"
-     id="word_image_upload_completed" style="position: fixed; right: 210px; bottom: 5px; padding: 4px;">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 pull-right hide draggable_aria close_aria"
+     id="word_image_upload_completed" style="position: fixed; right: 20px; bottom: 5px; padding: 4px;">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body">
             <div class="col-md-12" style="padding: 0">
-                <p class="pull-left" style="font-size: 18px;">
-                    貼り付けが完了しました。
-                </p>
-                <button id="word_image_upload_completed_close" style="margin-left: 2px;"
-                        class="btn btn-default pull-right" autofocus="true" title="確認">確認
-                </button>
+                <center>
+                    <p class="pull-left" style="font-size: 24px;">
+                        貼り付けが完了しました。
+                    </p>
+                    <br>
+                    <button id="word_image_upload_completed_close" style=""
+                        class="btn btn-warning btn-lg" autofocus="true" title="確認">確認
+                    </button>
+                </center>
+                
             </div>
         </div>
     </div>
