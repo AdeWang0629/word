@@ -519,9 +519,11 @@ jQuery(document).ready(function ($) {
         $("#restore_title").text('');
         $("#restore_confirm_alirt").removeClass('show').addClass('hide');
     });
-
+    var restore_post_ids = [];
     $("#restore_confirm").click(function(event) {
         /* Act on the event */
+        var post_title = $(".content_title.checked_row_restore").text();
+        
         var base_url = $("#base_url").val();
         $("#restore_title").text('');
         $("#restore_confirm_alirt").removeClass('show').addClass('hide');
@@ -541,9 +543,11 @@ jQuery(document).ready(function ($) {
             })
             .done(function (data) {
                 $("#trash_folder").click();
-                // location.reload();
-                console.log("success");
+                restore_post_ids = multiple_post_id;
                 multiple_post_id = [];
+                console.log(restore_post_ids);
+                $("#restored_title").text(post_title);
+                $("#deleted_file_restored").addClass('show').removeClass('hide');
             })
             .fail(function () {
                 console.log("error");
@@ -583,8 +587,10 @@ jQuery(document).ready(function ($) {
 
     $("#permanent_delete_confirm").click(function(event) {
         /* Act on the event */
+        var post_title = $(".content_title.checked_row_restore").text();
         var base_url = $("#base_url").val();
         $("#permanent_delete_confirm_alirt").removeClass('show').addClass('hide');
+        $("#permanent_file_title").text(post_title);
         setTimeout(function () {
             var request_data = {
                 'post_ids': toObject(multiple_post_id)
@@ -599,6 +605,7 @@ jQuery(document).ready(function ($) {
                 contentType: "application/json",
             })
             .done(function (data) {
+                $("#permanent_file_deleted").removeClass('hide').addClass('show')
                 $("#trash_folder").click();
                 // location.reload();
                 console.log(data);
@@ -617,7 +624,6 @@ jQuery(document).ready(function ($) {
     $("#delete_file").click(function () {
         var post_id = $(".checked").children('.word_id').val();
         var post_title = $(".content_title.checked").text();
-        
         if (post_id === undefined) {
 
             $("#select_document").removeClass('hide').addClass('show');
@@ -636,11 +642,13 @@ jQuery(document).ready(function ($) {
 
             var login_user_id = $("#login_user_id").val();
             $("#delete_confirm").click(function (event) {
+                $("#deletedss_file_title").text(post_title);
                 $.post('index.php/wordapp/delete_post', {post_id: post_id}, function (data) {
                     if (data == 'success') {
                         $("#delete_confirm_alirt").removeClass('show').addClass('hide');
                         $("#table_of_contantes").removeClass("hide").addClass("show");
-
+                        
+                        $("#deleted_file_deleted").removeClass('hide').addClass('show')
                         if ($("#post_id").val() == post_id) {
                             $("#doc_content").val("");
                             tinyMCE.activeEditor.setContent('');

@@ -1068,8 +1068,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="clearfix"></div>
 
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="delete_confirm_alirt"
-         style="position: fixed; right: 30px; bottom: 10px; padding: 4px;">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="delete_confirm_alirt"
+         style="position: fixed; width: 25%; right: 30px; bottom: 10px; padding: 4px;">
 
         <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1090,7 +1090,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
     </div>
-
+    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="deleted_file_deleted" style="position: fixed; right: 30px; bottom: 15px; padding: 4px;">
+        <div class="panel panel-warning"
+             style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            <div class="panel-body" style="font-size: 20px;">
+                <h4>「 <span id="deletedss_file_title"></span> 」<br>&nbsp &nbsp を削除しました。</h4>
+                <center>
+                    <h5 style="color: blue;">ゴミ箱に移動しました。</h5>
+                    <button id="close_select" class="btn btn-warning btn-lg">確認
+                    </button>
+                </center>
+            </div>
+        </div>
+    </div>
     
 
     
@@ -1828,8 +1840,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="restore_confirm_alirt"
-         style="position: fixed; right: 30px; bottom: 10px; padding: 4px;">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="restore_confirm_alirt" style="position: fixed; width: 25%; right: 30px; bottom: 10px; padding: 4px;">
 
     <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1863,8 +1874,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right hide draggable_aria " id="permanent_delete_confirm_alirt"
-         style="position: fixed; right: 30px; bottom: 10px; padding: 4px;">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="deleted_file_restored" style="position: fixed; right: 30px; bottom: 15px; padding: 4px;">
+    <div class="panel panel-warning"
+         style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+        <div class="panel-body" style="font-size: 20px;">
+            <h4>「 <span id="restored_title"></span> 」<br>&nbsp &nbsp を回復しました。</h4>
+            <center>
+                <h5 style="color: blue;">目次に移動しました。</h5>
+                <button id="close_select" class="btn btn-warning btn-lg">確認
+                </button>
+            </center>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="deleted_file_deleted" style="position: fixed; right: 30px; bottom: 15px; padding: 4px;">
+    <div class="panel panel-warning"
+         style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+        <div class="panel-body" style="font-size: 20px;">
+            <h4>「 <span id="deleted_file_title"></span> 」<br>&nbsp &nbsp を削除しました。</h4>
+            <center>
+                <h5 style="color: blue;">ゴミ箱に移動しました。</h5>
+                <button id="close_select" class="btn btn-warning btn-lg">確認
+                </button>
+            </center>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria " id="permanent_delete_confirm_alirt"
+         style="position: fixed;  width: 25%; right: 30px; bottom: 10px; padding: 4px;">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1879,6 +1916,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     戻る
                 </button>
             </center>                
+        </div>
+    </div>
+</div>
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="permanent_file_deleted" style="position: fixed; right: 30px; bottom: 15px; padding: 4px;">
+    <div class="panel panel-warning"
+         style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+        <div class="panel-body" style="font-size: 20px;">
+            <h4>「 <span id="permanent_file_title"></span> 」<br>&nbsp &nbsp を削除しました。</h4>
+            <center>
+                <!-- <h5 style="color: blue;">ゴミ箱に移動しました。</h5> -->
+                <button id="close_select" class="btn btn-warning btn-lg">確認
+                </button>
+            </center>
         </div>
     </div>
 </div>
