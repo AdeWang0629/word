@@ -72,10 +72,10 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
             <div class="panel-heading" style="text-align: center;">
                 <div class="panel-title" style="display: inline-block; float: left;"><strong>ログイン</strong></div>
                 <div class="panel-title" style="display: inline-block; font-size: 20px;"><strong>ワープロ</strong></div>
-                <div class="panel-title" style="display: inline-block; float: right;">
+                <!-- <div class="panel-title" style="display: inline-block; float: right;">
                     <button type="button" class="btn btn-warning" id="return_to_home_page" onclick="window.location.href = $('#mother_url').val();" >戻る
                     </button>
-                </div>
+                </div> -->
             </div>
 
             <div style="padding-top:30px;" class="panel-body">
