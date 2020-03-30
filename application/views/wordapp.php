@@ -1585,7 +1585,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!-- Image Upload Completed -->
 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 pull-right hide draggable_aria close_aria"
-     id="word_image_upload_completed" style="position: fixed; right: 20px; bottom: 5px; padding: 4px;">
+     id="word_image_upload_completed" style="position: fixed; width: 350px; right: 20px; bottom: 5px; padding: 4px;">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
