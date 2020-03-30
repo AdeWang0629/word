@@ -7,9 +7,9 @@
 		$total_post = $total_user_post;
 		for ($i= 0; $i <10 ; $i++) { ?>
 			<tr>
-                        <input type="hidden" id="total_user_post" value="<?= $total_post ?>">
+                <input type="hidden" id="total_user_post" value="<?= $total_post ?>">
 				<td nowrap="nowrap"><?= $start+$i+1; ?></td>
-				<td nowrap="nowrap" width="30%" class="content_title">					
+				<td nowrap="nowrap" attr-post-id="<?= $user_posts[$i]->post_id?>" width="30%" class="content_title">					
 					<?php
                                         
 					if ($start+$i < $total_post) {

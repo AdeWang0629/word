@@ -186,6 +186,10 @@ body {
 }
 
 .checked {
+    background-color: #DDDDDF;
+}
+
+.open_file{
     background-color: yellow;
 }
 

@@ -180,10 +180,6 @@ class Wordapp extends CI_Controller
         $data['user_posts'] = $this->wordapp_model->get_post_by_user_id($user_id, $start_from, $list_limit);
         $data['start_from'] = $start_from;
         $data['list_limit'] = $list_limit;
-//                echo "<pre>"; print_r($data['user_posts']);
-//                exit();
-        // echo $data['start_from'];
-        // exit();
         $this->load->view('components/table_of_post', isset($data) ? $data : NULL);
     }
 
