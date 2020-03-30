@@ -1069,7 +1069,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="clearfix"></div>
 
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="delete_confirm_alirt"
-         style="position: fixed; width: 25%; right: 30px; bottom: 10px; padding: 4px;">
+         style="position: fixed; width: 375px; right: 30px; bottom: 10px; padding: 4px;">
 
         <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1545,15 +1545,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <center>
                 <button class="btn btn-success btn-lg" style="margin-right: 20px !important;" id="word_image_paste_ok" title="はい">はい</button>
                 <button class="btn btn-warning btn-lg" id="word_image_paste_colse" title="いいえ">いいえ</button>
-            </center>
-            
+            </center>            
         </div>
     </div>
 </div>
 
 <!-- Image Zoom -->
 <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 pull-right hide draggable_aria" id="word_image_zooming"
-     style="position: fixed; right: 20px; bottom: 5px; padding: 4px;">
+     style="position: fixed; right: 20px; width:450px; bottom: 5px; padding: 4px;">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1568,10 +1567,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <center>
                     <br>
-                    <button style="" class="btn btn-success btn-lg" id="word_image_zoom_btn" title="拡大"><i
+                    <button style="margin-right: 20px;" class="btn btn-success btn-lg" id="word_image_zoom_btn" title="拡大"><i
                                 class="fa fa-search-plus"></i> 拡大
                     </button>
-                    <button style="" class="btn btn-success btn-lg" id="word_image_small_btn" title="縮小"><i
+                    <button style="margin-right: 20px;" class="btn btn-success btn-lg" id="word_image_small_btn" title="縮小"><i
                                 class="fa fa-search-minus"></i> 縮小
                     </button>
                     <button style="" class="btn btn-success btn-lg" id="word_image_width_completed" title="完了">
@@ -1858,7 +1857,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="restore_confirm_alirt" style="position: fixed; width: 25%; right: 30px; bottom: 10px; padding: 4px;">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="restore_confirm_alirt" style="position: fixed; width: 375px; right: 30px; bottom: 10px; padding: 4px;">
 
     <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1892,7 +1891,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="deleted_file_restored" style="position: fixed; right: 30px; bottom: 15px; padding: 4px;">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="deleted_file_restored" style="position: fixed; width: 375px; right: 30px; bottom: 15px; padding: 4px;">
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body" style="font-size: 20px;">
@@ -1905,7 +1904,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="deleted_file_deleted" style="position: fixed; right: 30px; bottom: 15px; padding: 4px;">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="deleted_file_deleted" style="position: fixed; width: 375px; right: 30px; bottom: 15px; padding: 4px;">
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body" style="font-size: 20px;">
@@ -1919,7 +1918,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria " id="permanent_delete_confirm_alirt"
-         style="position: fixed;  width: 25%; right: 30px; bottom: 10px; padding: 4px;">
+         style="position: fixed;  width: 375px; right: 30px; bottom: 10px; padding: 4px;">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
