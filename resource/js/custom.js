@@ -4,12 +4,16 @@ jQuery(document).ready(function ($) {
 // });
 
 
+    var restore_post_ids = [];
+    var open_file_id = null;
     $("#show_table_of_content").click(function (event) {
         event.preventDefault();
+        // restore_post_ids = [];
         $("#table_of_contantes").removeClass("hide").addClass("show");
         var login_user_id = $("#login_user_id").val();
         var start_from = 0;
         var word_list_limit = $("#word_limit_list").val();
+
         $("#table_close").focus();
         $("#word_start_list").val(0);
 
@@ -20,146 +24,141 @@ jQuery(document).ready(function ($) {
             type: 'POST',
             data: {login_user_id: login_user_id, start_from: start_from},
         })
-            .done(function (html) {
-
-                document.getElementById('post_list').innerHTML = html;
-                $("td.content_title").each(function () {
-                    var DELAY = 1000, clicks = 0, timer = null;
-                    $(this).on("click", function () {
-                        var post_id = $(this).children('.word_id').val();
-                        clicks++;  //count clicks
-                        $('td.content_title').removeClass("checked");
-                        $('td.content_title').removeClass('checked_row_restore');
-                        $(this).addClass("checked");
-                        if (clicks === 1) {
-
-                            timer = setTimeout(function () {
-
-                                clicks = 0;  //after action performed, reset counter
-                                if (post_id !== undefined) {
-                                    // alert(post_id);
-                                    $(this).addClass("checked");
-                                } else {
-                                    $('td.content_title').removeClass("checked");
-                                }
-                            }, DELAY);
-
-                        } else {
-                            clearTimeout(timer);    //prevent single-click action
-                            clicks = 0;             //after action performed, reset
-                            $.ajax({
-                                url: "index.php/wordapp/get_post_by_id",
-                                type: 'POST',
-                                data: {post_id: post_id},
-                            })
-                                .done(function (data) {
-                                    tinymce.get('doc_content').undoManager.clear();
-//                                    tinymce.activeEditor.undoManager.clear();
-                                    var post_data = JSON.parse(data);
-                                    $(" #post_id ").val(post_data.post_id)
-                                    $("#table_of_contantes").removeClass("show").addClass("hide");
-
-                                    // var get_page_count = localStorage.getItem("page_count");
-                                    // if (get_page_count != null) {
-                                    //     var plus_num = 1;
-                                    //     var page_count = Number(get_page_count) + Number(plus_num);
-                                    //
-                                    //     for (var i = 1; i < page_count; i++) {
-                                    //         $('#fixed_editor' + i).hide();
-                                    //     }
-                                    //     $('#page_count1').text('ページ 1 / 1');
-                                    // }
-
-                                    tinyMCE.get('doc_content').setContent(post_data.post_details);
-
-                                    // setTimeout(function () {
-                                    //     var text_content = tinymce.activeEditor.getContent({format: 'raw'});
-                                    //     // var text_content = post_data.post_details;
-                                    //     // alert(text_content);die();
-                                    //     var containsJapanese = text_content.match(/[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/);
-                                    //     if (containsJapanese)
-                                    //         var text_content_array = text_content.match(/(<[^>]*>|\w+|[\u30a0-\u30ff\u3040-\u309f\u3005-\u3006\u30e0-\u9fcf]+|["%&():;@\-',.!?=/]|[「」’％＆”。、！？（）])/g);
-                                    //     //     var text_content_array = text_content;
-                                    //     else
-                                    //         var text_content_array = text_content.match(/(<[^>]*>|\w+)/g);
-                                    //
-                                    //     // console.log(text_content_array);
-                                    //     var container_height = $(tinymce.activeEditor.getContainer()).height();
-                                    //
-                                    //     var page_count = Math.ceil(container_height / 1112);
-                                    //     // localStorage.setItem("page_count", page_count);
-                                    //
-                                    //     // console.log(container_height+'===='+text_content_array.length);
-                                    //
-                                    //     var text_content_length = Math.ceil(text_content_array.length / page_count);
-                                    //     // text_content_length = text_content_length+1;
-                                    //     var text_content_length1 = text_content_length;
-                                    //     var final_text = '';
-                                    //     var limit = 50;
-                                    //
-                                    //     for (var j = 0; j < text_content_length; j++) {
-                                    //         if (containsJapanese) {
-                                    //             final_text += text_content_array[j];
-                                    //         } else {
-                                    //             var text1 = text_content_array[j] + ' ';
-                                    //             text1 = text1.replace('nbsp', ' ');
-                                    //             final_text += text1;
-                                    //         }
-                                    //         // if (j == limit) {
-                                    //         //     // tinymce.editors['doc_content'].setContent(final_text+'<!-- pagebreak -->');
-                                    //         //     tinymce.editors['doc_content'].setContent(final_text);
-                                    //         //     var pp = $(tinymce.editors['doc_content'].getContainer()).height();
-                                    //         //     // alert(pp);
-                                    //         //     limit = limit * 2;
-                                    //         //     if (pp > 835) {
-                                    //         //         break;
-                                    //         //     }else{
-                                    //         //         continue;
-                                    //         //     }
-                                    //         //
-                                    //         //
-                                    //         //
-                                    //         //
-                                    //         // }
-                                    //
-                                    //     }
-                                    //     tinymce.editors['doc_content'].setContent(final_text);
-                                    //     // alert(j);
-                                    //     // var j = text_content_length;
-                                    //     // var text_content_length1 = j;
-                                    //     // die();
-                                    //     if (page_count > 1) {
-                                    //         // console.log(container_height);
-                                    //         // var page_count =page_count+1;
-                                    //         // $('#page_count1').text('PAGE 1 OF ' + page_count);
-                                    //         $('#page_count1').text('ページ 1 / ' + page_count);
-                                    //         paginatedTextOnPaste(2, page_count, text_content_array, text_content_length, 0, 1, containsJapanese, text_content_length1);
-                                    //     }
-                                    // }, 1000);
-
-                                    console.log("success");
-                                })
-                                .fail(function () {
-                                    console.log("error");
-                                })
-                                .always(function () {
-                                    console.log("complete");
-                                });
+        .done(function (data) {
+            var response = JSON.parse(data);
+            $("#total_user_post").val(response.total_user_post);            
+            var x = 10;
+            var y = 20;
+            var htmlData = "";
+            for (var i = 0; i < 10; i++) {
+                var extra_class = "";
+                var open_file = "";
+                    htmlData += "<tr>";
+                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+1) +'</td>';
+                        if ((start_from+i) < response.total_user_post) {
+                            if (restore_post_ids.indexOf(response.user_posts[i].post_id) !== -1) {
+                                extra_class ="recent_restore";
+                            }else{
+                                extra_class = "";
+                            }
+                            if (open_file_id==response.user_posts[i].post_id) {
+                                open_file = "open_file";
+                            }else{
+                                open_file = "";
+                            }
+                            htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+' '+open_file+'">';
+                        
+                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[i].post_id+"'>";
+                            htmlData += response.user_posts[i].post_title;
+                        
+                            htmlData += '</td>';
                         }
-                    });
+                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+x+1) +'</td>';
+                        if ((start_from+x+i) < response.total_user_post) {
+                            if (restore_post_ids.indexOf(response.user_posts[x+i].post_id) !== -1) {
+                                extra_class ="recent_restore";
+                            }else{
+                                extra_class = "";
+                            }
+                            if (open_file_id==response.user_posts[x+i].post_id) {
+                                open_file = "open_file";
+                            }else{
+                                open_file = "";
+                            }
+                            htmlData += '<td nowrap="nowrap" width="30%" class="content_title  '+extra_class+' '+open_file+'">';
+                        
+                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[x+i].post_id+"'>";
+                            htmlData += response.user_posts[x+i].post_title;
+                        
+                            htmlData += '</td>';
+                        }
+                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+y+1) +'</td>';
+                        if ((start_from+y+i) < response.total_user_post) {
+                            if (restore_post_ids.indexOf(response.user_posts[y+i].post_id) !== -1) {
+                                extra_class ="recent_restore";
+                            }else{
+                                extra_class = "";
+                            }
+                            if (open_file_id==response.user_posts[y+i].post_id) {
+                                open_file = "open_file";
+                            }else{
+                                open_file = "";
+                            }
+                            htmlData += '<td nowrap="nowrap" width="30%" class="content_title '+extra_class+' '+open_file+'">';
+
+                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[y+i].post_id+"'>";
+                            htmlData += response.user_posts[y+i].post_title;
+                       
+                            htmlData += '</td>';
+                        }
+                    htmlData += '</tr>';
+            }
+            // document.getElementById("trash_post_list").innerHTML = data
+            $('#post_list').html(htmlData);
+            // document.getElementById('post_list').innerHTML = html;
+            $("td.content_title").each(function () {
+                var DELAY = 1000, clicks = 0, timer = null;
+                $(this).on("click", function () {
+                    var post_id = $(this).children('.word_id').val();
+                    open_file_id = post_id;
+                    clicks++;  //count clicks
+                    $('td.content_title').removeClass("checked");
+                    $('td.content_title').removeClass('checked_row_restore');
+                    $(this).addClass("checked");
+                    if (clicks === 1) {
+                        timer = setTimeout(function () {
+                            clicks = 0;  //after action performed, reset counter
+                            if (post_id !== undefined) {
+                                $(this).addClass("checked");
+                            } else {
+                                $('td.content_title').removeClass("checked");
+                            }
+                        }, DELAY);
+                    } else {
+                        clearTimeout(timer);    //prevent single-click action
+                        clicks = 0;             //after action performed, reset
+                        $.ajax({
+                            url: "index.php/wordapp/get_post_by_id",
+                            type: 'POST',
+                            data: {post_id: post_id},
+                        })
+                        .done(function (data) {
+                            tinymce.get('doc_content').undoManager.clear();
+//                                    tinymce.activeEditor.undoManager.clear();
+                            var post_data = JSON.parse(data);
+                            $(" #post_id ").val(post_data.post_id)
+                            $("#table_of_contantes").removeClass("show").addClass("hide");
+
+                            
+
+                            tinyMCE.get('doc_content').setContent(post_data.post_details);
+
+                            
+
+                            console.log("success");
+                        })
+                        .fail(function () {
+                            console.log("error");
+                        })
+                        .always(function () {
+                            console.log("complete");
+                        });
+                    }
                 });
-            })
-            .fail(function () {
-                console.log("error");
-            })
-            .always(function () {
-                var total_user_post = $("#total_user_post").val();
-                if (total_user_post < 30) {
-                    $("#word_next_page").attr('disabled', 'disabled');
-                }
-                $("#word_previous_page").attr('disabled', 'disabled');
-                console.log("complete");
             });
+        })
+        .fail(function () {
+            console.log("error");
+        })
+        .always(function (data) {
+        // console.log(response);
+        var total_user_post = $("#total_user_post").val();
+        if (total_user_post< 30) {
+                $("#word_next_page").attr('disabled', 'disabled');
+            }
+            $("#word_previous_page").attr('disabled', 'disabled');
+            console.log("complete");
+        });
     });
 
     $("#destroy_session,#destroy_session1").click(function (event) {
@@ -183,6 +182,14 @@ jQuery(document).ready(function ($) {
     });
     $("#doc_content").click(function (event) {
         $("#table_of_contantes").removeClass("show").addClass("hide");
+    });
+
+    $(".got_to_table_of_content").click(function (event) {
+
+        $("#table_of_trash_files").removeClass("show").addClass("hide");
+        $("#table_of_contantes").removeClass("hide").addClass("show");
+        $("#show_table_of_content").click();
+        // restore_post_ids = [];
     });
 
     // $('.alt_keypress').click(function(e){
@@ -460,27 +467,62 @@ jQuery(document).ready(function ($) {
             type: 'POST',
             data: {login_user_id: login_user_id, start_from: start_from},
         })
-            .done(function (html) {
+        .done(function (data) {
 
-                document.getElementById('trash_post_list').innerHTML = html;
-            })
-            .fail(function () {
-                console.log("error");
-            })
-            .always(function () {
-                var total_user_post = $("#total_user_post").val();
-                if (total_user_post < 30) {
-                    $("#word_next_page").attr('disabled', 'disabled');
-                }
-                $("#word_previous_page").attr('disabled', 'disabled');
-                console.log("complete");
-            });
+            var response = JSON.parse(data);
+
+            var x = 10;
+            var y = 20;
+            var htmlData = "";
+            for (var i = 0; i < 10; i++) {
+                    htmlData += "<tr>";
+                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+1) +'</td>';
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title">';
+                        if ((start_from+i) < response.total_user_post) {
+                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[i].post_id+"'>";
+                            htmlData += response.user_posts[i].post_title;
+                        }
+                        htmlData += '</td>';
+                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+x+1) +'</td>';
+                        htmlData += '<td nowrap="nowrap" width="30%" class="content_title">';
+                        if ((start_from+x+i) < response.total_user_post) {
+                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[x+i].post_id+"'>";
+                            htmlData += response.user_posts[x+i].post_title;
+                        }
+                        htmlData += '</td>';
+                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+y+1) +'</td>';
+                        htmlData += '<td nowrap="nowrap" width="30%" class="content_title">';
+                        if ((start_from+y+i) < response.total_user_post) {
+                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[y+i].post_id+"'>";
+                            htmlData += response.user_posts[y+i].post_title;
+                        }
+                        htmlData += '</td>';
+                    htmlData += '</tr>';
+            }
+            // document.getElementById("trash_post_list").innerHTML = data
+            $('#trash_post_list').html(htmlData);
+        })
+        .fail(function () {
+            console.log("error");
+        })
+        .always(function (data) {
+            var response = JSON.parse(data);
+            // console.log(response);
+            // var total_user_post = $("#total_user_post").val();
+            if (response.total_user_post < 30) {
+                $("#word_next_page").attr('disabled', 'disabled');
+            }
+            $("#word_previous_page").attr('disabled', 'disabled');
+            console.log("complete");
+        });
     });
 
     var multiple_post_id = [];
     $(document).delegate("#trash_post_list .content_title", "click", function (event) {
-
+        // alert("Okay");
+        // return false;
         var post_id = $(this).children('.word_id').val();
+        // var post_id = $(this).attr('att-post-id');
         if (post_id != undefined) {
             if (jQuery.inArray(post_id, multiple_post_id) == -1) {
                 multiple_post_id.push(post_id);
@@ -519,7 +561,7 @@ jQuery(document).ready(function ($) {
         $("#restore_title").text('');
         $("#restore_confirm_alirt").removeClass('show').addClass('hide');
     });
-    var restore_post_ids = [];
+    
     $("#restore_confirm").click(function(event) {
         /* Act on the event */
         var post_title = $(".content_title.checked_row_restore").text();
@@ -664,9 +706,75 @@ jQuery(document).ready(function ($) {
                             },
                             data: {login_user_id: login_user_id},
                         })
-                        .done(function (html) {
-                            $("#ajax_loading_aria").hide();
-                            document.getElementById('post_list').innerHTML = html;
+                        .done(function (data) {
+                            var response = JSON.parse(data);
+                            var start_from = 0;
+                            var x = 10;
+                            var y = 20;
+                            var htmlData = "";
+                            for (var i = 0; i < 10; i++) {
+                                var extra_class = "";
+                                var open_file = "";
+                                    htmlData += "<tr>";
+                                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+1) +'</td>';
+                                        if ((start_from+i) < response.total_user_post) {
+                                            if (restore_post_ids.indexOf(response.user_posts[i].post_id) !== -1) {
+                                                extra_class ="recent_restore";
+                                            }
+                                            if (open_file_id==response.user_posts[i].post_id) {
+                                                open_file = "open_file";
+                                            }else{
+                                                open_file = "";
+                                            }
+                                            htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+' '+open_file+'">';
+                                        
+                                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[i].post_id+"'>";
+                                            htmlData += response.user_posts[i].post_title;
+                                        
+                                            htmlData += '</td>';
+                                        }
+                                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+x+1) +'</td>';
+                                        if ((start_from+x+i) < response.total_user_post) {
+                                            if (restore_post_ids.indexOf(response.user_posts[x+i].post_id) !== -1) {
+                                                extra_class ="recent_restore";
+                                            }
+                                            if (open_file_id==response.user_posts[x+i].post_id) {
+                                                open_file = "open_file";
+                                            }else{
+                                                open_file = "";
+                                            }
+                                            htmlData += '<td nowrap="nowrap" width="30%" class="content_title  '+extra_class+' '+open_file+'">';
+                                        
+                                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[x+i].post_id+"'>";
+                                            htmlData += response.user_posts[x+i].post_title;
+                                        
+                                            htmlData += '</td>';
+                                        }
+                                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+y+1) +'</td>';
+                                        if ((start_from+y+i) < response.total_user_post) {
+                                            if (restore_post_ids.indexOf(response.user_posts[y+i].post_id) !== -1) {
+                                                extra_class ="recent_restore";
+                                            }else{
+                                                extra_class ="";
+                                            }
+                                            if (open_file_id==response.user_posts[y+i].post_id) {
+                                                open_file = "open_file";
+                                            }else{
+                                                open_file = "";
+                                            }
+                                            htmlData += '<td nowrap="nowrap" width="30%" class="content_title '+extra_class+' '+open_file+'">';
+
+                                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[y+i].post_id+"'>";
+                                            htmlData += response.user_posts[y+i].post_title;
+                                       
+                                            htmlData += '</td>';
+                                        }
+                                    htmlData += '</tr>';
+                            }
+                            // document.getElementById("trash_post_list").innerHTML = data
+                            $('#post_list').html(htmlData);
+                            // $("#ajax_loading_aria").hide();
+                            // document.getElementById('post_list').innerHTML = html;
                             $("td.content_title").each(function () {
                                 var DELAY = 300, clicks = 0, timer = null;
                                 $(this).on("click", function () {
@@ -2686,6 +2794,7 @@ jQuery(document).ready(function ($) {
         var word_list_limit = $("#word_limit_list").val();
         var total_user_post = $("#total_user_post").val();
         start_from = parseInt(start_from) + 30;
+        
         $("#word_start_list").val(start_from);
 
         if ((total_user_post - start_from) < 30) {
@@ -2708,62 +2817,114 @@ jQuery(document).ready(function ($) {
             },
             data: {login_user_id: login_user_id, start_from: start_from, list_limit: word_list_limit}
         })
-            .done(function (html) {
-
-                $("#ajax_loading_aria").hide();
-                document.getElementById('post_list').innerHTML = html;
-                $("td.content_title").each(function () {
-                    var DELAY = 300, clicks = 0, timer = null;
-                    $(this).on("click", function () {
-                        var post_id = $(this).children('.word_id').val();
-                        clicks++;  //count clicks
-                        $('td.content_title').removeClass("checked");
-                        $(this).addClass("checked");
-                        if (clicks === 1) {
-
-                            timer = setTimeout(function () {
-
-                                clicks = 0;  //after action performed, reset counter
-                                if (post_id !== undefined) {
-                                    // alert(post_id);
-                                    $(this).addClass("checked");
-                                } else {
-                                    $('td.content_title').removeClass("checked");
-                                }
-                            }, DELAY);
-
-                        } else {
-                            clearTimeout(timer);    //prevent single-click action
-                            clicks = 0;             //after action performed, reset
-                            $.ajax({
-                                url: "index.php/wordapp/get_post_by_id",
-                                type: 'POST',
-                                data: {post_id: post_id},
-                            })
-                                .done(function (data) {
-                                    var post_data = JSON.parse(data);
-                                    $("#post_id ").val(post_data.post_id)
-                                    $("#table_of_contantes").removeClass("show").addClass("hide");
-                                    tinyMCE.get('doc_content').setContent(post_data.post_details);
-
-                                    console.log("success");
-                                })
-                                .fail(function () {
-                                    console.log("error");
-                                })
-                                .always(function () {
-                                    console.log("complete");
-                                });
+        .done(function (data) {
+            var response = JSON.parse(data);
+            var x = 10;
+            var y = 20;
+            var htmlData = "";
+            for (var i = 0; i < 10; i++) {
+                var extra_class = "";
+                    htmlData += "<tr>";
+                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+1) +'</td>';
+                        if ((start_from+i) < response.total_user_post) {
+                            if (restore_post_ids.indexOf(response.user_posts[i].post_id) !== -1) {
+                                extra_class ="recent_restore";
+                            }else{
+                                extra_class ="";
+                            }
+                            htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+'">';
+                        
+                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[i].post_id+"'>";
+                            htmlData += response.user_posts[i].post_title;
+                        
+                            htmlData += '</td>';
                         }
-                    });
+                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+x+1) +'</td>';
+                        if ((start_from+x+i) < response.total_user_post) {
+                            if (restore_post_ids.indexOf(response.user_posts[x+i].post_id) !== -1) {
+                                extra_class ="recent_restore";
+                            }else{
+                                extra_class ="";
+                            }
+
+                                htmlData += '<td nowrap="nowrap" width="30%" class="content_title">';
+                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[x+i].post_id+"'>";
+                            htmlData += response.user_posts[x+i].post_title;
+                        
+                                htmlData += '</td>';
+                        }
+                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+y+1) +'</td>';
+                        if ((start_from+y+i) < response.total_user_post) {
+                            if (restore_post_ids.indexOf(response.user_posts[y+i].post_id) !== -1) {
+                                extra_class ="recent_restore";
+                            }else{
+                                extra_class ="";
+                            }
+                            htmlData += '<td nowrap="nowrap" width="30%" class="content_title">';
+                        
+                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[y+i].post_id+"'>";
+                            htmlData += response.user_posts[y+i].post_title;
+                        
+                            htmlData += '</td>';
+                        }
+                    htmlData += '</tr>';
+            }
+            // document.getElementById("trash_post_list").innerHTML = data
+            $('#post_list').html(htmlData);
+            // $("#ajax_loading_aria").hide();
+            // document.getElementById('post_list').innerHTML = html;
+            $("td.content_title").each(function () {
+                var DELAY = 300, clicks = 0, timer = null;
+                $(this).on("click", function () {
+                    var post_id = $(this).children('.word_id').val();
+                    clicks++;  //count clicks
+                    $('td.content_title').removeClass("checked");
+                    $(this).addClass("checked");
+                    if (clicks === 1) {
+
+                        timer = setTimeout(function () {
+
+                            clicks = 0;  //after action performed, reset counter
+                            if (post_id !== undefined) {
+                                // alert(post_id);
+                                $(this).addClass("checked");
+                            } else {
+                                $('td.content_title').removeClass("checked");
+                            }
+                        }, DELAY);
+
+                    } else {
+                        clearTimeout(timer);    //prevent single-click action
+                        clicks = 0;             //after action performed, reset
+                        $.ajax({
+                            url: "index.php/wordapp/get_post_by_id",
+                            type: 'POST',
+                            data: {post_id: post_id},
+                        })
+                            .done(function (data) {
+                                var post_data = JSON.parse(data);
+                                $("#post_id ").val(post_data.post_id)
+                                $("#table_of_contantes").removeClass("show").addClass("hide");
+                                tinyMCE.get('doc_content').setContent(post_data.post_details);
+
+                                console.log("success");
+                            })
+                            .fail(function () {
+                                console.log("error");
+                            })
+                            .always(function () {
+                                console.log("complete");
+                            });
+                    }
                 });
-            })
-            .fail(function () {
-                console.log("error");
-            })
-            .always(function () {
-                console.log("complete");
             });
+        })
+        .fail(function () {
+            console.log("error");
+        })
+        .always(function () {
+            console.log("complete");
+        });
     });
 
     $("#word_previous_page").on('click', function (event) {
@@ -2803,62 +2964,117 @@ jQuery(document).ready(function ($) {
             },
             data: {login_user_id: login_user_id, start_from: start_from, list_limit: word_list_limit},
         })
-            .done(function (html) {
+        .done(function (data) {
+            var response = JSON.parse(data);
 
-                $("#ajax_loading_aria").hide();
-                document.getElementById('post_list').innerHTML = html;
-                $("td.content_title").each(function () {
-                    var DELAY = 300, clicks = 0, timer = null;
-                    $(this).on("click", function () {
-                        var post_id = $(this).children('.word_id').val();
-                        clicks++;  //count clicks
-                        $('td.content_title').removeClass("checked");
-                        $(this).addClass("checked");
-                        if (clicks === 1) {
-
-                            timer = setTimeout(function () {
-
-                                clicks = 0;  //after action performed, reset counter
-                                if (post_id !== undefined) {
-                                    // alert(post_id);
-                                    $(this).addClass("checked");
-                                } else {
-                                    $('td.content_title').removeClass("checked");
-                                }
-                            }, DELAY);
-
-                        } else {
-                            clearTimeout(timer);    //prevent single-click action
-                            clicks = 0;             //after action performed, reset
-                            $.ajax({
-                                url: "index.php/wordapp/get_post_by_id",
-                                type: 'POST',
-                                data: {post_id: post_id},
-                            })
-                                .done(function (data) {
-                                    var post_data = JSON.parse(data);
-                                    $(" #post_id ").val(post_data.post_id)
-                                    $("#table_of_contantes").removeClass("show").addClass("hide");
-                                    tinyMCE.get('doc_content').setContent(post_data.post_details);
-
-                                    console.log("success");
-                                })
-                                .fail(function () {
-                                    console.log("error");
-                                })
-                                .always(function () {
-                                    console.log("complete");
-                                });
+        var x = 10;
+        var y = 20;
+        var htmlData = "";
+        for (var i = 0; i < 10; i++) {
+            var extra_class = "";
+                htmlData += "<tr>";
+                    htmlData += '<td nowrap="nowrap">'+ (start_from+i+1) +'</td>';
+                    if ((start_from+i) < response.total_user_post) {
+                        if (restore_post_ids.indexOf(response.user_posts[i].post_id) !== -1) {
+                            extra_class ="recent_restore";
+                        }else{
+                            extra_class ="";
                         }
-                    });
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+'">';
+                    
+                        htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[i].post_id+"'>";
+                        htmlData += response.user_posts[i].post_title;
+                    
+                        htmlData += '</td>';
+                    }
+                    htmlData += '<td nowrap="nowrap">'+ (start_from+i+x+1) +'</td>';
+                    if ((start_from+x+i) < response.total_user_post) {
+                        if (restore_post_ids.indexOf(response.user_posts[x+i].post_id) !== -1)
+                        {
+                            extra_class ="recent_restore";
+                        }else{
+                            extra_class ="";
+                        }
+                        htmlData += '<td nowrap="nowrap" width="30%" class="content_title '+extra_class+'">';
+                        
+                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[x+i].post_id+"'>";
+                            htmlData += response.user_posts[x+i].post_title;
+                       
+                        htmlData += '</td>';
+                     }
+                    htmlData += '<td nowrap="nowrap">'+ (start_from+i+y+1) +'</td>';
+                    if ((start_from+y+i) < response.total_user_post) {
+                        if (restore_post_ids.indexOf(response.user_posts[y+i].post_id) !== -1)
+                        {
+                            extra_class ="recent_restore";
+                        }else{
+                            extra_class ="";
+                        }
+                        htmlData += '<td nowrap="nowrap" width="30%" class="content_title '+extra_class+'">';
+                    
+                        htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[y+i].post_id+"'>";
+                        htmlData += response.user_posts[y+i].post_title;
+                    
+                        htmlData += '</td>';
+                    }
+                htmlData += '</tr>';
+        }
+        // document.getElementById("trash_post_list").innerHTML = data
+        $('#post_list').html(htmlData);
+            // $("#ajax_loading_aria").hide();
+            // document.getElementById('post_list').innerHTML = html;
+            $("td.content_title").each(function () {
+                var DELAY = 300, clicks = 0, timer = null;
+                $(this).on("click", function () {
+                    var post_id = $(this).children('.word_id').val();
+                    clicks++;  //count clicks
+                    $('td.content_title').removeClass("checked");
+                    $(this).addClass("checked");
+                    if (clicks === 1) {
+
+                        timer = setTimeout(function () {
+
+                            clicks = 0;  //after action performed, reset counter
+                            if (post_id !== undefined) {
+                                // alert(post_id);
+                                $(this).addClass("checked");
+                            } else {
+                                $('td.content_title').removeClass("checked");
+                            }
+                        }, DELAY);
+
+                    } else {
+                        clearTimeout(timer);    //prevent single-click action
+                        clicks = 0;             //after action performed, reset
+                        $.ajax({
+                            url: "index.php/wordapp/get_post_by_id",
+                            type: 'POST',
+                            data: {post_id: post_id},
+                        })
+                            .done(function (data) {
+                                var post_data = JSON.parse(data);
+                                $(" #post_id ").val(post_data.post_id)
+                                $("#table_of_contantes").removeClass("show").addClass("hide");
+                                tinyMCE.get('doc_content').setContent(post_data.post_details);
+
+                                console.log("success");
+                            })
+                            .fail(function () {
+                                console.log("error");
+                            })
+                            .always(function () {
+                                console.log("complete");
+                            });
+                    }
                 });
-            })
-            .fail(function () {
-                console.log("error");
-            })
-            .always(function () {
-                console.log("complete");
             });
+        })
+        .fail(function () {
+            console.log("error");
+        })
+        .always(function () {
+            console.log("complete");
+        });
     });
 
 

@@ -190,7 +190,8 @@ body {
 }
 
 .open_file{
-    background-color: yellow;
+    background-color: green;
+    color: white;
 }
 
 .table_of_contantes .button_aria {
@@ -632,5 +633,9 @@ textarea.tinyMCE {
     border: 1px solid #666;
 }
 .checked_row_restore{
+    background-color: yellow;
+}
+.recent_restore{
+    border: 3px solid yellow !important;
     background-color: yellow;
 }

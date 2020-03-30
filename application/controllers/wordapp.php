@@ -174,13 +174,12 @@ class Wordapp extends CI_Controller
 
         // Retrieve sign in user
         $data['total_user_post'] = $this->wordapp_model->get_total_user_post($user_id);
-        // echo $data['total_user_post'];
-        // echo $this->db->last_query();
-        // exit();
-        $data['user_posts'] = $this->wordapp_model->get_post_by_user_id($user_id, $start_from, $list_limit);
         $data['start_from'] = $start_from;
         $data['list_limit'] = $list_limit;
-        $this->load->view('components/table_of_post', isset($data) ? $data : NULL);
+        $data['user_posts'] = $this->wordapp_model->get_post_by_user_id($user_id, $start_from, $list_limit);
+        echo json_encode($data);
+        
+        // $this->load->view('components/table_of_post', isset($data) ? $data : NULL);
     }
 
     public function get_post_by_id()
@@ -1279,17 +1278,16 @@ class Wordapp extends CI_Controller
 
         // Retrieve sign in user
         $data['total_user_post'] = $this->wordapp_model->get_total_user_post($user_id, $deleted = 1);
-        // echo $data['total_user_post'];
-        // echo $this->db->last_query();
-        // exit();
-        $data['user_posts'] = $this->wordapp_model->get_post_by_user_id($user_id, $start_from, $list_limit, $deleted = 1);
         $data['start_from'] = $start_from;
         $data['list_limit'] = $list_limit;
+        $data['user_posts'] = $this->wordapp_model->get_post_by_user_id($user_id, $start_from, $list_limit, $deleted = 1);
+        
+        echo json_encode($data);
 //                echo "<pre>"; print_r($data['user_posts']);
 //                exit();
         // echo $data['start_from'];
         // exit();
-        $this->load->view('components/table_of_post', isset($data) ? $data : NULL);
+        // $this->load->view('components/table_of_post', isset($data) ? $data : NULL);
     }
 
     public function restore_post_files()

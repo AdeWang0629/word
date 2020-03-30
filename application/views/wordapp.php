@@ -1046,6 +1046,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- Indicates a successful or positive action -->
         <button type="button" class="btn btn-warning btn_table1 pull-right" id="word_next_page"> 次</button>
         <input type="hidden" id="word_start_list" name="word_start_list" value="0">
+        <input type="hidden" id="total_user_post" name="total_user_post" value="0">
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
         <button type="button" class="btn btn-warning btn_table1 pull-right" disabled="disabled" id="word_previous_page">
             前
@@ -1898,7 +1899,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h4>「 <span id="restored_title"></span> 」<br>&nbsp &nbsp を回復しました。</h4>
             <center>
                 <h5 style="color: blue;">目次に移動しました。</h5>
-                <button id="close_select" class="btn btn-warning btn-lg">確認
+                <button id="close_select" class="btn btn-warning btn-lg got_to_table_of_content">確認
                 </button>
             </center>
         </div>
