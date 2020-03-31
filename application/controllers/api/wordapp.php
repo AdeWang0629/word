@@ -155,10 +155,10 @@ class Wordapp extends CI_Controller {
 	{
 		$get_user_json = file_get_contents('php://input');
 		$user_data = json_decode($get_user_json);
-		// print_r($user_data);
+		// print_r($get_user_json);
 		// exit();
-		if (!empty($user_data)) {
-			if ($this->config->item("api_key") === base64_decode($user_data->api_key)) {
+		// if (!empty($user_data)) {
+		// 	if ($this->config->item("api_key") === base64_decode($user_data->api_key)) {
 
 				$img = str_replace('data:image/png;base64,', '', $user_data->image_data);
 				
@@ -172,12 +172,12 @@ class Wordapp extends CI_Controller {
 				}else{
 					echo 'error'; 
 				}			
-			}else{
-				$response["success"] = 0;
-				$response["message"] = "API key is wrong";
-				echo json_encode($response);
-			}
-		}
+		// 	}else{
+		// 		$response["success"] = 0;
+		// 		$response["message"] = "API key is wrong";
+		// 		echo json_encode($response);
+		// 	}
+		// }
 
 	}
         

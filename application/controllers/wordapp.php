@@ -160,9 +160,6 @@ class Wordapp extends CI_Controller
 
     public function get_user_post()
     {
-        // Enable SSL?
-        maintain_ssl($this->config->item("ssl_enabled"));
-
         $user_id = $this->input->post('login_user_id');
         $start_from = $this->input->post('start_from');
         $list_limit = 30;
