@@ -2669,8 +2669,9 @@ jQuery(document).ready(function ($) {
 
     $("#word_cursor_colse").on('click', function (event) {
         event.preventDefault();
-
+        $("#word_imgupload").val('');
         $("#word_image_past_message").removeClass('show').addClass('hide');
+        $("#word_image_selection_message").removeClass('hide').addClass('show');
         /* Act on the event */
     });
 
@@ -2689,6 +2690,7 @@ jQuery(document).ready(function ($) {
     $("#word_image_paste_colse").on('click', function (event) {
         event.preventDefault();
         $("#word_image_past_confirmation").removeClass('show').addClass('hide');
+        $("#word_image_past_message").removeClass('hide').addClass('show');
     });
 
     $("#word_image_zooming_close").on('click', function (event) {
