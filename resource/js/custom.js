@@ -33,65 +33,65 @@ jQuery(document).ready(function ($) {
             for (var i = 0; i < 10; i++) {
                 var extra_class = "";
                 var open_file = "";
-                    htmlData += "<tr>";
-                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+1) +'</td>';
-                        if ((start_from+i) < response.total_user_post) {
-                            if (restore_post_ids.indexOf(response.user_posts[i].post_id) !== -1) {
-                                extra_class ="recent_restore";
-                            }else{
-                                extra_class = "";
-                            }
-                            if (open_file_id==response.user_posts[i].post_id) {
-                                open_file = "open_file";
-                            }else{
-                                open_file = "";
-                            }
-                            htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+' '+open_file+'">';
-                        
-                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[i].post_id+"'>";
-                            htmlData += response.user_posts[i].post_title;
-                        
-                            htmlData += '</td>';
+                htmlData += "<tr>";
+                    htmlData += '<td nowrap="nowrap">'+ (start_from+i+1) +'</td>';
+                    if ((start_from+i) < response.total_user_post) {
+                        if (restore_post_ids.indexOf(response.user_posts[i].post_id) !== -1) {
+                            extra_class ="recent_restore";
+                        }else{
+                            extra_class = "";
                         }
-                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+x+1) +'</td>';
-                        if ((start_from+x+i) < response.total_user_post) {
-                            if (restore_post_ids.indexOf(response.user_posts[x+i].post_id) !== -1) {
-                                extra_class ="recent_restore";
-                            }else{
-                                extra_class = "";
-                            }
-                            if (open_file_id==response.user_posts[x+i].post_id) {
-                                open_file = "open_file";
-                            }else{
-                                open_file = "";
-                            }
-                            htmlData += '<td nowrap="nowrap" width="30%" class="content_title  '+extra_class+' '+open_file+'">';
-                        
-                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[x+i].post_id+"'>";
-                            htmlData += response.user_posts[x+i].post_title;
-                        
-                            htmlData += '</td>';
+                        if (open_file_id==response.user_posts[i].post_id) {
+                            open_file = "open_file";
+                        }else{
+                            open_file = "";
                         }
-                        htmlData += '<td nowrap="nowrap">'+ (start_from+i+y+1) +'</td>';
-                        if ((start_from+y+i) < response.total_user_post) {
-                            if (restore_post_ids.indexOf(response.user_posts[y+i].post_id) !== -1) {
-                                extra_class ="recent_restore";
-                            }else{
-                                extra_class = "";
-                            }
-                            if (open_file_id==response.user_posts[y+i].post_id) {
-                                open_file = "open_file";
-                            }else{
-                                open_file = "";
-                            }
-                            htmlData += '<td nowrap="nowrap" width="30%" class="content_title '+extra_class+' '+open_file+'">';
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+' '+open_file+'">';
+                    
+                        htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[i].post_id+"'>";
+                        htmlData += response.user_posts[i].post_title;
+                    
+                        htmlData += '</td>';
+                    }
+                    htmlData += '<td nowrap="nowrap">'+ (start_from+i+x+1) +'</td>';
+                    if ((start_from+x+i) < response.total_user_post) {
+                        if (restore_post_ids.indexOf(response.user_posts[x+i].post_id) !== -1) {
+                            extra_class ="recent_restore";
+                        }else{
+                            extra_class = "";
+                        }
+                        if (open_file_id==response.user_posts[x+i].post_id) {
+                            open_file = "open_file";
+                        }else{
+                            open_file = "";
+                        }
+                        htmlData += '<td nowrap="nowrap" width="30%" class="content_title  '+extra_class+' '+open_file+'">';
+                    
+                        htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[x+i].post_id+"'>";
+                        htmlData += response.user_posts[x+i].post_title;
+                    
+                        htmlData += '</td>';
+                    }
+                    htmlData += '<td nowrap="nowrap">'+ (start_from+i+y+1) +'</td>';
+                    if ((start_from+y+i) < response.total_user_post) {
+                        if (restore_post_ids.indexOf(response.user_posts[y+i].post_id) !== -1) {
+                            extra_class ="recent_restore";
+                        }else{
+                            extra_class = "";
+                        }
+                        if (open_file_id==response.user_posts[y+i].post_id) {
+                            open_file = "open_file";
+                        }else{
+                            open_file = "";
+                        }
+                        htmlData += '<td nowrap="nowrap" width="30%" class="content_title '+extra_class+' '+open_file+'">';
 
-                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[y+i].post_id+"'>";
-                            htmlData += response.user_posts[y+i].post_title;
-                       
-                            htmlData += '</td>';
-                        }
-                    htmlData += '</tr>';
+                        htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[y+i].post_id+"'>";
+                        htmlData += response.user_posts[y+i].post_title;
+                   
+                        htmlData += '</td>';
+                    }
+                htmlData += '</tr>';
             }
             // document.getElementById("trash_post_list").innerHTML = data
             $('#post_list').html(htmlData);
@@ -2707,6 +2707,7 @@ jQuery(document).ready(function ($) {
         // alert(form_data[0]);
         // return false;
         var url = base_url + "index.php/emailing/email_image_upload";
+
         if ($("#word_imgupload").val() != "") {
             $.ajax({
                 url: url,
@@ -2716,17 +2717,18 @@ jQuery(document).ready(function ($) {
                 cache: false,
                 processData: false,
             })
-                .done(function (data) {
-                    var data = JSON.parse(data);
-                    $("#word_uploaded_file_name").val(data.upload_data.file_name);
-                    console.log(data.upload_data.file_name);
-                })
-                .fail(function () {
-                    console.log("error");
-                })
-                .always(function () {
-                    console.log("complete");
-                });
+            .done(function (data) {
+                var data = JSON.parse(data);
+                $("#word_imgupload").val('')
+                $("#word_uploaded_file_name").val(data.upload_data.file_name);
+                console.log(data.upload_data.file_name);
+            })
+            .fail(function () {
+                console.log("error");
+            })
+            .always(function () {
+                console.log("complete");
+            });
 
         } else {
             $.alert("Please select picture")
