@@ -1618,9 +1618,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <p class="pull-left" style="font-size: 18px;">
                     絵・図
                 </p>
-                <button id="word_shape_aria_close" style="margin-left: 2px;"
-                        class="btn btn-warning pull-right btn_table">戻る
-                </button>
+                
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12" style="padding: 0">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -1643,7 +1641,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <button class="btn btn-success btn_table" from_button="0" id="shapesSaveClose"><i
                                 class="fa fa-floppy-o"></i> 完了
                     </button>
-
+                    <button id="word_shape_aria_close" style="margin-left: 2px;"
+                        class="btn btn-warning btn_table">戻る
+                    </button>
                     <!-- <div class="btn-group">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         絵・図 <span class="caret"></span>

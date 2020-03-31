@@ -2697,6 +2697,7 @@ jQuery(document).ready(function ($) {
 
         event.preventDefault();
         $("#word_image_zooming").removeClass('show').addClass('hide');
+        $("#word_image_past_confirmation").removeClass('hide').addClass('show');
     });
 
     function startUpload() {
