@@ -1559,11 +1559,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body">
             <div class="col-md-12" style="padding: 0">
-                <p class="pull-left" style="font-size: 18px;">
+                <h4 class="text-center" style="font-size: 26px;">
                     サイズを選んで下さい。
-                </p>
-                <button id="word_image_zooming_close" style="margin-left: 2px;" class="btn btn-warning btn-lg pull-right">戻る
-                </button>
+                </h4>
+                <!-- <button id="word_image_zooming_close" style="margin-left: 2px;" class="btn btn-warning btn-lg pull-right">戻る
+                </button> -->
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <center>

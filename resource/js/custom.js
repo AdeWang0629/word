@@ -2693,12 +2693,12 @@ jQuery(document).ready(function ($) {
         $("#word_image_past_message").removeClass('hide').addClass('show');
     });
 
-    $("#word_image_zooming_close").on('click', function (event) {
+    // $("#word_image_zooming_close").on('click', function (event) {
 
-        event.preventDefault();
-        $("#word_image_zooming").removeClass('show').addClass('hide');
-        $("#word_image_past_confirmation").removeClass('hide').addClass('show');
-    });
+    //     event.preventDefault();
+    //     $("#word_image_zooming").removeClass('show').addClass('hide');
+    //     $("#word_image_past_confirmation").removeClass('hide').addClass('show');
+    // });
 
     function startUpload() {
         var base_url = $("#base_url").val();
