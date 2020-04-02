@@ -246,7 +246,7 @@ tinymce.init({
 
                 if ((clicks == 1)) { // && (apply_style == 1)
                      event.preventDefault();
-                     event.stopPropagation();
+                     // event.stopPropagation();
                     // alert(apply_style+"======"+clicks);
                     // return false;
                     

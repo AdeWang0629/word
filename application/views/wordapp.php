@@ -1435,7 +1435,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <tr>
                     <td onclick="word_font_color('#000000')" style="background-color: #000000;"></td>
                     <td onclick="word_font_color('#FF0000');" style="background-color: #FF0000;"></td>
-                    <td onclick="word_font_color('#0000FF');" style="background-color: #0000FF;"></td>
+                    <td onclick="word_font_color('blue');" style="background-color: #0000FF;"></td>
                 </tr>
                 <tr>
                     <td onclick="word_font_color('#00FF00');" style="background-color: #00FF00;"></td>
