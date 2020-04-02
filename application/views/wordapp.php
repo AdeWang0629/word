@@ -735,7 +735,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <button class="btn btn-success btn_keipro" id="font_width" data-html="true" role="button"
                             onclick="font_width()" data-toggle="popover" data-container="body" title=""
-                            data-content="太字<br>黒塗りした文字を、太字に修飾します。<br>再度（２度）操作すると、太字は解消します。
+                            data-content="太字<br>選択した文字を、太字に修飾します。<br>再度（２度）操作すると、太字は解消します。
 　" data-placement="auto left" data-trigger="hover">太 字
                     </button>
 
@@ -745,7 +745,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </button>
 
                     <button class="btn btn-success btn_keipro " id="font_size" data-html="true" role="button"
-                            data-toggle="popover" data-container="body" title="" data-content="サイズ<br>黒塗りした文字を、文字の大きさを拡大・縮小します。
+                            data-toggle="popover" data-container="body" title="" data-content="サイズ<br>選択した文字を、文字の大きさを拡大・縮小します。
                                     " data-placement="auto left" data-trigger="hover">サイズ
                     </button>
 
