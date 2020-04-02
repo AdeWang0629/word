@@ -791,12 +791,12 @@ class Emailing extends CI_Controller
             $config['encrypt_name'] = TRUE;
 
             $this->load->library('upload', $config);
-
+            $data['error'] = array();
+            $data['upload_data'] = array();
             if (!$this->upload->do_upload('userfile')) {
-                $data = array('error' => $this->upload->display_errors());
-
+                $data['error'] = $this->upload->display_errors();
             } else {
-                $data = array('upload_data' => $this->upload->data());
+                $data['upload_data'] = $this->upload->data();
             }
             echo json_encode($data);
         }

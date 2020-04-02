@@ -245,8 +245,9 @@ tinymce.init({
                 // console.log('apply_style='+apply_style);
 
                 if ((clicks == 1)) { // && (apply_style == 1)
+                    // alert("Ahsan Ullah");
                      event.preventDefault();
-                     // event.stopPropagation();
+                     event.stopPropagation();
                     // alert(apply_style+"======"+clicks);
                     // return false;
                     

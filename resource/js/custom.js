@@ -2655,7 +2655,6 @@ jQuery(document).ready(function ($) {
     $('#word_imgupload').change(function (event) {
         event.preventDefault();
         $("#word_image_selection_message").removeClass('show').addClass('hide');
-        $("#word_image_past_message").removeClass('hide').addClass('show');
         startUpload();
         // alert("Okay");
     });
@@ -2681,7 +2680,8 @@ jQuery(document).ready(function ($) {
         var file_name = $("#word_uploaded_file_name").val();
         var raw_name = file_name.split(".");
         $("#word_image_past_confirmation").removeClass('show').addClass('hide');
-        tinymce.execCommand('mceInsertContent', false, '<img width="400" style="margin: 5px 10px; float:left; overflow: hidden !important;" align="middle" id="' + raw_name[0] + '" src="uploads/' + file_name + '">');
+        tinymce.execCommand('mceInsertContent', false, '<img width="400" style="margin: 5px 10px; float:left; overflow: hidden !important;" align="middle" id="' + raw_name[0] + '" src="uploads/' + file_name + '"> ');
+        // tinymce.execCommand('mceInsertContent', false, '&nbsp');
 
         $("#word_image_zooming").removeClass('hide').addClass('show');
         /* Act on the event */
@@ -2715,6 +2715,9 @@ jQuery(document).ready(function ($) {
             $.ajax({
                 url: url,
                 method: 'POST',
+                beforeSend: function () {
+                    $("#ajax_loading_aria").removeClass('hide').addClass('show');
+                },
                 data: form_data,
                 contentType: false,
                 cache: false,
@@ -2722,14 +2725,22 @@ jQuery(document).ready(function ($) {
             })
             .done(function (data) {
                 var data = JSON.parse(data);
-                $("#word_imgupload").val('')
-                $("#word_uploaded_file_name").val(data.upload_data.file_name);
-                console.log(data.upload_data.file_name);
+                if (data.error.length>0) {
+                    $("#word_imgupload").val('')
+                    $("#word_image_upload_error_message").html(data.error);
+                    $("#word_image_upload_error").removeClass('hide').addClass('show');
+                } else {
+                    $("#word_imgupload").val('')
+                    $("#word_image_past_message").removeClass('hide').addClass('show');
+                    $("#word_uploaded_file_name").val(data.upload_data.file_name);
+                }
+                
             })
             .fail(function () {
                 console.log("error");
             })
             .always(function () {
+                $("#ajax_loading_aria").removeClass('show').addClass('hide');
                 console.log("complete");
             });
 
@@ -2738,6 +2749,12 @@ jQuery(document).ready(function ($) {
         }
 
     }
+
+    $("#return_image_upload_for_error").on('click', function(event) {
+        event.preventDefault();
+        $("#word_image_upload_error").removeClass('show').addClass('hide');
+        $("#word_image_selection_message").removeClass('hide').addClass('show');
+    });
 
     $("#word_image_zoom_btn").on("click", function (event) {
         event.preventDefault();
@@ -2965,7 +2982,7 @@ jQuery(document).ready(function ($) {
             url: url,
             type: 'POST',
             beforeSend: function () {
-                $("#ajax_loading_aria").show();
+                $("#ajax_loading_aria").removeClass('hide').addClass('show');
             },
             data: {login_user_id: login_user_id, start_from: start_from, list_limit: word_list_limit},
         })

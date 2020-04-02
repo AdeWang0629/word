@@ -1950,6 +1950,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
+<div class="pull-right draggable_aria hide" id="ajax_loading_aria"
+     style="position: fixed; right: 10px; bottom: 0px; padding: 4px;">
+
+    <div class="panel panel-info" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+        <div class="panel-body" style="color: #000; font-weight: bold;">
+            <h3>読み込んでいます... </h3>
+            <img src="resource/img/ajax/ajax_load_8.gif">
+        </div>
+    </div>
+</div>
+<div class="pull-right draggable_aria hide" id="word_image_upload_error"
+     style="position: fixed; right: 10px; bottom: 0px; padding: 4px;">
+
+    <div class="panel panel-info" style="margin-bottom: 2px; border: solid 2px red; border-top: solid 7px red; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+        <div class="panel-body" style="color: #000; font-weight: bold;">
+            <h3 id="word_image_upload_error_message"></h3>
+            <center>
+                <button id="return_image_upload_for_error" class="btn btn-warning btn-lg">戻る</button>
+            </center>
+        </div>
+    </div>
+</div>
 
 <?php
 //$this->load->view('components/email_modal');
