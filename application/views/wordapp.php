@@ -745,7 +745,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </button>
 
                     <button class="btn btn-success btn_keipro " id="font_size" data-html="true" role="button"
-                            data-toggle="popover" data-container="body" title="" data-content="サイズ<br>選択した文字を、文字の大きさを拡大・縮小します。
+                            data-toggle="popover" data-container="body" title="" data-content="サイズ<br>選択した文字の大きさを拡大・縮小します。
                                     " data-placement="auto left" data-trigger="hover">サイズ
                     </button>
 
