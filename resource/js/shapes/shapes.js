@@ -551,19 +551,22 @@ jQuery(document).ready(function ($) {
             var alltogetherObj = new fabric.Group(objs);
             var dataURL = alltogetherObj.toDataURL('png');
         }
-        // alert(base_url);
-        $.ajax({
-            url: url,
-            type: 'POST',
-            data: JSON.stringify({
-                api_key: api_key,
-                image_data: dataURL
-            }),
-            contentType: "application/json",
-        })
+        // alert(dataURL);   
+        if (dataURL=="data:,") {
+            return false;
+        } else {
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: JSON.stringify({
+                    api_key: api_key,
+                    image_data: dataURL
+                }),
+                contentType: "application/json",
+            })
             .done(function (data) {
                 if (data != 'error') {
-                    tinymce.execCommand('mceInsertContent', false, '<img  id="canvasShapesImage" src="' + data + '">');
+                    tinymce.execCommand('mceInsertContent', false, '<img  id="canvasShapesImage" src="' + data + '"> ');
                     if (from_button == 1) {
                         document.getElementById('WordCanvas1').width = 750;
                         document.getElementById('WordCanvas1').height = 500;
@@ -586,6 +589,8 @@ jQuery(document).ready(function ($) {
             .always(function () {
                 console.log("complete");
             });
+        }
+        
     });
 
     $("#delete-shapes").click(function (event) {
