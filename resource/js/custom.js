@@ -2776,10 +2776,13 @@ jQuery(document).ready(function ($) {
         var current_image_width = $("#word_image_width").val();
 
         var replace_image_width = parseInt(current_image_width) + 50;
-        $(image_id[0]).attr('width', replace_image_width);
-        $("#word_image_width").val(replace_image_width);
-        if (current_image_width > 850) {
-            $("#word_image_zoom_btn").attr('disabled', "disabled");
+        
+        $("#word_image_small_btn").removeClass('disabled');
+        if (current_image_width > 600) {
+            $("#word_image_zoom_btn").addClass('disabled');
+        }else{
+            $(image_id[0]).attr('width', replace_image_width);
+            $("#word_image_width").val(replace_image_width);
         }
     }
 
@@ -2787,8 +2790,18 @@ jQuery(document).ready(function ($) {
         var image_id = tinyMCE.activeEditor.dom.select('#' + image_id);
         var current_image_width = $("#word_image_width").val();
         var replace_image_width = parseInt(current_image_width) - 50;
-        $(image_id[0]).attr('width', replace_image_width);
-        $("#word_image_width").val(replace_image_width);
+        $("#word_image_zoom_btn").removeClass('disabled');
+        // alert(replace_image_width);
+        if (replace_image_width<50) {
+
+            $("#word_image_small_btn").addClass('disabled');
+            // $("#word_image_small_btn").attr('disabled', 'true');
+        } else {
+            $(image_id[0]).attr('width', replace_image_width);
+            $("#word_image_width").val(replace_image_width);
+        }
+        
+        
         // if (current_image_width<200) {
         // 	$("#image_small_btn").attr('disabled', "disabled");
         // }
@@ -2796,6 +2809,9 @@ jQuery(document).ready(function ($) {
 
     $("#word_image_width_completed").on('click', function (event) {
         event.preventDefault();
+        $("#word_image_width").val('400');
+        $("#word_image_zoom_btn").removeClass('disabled');
+        $("#word_image_small_btn").removeClass('disabled');
         $("#word_image_upload_completed").removeClass('hide').addClass('show');
         $("#word_image_zooming").removeClass('show').addClass('hide');
 
