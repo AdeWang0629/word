@@ -2795,16 +2795,10 @@ jQuery(document).ready(function ($) {
         if (replace_image_width<50) {
 
             $("#word_image_small_btn").addClass('disabled');
-            // $("#word_image_small_btn").attr('disabled', 'true');
         } else {
             $(image_id[0]).attr('width', replace_image_width);
             $("#word_image_width").val(replace_image_width);
         }
-        
-        
-        // if (current_image_width<200) {
-        // 	$("#image_small_btn").attr('disabled', "disabled");
-        // }
     }
 
     $("#word_image_width_completed").on('click', function (event) {

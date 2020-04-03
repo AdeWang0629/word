@@ -1998,7 +1998,8 @@ $this->load->view('components/income_modal')
 <!-- Art Shapes -->
 <script src="<?php echo base_url('resource/js/shapes/fabric.min.js'); ?>"></script>
 <!--<script src="--><?php //echo base_url('resource/js/shapes/fabric.js'); ?><!--"></script>-->
-<script src="<?php echo base_url('resource/js/shapes/shapes.js'); ?>"></script>
+<!-- <script src="<?php // echo base_url('resource/js/shapes/shapes.js'); ?>"></script> -->
+<script type="text/javascript" src="<?php echo base_url().RES_DIR; ?>/js/shapes/shapes.js?id=<?php echo rand(0,10000)?>"></script>
 <!-- Art Shapes -->
 <!-- Color Picker -->
 <link rel="stylesheet" media="screen" type="text/css" href="resource/color_picker/css/colorPicker.css"/>
