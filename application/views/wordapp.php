@@ -107,7 +107,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 $('#preloader').fadeOut('slow', function () {
                     $(this).remove();
                     $('#doc_content_maindiv').show();
-                    tinymce.get('doc_content').focus();
+                    // tinymce.get('doc_content').focus();
                 });
             }, 300);
 
