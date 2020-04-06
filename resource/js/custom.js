@@ -52,6 +52,9 @@ jQuery(document).ready(function ($) {
                         htmlData += response.user_posts[i].post_title;
                     
                         htmlData += '</td>';
+                    }else{
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="">';
+                        htmlData += '</td>';
                     }
                     htmlData += '<td nowrap="nowrap">'+ (start_from+i+x+1) +'</td>';
                     if ((start_from+x+i) < response.total_user_post) {
@@ -71,6 +74,9 @@ jQuery(document).ready(function ($) {
                         htmlData += response.user_posts[x+i].post_title;
                     
                         htmlData += '</td>';
+                    }else{
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="">';
+                        htmlData += '</td>';
                     }
                     htmlData += '<td nowrap="nowrap">'+ (start_from+i+y+1) +'</td>';
                     if ((start_from+y+i) < response.total_user_post) {
@@ -89,6 +95,9 @@ jQuery(document).ready(function ($) {
                         htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[y+i].post_id+"'>";
                         htmlData += response.user_posts[y+i].post_title;
                    
+                        htmlData += '</td>';
+                    }else{
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="">';
                         htmlData += '</td>';
                     }
                 htmlData += '</tr>';
