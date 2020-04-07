@@ -82,7 +82,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 right: 20px !important;
             }
+        }
 
+        @media only screen and (max-width: 768px) {
+
+            .resp {
+                position: absolute;
+                left: 0px;
+            }
         }
 
         /*.mce-content-body.my_class{*/
@@ -1063,8 +1070,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="clearfix"></div>
 
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="delete_confirm_alirt"
-         style="position: fixed; width: 380px; right: 30px; bottom: 10px; padding: 4px;">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria delete_confirm_alirt resp" id="delete_confirm_alirt"
+         style="">
 
         <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">

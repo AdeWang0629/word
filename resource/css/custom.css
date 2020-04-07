@@ -639,3 +639,21 @@ textarea.tinyMCE {
     border: 3px solid yellow !important;
     background-color: yellow;
 }
+
+.delete_confirm_alirt{
+    position: fixed; 
+    width: 380px; 
+    right: 30px; 
+    bottom: 10px; 
+    padding: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .delete_confirm_alirt{
+        position: fixed; 
+        width: 100%; 
+        right: 0px; 
+        bottom: 10px; 
+        padding: 4px;
+    }
+}
