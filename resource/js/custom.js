@@ -93,11 +93,10 @@ jQuery(document).ready(function ($) {
                         htmlData += '<td nowrap="nowrap" width="30%" class="content_title '+extra_class+' '+open_file+'">';
 
                         htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[y+i].post_id+"'>";
-                        htmlData += response.user_posts[y+i].post_title;
-                   
+                        htmlData += response.user_posts[y+i].post_title;                 
                         htmlData += '</td>';
                     }else{
-                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="">';
+                        htmlData += '<td nowrap="nowrap" width="30%" class="">';
                         htmlData += '</td>';
                     }
                 htmlData += '</tr>';

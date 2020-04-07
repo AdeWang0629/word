@@ -111,19 +111,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 });
             }, 300);
 
-//            $("#view_email_main_modal").click(function (event) {
-//                $('#emailing_aria_button').trigger('click');
-//            });
-
             $("#notification_aria_close, #notification_aria_close_normal_email").click(function (event) {
                 var id = this.id;
                 if (id == 'notification_aria_close_normal_email') {
                     $("#notification_aria_normal_email").hide();
                 } else {
                     $(".notification_aria").removeClass('show').addClass('hide');
-//                    $("#notification_aria").hide();
                 }
-//                $(".home_page_navi").removeClass('hide').addClass('show');
             });
 
             $("#allow_notification_sound_button").click(function (event) {
@@ -723,8 +717,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             data-content="目次<br>目次を表示し、文章を選択・削除します。" data-placement="auto left" data-trigger="hover">目次
                     </button>
 
-                    <button class="btn btn-success btn_keipro" id="create_new_doc" data-toggle="popover"
-                            data-container="body" title="" data-html="true" data-content="新規<br>新しい文章を書きます。目次は自動保存されます。"
+                    <button class="btn btn-success btn_keipro" id="create_new_doc" data-toggle="popover" data-container="body" title="" data-html="true" data-content="新規<br>新しい文章を書きます。目次は自動保存されます。"
                             data-placement="auto left" data-trigger="hover">新規
                     </button>
 
@@ -1040,20 +1033,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 button_aria">
 
         <!-- Contextual button for informational alert messages -->
-        <button type="button" class="btn btn-danger btn_table1 pull-right" id="table_close"> 戻る</button>
+        <button type="button" class="btn btn-danger btn_table1 pull-right" id="table_close" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="戻る" data-placement="auto top"> 戻る</button>
 
         <!-- Indicates a successful or positive action -->
-        <button type="button" class="btn btn-warning btn_table1 pull-right" id="word_next_page"> 次</button>
+        <button type="button" class="btn btn-warning btn_table1 pull-right" id="word_next_page" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="次の頁へ" data-placement="auto top"> 次</button>
         <input type="hidden" id="word_start_list" name="word_start_list" value="0">
         <input type="hidden" id="total_user_post" name="total_user_post" value="0">
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-warning btn_table1 pull-right" disabled="disabled" id="word_previous_page">
+        
+        <button type="button" class="btn btn-warning btn_table1 pull-right" disabled="disabled" id="word_previous_page" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="前の頁へ" data-placement="auto top">
             前
         </button>
-        <button type="button" class="btn btn-primary btn_table1 pull-right" id="delete_file"> 削除</button>
+        <button type="button" class="btn btn-primary btn_table1 pull-right" id="delete_file" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="文章を削除します" data-placement="auto top"> 削除</button>
         <!-- Standard button -->
-        <button type="button" class="btn btn-success btn_table1 pull-right" id="open_file"> 開く</button>
-        <button type="button" class="btn btn-default btn_table1 pull-right" id="trash_folder"> ゴミ箱</button>
+
+        <button type="button" class="btn btn-success btn_table1 pull-right" id="open_file" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="文章を開きます" data-placement="auto top"> 開く</button>
+        <button type="button" class="btn btn-default btn_table1 pull-right" id="trash_folder" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="ゴミ箱を表示します" data-placement="auto top"> ゴミ箱</button>
     </div>
     <div class="clearfix"></div>
 
@@ -1141,7 +1136,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 button_aria">
 
         <!-- Contextual button for informational alert messages -->
-        <button type="button" class="btn btn-danger btn_table1 pull-right" id="trash_table_close"> 戻る</button>
+        <button type="button" class="btn btn-danger btn_table1 pull-right" id="trash_table_close" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="戻る" data-placement="auto top"> 戻る</button>
 
         <!-- Indicates a successful or positive action -->
         <!--        <button type="button" class="btn btn-warning btn_table1 pull-right" id="word_next_page"> 次</button>-->
@@ -1150,9 +1145,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!--        <button type="button" class="btn btn-warning btn_table1 pull-right" disabled="disabled" id="word_previous_page">-->
         <!--            前-->
         <!--        </button>-->
-         <button type="button" class="btn btn-primary btn_table1 pull-right" id="permanent_delete_file"> 削除</button>
+        
+         <button type="button" class="btn btn-primary btn_table1 pull-right" id="permanent_delete_file" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="文章を完全に削除します" data-placement="auto top"> 削除</button>
         <!-- Standard button -->
-        <button type="button" class="btn btn-success btn_table1 pull-right" id="restore_file"> 回復</button>
+        <button type="button" class="btn btn-success btn_table1 pull-right" id="restore_file" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="文章を回復します" data-placement="auto top"> 回復</button>
     </div>
     <div class="clearfix"></div>
 
