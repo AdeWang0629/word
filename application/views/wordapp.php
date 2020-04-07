@@ -73,7 +73,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         .resp {
             position: absolute;
-            left: 23px;
             min-width: 270px;
         }
 
@@ -89,6 +88,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             .resp {
                 position: absolute;
                 left: 0px;
+                width: 100%;
+                bottom: 100px;
             }
         }
 
