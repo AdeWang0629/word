@@ -89,7 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 position: absolute;
                 left: 0px;
                 width: 100%;
-                bottom: 150px;
+                bottom: 50px;
             }
         }
 
