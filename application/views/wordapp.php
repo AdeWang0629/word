@@ -1093,7 +1093,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="deleted_file_deleted" style="position: fixed; right: 30px; bottom: 15px; padding: 4px;">
+    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt resp" id="deleted_file_deleted" style="">
         <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
             <div class="panel-body" style="font-size: 20px;">
@@ -1110,13 +1110,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     
 
-    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="select_document"
-         style="position: fixed; right: 30px; bottom: 15px; padding: 4px;">
+    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt resp" id="select_document"
+         style="">
 
         <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
             <div class="panel-body">
-                <center><h4><i style="color: #f1c40f" class="fa fa-warning"></i>目次を選択して<br>ください。</h4>
+                <center><h4><i style="color: #f1c40f" class="fa fa-warning"></i>目次を選択してください。</h4>
                     <button id="close_select" class="btn btn-warning " style="box-shadow: none; border: none;">確認
                     </button>
                 </center>
@@ -1859,7 +1859,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria" id="restore_confirm_alirt" style="position: fixed; width: 380px; right: 30px; bottom: 10px; padding: 4px;">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria delete_confirm_alirt resp" id="restore_confirm_alirt" style="">
 
     <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1879,8 +1879,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="restore_select_document"
-         style="position: fixed; right: 30px; bottom: 15px; padding: 4px;">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt resp" id="restore_select_document" style="">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1893,7 +1892,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="deleted_file_restored" style="position: fixed; width: 380px; right: 30px; bottom: 15px; padding: 4px;">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt resp" id="deleted_file_restored" style="">
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body" style="font-size: 20px;">
@@ -1906,7 +1905,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="deleted_file_deleted" style="position: fixed; width: 380px; right: 30px; bottom: 15px; padding: 4px;">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt resp" id="deleted_file_deleted" style="">
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body" style="font-size: 20px;">
@@ -1919,8 +1918,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria " id="permanent_delete_confirm_alirt"
-         style="position: fixed;  width: 380px; right: 30px; bottom: 10px; padding: 4px;">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria resp delete_confirm_alirt" id="permanent_delete_confirm_alirt"
+         style="">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1938,7 +1937,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria" id="permanent_file_deleted" style="position: fixed; right: 30px; bottom: 15px; padding: 4px;">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria resp delete_confirm_alirt" id="permanent_file_deleted" style="">
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body" style="font-size: 20px;">
@@ -1951,7 +1950,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="pull-right draggable_aria hide" id="ajax_loading_aria"
+<div class="pull-right draggable_aria hide resp" id="ajax_loading_aria"
      style="position: fixed; right: 10px; bottom: 0px; padding: 4px;">
 
     <div class="panel panel-info" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1961,7 +1960,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="pull-right draggable_aria hide" id="word_image_upload_error"
+<div class="pull-right draggable_aria hide resp" id="word_image_upload_error"
      style="position: fixed; right: 10px; bottom: 0px; padding: 4px;">
 
     <div class="panel panel-info" style="margin-bottom: 2px; border: solid 2px red; border-top: solid 7px red; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
