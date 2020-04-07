@@ -161,11 +161,11 @@ jQuery(document).ready(function ($) {
         .always(function (data) {
         // console.log(response);
         var total_user_post = $("#total_user_post").val();
-        if (total_user_post< 30) {
-                $("#word_next_page").attr('disabled', 'disabled');
-            }
-            $("#word_previous_page").attr('disabled', 'disabled');
-            console.log("complete");
+        // if (total_user_post< 30) {
+        //         $("#word_next_page").attr('disabled', 'disabled');
+        //     }
+        //     $("#word_previous_page").attr('disabled', 'disabled');
+        //     console.log("complete");
         });
     });
 
@@ -517,11 +517,11 @@ jQuery(document).ready(function ($) {
             var response = JSON.parse(data);
             // console.log(response);
             // var total_user_post = $("#total_user_post").val();
-            if (response.total_user_post < 30) {
-                $("#word_next_page").attr('disabled', 'disabled');
-            }
-            $("#word_previous_page").attr('disabled', 'disabled');
-            console.log("complete");
+            // if (response.total_user_post < 30) {
+            //     $("#word_next_page").attr('disabled', 'disabled');
+            // }
+            // $("#word_previous_page").attr('disabled', 'disabled');
+            // console.log("complete");
         });
     });
 
@@ -2833,19 +2833,12 @@ jQuery(document).ready(function ($) {
         var start_from = $("#word_start_list").val();
         var word_list_limit = $("#word_limit_list").val();
         var total_user_post = $("#total_user_post").val();
+        if (parseInt(start_from)+30 > total_user_post) {
+           return false;
+        } 
         start_from = parseInt(start_from) + 30;
         
         $("#word_start_list").val(start_from);
-
-        if ((total_user_post - start_from) < 30) {
-            $('#word_next_page').attr('disabled', 'disabled');
-        }
-
-        if (start_from == 0) {
-            $('#word_previous_page').attr('disabled', 'disabled');
-        } else {
-            $('#word_previous_page').attr('disabled', false);
-        }
 
         var url = $("#base_url").val() + 'index.php/wordapp/get_user_post/';
 
@@ -2853,7 +2846,7 @@ jQuery(document).ready(function ($) {
             url: url,
             type: 'POST',
             beforeSend: function () {
-                $("#ajax_loading_aria").show();
+                $("#ajax_loading_aria").removeClass('hide').addClass('show');
             },
             data: {login_user_id: login_user_id, start_from: start_from, list_limit: word_list_limit}
         })
@@ -2868,43 +2861,64 @@ jQuery(document).ready(function ($) {
                         htmlData += '<td nowrap="nowrap">'+ (start_from+i+1) +'</td>';
                         if ((start_from+i) < response.total_user_post) {
                             if (restore_post_ids.indexOf(response.user_posts[i].post_id) !== -1) {
-                                extra_class ="recent_restore";
+                            extra_class ="recent_restore";
                             }else{
-                                extra_class ="";
+                                extra_class = "";
                             }
-                            htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+'">';
+                            if (open_file_id==response.user_posts[i].post_id) {
+                                open_file = "open_file";
+                            }else{
+                                open_file = "";
+                            }
+                            htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+' '+open_file+'">';
                         
                             htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[i].post_id+"'>";
                             htmlData += response.user_posts[i].post_title;
                         
                             htmlData += '</td>';
+                        }else{
+                            htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="">';
+                            htmlData += '</td>';
                         }
                         htmlData += '<td nowrap="nowrap">'+ (start_from+i+x+1) +'</td>';
                         if ((start_from+x+i) < response.total_user_post) {
                             if (restore_post_ids.indexOf(response.user_posts[x+i].post_id) !== -1) {
-                                extra_class ="recent_restore";
+                            extra_class ="recent_restore";
                             }else{
-                                extra_class ="";
+                                extra_class = "";
                             }
-
-                                htmlData += '<td nowrap="nowrap" width="30%" class="content_title">';
+                            if (open_file_id==response.user_posts[i].post_id) {
+                                open_file = "open_file";
+                            }else{
+                                open_file = "";
+                            }
+                            htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+' '+open_file+'">';
                             htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[x+i].post_id+"'>";
                             htmlData += response.user_posts[x+i].post_title;
                         
                                 htmlData += '</td>';
+                        }else{
+                            htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="">';
+                            htmlData += '</td>';
                         }
                         htmlData += '<td nowrap="nowrap">'+ (start_from+i+y+1) +'</td>';
                         if ((start_from+y+i) < response.total_user_post) {
                             if (restore_post_ids.indexOf(response.user_posts[y+i].post_id) !== -1) {
-                                extra_class ="recent_restore";
+                            extra_class ="recent_restore";
                             }else{
-                                extra_class ="";
+                                extra_class = "";
                             }
-                            htmlData += '<td nowrap="nowrap" width="30%" class="content_title">';
-                        
-                            htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[y+i].post_id+"'>";
+                            if (open_file_id==response.user_posts[i].post_id) {
+                                open_file = "open_file";
+                            }else{
+                                open_file = "";
+                            }
+                            htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+' '+open_file+'">';
                             htmlData += response.user_posts[y+i].post_title;
                         
+                            htmlData += '</td>';
+                        }else{
+                            htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="">';
                             htmlData += '</td>';
                         }
                     htmlData += '</tr>';
@@ -2964,6 +2978,7 @@ jQuery(document).ready(function ($) {
         })
         .always(function () {
             console.log("complete");
+            $("#ajax_loading_aria").removeClass('show').addClass('hide');
         });
     });
 
@@ -2975,9 +2990,10 @@ jQuery(document).ready(function ($) {
         var word_list_limit = $("#word_limit_list").val();
         var total_user_post = $("#total_user_post").val();
 
-        if ((total_user_post - start_from) >= 1) {
-            $('#word_next_page').attr('disabled', false);
-        }
+        if (start_from < 1) {
+            return false;
+            // $('#word_previous_page').attr('disabled', 'disabled');
+        } 
         if (word_list_limit == "") {
             start_from = 0;
             word_list_limit = 30;
@@ -2990,11 +3006,8 @@ jQuery(document).ready(function ($) {
             $("#word_start_list").val(start_from);
         }
 
-        if (start_from == 0) {
-            $('#word_previous_page').attr('disabled', 'disabled');
-        } else {
-            $('#word_previous_page').attr('disabled', false);
-        }
+        
+
         var url = $("#base_url").val() + 'index.php/wordapp/get_user_post/';
         $.ajax({
             url: url,
@@ -3018,43 +3031,66 @@ jQuery(document).ready(function ($) {
                         if (restore_post_ids.indexOf(response.user_posts[i].post_id) !== -1) {
                             extra_class ="recent_restore";
                         }else{
-                            extra_class ="";
+                            extra_class = "";
                         }
-                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+'">';
+                        if (open_file_id==response.user_posts[i].post_id) {
+                            open_file = "open_file";
+                        }else{
+                            open_file = "";
+                        }
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+' '+open_file+'">';
                     
                         htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[i].post_id+"'>";
                         htmlData += response.user_posts[i].post_title;
                     
                         htmlData += '</td>';
+                    }else{
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="">';
+                        htmlData += '</td>';
                     }
                     htmlData += '<td nowrap="nowrap">'+ (start_from+i+x+1) +'</td>';
                     if ((start_from+x+i) < response.total_user_post) {
-                        if (restore_post_ids.indexOf(response.user_posts[x+i].post_id) !== -1)
-                        {
+                        if (restore_post_ids.indexOf(response.user_posts[x+i].post_id) !== -1) {
                             extra_class ="recent_restore";
                         }else{
-                            extra_class ="";
+                            extra_class = "";
                         }
-                        htmlData += '<td nowrap="nowrap" width="30%" class="content_title '+extra_class+'">';
+                        if (open_file_id==response.user_posts[i].post_id) {
+                            open_file = "open_file";
+                        }else{
+                            open_file = "";
+                        }
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+' '+open_file+'">';
+                        
                         
                             htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[x+i].post_id+"'>";
                             htmlData += response.user_posts[x+i].post_title;
                        
                         htmlData += '</td>';
-                     }
+                     }else{
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="">';
+                        htmlData += '</td>';
+                    }
                     htmlData += '<td nowrap="nowrap">'+ (start_from+i+y+1) +'</td>';
                     if ((start_from+y+i) < response.total_user_post) {
-                        if (restore_post_ids.indexOf(response.user_posts[y+i].post_id) !== -1)
-                        {
+                        if (restore_post_ids.indexOf(response.user_posts[y+i].post_id) !== -1) {
                             extra_class ="recent_restore";
                         }else{
-                            extra_class ="";
+                            extra_class = "";
                         }
-                        htmlData += '<td nowrap="nowrap" width="30%" class="content_title '+extra_class+'">';
+                        if (open_file_id==response.user_posts[i].post_id) {
+                            open_file = "open_file";
+                        }else{
+                            open_file = "";
+                        }
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="content_title '+extra_class+' '+open_file+'">';
                     
                         htmlData += "<input type='hidden' name='word_id' id'word_id' class='word_id' value='"+response.user_posts[y+i].post_id+"'>";
                         htmlData += response.user_posts[y+i].post_title;
                     
+                        htmlData += '</td>';
+                    }else{
+                        htmlData += '<td nowrap="nowrap" att-post-id="" width="30%" class="">';
                         htmlData += '</td>';
                     }
                 htmlData += '</tr>';
@@ -3114,6 +3150,7 @@ jQuery(document).ready(function ($) {
         })
         .always(function () {
             console.log("complete");
+            $("#ajax_loading_aria").removeClass('show').addClass('hide');
         });
     });
 

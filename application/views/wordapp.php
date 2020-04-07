@@ -1041,7 +1041,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <input type="hidden" id="total_user_post" name="total_user_post" value="0">
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
         
-        <button type="button" class="btn btn-warning btn_table1 pull-right" disabled="disabled" id="word_previous_page" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="前の頁へ" data-placement="auto top">
+        <button type="button" class="btn btn-warning btn_table1 pull-right" id="word_previous_page" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="前の頁へ" data-placement="auto top">
             前
         </button>
         <button type="button" class="btn btn-primary btn_table1 pull-right" id="delete_file" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="文章を削除します" data-placement="auto top"> 削除</button>
