@@ -1331,8 +1331,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="clearfix"></div>
 
 
-<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 pull-right hide font_family_aria" id="font_family_aria"
-     style="position: fixed; right: 5px; bottom: 5px; padding: 4px; background-color: #FFFFFF; border-radius: 2px;">
+<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 pull-right hide font_family_aria resp" id="font_family_aria"
+     style="">
     <div class="col-lg-12" style="padding: 0">
         <button type="button" style="margin-bottom: 10px; margin-right: 0;"
                 class="btn btn-warning pull-right btn_keipro" id="close_family_aria">戻る
@@ -1396,13 +1396,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--</div>-->
 <!--<div class="clearfix"></div>-->
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 pull-right hide draggable_aria" id="word_function_aria"
-     style="position: fixed; right: 30px; width: 350px; bottom: 20px; padding: 4px;">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 pull-right hide draggable_aria resp delete_confirm_alirt" id="word_function_aria"
+     style="">
 
     <div class="panel panel-info" style="margin-bottom: 2px; border: 2px solid #eee;">
         <div class="col-md-12" style="margin-top: 10px;">
             <button type="button" id="close_function_aria" class="btn btn-warning popup_button pull-right" id="close-app" title="戻る">戻る
             </button>
+            <div class="clearfix"></div>
         </div>
         <div class="col-md-12 panel-body">            
             <button class="btn btn-info popup_button" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="絵・図" data-placement="auto top" data-trigger="hover" id="btn-shapes-design">絵・図</button>
