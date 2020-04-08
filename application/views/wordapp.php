@@ -89,10 +89,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 position: absolute;
                 left: 0px;
                 width: 100%;
-                bottom: 150px;
+                bottom: 20px;
             }
         }
 
+        .mce-floatpanel{
+            background-color: red;
+            border-width: 1px; 
+            z-index: 65536; 
+            left: 448px; 
+            top: 73px; 
+            width: 638px; 
+            height: 384px;
+        }
         /*.mce-content-body.my_class{*/
         /*padding-left: 50px;*/
         /*padding-right: 50px;*/
