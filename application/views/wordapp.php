@@ -666,7 +666,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <?php
         }
         ?>
-        <div class="dropdown" style="float: right">
+        <div class="dropdown" style="float: right; z-index: 1200;">
             <button class="btn-success dropdown-toggle" type="button" data-toggle="dropdown">
                 <?php
                 if ($account->company_name != '')
@@ -1243,11 +1243,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 hide pull-right font_size_aria" id="font_size_aria"
-     style="position: fixed; right: 5px; bottom: 5px; padding: 4px; background-color: #FFFFFF; border-radius: 2px;">
+<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 hide pull-right font_size_aria resp" id="font_size_aria"
+     style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
     <div class="col-lg-12" style="padding: 0">
         <button type="button" style="margin-bottom: 10px; margin-right: 0;"
-                class="btn btn-warning pull-right btn_keipro" id="close_font_size_aria">戻る
+                class="btn btn-warning btn-lg pull-right" id="close_font_size_aria">戻る
         </button>
     </div>
     <div class="clearfix"></div>
@@ -1331,8 +1331,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="clearfix"></div>
 
 
-<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 pull-right hide font_family_aria resp" id="font_family_aria"
-     style="">
+<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 pull-right hide font_family_aria resp" id="font_family_aria" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
     <div class="col-lg-12" style="padding: 0">
         <button type="button" style="margin-bottom: 10px; margin-right: 0;"
                 class="btn btn-warning pull-right btn_keipro" id="close_family_aria">戻る
@@ -1432,15 +1431,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="clearfix"></div>
 </div>
 <!-- Font Color Aria -->
-<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 pull-right hide draggable_aria font_color_aria" id="font_color_aria"
-     style="position: fixed; right: 0px; bottom: 0px; padding: 4px;">
+<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 pull-right hide draggable_aria font_color_aria resp" id="font_color_aria" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
 
-    <div class="panel panel-info" style="margin-bottom: 2px; border: 2px solid #eee;">
-        <div class="panel-body">
-            <div class="col-md-12">
-                <button type="button" class="btn btn-info pull-right btn_popup" id="close_font_color_aria">戻る</button>
-            </div>
-
+    <div class="row" style="">
+        <div class="col-sm-12">
+            <button type="button" class="btn btn-warning btn-lg pull-right" id="close_font_color_aria" style="margin-bottom: 10px;">戻る</button>
+            <div class="clearfix"></div> 
+        </div>
+            
+        <div class="col-sm-12">
             <table class="table table-bordered">
                 <input type="hidden" id="show_color_popup" name="show_color_popup" value="0">
                 <tr>
@@ -1454,6 +1453,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <td onclick="word_font_color('#8B4513');" style="background-color: #8B4513;"></td>
                 </tr>
             </table>
+        </div>
+           
         </div>
     </div>
 </div>

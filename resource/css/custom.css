@@ -573,11 +573,7 @@ textarea.tinyMCE {
     cursor: pointer;
 }
 
-.font_color_aria table td {
-    width: 60px;
-    height: 60px;
-    border: 5px solid #fff;
-}
+
 
 .word_image_selection_message {
     position: fixed;
@@ -656,7 +652,23 @@ textarea.tinyMCE {
     background-color: #FFFFFF; 
     border-radius: 2px;
 }
+.font_size_aria{
+    position: fixed; 
+    right: 5px; 
+    bottom: 5px; 
+    padding: 4px; 
+    background-color: #FFFFFF; 
+}
+.font_color_aria{
+    position: fixed; right: 0px; bottom: 0px; padding: 4px;
+    background-color: white;
+}
 
+.font_color_aria table td {
+    width: 60px;
+    height: 60px;
+    border: 5px solid #fff;
+}
 @media only screen and (max-width: 768px) {
     .delete_confirm_alirt{
         position: fixed; 
@@ -664,5 +676,17 @@ textarea.tinyMCE {
         right: 0px; 
         bottom: 10px; 
         padding: 4px;
+    }
+
+    .left_content_aria{
+        display: none;
+    }
+    .font_size_aria{
+        position: fixed; 
+        /*width: 100%;*/
+        /*right: 5px; */
+        bottom: 5px; 
+        padding: 4px; 
+        background-color: #FFFFFF; 
     }
 }
