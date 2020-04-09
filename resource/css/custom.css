@@ -689,4 +689,13 @@ textarea.tinyMCE {
         padding: 4px; 
         background-color: #FFFFFF; 
     }
+
+    .home_page_navi {
+        position: fixed;
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+        padding: 4px;
+        width: 100%;
+    }
 }
