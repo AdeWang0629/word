@@ -3475,6 +3475,15 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
         $("#new_partner_registration_form").hide();
     });
+    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $(".btn").click(function(event) {
+            setTimeout(function() {
+                $(".popover").css('display', 'none');
+            }, 1000);
+        });        
+    }
+    
+    
 
 });
 

@@ -1119,7 +1119,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     
 
-    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt resp" id="select_document"
+    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria select_document" id="select_document"
          style="">
 
         <div class="panel panel-warning"
@@ -1243,7 +1243,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 hide pull-right font_size_aria resp" id="font_size_aria"
+<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 hide pull-right font_size_aria" id="font_size_aria"
      style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
     <div class="col-lg-12" style="padding: 0">
         <button type="button" style="margin-bottom: 10px; margin-right: 0;"
@@ -1331,7 +1331,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="clearfix"></div>
 
 
-<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 pull-right hide font_family_aria resp" id="font_family_aria" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
+<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 pull-right hide font_family_aria" id="font_family_aria" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
     <div class="col-lg-12" style="padding: 0">
         <button type="button" style="margin-bottom: 10px; margin-right: 0;"
                 class="btn btn-warning pull-right btn_keipro" id="close_family_aria">戻る
@@ -1431,7 +1431,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="clearfix"></div>
 </div>
 <!-- Font Color Aria -->
-<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 pull-right hide draggable_aria font_color_aria resp" id="font_color_aria" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
+<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 pull-right hide draggable_aria font_color_aria" id="font_color_aria" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
 
     <div class="row" style="">
         <div class="col-sm-12">
@@ -1890,7 +1890,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt resp" id="restore_select_document" style="">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria restore_select_document" id="restore_select_document" style="">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">

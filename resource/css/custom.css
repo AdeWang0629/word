@@ -643,6 +643,21 @@ textarea.tinyMCE {
     bottom: 10px; 
     padding: 4px;
 }
+.restore_select_document{
+    position: fixed; 
+    width: 380px; 
+    right: 30px; 
+    bottom: 10px; 
+    padding: 4px;
+}
+
+.select_document{
+    position: fixed; 
+    width: 380px; 
+    right: 30px; 
+    bottom: 10px; 
+    padding: 4px;
+}
 
 .font_family_aria{
     position: fixed; 
@@ -682,10 +697,9 @@ textarea.tinyMCE {
         display: none;
     }
     .font_size_aria{
-        position: fixed; 
-        /*width: 100%;*/
-        /*right: 5px; */
-        bottom: 5px; 
+        position: absolute; 
+        width: 98%;
+        bottom: 0px; 
         padding: 4px; 
         background-color: #FFFFFF; 
     }
@@ -696,5 +710,53 @@ textarea.tinyMCE {
         bottom: 0px;
         padding: 4px;
         width: 100%;
+    }
+
+    .font_color_aria{
+        position: absolute; right: 0px; bottom: 0px; padding: 4px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .font_family_aria{
+        position: absolute; 
+        width: 98%;
+        bottom: 0px; 
+        padding: 4px; 
+        background-color: #FFFFFF; 
+        border-radius: 2px;
+    }
+
+    .delete_confirm_alirt{
+        position: absolute; 
+        width: 98%; 
+        right:0px; 
+        bottom: 0px; 
+        padding: 4px;
+    }
+
+    .table_of_contantes {
+        position: absolute;
+        bottom: 0px;
+        padding: 10px;
+        border: 2px solid #ababab;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        background-color: #FFF;
+    }
+
+    .restore_select_document{
+        position: absolute; 
+        width: 98%; 
+        right: 0px; 
+        bottom: 0px; 
+        padding: 4px;
+    }
+    .select_document{
+        position: absolute; 
+        width: 98%; 
+        right: 0px; 
+        bottom: 50px; 
+        padding: 4px;
     }
 }
