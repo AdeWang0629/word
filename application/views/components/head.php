@@ -16,7 +16,8 @@
 <link type="text/css" rel="stylesheet" href="<?php echo base_url('resource/dist/css/bootstrap-theme.min.css'); ?>"/>
 <link type="text/css" rel="stylesheet" href="<?php echo base_url('resource/css/font-awesome.min.css'); ?>"/>
 <link type="text/css" rel="stylesheet" href="<?php echo base_url('resource/css/custom.css'); ?>"/>
-<link type="text/css" rel="stylesheet" href="<?php echo base_url('resource/css/word_responsive.css'); ?>"/> 
+<link rel="stylesheet" type="text/css" href="<?php echo base_url().RES_DIR; ?>/css/custom.css?id=<?php echo rand(0,10000)?>">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url().RES_DIR; ?>/css/word_responsive.css?id=<?php echo rand(0,10000)?>">
 <link type="text/css" rel="stylesheet" href="<?php echo base_url('resource/css/email_modal.css'); ?>"/>
 <link type="text/css" rel="stylesheet" href="<?php echo base_url('resource/css/sign-in.css'); ?>"/>
 
