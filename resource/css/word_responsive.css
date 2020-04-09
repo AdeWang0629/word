@@ -78,14 +78,14 @@ and open the template in the editor.
         font-weight: normal;
     }
 
-    .home_page_navi {
+    /*.home_page_navi {
         position: fixed;
         right: 50px;
         bottom: 10px;
         padding: 4px;
         font-weight: normal;
         font-size: 16px;
-    }
+    }*/
     .notification_aria {
         position: fixed;
         right: 50px;
@@ -201,14 +201,14 @@ and open the template in the editor.
 
 @media only screen and (min-device-width: 540px) and (max-device-width: 650px) {
 
-    .home_page_navi {
+    /*.home_page_navi {
         position: fixed;
         right: 100px;
         bottom: 10px;
         padding: 4px;
         font-size: 18px;
         width: 400px;
-    }
+    }*/
     .notification_aria {
         position: fixed;
         right: 100px;
@@ -553,14 +553,14 @@ and open the template in the editor.
         font-weight: normal;
     }
 
-    .home_page_navi {
+    /*.home_page_navi {
         position: fixed;
         right: 50px;
         bottom: 10px;
         padding: 4px;
         font-weight: normal;
         font-size: 16px;
-    }
+    }*/
     .notification_aria {
         position: fixed;
         right: 50px;
@@ -725,14 +725,14 @@ and open the template in the editor.
         z-index: 1000;
     }
 
-    .home_page_navi {
+    /*.home_page_navi {
         position: fixed;
         right: 100px;
         bottom: 10px;
         padding: 4px;
         font-size: 18px;
         width: 500px;
-    }
+    }*/
     .notification_aria {
         position: fixed;
         right: 100px;
@@ -1086,7 +1086,7 @@ and open the template in the editor.
         font-weight: normal;
     }
 
-    .home_page_navi {
+    /*.home_page_navi {
         position: fixed;
         right: 50px;
         bottom: 10px;
@@ -1095,7 +1095,7 @@ and open the template in the editor.
         font-size: 16px;
         width: 80% !important;
 
-    }
+    }*/
     .notification_aria {
         position: fixed;
         right: 50px;
@@ -1263,14 +1263,14 @@ and open the template in the editor.
         min-width: 60px;
     }
 
-    .home_page_navi {
+    /*.home_page_navi {
         position: fixed;
         right: 100px;
         bottom: 10px;
         padding: 4px;
         font-size: 18px;
         width: 500px;
-    }
+    }*/
     .notification_aria {
         position: fixed;
         right: 100px;

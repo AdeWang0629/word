@@ -691,10 +691,9 @@ textarea.tinyMCE {
     }
 
     .home_page_navi {
-        position: fixed;
         position: absolute;
         right: 0px;
-        bottom: 10px;
+        bottom: 0px;
         padding: 4px;
         width: 100%;
     }
