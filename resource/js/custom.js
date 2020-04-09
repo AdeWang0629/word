@@ -3480,7 +3480,9 @@ jQuery(document).ready(function ($) {
             setTimeout(function() {
                 $(".popover").css('display', 'none');
             }, 1000);
-        });        
+        });
+
+        $("#show_table_of_content").attr('data-placement', 'auto bottom');        
     }
     
     
