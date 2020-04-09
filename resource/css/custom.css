@@ -210,11 +210,6 @@ body {
     font-weight: bold;
 }
 
-#word_function_aria .btn {
-}
-
-.table_of_contantes .button_aria .btn {
-}
 
 /*Table of parter*/
 
@@ -643,6 +638,13 @@ textarea.tinyMCE {
     bottom: 10px; 
     padding: 4px;
 }
+.word_function_aria{
+    position: fixed; 
+    width: 380px; 
+    right: 10px; 
+    bottom: 10px; 
+    padding: 4px;
+}
 .restore_select_document{
     position: fixed; 
     width: 380px; 
@@ -685,13 +687,6 @@ textarea.tinyMCE {
     border: 5px solid #fff;
 }
 @media only screen and (max-width: 768px) {
-    .delete_confirm_alirt{
-        position: fixed; 
-        width: 100%; 
-        right: 0px; 
-        bottom: 10px; 
-        padding: 4px;
-    }
 
     .left_content_aria{
         display: none;
@@ -757,6 +752,13 @@ textarea.tinyMCE {
         width: 98%; 
         right: 0px; 
         bottom: 50px; 
+        padding: 4px;
+    }
+    .word_function_aria{
+        position: absolute; 
+        width: 98%; 
+        right: 0px; 
+        bottom: 0px; 
         padding: 4px;
     }
 }

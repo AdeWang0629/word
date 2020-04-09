@@ -1395,7 +1395,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--</div>-->
 <!--<div class="clearfix"></div>-->
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 pull-right hide draggable_aria resp delete_confirm_alirt" id="word_function_aria"
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 pull-right hide draggable_aria word_function_aria" id="word_function_aria"
      style="">
 
     <div class="panel panel-info" style="margin-bottom: 2px; border: 2px solid #eee;">
