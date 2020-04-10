@@ -1213,8 +1213,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="clearfix"></div>
 </div>
 
-<div class="col-lg-4 col-md-5 col-sm-4 col-xs-10 pull-right hide draggable_aria close_aria" id="blanck_document_message"
-     style="position: fixed; right: 210px; bottom: 5px; padding: 4px;">
+<div class="col-lg-4 col-md-5 col-sm-4 col-xs-10 pull-right hide draggable_aria close_aria blanck_document_message" id="blanck_document_message"
+     style="">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1478,7 +1478,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <!-- Font Color Aria -->
-<div class="col-md-3 col-sm-3 pull-right draggable_aria close_aria" id="ajax_loading_aria"
+<div class="col-md-3 col-sm-3 pull-right draggable_aria close_aria ajax_loading_aria" id="ajax_loading_aria"
      style="position: fixed; right: 0px; bottom: 0px; padding: 4px; display: none;">
 
     <div class="panel panel-info" style="margin-bottom: 2px; border: 2px solid #eee;">
@@ -1944,7 +1944,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria resp restore_select_document" id="permanent_file_deleted" style="">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria restore_select_document" id="permanent_file_deleted" style="">
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body" style="font-size: 20px;">

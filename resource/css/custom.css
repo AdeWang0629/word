@@ -731,6 +731,13 @@ textarea.tinyMCE {
     padding: 4px;
 }
 
+.blanck_document_message{
+    position: fixed; 
+    right: 10px; 
+    bottom: 5px; 
+    padding: 4px;
+}
+
 @media only screen and (max-width: 768px) {
 
     .left_content_aria{
@@ -861,6 +868,14 @@ textarea.tinyMCE {
     }
 
     .ajax_loading_aria{
+        position: absolute; 
+        width: 98%; 
+        right: 0px; 
+        bottom: 0px; 
+        padding: 4px;
+    }
+
+    .blanck_document_message{
         position: absolute; 
         width: 98%; 
         right: 0px; 

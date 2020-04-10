@@ -666,13 +666,13 @@ and open the template in the editor.
     }*/
 
 
-    #blanck_document_message {
+    /*#blanck_document_message {
         right: 50px !important;
     }
 
     #blanck_document_message .panel-body {
         padding: 5px;
-    }
+    }*/
 
 
 }
@@ -906,14 +906,14 @@ and open the template in the editor.
         padding: 4px;
     }*/
 
-    #blanck_document_message {
+    /*#blanck_document_message {
         right: 130px !important;
         width: 400px;
     }
 
     #blanck_document_message .panel-body {
         padding: 5px;
-    }
+    }*/
 
 
 
@@ -1202,13 +1202,13 @@ and open the template in the editor.
     }*/
 
 
-    #blanck_document_message {
+    /*#blanck_document_message {
         right: 40px !important;
     }
 
     #blanck_document_message .panel-body {
         padding: 10px;
-    }
+    }*/
 
 
 }
@@ -1462,11 +1462,11 @@ and open the template in the editor.
 
     }
 
-    #blanck_document_message {
+    /*#blanck_document_message {
         right: 110px !important;
         width: 55%;
 
-    }
+    }*/
     .panel-body {
         padding: 5px;
     }
@@ -1548,13 +1548,13 @@ and open the template in the editor.
         align-items: flex-start;
     }
 
-    #blanck_document_message {
+    /*#blanck_document_message {
         right: 50px !important;
     }
 
     #blanck_document_message.panel-body {
         padding: 5px;
-    }
+    }*/
 
 
     div#popover291550 {
