@@ -1080,7 +1080,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="clearfix"></div>
 
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria delete_confirm_alirt resp" id="delete_confirm_alirt"
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria delete_confirm_alirt" id="delete_confirm_alirt"
          style="">
 
         <div class="panel panel-warning"
@@ -1102,7 +1102,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt resp" id="deleted_file_deleted" style="">
+    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt" id="deleted_file_deleted" style="">
         <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
             <div class="panel-body" style="font-size: 20px;">
@@ -1870,7 +1870,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria delete_confirm_alirt resp" id="restore_confirm_alirt" style="">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria delete_confirm_alirt" id="restore_confirm_alirt" style="">
 
     <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1903,7 +1903,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt resp" id="deleted_file_restored" style="">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt" id="deleted_file_restored" style="">
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body" style="font-size: 20px;">
@@ -1916,7 +1916,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt resp" id="deleted_file_deleted" style="">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria delete_confirm_alirt" id="deleted_file_deleted" style="">
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body" style="font-size: 20px;">
