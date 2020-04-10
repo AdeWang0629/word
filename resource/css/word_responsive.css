@@ -185,13 +185,13 @@ and open the template in the editor.
         overflow-y: scroll;
     }
 
-    .word_image_selection_message {
+    /*.word_image_selection_message {
         position: fixed;
         width: 300px;
         right: 50px;
         bottom: 5px;
         padding: 4px;
-    }
+    }*/
 
 
 
@@ -371,12 +371,12 @@ and open the template in the editor.
         /*overflow: hidden;*/
     }
 
-    .word_image_selection_message {
+    /*.word_image_selection_message {
         position: fixed;
         right: 100px;
         bottom: 5px;
         padding: 4px;
-    }
+    }*/
 
     .btn_scpecial {
         text-align: center;
@@ -388,7 +388,6 @@ and open the template in the editor.
         height: 50px;
         font-weight: normal;
     }
-
 }
 
 
@@ -658,13 +657,13 @@ and open the template in the editor.
         overflow-y: scroll;
     }
 
-    .word_image_selection_message {
+    /*.word_image_selection_message {
         position: fixed;
         width: 300px;
         right: 50px;
         bottom: 5px;
         padding: 4px;
-    }
+    }*/
 
 
     #blanck_document_message {
@@ -900,12 +899,12 @@ and open the template in the editor.
         /*overflow: hidden;*/
     }
 
-    .word_image_selection_message {
+    /*.word_image_selection_message {
         position: fixed;
         right: 100px;
         bottom: 5px;
         padding: 4px;
-    }
+    }*/
 
     #blanck_document_message {
         right: 130px !important;
@@ -1194,13 +1193,13 @@ and open the template in the editor.
         overflow-y: scroll;
     }
 
-    .word_image_selection_message {
+    /*.word_image_selection_message {
         position: fixed;
         width: 300px;
         right: 50px;
         bottom: 5px;
         padding: 4px;
-    }
+    }*/
 
 
     #blanck_document_message {
@@ -1426,12 +1425,12 @@ and open the template in the editor.
 
     }
 
-    .word_image_selection_message {
+    /*.word_image_selection_message {
         position: fixed;
         right: 100px;
         bottom: 5px;
         padding: 4px;
-    }
+    }*/
 
     .btn_scpecial {
         border-radius: 6px;

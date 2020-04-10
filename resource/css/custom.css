@@ -569,14 +569,6 @@ textarea.tinyMCE {
 }
 
 
-
-.word_image_selection_message {
-    position: fixed;
-    right: 210px;
-    bottom: 5px;
-    padding: 4px;
-}
-
 .jcs_mdl {
     position: absolute;
     right: 10px;
@@ -693,6 +685,52 @@ textarea.tinyMCE {
     height: 60px;
     border: 5px solid #fff;
 }
+.word_image_selection_message {
+    position: fixed;
+    width: 340px;
+    right: 10px;
+    bottom: 5px;
+    padding: 4px;
+}
+
+.word_image_past_message {
+    position: fixed;
+    width: 350px;
+    right: 10px;
+    bottom: 5px;
+    padding: 4px;
+}
+
+.word_image_past_confirmation{
+    position: fixed;
+    width: 350px;
+    right: 10px;
+    bottom: 5px;
+    padding: 4px;
+}
+
+.word_image_zooming{
+    position: fixed;
+    width: 450px;
+    right: 10px;
+    bottom: 5px;
+    padding: 4px;
+}
+.word_image_upload_completed{
+    position: fixed;
+    width: 350px;
+    right: 10px;
+    bottom: 5px;
+    padding: 4px;
+}
+
+.ajax_loading_aria{
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    padding: 4px;
+}
+
 @media only screen and (max-width: 768px) {
 
     .left_content_aria{
@@ -748,6 +786,8 @@ textarea.tinyMCE {
         padding: 4px;
     }
 
+
+
     .table_of_contantes {
         position: absolute;
         bottom: 0px;
@@ -773,6 +813,54 @@ textarea.tinyMCE {
         padding: 4px;
     }
     .word_function_aria{
+        position: absolute; 
+        width: 98%; 
+        right: 0px; 
+        bottom: 0px; 
+        padding: 4px;
+    }
+
+    .word_image_selection_message{
+        position: absolute; 
+        width: 98%; 
+        right: 0px; 
+        bottom: 0px; 
+        padding: 4px;
+    }
+
+    .word_image_past_message{
+         position: absolute; 
+        width: 98%; 
+        right: 0px; 
+        bottom: 0px; 
+        padding: 4px;
+    }
+
+    .word_image_past_confirmation{
+        position: absolute; 
+        width: 98%; 
+        right: 0px; 
+        bottom: 0px; 
+        padding: 4px;
+    }
+
+    .word_image_zooming{
+        position: absolute; 
+        width: 98%; 
+        right: 0px; 
+        bottom: 0px; 
+        padding: 4px;
+    }
+
+    .word_image_upload_completed{
+        position: absolute; 
+        width: 98%; 
+        right: 0px; 
+        bottom: 0px; 
+        padding: 4px;
+    }
+
+    .ajax_loading_aria{
         position: absolute; 
         width: 98%; 
         right: 0px; 

@@ -1489,10 +1489,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <!-- Image Selection message -->
-<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pull-right hide draggable_aria word_image_selection_message" id="word_image_selection_message" style="position: fixed; right: 20px; bottom: 15px;">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right hide draggable_aria word_image_selection_message" id="word_image_selection_message" style="">
 
-    <div class="panel panel-warning"
-         style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+    <div class="panel panel-warning"style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body">
             <div class="col-md-12" style="padding: 0">
                 <h5 class="pull-left" style="font-size: 20px;">何を挿入しますか？</h5> 
@@ -1526,13 +1525,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!-- Cursor Confermation -->
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 pull-right hide draggable_aria" id="word_image_past_message"
-     style="position: fixed; right: 20px; bottom: 5px; padding: 4px;">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 pull-right hide draggable_aria word_image_past_message" id="word_image_past_message" style="">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body">
-            <p style="font-size: 24px;">
+            <p style="font-size: 18px;">
                 どこに貼り付けますか？ <br> カーソルで指定し、位置を決めて下さい。
             </p>
             <center>
@@ -1545,8 +1543,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!-- Image Past Confirmation -->
 
-<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 pull-right hide draggable_aria" id="word_image_past_confirmation"
-     style="position: fixed; right: 20px; bottom: 5px; padding: 4px;">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 pull-right hide draggable_aria word_image_past_confirmation" id="word_image_past_confirmation"style="">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1563,8 +1560,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <!-- Image Zoom -->
-<div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 pull-right hide draggable_aria" id="word_image_zooming"
-     style="position: fixed; right: 20px; width:450px; bottom: 5px; padding: 4px;">
+<div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 hide draggable_aria word_image_zooming" id="word_image_zooming"
+     style="">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1596,8 +1593,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 <!-- Image Upload Completed -->
-<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 pull-right hide draggable_aria close_aria"
-     id="word_image_upload_completed" style="position: fixed; width: 350px; right: 20px; bottom: 5px; padding: 4px;">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 pull-right hide draggable_aria close_aria word_image_upload_completed"
+     id="word_image_upload_completed" style="">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1960,8 +1957,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="pull-right draggable_aria hide resp" id="ajax_loading_aria"
-     style="position: fixed; right: 10px; bottom: 0px; padding: 4px;">
+<div class="pull-right draggable_aria hide ajax_loading_aria" id="ajax_loading_aria"
+     style="">
 
     <div class="panel panel-info" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body" style="color: #000; font-weight: bold;">
