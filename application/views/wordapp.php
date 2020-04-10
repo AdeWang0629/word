@@ -762,7 +762,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <button class="btn btn-success btn_keipro" data-html="true" role="button" data-toggle="popover"
                             data-container="body" id="income_sheet_btn" title="" data-content="表計算<br>。。。。。"
-                            data-placement="bottom left" data-trigger="hover">表計算
+                            data-placement="auto left" data-trigger="hover">表計算
                     </button>
                     <button class="btn btn-success btn_keipro" id="inserImage" data-html="true" role="button"
                             data-toggle="popover" data-container="body" title="" data-content="挿し絵<br>写真や画像を文中に入れられます"
@@ -771,7 +771,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <button class="btn btn-success btn_keipro" id="word_function" data-html="true" role="button"
                             data-toggle="popover" data-container="body" title="" data-content="機能<br>多くの機能があり、選択して使用します。ご確認ください。
-                                    " data-placement="bottom" data-trigger="hover">機能
+                                    " data-placement="auto left" data-trigger="hover">機能
                     </button>
 
                     <!--                            <button class="btn btn-success btn_keipro" id="shapes" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content=" 絵・図 " data-placement="bottom" data-trigger="hover"> 絵・図</button>-->
@@ -801,8 +801,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--                    </button>-->
 
                     <a style="height: 33px; min-width: 80px; border-radius: 6px;" id="destroy_session" data-html="true"
-                       class="btn btn-success sign_out_btn" role="button" data-toggle="popover" data-container="body"
-                       title="" data-content="終了<br>全てを終了します。自動保存で安心です。" data-placement="left"
+                       class="btn btn-success sign_out_btn btn_keipro" role="button" data-toggle="popover" data-container="body"
+                       title="" data-content="終了<br>全てを終了します。自動保存で安心です。" data-placement="auto left"
                        data-trigger="hover">終了</a>
 
 
@@ -1119,7 +1119,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     
 
-    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria select_document" id="select_document"
+    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria select_document" id="select_document"
          style="">
 
         <div class="panel panel-warning"
