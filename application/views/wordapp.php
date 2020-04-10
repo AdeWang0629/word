@@ -1119,7 +1119,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     
 
-    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria select_document" id="select_document"
+    <div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria select_document" id="select_document"
          style="">
 
         <div class="panel panel-warning"
