@@ -638,6 +638,13 @@ textarea.tinyMCE {
     bottom: 10px; 
     padding: 4px;
 }
+.restore_confirm_alirt{
+    position: fixed; 
+    width: 380px; 
+    right: 30px; 
+    bottom: 10px; 
+    padding: 4px;
+}
 .word_function_aria{
     position: fixed; 
     width: 380px; 
@@ -730,6 +737,14 @@ textarea.tinyMCE {
         width: 98%; 
         right:0px; 
         bottom: 130px; 
+        padding: 4px;
+    }
+
+    .restore_confirm_alirt{
+        position: absolute; 
+        width: 98%; 
+        right:0px; 
+        bottom: 20px; 
         padding: 4px;
     }
 

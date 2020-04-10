@@ -1035,17 +1035,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="col-lg-10 col-md-10 col-sm-11 col-xs-11 pull-right table_of_contantes hide draggable_aria resp"
      id="table_of_contantes">
     <div style="padding: 0px;" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 title_aria">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding: 10px 0px">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding: 10px 0px">
             <strong>目次 <span class="span-title-list-files"
                              style="border: 1px red dashed; font-size: 16px;">（直近順に表示）</span></strong>
         </div>
-        <div style="padding: 0px;" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+        <div style="padding: 0px;" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <strong>
                 <p>新文章の先頭15文字が、目次に自動登録されます。</p>
                 <p>目次変更は文章を押し訂正します。</p>
             </strong>
         </div>
-
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 button_aria">
 
@@ -1138,7 +1137,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="col-lg-10 col-md-10 col-sm-11 col-xs-11 pull-right table_of_contantes hide draggable_aria resp"
      id="table_of_trash_files">
     <div style="padding: 0px;" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 title_aria">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 10px 0px">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 10px 0px">
             <strong>ゴミ箱 <span class="span-title-list-files"
                               style="border: 1px red dashed; font-size: 16px;">（直近順に表示）</span></strong>
         </div>
@@ -1870,7 +1869,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria delete_confirm_alirt" id="restore_confirm_alirt" style="">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria restore_confirm_alirt" id="restore_confirm_alirt" style="">
 
     <div class="panel panel-warning"
              style="margin-bottom: 2px; border: solid 2px #e74c3c; border-top: solid 7px #e74c3c; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
