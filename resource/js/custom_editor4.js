@@ -1205,8 +1205,10 @@ function change_font_family(font_name) {
     if (font_name == "hgp創英角ﾎﾟｯﾌﾟ体,hg創英角ﾎﾟｯﾌﾟ体") {
         checked_font = "font_5";
     }
-
-    tinymce.get('doc_content').execCommand("fontName", false, font_name);
+    $("#change_font_family").val(font_name);
+    // if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // tinymce.get('doc_content').execCommand("fontName", false, font_name);
+    // }
     $("#" + checked_font).addClass('checked');
 }
 
@@ -1380,8 +1382,9 @@ function word_font_color(color_code) {
     $("#font_color_mapping").val(1);
     $("#apply_style").val(1);
     $("#font_color_code_mapping").val("#000000");
+    $("#word_font_color").val(color_code);
     // $("#font_color_code_mapping").val(color_code);
-    tinymce.get('doc_content').execCommand('ForeColor', false, color_code);
+    // tinymce.get('doc_content').execCommand('ForeColor', false, color_code);
 }
 
 function find_replace() {
@@ -1427,7 +1430,8 @@ function change_font_size(font_size, font_size_number) {
     $("#apply_style").val(1);
     $("#font_size_number_mapping").val("18.666667px");
     $("#font_color_code_mapping").val("#000000");
-    tinymce.get('doc_content').execCommand("fontSize", false, font_size);
+    $("#change_font_size").val(font_size);
+    // tinymce.get('doc_content').execCommand("fontSize", false, font_size);
     // tinymce.get('doc_content2').execCommand("fontSize", false, font_size);
     // tinymce.get('doc_content3').execCommand("fontSize", false, font_size);
     // tinymce.get('doc_content4').execCommand("fontSize", false, font_size);

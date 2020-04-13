@@ -873,6 +873,8 @@ jQuery(document).ready(function ($) {
 
     $("#close_font_size_aria").click(function (event) {
         $("#font_size_aria").removeClass('show').addClass('hide');
+        var change_font_size = $("#change_font_size").val();
+        tinymce.get('doc_content').execCommand("fontSize", false, change_font_size);
     });
     $("#email_close_font_size_aria").click(function (event) {
         $("#email_font_size_aria").removeClass('show').addClass('hide');
@@ -902,6 +904,10 @@ jQuery(document).ready(function ($) {
 
     $("#close_family_aria").click(function (event) {
         $("#font_family_aria").removeClass('show').addClass('hide');
+        var change_font_family = $("#change_font_family").val();
+        // if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            tinymce.get('doc_content').execCommand("fontName", false, change_font_family);
+        // }
     });
 
     $("#email_close_family_aria").click(function (event) {
@@ -938,6 +944,8 @@ jQuery(document).ready(function ($) {
         $("#show_color_popup").val(0)
         $("#font_color_aria").removeClass('show').addClass('hide');
         $("#word_function_aria").removeClass('hide').addClass('show');
+        // $("#word_font_color").val();
+        tinymce.get('doc_content').execCommand('ForeColor', false, $("#word_font_color").val());
     });
 
     $(document).mouseup(function (e) {
@@ -3169,15 +3177,15 @@ jQuery(document).ready(function ($) {
             table_of_contantes.removeClass('show').addClass('hide');
         }
 
-        var font_family_aria = $("#font_family_aria");
-        if (!font_family_aria.is(e.target) && font_family_aria.has(e.target).length === 0) {
-            font_family_aria.removeClass('show').addClass('hide');
-        }
+        // var font_family_aria = $("#font_family_aria");
+        // if (!font_family_aria.is(e.target) && font_family_aria.has(e.target).length === 0) {
+        //     font_family_aria.removeClass('show').addClass('hide');
+        // }
 
-        var font_size_aria = $("#font_size_aria");
-        if (!font_size_aria.is(e.target) && font_size_aria.has(e.target).length === 0) {
-            font_size_aria.removeClass('show').addClass('hide');
-        }
+        // var font_size_aria = $("#font_size_aria");
+        // if (!font_size_aria.is(e.target) && font_size_aria.has(e.target).length === 0) {
+        //     font_size_aria.removeClass('show').addClass('hide');
+        // }
 
         var word_image_selection_message = $("#word_image_selection_message");
         if (!word_image_selection_message.is(e.target) && word_image_selection_message.has(e.target).length === 0) {
@@ -3189,15 +3197,15 @@ jQuery(document).ready(function ($) {
             word_function_aria.removeClass('show').addClass('hide');
         }
 
-        var font_color_aria = $("#font_color_aria");
-        if (!font_color_aria.is(e.target) && font_color_aria.has(e.target).length === 0) {
-            font_color_aria.removeClass('show').addClass('hide');
-            var show_color_popup = $("#show_color_popup").val()
-            if (show_color_popup == 1) {
-                $("#show_color_popup").val(0)
-                $("#word_function_aria").removeClass('hide').addClass('show');
-            }
-        }
+        // var font_color_aria = $("#font_color_aria");
+        // if (!font_color_aria.is(e.target) && font_color_aria.has(e.target).length === 0) {
+        //     font_color_aria.removeClass('show').addClass('hide');
+        //     var show_color_popup = $("#show_color_popup").val()
+        //     if (show_color_popup == 1) {
+        //         $("#show_color_popup").val(0)
+        //         $("#word_function_aria").removeClass('hide').addClass('show');
+        //     }
+        // }
 
         var word_canvase_aria = $("#word_canvase_aria");
         if (!word_canvase_aria.is(e.target) && word_canvase_aria.has(e.target).length === 0) {

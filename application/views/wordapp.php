@@ -714,7 +714,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <input type="hidden" name="font_color_mapping" id="font_color_mapping" value="0">
         <input type="hidden" name="font_color_code_mapping" id="font_color_code_mapping" value="0">
 
-
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 sidebar-offcanvas show" id="left_content_aria">
             <div class="left_content_aria sidebar-nav-fixed affix">
                 <center><strong>見出し表示</strong></center>
@@ -1253,6 +1252,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-lg-12" style="padding: 0;">
         <!-- <div class="col-md-12 font_size_table_parent">
         <div class="font_size_table_child"> -->
+        <input type="hidden" id="change_font_size" value="18.666667px" name="">
         <table class="table table-bordered" id="font-size-popup-table" style="margin: 0;">
             <tr>
                 <td onclick="change_font_size('10.666667px', 8)" class="font_size" id="font_size_8">8</td>
@@ -1341,6 +1341,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- <div class="font_family_aria_parent">
         <div class="font_family_aria_child"> -->
         <table class="table table-bordered" style="margin-bottom: 0;">
+            <input type="hidden" id="change_font_family" value="ms mincho, ｍｓ 明朝" name="">
             <tr>
                 <td id="font_1" onclick="change_font_family('ms mincho, ｍｓ 明朝')" class="checked">ＭＳ明朝</td>
             </tr>
@@ -1441,6 +1442,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="col-sm-12">
             <table class="table table-bordered">
                 <input type="hidden" id="show_color_popup" name="show_color_popup" value="0">
+                <input type="hidden" id="word_font_color" value="#000000" name="">
                 <tr>
                     <td onclick="word_font_color('#000000')" style="background-color: #000000;"></td>
                     <td onclick="word_font_color('#FF0000');" style="background-color: #FF0000;"></td>
