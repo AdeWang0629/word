@@ -758,6 +758,7 @@ textarea.tinyMCE {
         bottom: 0px;
         padding: 4px;
         width: 100%;
+        font-size: 13px;
     }
 
     .font_color_aria{
