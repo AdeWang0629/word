@@ -945,7 +945,6 @@ jQuery(document).ready(function ($) {
         $("#font_color_aria").removeClass('show').addClass('hide');
         $("#word_function_aria").removeClass('hide').addClass('show');
         // $("#word_font_color").val();
-        tinymce.get('doc_content').execCommand('ForeColor', false, $("#word_font_color").val());
     });
 
     $(document).mouseup(function (e) {
@@ -957,6 +956,7 @@ jQuery(document).ready(function ($) {
     $("#close_function_aria").on('click', function (event) {
         event.preventDefault();
         $("#word_function_aria").removeClass('show').addClass('hide');
+        tinymce.get('doc_content').execCommand('ForeColor', false, $("#word_font_color").val());
     });
 
     $("#email_close_function_aria").on('click', function (event) {
@@ -3192,10 +3192,10 @@ jQuery(document).ready(function ($) {
             word_image_selection_message.removeClass('show').addClass('hide');
         }
 
-        var word_function_aria = $("#word_function_aria");
-        if (!word_function_aria.is(e.target) && word_function_aria.has(e.target).length === 0) {
-            word_function_aria.removeClass('show').addClass('hide');
-        }
+        // var word_function_aria = $("#word_function_aria");
+        // if (!word_function_aria.is(e.target) && word_function_aria.has(e.target).length === 0) {
+        //     word_function_aria.removeClass('show').addClass('hide');
+        // }
 
         // var font_color_aria = $("#font_color_aria");
         // if (!font_color_aria.is(e.target) && font_color_aria.has(e.target).length === 0) {
