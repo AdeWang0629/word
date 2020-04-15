@@ -351,7 +351,7 @@ jQuery(document).ready(function ($) {
     $("#create_new_doc").click(function (event) {
         event.preventDefault();
         // location.reload();
-        tinymce.get('doc_content').getBody().focus(); // for auto focusing on tinymce editor when click
+        // tinymce.get('doc_content').getBody().focus(); // for auto focusing on tinymce editor when click
         tinymce.get('doc_content').undoManager.clear();
         var post_id = $("#post_id").val();
         // Get the HTML contents of the currently active editor

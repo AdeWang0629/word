@@ -869,7 +869,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="panel panel-info"
          style="margin-bottom: 2px; border: solid 2px #4AB9DA; border-top: solid 7px #4AB9DA; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body" style="padding: 5px;">
-            <h3>第１ナビ</h3>
+            <!-- <h3>第１ナビ</h3> -->
                 <p>1. 自動保存されますので、保存操作は不要です。</p>
                 <p>2. 新文書の先頭15文字が、目次に自動保存されます。</p>
                 <!-- 3. メールおよび、ペーパーレスのボタンを押して使用できます。 -->
@@ -2092,12 +2092,15 @@ $this->load->view('components/income_modal')
     }
 
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // $(".btn").click(function(event) {
+        //     setTimeout(function() {
+        //         $(".popover").css('display', 'none');
+        //     }, 1000);
+        // });
+        $(".btn_keipro").attr('data-placement', 'auto bottom');
         $(".btn").click(function(event) {
-            setTimeout(function() {
-                $(".popover").css('display', 'none');
-            }, 1000);
+            $(".popover").css('display', 'none');
         });
-        $(".btn_keipro").attr('data-placement', 'auto bottom');        
     }
 
 
