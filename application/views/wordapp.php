@@ -869,7 +869,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="panel panel-info"
          style="margin-bottom: 2px; border: solid 2px #4AB9DA; border-top: solid 7px #4AB9DA; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body" style="padding: 5px;">
-            <!-- <h3>第１ナビ</h3> -->
+            <h4>第１ナビ</h4>
                 <p>1. 自動保存されますので、保存操作は不要です。</p>
                 <p>2. 新文書の先頭15文字が、目次に自動保存されます。</p>
                 <!-- 3. メールおよび、ペーパーレスのボタンを押して使用できます。 -->

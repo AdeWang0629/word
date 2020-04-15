@@ -544,8 +544,8 @@ textarea.tinyMCE {
     right: 10px;
     bottom: 10px;
     padding: 4px;
-    width: 565px;
-    font-size: 22px;
+    width: 480px;
+    font-size: 18px;
 }
 .notification_aria {
     position: fixed;
