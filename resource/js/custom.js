@@ -183,7 +183,7 @@ jQuery(document).ready(function ($) {
     $("#table_close").click(function (event) {
         $("#table_of_contantes").removeClass("show").addClass("hide");
         $("#delete_confirm_alirt").removeClass("show").addClass("hide");
-        
+
     });
     $("#trash_table_close").click(function (event) {
         $("#table_of_trash_files").removeClass("show").addClass("hide");
@@ -960,7 +960,10 @@ jQuery(document).ready(function ($) {
     $("#close_function_aria").on('click', function (event) {
         event.preventDefault();
         $("#word_function_aria").removeClass('show').addClass('hide');
-        tinymce.get('doc_content').execCommand('ForeColor', false, $("#word_font_color").val());
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            tinymce.get('doc_content').execCommand('ForeColor', false, $("#word_font_color").val());
+        }
+        
     });
 
     $("#email_close_function_aria").on('click', function (event) {

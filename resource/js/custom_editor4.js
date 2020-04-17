@@ -1383,8 +1383,11 @@ function word_font_color(color_code) {
     $("#apply_style").val(1);
     $("#font_color_code_mapping").val("#000000");
     $("#word_font_color").val(color_code);
-    // $("#font_color_code_mapping").val(color_code);
-    // tinymce.get('doc_content').execCommand('ForeColor', false, color_code);
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $("#font_color_code_mapping").val(color_code);
+        tinymce.get('doc_content').execCommand('ForeColor', false, color_code);
+    }
+    
 }
 
 function find_replace() {
