@@ -2092,10 +2092,23 @@ $this->load->view('components/income_modal')
     }
 
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var pressTimer;
+        $(".btn").mouseup(function(){
+          clearTimeout(pressTimer);
+          // Clear timeout
+          return false;
+        }).mousedown(function(){
+          // Set timeout
+          pressTimer = window.setTimeout(function() {
+            $(".popover").css('display', 'none');
+        },3000);
+          return false; 
+        });
+
         // $(".btn").click(function(event) {
         //     setTimeout(function() {
         //         $(".popover").css('display', 'none');
-        //     }, 1000);
+        //     }, 3000);
         // });
         $(".btn_keipro").attr('data-placement', 'auto bottom');
         $(".btn").click(function(event) {
