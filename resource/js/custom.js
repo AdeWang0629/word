@@ -182,9 +182,13 @@ jQuery(document).ready(function ($) {
     });
     $("#table_close").click(function (event) {
         $("#table_of_contantes").removeClass("show").addClass("hide");
+        $("#delete_confirm_alirt").removeClass("show").addClass("hide");
+        
     });
     $("#trash_table_close").click(function (event) {
         $("#table_of_trash_files").removeClass("show").addClass("hide");
+        $("#permanent_delete_confirm_alirt").removeClass("show").addClass("hide");
+        $("#restore_confirm_alirt").removeClass("show").addClass("hide");
         $("#table_of_contantes").removeClass("hide").addClass("show");
         $("#show_table_of_content").click();
     });
