@@ -193,6 +193,7 @@ jQuery(document).ready(function ($) {
             '    <td width="16%" bgcolor="#FFFFFF" align="center" class="ime_on"></td>\n' +
             '  </tr>\n' +
             '</table>\n';
+        tinymce.get('doc_content').focus();
         tinymce.execCommand('mceInsertContent', false, table_content);
     });
 
