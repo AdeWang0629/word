@@ -1460,21 +1460,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 <!-- Font Color Aria -->
-<div class="col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria close_aria" id="font_cut_copy_aria"
-     style="position: fixed; right: 0px; bottom: 0px; padding: 4px;">
+<div class="col-md-4 col-sm-4 col-xs-12 pull-right hide draggable_aria close_aria font_cut_copy_aria" id="font_cut_copy_aria">
 
-    <div class="panel panel-info" style="margin-bottom: 2px; border: 2px solid #eee;">
-        <div class="panel-body" style="color: #000; font-weight: bold;">
-            <div class="col-md-12" style="padding: 0">
-                <button onclick="return_close()" type="button" class="btn btn-info pull-right" id="close_copy_cut_aria">
+    <div class="panel panel-info" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+        <div class="panel-body">
+            <div class="col-md-12" style="padding: 0;">
+                <button onclick="return_close()" type="button" class="btn btn-lg btn-warning pull-right" id="close_copy_cut_aria">
                     戻る
-                </button>
+                </button><br>
             </div>
-            <p>黒く塗った部分を、別の場所に移動します。 <br> 移動部分の先頭にカーソルを置き、
-                <br> マウスの左クリックを押し続けて黒塗りします。
-                <br> 次に。右クリックを押し「切り取り」を選び、
-                <br> 移動先にカーソルを置き、右クリックで「貼り付け」ます。
-            </p>
+            <div class="clearfix"></div>
+            <div class="col-md-12" style="padding: 0;">
+                <p style="font-size: 18px;">黒く塗った部分を、別の場所に移動します。 <br> 移動部分の先頭にカーソルを置き、
+                    <br> マウスの左クリックを押し続けて黒塗りします。
+                    <br> 次に。右クリックを押し「切り取り」を選び、
+                    <br> 移動先にカーソルを置き、右クリックで「貼り付け」ます。
+                </p>
+            </div>
+            <div class="clearfix"></div>
         </div>
     </div>
 </div>
@@ -1493,7 +1496,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- Image Selection message -->
 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right hide draggable_aria word_image_selection_message" id="word_image_selection_message" style="">
 
-    <div class="panel panel-warning"style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+    <div class="panel panel-warning" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body">
             <div class="col-md-12" style="padding: 0">
                 <h5 class="pull-left" style="font-size: 20px;">何を挿入しますか？</h5> 
@@ -2092,28 +2095,51 @@ $this->load->view('components/income_modal')
     }
 
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        var pressTimer;
-        $(".btn").mouseup(function(){
-          clearTimeout(pressTimer);
-          // Clear timeout
-          return false;
-        }).mousedown(function(){
-          // Set timeout
-          pressTimer = window.setTimeout(function() {
-            $(".popover").css('display', 'none');
-        },3000);
-          return false; 
-        });
 
-        // $(".btn").click(function(event) {
-        //     setTimeout(function() {
+        // var pressTimer;
+        // $(".btn").mouseup(function(){
+        //   clearTimeout(pressTimer);
+        //   alert("Not Show");
+        //   // Clear timeout
+        //   return false;
+        // }).mousedown(function(){
+        //     // Set timeout
+        //     alert("Show");
+        //     pressTimer = setTimeout(function() {
+        //         alert("Shown");
         //         $(".popover").css('display', 'none');
-        //     }, 3000);
+        //     },3000);
+        //     // return false; 
+        // });
+
+        $('[data-toggle="popover"]').click(function(event) {
+            setTimeout(function() {
+                $(".popover").css('display', 'none');
+            }, 3000);
+            $(".popover").css('display', 'none');
+        });
+        // $('[data-toggle="popover"]').popover({
+        //     placement: 'bottom',
+        //     delay: {
+        //         "show": 500,
+        //         "hide": 100
+        //     },
+        //     $('#element').tooltip('show')            
+        // });
+        // setTimeout(function () {
+        //     $('.popover').fadeOut('slow');
+        // }, 3000);
+
+
+        // $('[data-toggle="popover"]').click(function () {
+
+            
+
         // });
         $(".btn_keipro").attr('data-placement', 'auto bottom');
-        $(".btn").click(function(event) {
-            $(".popover").css('display', 'none');
-        });
+        // $(".btn").click(function(event) {
+        //     $(".popover").css('display', 'none');
+        // });
     }
 
 
