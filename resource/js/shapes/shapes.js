@@ -195,6 +195,9 @@ jQuery(document).ready(function ($) {
             '</table>\n';
         tinymce.get('doc_content').focus();
         tinymce.execCommand('mceInsertContent', false, table_content);
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $("#word_function_aria").removeClass('show').addClass('hide');
+        }
     });
 
 //	var canvas = new fabric.Canvas('WordCanvas');
