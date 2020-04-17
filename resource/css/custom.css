@@ -746,6 +746,18 @@ textarea.tinyMCE {
     padding: 4px;
 }
 
+.word_canvase_aria{
+    position: fixed; right: 5px; bottom: 5px; padding: 4px; 
+}
+.word_canvase_aria1{
+    position: fixed; right: 5px; bottom: 5px; padding: 4px; 
+}
+.word_canvas{
+    width: 750px;
+    overflow: scroll;
+    height: 500px;
+}
+
 @media only screen and (max-width: 768px) {
 
     .left_content_aria{
@@ -898,5 +910,26 @@ textarea.tinyMCE {
         right: 0px; 
         bottom: 0px; 
         padding: 4px;
+    }
+
+    .word_canvase_aria{
+        position: absolute; right: 0; bottom: 0; padding: 4px; 
+        height: 80%;
+        overflow: scroll;
+    }
+
+    .word_canvase_aria1{
+        position: absolute; right: 0; bottom: 0; padding: 4px; 
+        height: 80%;
+        overflow: scroll;
+    }
+    .word_canvas{
+        width: 750px;
+        overflow: scroll;
+        height: 500px;
+    }
+    .word_canvas_container{
+        width: 100%;
+        overflow: scroll;
     }
 }

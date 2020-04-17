@@ -1621,8 +1621,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <!-- Canvase Art Aria -->
-<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 pull-right hide" id="word_canvase_aria"
-     style="position: fixed; right: 5px; bottom: 5px; padding: 4px;">
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 pull-right hide word_canvase_aria" id="word_canvase_aria">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1670,8 +1669,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div> -->
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="col-lg-9 col-md-9 col-sm-12 pull-left" style="padding-left: 0px;">
-                        <canvas class="" id="WordCanvas" width="750" height="500" style="border:1px solid #ddd;">
+                    <div class="col-lg-9 col-md-9 col-sm-12 pull-left word_canvas_container" style="padding-left: 0px;">
+                        <canvas class="word_canvas" width="750" height="500" id="WordCanvas" style="border:1px solid #ddd;">
                         </canvas>
                     </div>
 
@@ -1790,8 +1789,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 
-<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 pull-right hide" id="word_canvase_aria1"
-     style="position: fixed; right: 5px; bottom: 5px; padding: 4px;">
+<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 pull-right hide word_canvase_aria1" id="word_canvase_aria1">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1838,8 +1836,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div> -->
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="col-lg-9 col-md-9 col-sm-12 pull-left" style="padding-left: 0px;">
-                        <canvas class="" id="WordCanvas1" width="750" height="500" style="border:1px solid #ddd;">
+                    <div class="col-lg-9 col-md-9 col-sm-12 pull-left word_canvas_container" style="padding-left: 0px;">
+                        <canvas class="word_canvas" id="WordCanvas1" width="750" height="500" style="border:1px solid #ddd;">
                         </canvas>
                     </div>
 
@@ -2094,6 +2092,11 @@ $this->load->view('components/income_modal')
         $('#close_shape_line_back_color_picker').hide();
     }
 
+    $(".word_canvas").css({
+        width: '750',
+        height: '500'
+    });
+
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
         // var pressTimer;
@@ -2140,6 +2143,10 @@ $this->load->view('components/income_modal')
         // $(".btn").click(function(event) {
         //     $(".popover").css('display', 'none');
         // });
+        $(".word_canvas").css({
+            width: '750',
+            height: '500'
+        });
     }
 
 

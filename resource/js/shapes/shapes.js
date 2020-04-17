@@ -500,6 +500,9 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
         var base_url = $("#base_url").val();
         // alert(base_url);die();
+        $(".word_canvase_aria").removeClass('show').addClass('hide');
+        $(".word_canvase_aria1").removeClass('show').addClass('hide');
+        $(".word_function_aria").removeClass('show').addClass('hide');
         var api_key = $("#api_key").val();
         var url = base_url + 'index.php/api/wordapp/save_shapes';
 
@@ -570,6 +573,7 @@ jQuery(document).ready(function ($) {
             })
             .done(function (data) {
                 if (data != 'error') {
+                    tinymce.get('doc_content').focus();
                     tinymce.execCommand('mceInsertContent', false, '<img  id="canvasShapesImage" src="' + data + '"> ');
                     if (from_button == 1) {
                         document.getElementById('WordCanvas1').width = 750;
