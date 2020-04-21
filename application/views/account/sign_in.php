@@ -138,20 +138,19 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                 <div class="form-group">
                     <label class="col-md-3 control-label" for="singlebutton"></label>
                     <div class="col-md-12">
-                        <button style="margin-left: 32px;" type="submit" id="singlebutton" title="ログイン"
+                        <button style="margin-left: 32px;" type="submit" id="singlebutton"
                                 name="singlebutton"
                                 class="btn btn-success"><i class="fa fa-sign-in" aria-hidden="true"></i> ログイン
                         </button>
-                        <button type="button" id="sign_up" title="新規登録" name="singlebutton"
+                        <button type="button" id="sign_up" name="singlebutton"
                                 class="btn btn-default btn-sub"><i class="fa fa-user-plus" aria-hidden="true"></i> 新規登録
                         </button>
-                        <button type="button" id="change_pass" title="パスワード変更" name="singlebutton"
+                        <button type="button" id="change_pass" name="singlebutton"
                                 class="btn btn-default btn-sub"
                                 style="background: red;border-color: blue; color: white; border-width:2px; "><i
                                     class="fa fa-lock" aria-hidden="true"></i> パスワード変更
                         </button>
-                        <button type="button" id="forgot_password" title="パスワードを忘れた方
-" name="singlebutton"
+                        <button type="button" id="forgot_password" name="singlebutton"
                                 class="btn btn-default btn-sub"
                                 style="background: blue; color: white; border-width:2px; border: 1px solid blue; border-radius: 5px; ">
                             <i class="fa fa-lock" aria-hidden="true"></i> パスワードを忘れた方
