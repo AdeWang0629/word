@@ -832,6 +832,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="fixed-editor" id="fixed-editor" style="margin-left:0">
                 <input type="hidden" id="number_of_page" value="1" name="number_of_page">
                 <input type="hidden" name="post_id" id="post_id" value="">
+                <input type="hidden" name="current_open_file" id="current_open_file" value="">
                 <input type="hidden" id="event_mapping" name="event_mapping" value="1">
                 <textarea class="form-control" id="doc_content" name="doc_content" style="ime-mode:active;">
 

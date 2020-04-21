@@ -379,6 +379,10 @@ tinymce.init({
 
         // editor.execCommand("fontName", false, "ms mincho, �搾ｽ� 譏取悃");
         editor.on('change keyup paste redo undo', function (event) {
+            // alert(event.type)
+            if (event.type == 'paste') {
+                $("#event_mapping").val(1);
+            } 
             var event_mapping = $("#event_mapping").val();
             console.log("Event Mapping No.: " + event_mapping);
 
@@ -498,6 +502,7 @@ tinymce.init({
 
             if (event_mapping == 1) {
                 $("#event_mapping").val(2);
+
                 save_autometically();
             }
         });
@@ -1488,6 +1493,7 @@ function save_autometically() {
 
     delay(function () {
         var post_id = $("#post_id").val();
+
         // var content = tinymce.activeEditor.getContent();
         var content = '';
         var get_page_count = localStorage.getItem("page_count");
@@ -1522,25 +1528,26 @@ function save_autometically() {
                 data: {post_id: post_id, post_title: post_title, post_details: content},
             })
 
-                .done(function (data, statusText, xhr) {
-                    var post = JSON.parse(data);
+            .done(function (data, statusText, xhr) {
+                var post = JSON.parse(data);
 
-                    $('#post_id').attr('value', post.post_id);
-                    $('.internet_connection_alert').slideUp(400);
-                    console.log('success');
-                })
-                .fail(function (data, statusText, xhr) {
-                    $('.internet_connection_alert').show().delay(750).slideDown(400);
-                    console.log(xhr.status);
-                    console.log(statusText);
-                    $("#event_mapping").val(1);
-                })
-                .always(function (data, statusText, xhr) {
-                    $("#event_mapping").val(1);
-                    console.log(xhr.status);
-                    console.log(statusText);
-                    console.log("complete");
-                });
+                $('#post_id').attr('value', post.post_id);
+                $('#current_open_file').attr('value', post.post_id);
+                $('.internet_connection_alert').slideUp(400);
+                console.log('success');
+            })
+            .fail(function (data, statusText, xhr) {
+                $('.internet_connection_alert').show().delay(750).slideDown(400);
+                console.log(xhr.status);
+                console.log(statusText);
+                $("#event_mapping").val(1);
+            })
+            .always(function (data, statusText, xhr) {
+                $("#event_mapping").val(1);
+                console.log(xhr.status);
+                console.log(statusText);
+                console.log("complete");
+            });
         } else {
             $.ajax({
                 url: 'index.php/wordapp/delete_post',
