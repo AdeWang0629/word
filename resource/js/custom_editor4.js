@@ -1206,9 +1206,9 @@ function change_font_family(font_name) {
         checked_font = "font_5";
     }
     $("#change_font_family").val(font_name);
-    // if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        // tinymce.get('doc_content').execCommand("fontName", false, font_name);
-    // }
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        tinymce.get('doc_content').execCommand("fontName", false, font_name);
+    }
     $("#" + checked_font).addClass('checked');
 }
 
@@ -1434,6 +1434,10 @@ function change_font_size(font_size, font_size_number) {
     $("#font_size_number_mapping").val("18.666667px");
     $("#font_color_code_mapping").val("#000000");
     $("#change_font_size").val(font_size);
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $("#change_font_size").val(font_size);
+        tinymce.get('doc_content').execCommand("fontSize", false, font_size);
+    }
     // tinymce.get('doc_content').execCommand("fontSize", false, font_size);
     // tinymce.get('doc_content2').execCommand("fontSize", false, font_size);
     // tinymce.get('doc_content3').execCommand("fontSize", false, font_size);

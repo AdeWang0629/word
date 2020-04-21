@@ -878,7 +878,10 @@ jQuery(document).ready(function ($) {
     $("#close_font_size_aria").click(function (event) {
         $("#font_size_aria").removeClass('show').addClass('hide');
         var change_font_size = $("#change_font_size").val();
-        tinymce.get('doc_content').execCommand("fontSize", false, change_font_size);
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            tinymce.get('doc_content').execCommand("fontSize", false, change_font_size);
+        }
+        
     });
     $("#email_close_font_size_aria").click(function (event) {
         $("#email_font_size_aria").removeClass('show').addClass('hide');
@@ -909,9 +912,9 @@ jQuery(document).ready(function ($) {
     $("#close_family_aria").click(function (event) {
         $("#font_family_aria").removeClass('show').addClass('hide');
         var change_font_family = $("#change_font_family").val();
-        // if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             tinymce.get('doc_content').execCommand("fontName", false, change_font_family);
-        // }
+        }
     });
 
     $("#email_close_family_aria").click(function (event) {
