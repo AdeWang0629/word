@@ -108,7 +108,7 @@ jQuery(document).ready(function ($) {
                 var DELAY = 1000, clicks = 0, timer = null;
                 $(this).on("click", function () {
                     var post_id = $(this).children('.word_id').val();
-                    open_file_id = post_id;
+                    
                     clicks++;  //count clicks
                     $('td.content_title').removeClass("checked");
                     $('td.content_title').removeClass('checked_row_restore');
@@ -134,6 +134,7 @@ jQuery(document).ready(function ($) {
                             tinymce.get('doc_content').undoManager.clear();
 //                                    tinymce.activeEditor.undoManager.clear();
                             var post_data = JSON.parse(data);
+                            open_file_id = post_id;
                             $(" #post_id ").val(post_data.post_id)
                             $("#table_of_contantes").removeClass("show").addClass("hide");
 
