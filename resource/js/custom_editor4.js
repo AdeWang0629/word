@@ -248,8 +248,17 @@ tinymce.init({
                 //     $(tinymce.activeEditor.selection.getNode()).after("&nbsp;");
                 //
                 // }
+                var content = tinyMCE.activeEditor.getContent();
+                
+                var temp_title = strip(content);
+                temp_title = temp_title.replace(/&nbsp;/gi, '');
+                temp_title = temp_title.replace(/\n|\r/g, "").trim();
 
-                clicks++;
+
+                if (temp_title !== "") {
+                    clicks++;
+                }
+                
                 console.log('clicks='+clicks);
                 // console.log('apply_style='+apply_style);
 
