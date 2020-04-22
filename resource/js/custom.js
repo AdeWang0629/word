@@ -42,6 +42,7 @@ jQuery(document).ready(function ($) {
                             extra_class = "";
                         }
                         if (open_file_id==response.user_posts[i].post_id) {
+                            $("#current_open_file").val(response.user_posts[i].post_id);
                             open_file = "open_file";
                         }else{
                             open_file = "";
@@ -64,6 +65,7 @@ jQuery(document).ready(function ($) {
                             extra_class = "";
                         }
                         if (open_file_id==response.user_posts[x+i].post_id) {
+                            $("#current_open_file").val(response.user_posts[x+i].post_id);
                             open_file = "open_file";
                         }else{
                             open_file = "";
@@ -86,6 +88,7 @@ jQuery(document).ready(function ($) {
                             extra_class = "";
                         }
                         if (open_file_id==response.user_posts[y+i].post_id) {
+                            $("#current_open_file").val(response.user_posts[y+i].post_id);
                             open_file = "open_file";
                         }else{
                             open_file = "";
@@ -135,15 +138,11 @@ jQuery(document).ready(function ($) {
 //                                    tinymce.activeEditor.undoManager.clear();
                             var post_data = JSON.parse(data);
                             open_file_id = post_id;
+                            $("#current_open_file").val(post_data.post_id);
                             $(" #post_id ").val(post_data.post_id)
                             $("#table_of_contantes").removeClass("show").addClass("hide");
 
-                            
-
                             tinyMCE.get('doc_content').setContent(post_data.post_details);
-
-                            
-
                             console.log("success");
                         })
                         .fail(function () {
@@ -447,20 +446,22 @@ jQuery(document).ready(function ($) {
                 type: 'POST',
                 data: {post_id: post_id},
             })
-                .done(function (data) {
-                    var post_data = JSON.parse(data);
-                    $(" #post_id ").val(post_data.post_id)
-                    $("#table_of_contantes").removeClass("show").addClass("hide");
-                    tinyMCE.get('doc_content').setContent(post_data.post_details);
+            .done(function (data) {
+                var post_data = JSON.parse(data);
+                $(" #post_id ").val(post_data.post_id)
+                open_file_id = post_data.post_id;
+                $("#current_open_file").val(post_data.post_id);
+                $("#table_of_contantes").removeClass("show").addClass("hide");
+                tinyMCE.get('doc_content').setContent(post_data.post_details);
 
-                    console.log("success");
-                })
-                .fail(function () {
-                    console.log("error");
-                })
-                .always(function () {
-                    console.log("complete");
-                });
+                console.log("success");
+            })
+            .fail(function () {
+                console.log("error");
+            })
+            .always(function () {
+                console.log("complete");
+            });
         }
 
     });
@@ -819,6 +820,8 @@ jQuery(document).ready(function ($) {
                                         .done(function (data) {
                                             var post_data = JSON.parse(data);
                                             $(" #post_id ").val(post_data.post_id)
+                                            open_file_id = post_data.post_id;
+                                            $("#current_open_file").val(post_data.post_id);
                                             $("#table_of_contantes").removeClass("show").addClass("hide");
                                             tinyMCE.get('doc_content').setContent(post_data.post_details);
 
@@ -2906,7 +2909,7 @@ jQuery(document).ready(function ($) {
                             }else{
                                 extra_class = "";
                             }
-                            if (open_file_id==response.user_posts[i].post_id) {
+                            if (open_file_id==response.user_posts[x+i].post_id) {
                                 open_file = "open_file";
                             }else{
                                 open_file = "";
@@ -2927,7 +2930,7 @@ jQuery(document).ready(function ($) {
                             }else{
                                 extra_class = "";
                             }
-                            if (open_file_id==response.user_posts[i].post_id) {
+                            if (open_file_id==response.user_posts[y+i].post_id) {
                                 open_file = "open_file";
                             }else{
                                 open_file = "";
@@ -2976,7 +2979,9 @@ jQuery(document).ready(function ($) {
                         })
                             .done(function (data) {
                                 var post_data = JSON.parse(data);
-                                $("#post_id ").val(post_data.post_id)
+                                $("#post_id ").val(post_data.post_id);
+                                open_file_id = post_data.post_id;
+                                $("#current_open_file").val(post_data.post_id);
                                 $("#table_of_contantes").removeClass("show").addClass("hide");
                                 tinyMCE.get('doc_content').setContent(post_data.post_details);
 
@@ -3074,7 +3079,7 @@ jQuery(document).ready(function ($) {
                         }else{
                             extra_class = "";
                         }
-                        if (open_file_id==response.user_posts[i].post_id) {
+                        if (open_file_id==response.user_posts[x+i].post_id) {
                             open_file = "open_file";
                         }else{
                             open_file = "";
@@ -3097,7 +3102,7 @@ jQuery(document).ready(function ($) {
                         }else{
                             extra_class = "";
                         }
-                        if (open_file_id==response.user_posts[i].post_id) {
+                        if (open_file_id==response.user_posts[y+i].post_id) {
                             open_file = "open_file";
                         }else{
                             open_file = "";
@@ -3150,6 +3155,8 @@ jQuery(document).ready(function ($) {
                                 var post_data = JSON.parse(data);
                                 $(" #post_id ").val(post_data.post_id)
                                 $("#table_of_contantes").removeClass("show").addClass("hide");
+                                open_file_id = post_data.post_id;
+                                $("#current_open_file").val(post_data.post_id);
                                 tinyMCE.get('doc_content').setContent(post_data.post_details);
 
                                 console.log("success");
