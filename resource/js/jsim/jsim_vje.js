@@ -205,12 +205,12 @@ var JS_IM_vje = {
             JS_IM_Obj.GUI.buffer.hide();
             return ''; // IEでフォームが初期化されるのを防ぐ
           break;
-          case 32 : // Space
-            if( this.romajiBuffer == '' ) return null; // romajiBufferが空ならそのままスペースを入力する
-            this.extension.convert(); // 変換開始
-            this.phase = 'wait';
-            return '';
-          break;
+          // case 32 : // Space
+          //   if( this.romajiBuffer == '' ) return null; // romajiBufferが空ならそのままスペースを入力する
+          //   this.extension.convert(); // 変換開始
+          //   this.phase = 'wait';
+          //   return '';
+          // break;
           case 10 : // Enter
           case 13 : // Enter
             if( this.romajiBuffer == "" ) return null;
