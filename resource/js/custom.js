@@ -427,11 +427,11 @@ jQuery(document).ready(function ($) {
 
     });
 
-//        $("#close_blanck_document_btn").on('click', function()
-//        {
-//            $("#blanck_document_message").removeClass('show').addClass('hide');
-//
-//        })
+       $("#close_blanck_document_btn").on('click', function()
+       {
+           location.reload();
+
+       })
 
     $("#open_file").click(function () {
         tinymce.get('doc_content').undoManager.clear();
