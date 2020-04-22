@@ -356,8 +356,15 @@ jQuery(document).ready(function ($) {
 
     $("#create_new_doc").click(function (event) {
         event.preventDefault();
+        $("#blanck_document_message").removeClass('hide').addClass('show');
         // location.reload();
         // tinymce.get('doc_content').getBody().focus(); // for auto focusing on tinymce editor when click
+        
+
+    });
+
+   $("#close_blanck_document_btn").on('click', function()
+   {
         tinymce.get('doc_content').undoManager.clear();
         // tinymce.execCommand('mceFocus',false,'doc_content');
 
@@ -388,7 +395,7 @@ jQuery(document).ready(function ($) {
         if (post_title.length < 1) {
             $("#tinymce").focus();
             $("#close_blanck_document_btn").focus();
-            $("#blanck_document_message").removeClass('hide').addClass('show');
+            // $("#blanck_document_message").removeClass('hide').addClass('show');
 
             return false;
         } else {
@@ -423,15 +430,9 @@ jQuery(document).ready(function ($) {
                 .always(function () {
                     console.log("complete");
                 });
-        }
+        }       
 
-    });
-
-       $("#close_blanck_document_btn").on('click', function()
-       {
-           location.reload();
-
-       })
+   })
 
     $("#open_file").click(function () {
         tinymce.get('doc_content').undoManager.clear();
