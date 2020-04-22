@@ -29,8 +29,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script type="text/javascript" src="resource/js/jsim/jsim_keycode.js"></script>
         <script type="text/javascript" src="resource/js/jsim/jsim.js"></script>
         <!-- <script type="text/javascript" src="resource/js/jsim/roma.js"></script> -->
-
-        <script type="text/javascript" src="resource/js/jsim/jsim_vje.js"></script>
+        <script type="text/javascript" src="<?php echo base_url().RES_DIR; ?>/js/jsim/jsim_vje.js?id=<?php echo rand(0,10000)?>"></script>
+        <!-- <script type="text/javascript" src="resource/js/jsim/jsim_vje.js"></script> -->
         
         <script src="<?= base_url('resource/js/custom_editor4.js') ?>"></script>
 
