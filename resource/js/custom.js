@@ -143,6 +143,8 @@ jQuery(document).ready(function ($) {
                             $("#table_of_contantes").removeClass("show").addClass("hide");
 
                             tinyMCE.get('doc_content').setContent(post_data.post_details);
+                            tinymce.execCommand('mceFocus',false,'doc_content');
+                            // tinymce.get('doc_content').getBody().focus();
                             console.log("success");
                         })
                         .fail(function () {
@@ -357,6 +359,8 @@ jQuery(document).ready(function ($) {
         // location.reload();
         // tinymce.get('doc_content').getBody().focus(); // for auto focusing on tinymce editor when click
         tinymce.get('doc_content').undoManager.clear();
+        // tinymce.execCommand('mceFocus',false,'doc_content');
+
         var post_id = $("#post_id").val();
         // Get the HTML contents of the currently active editor
         // var content = tinyMCE.activeEditor.getContent();
@@ -381,7 +385,6 @@ jQuery(document).ready(function ($) {
         temp_title = temp_title.replace(/\n|\r/g, "").trim();
 
         var post_title = temp_title.substring(0, 15);
-
         if (post_title.length < 1) {
             $("#tinymce").focus();
             $("#close_blanck_document_btn").focus();
@@ -453,7 +456,7 @@ jQuery(document).ready(function ($) {
                 $("#current_open_file").val(post_data.post_id);
                 $("#table_of_contantes").removeClass("show").addClass("hide");
                 tinyMCE.get('doc_content').setContent(post_data.post_details);
-
+                tinymce.execCommand('mceFocus',false,'doc_content');
                 console.log("success");
             })
             .fail(function () {
@@ -2984,7 +2987,7 @@ jQuery(document).ready(function ($) {
                                 $("#current_open_file").val(post_data.post_id);
                                 $("#table_of_contantes").removeClass("show").addClass("hide");
                                 tinyMCE.get('doc_content').setContent(post_data.post_details);
-
+                                tinymce.execCommand('mceFocus',false,'doc_content');
                                 console.log("success");
                             })
                             .fail(function () {
@@ -3158,7 +3161,7 @@ jQuery(document).ready(function ($) {
                                 open_file_id = post_data.post_id;
                                 $("#current_open_file").val(post_data.post_id);
                                 tinyMCE.get('doc_content').setContent(post_data.post_details);
-
+                                tinymce.execCommand('mceFocus',false,'doc_content');
                                 console.log("success");
                             })
                             .fail(function () {
