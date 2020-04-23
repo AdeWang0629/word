@@ -3506,11 +3506,17 @@ jQuery(document).ready(function ($) {
         $("#new_partner_registration_form").hide();
     });
 
-    $('[data-toggle="tooltip"]').mouseenter(function(){
-        var that = $(this)
-        that.tooltip('show');
-        setTimeout(function(){
-            that.tooltip('hide');
+    // $('[data-toggle="popover"]').click(function () {
+
+    //     setTimeout(function () {
+    //         $('.popover').fadeOut('slow');
+    //     }, 5000);
+
+    // });
+
+    $('.pop').popover().click(function () {
+        setTimeout(function () {
+            $('.pop').popover('hide');
         }, 3000);
     });
 });
