@@ -2026,10 +2026,10 @@ $this->load->view('components/income_modal')
 <script type="text/javascript">
     jQuery(document).ready(function ($) {
 
-        jQuery("#back_color_picker,#text_color_picker,#shape_bg_color_picker,#shape_line_color_picker").hexColorPicker({
-            "pickerWidth": 110,
-            "size": 5
-        });
+        // jQuery("#back_color_picker,#text_color_picker,#shape_bg_color_picker,#shape_line_color_picker").hexColorPicker({
+        //     "pickerWidth": 110,
+        //     "size": 5
+        // });
 
         jQuery("#text_color_picker,#back_color_picker,#shape_bg_color_picker,#shape_line_color_picker").click(function (event) {
             var img_id = $(this).attr('img_id');

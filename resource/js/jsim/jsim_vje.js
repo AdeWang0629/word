@@ -230,14 +230,14 @@ var JS_IM_vje = {
         if(keyStatus.inputCode >= 91 && keyStatus.inputCode <= 145) //NUMPAD, FN KEY
           return null;
         // 結合処理
-        if( JS_IM_Common.Browser.Gecko && !keyStatus.inputChar )
-          keyStatus.inputChar = mapKeyPressToActualCharacter(keyStatus.shiftKey, keyStatus.inputCode); //or inputCode
-        if( keyStatus.inputChar /* != null */ ){
-          this.romajiBuffer += keyStatus.inputChar.toLowerCase();
-          this.inlineBuffer = roma2.hiragana(this.romajiBuffer).toString();
-          JS_IM_Obj.GUI.buffer.update( this.inlineBuffer );
-          return outputStr;
-        }
+        // if( JS_IM_Common.Browser.Gecko && !keyStatus.inputChar )
+        //   keyStatus.inputChar = mapKeyPressToActualCharacter(keyStatus.shiftKey, keyStatus.inputCode); //or inputCode
+        // if( keyStatus.inputChar /* != null */ ){
+        //   this.romajiBuffer += keyStatus.inputChar.toLowerCase();
+        //   this.inlineBuffer = roma2.hiragana(this.romajiBuffer).toString();
+        //   JS_IM_Obj.GUI.buffer.update( this.inlineBuffer );
+        //   return outputStr;
+        // }
       break;
       case 'wait' : // コールバック待ち
         switch( keyStatus.inputCode ){

@@ -254,12 +254,23 @@ tinymce.init({
                 temp_title = temp_title.replace(/&nbsp;/gi, '');
                 temp_title = temp_title.replace(/\n|\r/g, "").trim();
 
-
-                if (temp_title !== "") {
+                // var test = tinymce.activeEditor.selection.getNode().Element;
+                var test = tinymce.activeEditor.selection.getEnd().innerHTML;
+                test = strip(test);
+                // test = test.replace(/&nbsp;/gi, '');
+                // test = test.replace(/\n|\r/g, "").trim();
+                
+                if (temp_title !== "" || test !== "") {
                     clicks++;
                 }
+
+                if (test == "") {
+                    clicks = 0;
+                }
                 
+                // alert(test);
                 console.log('clicks='+clicks);
+                console.log('currentContent='+test);
                 // console.log('apply_style='+apply_style);
 
                 if ((clicks == 1)) { // && (apply_style == 1)
