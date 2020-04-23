@@ -732,7 +732,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </button> -->
                     <button tabindex="0" class="btn btn-success btn_keipro word_style_button" id="show_table_of_content"
                             role="button" data-toggle="popover" data-container="body" data-html="true" title=""
-                            data-content="目次<br>目次を表示し、文章を選択・削除します。" data-placement="auto left" data-trigger="hover">目次
+                            data-content="目次<br>目次を表示し、文章を選択・削除します。" data-placement="auto left">目次
                     </button>
 
                     <button class="btn btn-success btn_keipro" id="create_new_doc" data-toggle="popover" data-container="body" title="" data-html="true" data-content="新規<br>新しい文章を書きます。目次は自動保存されます。"
@@ -2099,49 +2099,33 @@ $this->load->view('components/income_modal')
         width: '750',
         height: '500'
     });
+    
 
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
-        // var pressTimer;
-        // $(".btn").mouseup(function(){
-        //   clearTimeout(pressTimer);
-        //   alert("Not Show");
-        //   // Clear timeout
-        //   return false;
-        // }).mousedown(function(){
-        //     // Set timeout
-        //     alert("Show");
-        //     pressTimer = setTimeout(function() {
-        //         alert("Shown");
-        //         $(".popover").css('display', 'none');
-        //     },3000);
-        //     // return false; 
-        // });
+    var pressTimer;
 
-        $('[data-toggle="popover"]').click(function(event) {
-            setTimeout(function() {
-                $(".popover").css('display', 'none');
-            }, 3000);
-            $(".popover").css('display', 'none');
-        });
-        // $('[data-toggle="popover"]').popover({
-        //     placement: 'bottom',
-        //     delay: {
-        //         "show": 500,
-        //         "hide": 100
-        //     },
-        //     $('#element').tooltip('show')            
-        // });
-        // setTimeout(function () {
-        //     $('.popover').fadeOut('slow');
-        // }, 3000);
+    $('[data-toggle="popover"]').mouseup(function(){
 
-
-        // $('[data-toggle="popover"]').click(function () {
-
-            
-
-        // });
+      clearTimeout(pressTimer);
+      // Clear timeout
+      return false;
+    }).mousedown(function(){
+      // Set timeout
+      // alert("Okay");
+      // $(this).popover({container: 'body'});
+      pressTimer = window.setTimeout(function() { 
+        $(this).popover({container: 'body'});
+        // alert("Okay")
+        setTimeout(function () {
+            alert("Hide");
+            $(this).popover('hide');
+        }, 3000);
+        
+        // $('[data-toggle="popover"]').popover('hide');
+      },500);
+      return false; 
+    });
         $(".btn_keipro").attr('data-placement', 'auto bottom');
         // $(".btn").click(function(event) {
         //     $(".popover").css('display', 'none');
@@ -2152,7 +2136,9 @@ $this->load->view('components/income_modal')
         });
 
 
-        
+
+    }else{
+        $('[data-toggle="popover"]').popover({container: 'body'});
     }
 
 

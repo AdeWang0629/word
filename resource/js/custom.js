@@ -859,7 +859,7 @@ jQuery(document).ready(function ($) {
         // $("#emailing_aria").hide();
     });
 
-    $('[data-toggle="popover"]').popover({container: 'body'});
+    
 
 
     $("#font_size").click(function (event) {
@@ -3506,6 +3506,11 @@ jQuery(document).ready(function ($) {
         $("#new_partner_registration_form").hide();
     });
 
+    // if($('.popover:visible').length > 0)
+    // {
+    //     alert("Okay");
+    // }
+
     // $('[data-toggle="popover"]').click(function () {
 
     //     setTimeout(function () {
@@ -3516,6 +3521,10 @@ jQuery(document).ready(function ($) {
 
 
     // $('[data-toggle="popover"]').popover().click(function () {
+    //     if($('.popover:visible').length > 0)
+    //     {
+    //         alert("Okay");
+    //     }
     //     setTimeout(function () {
     //         $('[data-toggle="popover"]').popover('hide');
     //     }, 3000);
@@ -3523,20 +3532,23 @@ jQuery(document).ready(function ($) {
 
     // var pressTimer;
 
-    // $('[data-toggle="popover"]').mouseup(function(){
+    // $('.btn_keipro').mouseup(function(){
 
     //   clearTimeout(pressTimer);
     //   // Clear timeout
     //   return false;
     // }).mousedown(function(){
     //   // Set timeout
+    //   $(this).popover('show');
     //   pressTimer = window.setTimeout(function() { 
     //     alert("Okay");
     //     setTimeout(function () {
-    //         $('[data-toggle="popover"]').popover('hide');
+    //         alert("Hide");
+    //         $(this).popover('hide');
     //     }, 3000);
+        
     //     // $('[data-toggle="popover"]').popover('hide');
-    //   },1000);
+    //   },500);
     //   return false; 
     // });
 });

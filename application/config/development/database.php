@@ -45,7 +45,7 @@ $active_record = TRUE;
 // $db['default']['username'] = 'editor';
 // $db['default']['password'] = 'bcfyV25vtIAJgTID';
 // $db['default']['database'] = 'editor';
-if($_SERVER['SERVER_NAME'] === 'localhost'){
+if($_SERVER['SERVER_NAME'] === 'localhost' || $_SERVER['SERVER_NAME'] === '127.0.0.1'){
     // local pc 
     $db['default']['hostname'] = 'localhost';
     $db['default']['username'] = 'root';

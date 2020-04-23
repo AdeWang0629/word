@@ -27,7 +27,7 @@
 	$hostname = explode('.',$_SERVER['SERVER_NAME']);
      // var_dump($_SERVER['SERVER_NAME']);
      // exit();
-	if($hostname[0] === 'localhost'  || $hostname[0] === '192' || $hostname[0] === '120') $hostname[1] = 'development';
+	if($hostname[0] === 'localhost'  || $hostname[0] === '192' || $hostname[0] === '127' || $hostname[0] === '120') $hostname[1] = 'development';
 
 	if(!isset($hostname[1])){
 		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
