@@ -3513,12 +3513,31 @@ jQuery(document).ready(function ($) {
     //     }, 5000);
 
     // });
-    
 
-    $('.pop').popover().click(function () {
+
+    $('[data-toggle="popover"]').popover().click(function () {
         setTimeout(function () {
-            $('.pop').popover('hide');
+            $('[data-toggle="popover"]').popover('hide');
         }, 3000);
+    });
+
+    var pressTimer;
+
+    $('[data-toggle="popover"]').mouseup(function(){
+
+      clearTimeout(pressTimer);
+      // Clear timeout
+      return false;
+    }).mousedown(function(){
+      // Set timeout
+      pressTimer = window.setTimeout(function() { 
+        alert("Okay");
+        setTimeout(function () {
+            $('[data-toggle="popover"]').popover('hide');
+        }, 3000);
+        // $('[data-toggle="popover"]').popover('hide');
+      },1000);
+      return false; 
     });
 });
 
