@@ -3513,6 +3513,7 @@ jQuery(document).ready(function ($) {
     //     }, 5000);
 
     // });
+    
 
     $('.pop').popover().click(function () {
         setTimeout(function () {
