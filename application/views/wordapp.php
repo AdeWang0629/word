@@ -727,7 +727,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
              class="col-lg-2 col-md-2  col-sm-2 col-xs-12 mobile_width pull-right">
             <div style="background-color: #DDDDDF" class="word_btn_containers">
                 <div class="word_btn_container22 flex-container" style="margin-top: 0.3em">
-
+                    <!-- <button tabindex="0" class="btn btn-success btn_keipro word_style_button" id="show_table_of_content" data-toggle="popover" id="show_table_of_content"
+                            role="button">目次
+                    </button> -->
                     <button tabindex="0" class="btn btn-success btn_keipro word_style_button" id="show_table_of_content"
                             role="button" data-toggle="popover" data-container="body" data-html="true" title=""
                             data-content="目次<br>目次を表示し、文章を選択・削除します。" data-placement="auto left" data-trigger="hover">目次
