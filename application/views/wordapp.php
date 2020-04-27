@@ -730,7 +730,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <!-- <button tabindex="0" class="btn btn-success btn_keipro word_style_button" id="show_table_of_content" data-toggle="popover" id="show_table_of_content"
                             role="button">目次
                     </button> -->
-                    <button tabindex="0" ontouchend="hideTooltip(this.id)" class="btn btn-success btn_keipro word_style_button" id="show_table_of_content"
+                    <button tabindex="0" class="btn btn-success btn_keipro word_style_button" id="show_table_of_content"
                             role="button" data-toggle="popover" data-container="body" data-html="true" title=""
                             data-content="目次<br>目次を表示し、文章を選択・削除します。" data-placement="auto left" data-trigger="hover">目次
                     </button>
@@ -2102,10 +2102,28 @@ $this->load->view('components/income_modal')
     
 
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    $('[data-toggle="popover"]').popover();
+    
+    var pressTimer;
+
+    // $('[data-toggle="popover"]').mouseup(function(){
+
+    //     clearTimeout(pressTimer);
+    //     // Clear timeout
+    //     return false;
+    //     }).mousedown(function(){
+    //     // Set timeout
+    //     alert("mousedown");
+    //     // $(this).popover({container: 'body'});
+    //     pressTimer = window.setTimeout(function() { 
+    //         alert("Okay");
+    //         $('[data-toggle="popover"]').popover();
+    //     },500);
+    //     return false; 
+    // });
     
     function hideTooltip(button_id) {
         // alert(button_id);
+        return false;
         setTimeout(function () {
 
             $("#"+button_id).popover('hide')
@@ -2126,7 +2144,7 @@ $this->load->view('components/income_modal')
 
     
     }else{
-        $('[data-toggle="popover"]').popover({container: 'body'});
+        // $('[data-toggle="popover"]').popover({container: 'body'});
     }
 
 
