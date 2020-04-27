@@ -2098,53 +2098,35 @@ $this->load->view('components/income_modal')
         width: '750',
         height: '500'
     });
-
     
-
+   
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    
-    var pressTimer;
-
-    // $('[data-toggle="popover"]').mouseup(function(){
-
-    //     clearTimeout(pressTimer);
-    //     // Clear timeout
-    //     return false;
-    //     }).mousedown(function(){
-    //     // Set timeout
-    //     alert("mousedown");
-    //     // $(this).popover({container: 'body'});
-    //     pressTimer = window.setTimeout(function() { 
-    //         alert("Okay");
-    //         $('[data-toggle="popover"]').popover();
-    //     },500);
-    //     return false; 
-    // });
-    
-    function hideTooltip(button_id) {
-        // alert(button_id);
-        return false;
-        setTimeout(function () {
-
-            $("#"+button_id).popover('hide')
-            // $('#'+button_id).tooltip('hide');
-            // $(this).trigger('click');
-        }, 1500);
-
-    }
-
-    $(".btn_keipro").attr('data-placement', 'auto bottom');
-    // $(".btn").click(function(event) {
-    //     $(".popover").css('display', 'none');
-    // });
-    $(".word_canvas").css({
-        width: '750',
-        height: '500'
-    });
-
-    
+        var pressTimer;
+        function hideTooltip() {
+            // alert("Hide");
+            setTimeout(function () {
+                // alert("Hided");
+                $('[data-toggle="popover"]').popover('hide');
+            }, 1500);
+        }
+        
+        $('.btn').mouseup(function(){
+          clearTimeout(pressTimer);          
+          // alert(btn_id);
+          return false;
+        }).mousedown(function(){
+          // Set timeout
+          var btn_id = $(this).attr('id');
+          pressTimer = window.setTimeout(function() { 
+            $('#'+btn_id).popover('show');
+            // $('#'+btn_id).focus();
+            hideTooltip();
+          },1000);
+          return false; 
+        });
+        $(".btn_keipro").attr('data-placement', 'auto bottom');    
     }else{
-        // $('[data-toggle="popover"]').popover({container: 'body'});
+        $('[data-toggle="popover"]').popover({container: 'body'});
     }
 
 

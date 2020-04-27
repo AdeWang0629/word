@@ -3511,7 +3511,7 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
         $("#new_partner_registration_form").hide();
     });
-    $('[data-toggle="popover"]').popover({container: 'body'});
+    
 
     // if($('.popover:visible').length > 0)
     // {
