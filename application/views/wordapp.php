@@ -2107,7 +2107,7 @@ $this->load->view('components/income_modal')
     }
     
     
-    $('[data-toggle="popover"]').popover({container: 'body'});
+    // $('[data-toggle="popover"]').popover({container: 'body'});
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('.btn').click(function(event) {
             $('[data-toggle="popover"]').popover('destroy');
@@ -2187,9 +2187,9 @@ $this->load->view('components/income_modal')
 
     
     }
-    // else{
-    //     $('[data-toggle="popover"]').popover({container: 'body'});
-    // }
+    else{
+        $('[data-toggle="popover"]').popover({container: 'body'});
+    }
 
 
 </script>
