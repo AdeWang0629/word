@@ -865,6 +865,7 @@ jQuery(document).ready(function ($) {
     $("#font_size").click(function (event) {
 
         $("#font_size_aria").removeClass('hide').addClass('show');
+        $("#font_family_aria").removeClass('show').addClass('hide');
         $("#close_font_size_aria").focus();
     });
 
@@ -897,6 +898,8 @@ jQuery(document).ready(function ($) {
 
     $("#font_family").click(function (event) {
         $("#font_family_aria").removeClass('hide').addClass('show');
+        $("#font_size_aria").removeClass('show').addClass('hide');
+
         $("#close_family_aria").focus();
     });
 
@@ -2672,6 +2675,9 @@ jQuery(document).ready(function ($) {
     $("#inserImage").on('click', function (event) {
         event.preventDefault();
         // alert("Okay");
+        $("#word_image_selection_message").removeClass('hide').addClass('show');
+        $("#font_family_aria").removeClass('show').addClass('hide');
+        $("#font_size_aria").removeClass('show').addClass('hide');
         $("#word_image_selection_message").removeClass('hide').addClass('show');
         $("#close_word_image_selection").focus();
     });

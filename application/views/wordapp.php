@@ -1470,14 +1470,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="col-md-12" style="padding: 0;">
                 <button onclick="return_close()" type="button" class="btn btn-lg btn-warning pull-right" id="close_copy_cut_aria">
                     戻る
-                </button><br>
+                </button><br><br>
             </div>
             <div class="clearfix"></div>
             <div class="col-md-12" style="padding: 0;">
-                <p style="font-size: 18px;">黒く塗った部分を、別の場所に移動します。 <br> 移動部分の先頭にカーソルを置き、
-                    <br> マウスの左クリックを押し続けて黒塗りします。
+                <p style="font-size: 18px;">黄色く塗った部分を、別の場所に移動します。 <br> 移動部分の先頭にカーソルを置き、マウスの左クリックを押し続けて黄塗りします。
                     <br> 次に。右クリックを押し「切り取り」を選び、
-                    <br> 移動先にカーソルを置き、右クリックで「貼り付け」ます。
+                    移動先にカーソルを置き、右クリックで「貼り付け」ます。
                 </p>
             </div>
             <div class="clearfix"></div>
@@ -2135,8 +2134,7 @@ $this->load->view('components/income_modal')
             height: '500'
         });
 
-
-
+        $(".mce-btn-has-text").css({left: '10px', color: "red", border: "1px solid black"});
     }else{
         $('[data-toggle="popover"]').popover({container: 'body'});
     }
