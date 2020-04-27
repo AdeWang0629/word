@@ -732,7 +732,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </button> -->
                     <button tabindex="0" class="btn btn-success btn_keipro word_style_button" id="show_table_of_content"
                             role="button" data-toggle="popover" data-container="body" data-html="true" title=""
-                            data-content="目次<br>目次を表示し、文章を選択・削除します。" data-placement="auto left">目次
+                            data-content="目次<br>目次を表示し、文章を選択・削除します。" data-placement="auto left" data-trigger="hover">目次
                     </button>
 
                     <button class="btn btn-success btn_keipro" id="create_new_doc" data-toggle="popover" data-container="body" title="" data-html="true" data-content="新規<br>新しい文章を書きます。目次は自動保存されます。"
@@ -2107,16 +2107,24 @@ $this->load->view('components/income_modal')
     }
     
     
-
+    $('[data-toggle="popover"]').popover({container: 'body'});
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
+        $('.btn').click(function(event) {
+            $('[data-toggle="popover"]').popover('destroy');
+        });
         $( ".btn" ).bind( "taphold", tapholdHandler );
+
         function tapholdHandler( event ){
             var btn_id = $(this).attr('id');
             $('#'+btn_id).popover('show');
-            // $('#'+btn_id).focus();
             hideTooltip(btn_id);
         }
+
+        // $(".btn")click(function(event) {
+        //     var btn_id = $(this).attr('id');
+        //     $('#'+btn_id).popover('destroy');
+        //     // $('#id_nickname').popover('destroy');
+        // });
         // var pressTimer;
         // $('.btn').mouseup(function(){
         //   clearTimeout(pressTimer);
@@ -2178,9 +2186,10 @@ $this->load->view('components/income_modal')
     });
 
     
-    }else{
-        $('[data-toggle="popover"]').popover({container: 'body'});
     }
+    // else{
+    //     $('[data-toggle="popover"]').popover({container: 'body'});
+    // }
 
 
 </script>
