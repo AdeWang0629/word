@@ -2110,7 +2110,7 @@ $this->load->view('components/income_modal')
 
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
-        $( ".btn_keipro" ).bind( "taphold", tapholdHandler );
+        $( ".btn" ).bind( "taphold", tapholdHandler );
         function tapholdHandler( event ){
             var btn_id = $(this).attr('id');
             $('#'+btn_id).popover('show');
