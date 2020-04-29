@@ -570,27 +570,27 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
             
             if (username == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '関連番号、メールアドレス、個人名、会社名、携帯番号、パスワード、パスワード再入力を入力して下さい。';
-//                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
+                document.getElementById('error_message_text').innerText = '携帯番号、メールアドレス、個人名、会社名、パスワード、パスワード再入力を入力して下さい。';
+//                alert("氏名、携帯番号、パスワード、携帯番号を入力して下さい。")
                 return false;
             } else if (password == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '関連番号、メールアドレス、個人名、会社名、携帯番号、パスワード、パスワード再入力を入力して下さい。';
+                document.getElementById('error_message_text').innerText = '携帯番号、メールアドレス、個人名、会社名、パスワード、パスワード再入力を入力して下さい。';
 //                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
                 return false;
             }else if (confirm_password == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '関連番号、メールアドレス、個人名、会社名、携帯番号、パスワード、パスワード再入力を入力して下さい。';
+                document.getElementById('error_message_text').innerText = '携帯番号、メールアドレス、個人名、会社名、パスワード、パスワード再入力を入力して下さい。';
 //                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
                 return false;
             } else if (sign_up_name == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '関連番号、メールアドレス、個人名、会社名、携帯番号、パスワード、パスワード再入力を入力して下さい。';
+                document.getElementById('error_message_text').innerText = '携帯番号、メールアドレス、個人名、会社名、パスワード、パスワード再入力を入力して下さい。';
 //                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
                 return false;
             } else if (company_name == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '関連番号、メールアドレス、個人名、会社名、携帯番号、パスワード、パスワード再入力を入力して下さい。';
+                document.getElementById('error_message_text').innerText = '携帯番号、メールアドレス、個人名、会社名、パスワード、パスワード再入力を入力して下さい。';
 //                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
                 return false;
             }else if (password != confirm_password) {
