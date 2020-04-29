@@ -140,19 +140,19 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                     <div class="col-md-12">
                         <button style="margin-left: 32px;" type="submit" id="singlebutton"
                                 name="singlebutton"
-                                class="btn btn-success"><i class="fa fa-sign-in" aria-hidden="true"></i> ログイン
+                                class="btn btn-success" title=" ログイン"><i class="fa fa-sign-in" aria-hidden="true"></i> ログイン
                         </button>
                         <button type="button" id="sign_up" name="singlebutton"
-                                class="btn btn-default btn-sub"><i class="fa fa-user-plus" aria-hidden="true"></i> 新規登録
+                                class="btn btn-default btn-sub" title="新規登録"><i class="fa fa-user-plus" aria-hidden="true"></i> 新規登録
                         </button>
                         <button type="button" id="change_pass" name="singlebutton"
                                 class="btn btn-default btn-sub"
-                                style="background: red; color: white; "><i
+                                style="background: red; color: white; " title="パスワード変更"><i
                                     class="fa fa-lock" aria-hidden="true"></i> パスワード変更
                         </button>
                         <button type="button" id="forgot_password" name="singlebutton"
                                 class="btn btn-default btn-sub"
-                                style="background: blue; color: white; border-width:2px; border: 1px solid blue; border-radius: 5px; ">
+                                style="background: blue; color: white; border-width:2px; border: 1px solid blue; border-radius: 5px; " title="パスワードを忘れた方">
                             <i class="fa fa-lock" aria-hidden="true"></i> パスワードを忘れた方
                         </button>
                     </div>
@@ -557,8 +557,8 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
             $("#success_message").removeClass("show").addClass("hide");
         });
 
-        $("#save_sign_up").click(function (event) {
-            var username = $("#sign_up_username").val();
+        $("#save_sign_up").(function (event) {
+            var username = $("#sign_up_usclickername").val();
             var email = $("#email").val();
             var confirm_password = $("#sign_up_confirm_password").val();
             var password = $("#sign_up_password").val();
