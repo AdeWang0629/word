@@ -147,7 +147,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                         </button>
                         <button type="button" id="change_pass" name="singlebutton"
                                 class="btn btn-default btn-sub"
-                                style="background: red;border-color: blue; color: white; border-width:2px; "><i
+                                style="background: red; color: white; "><i
                                     class="fa fa-lock" aria-hidden="true"></i> パスワード変更
                         </button>
                         <button type="button" id="forgot_password" name="singlebutton"
@@ -176,30 +176,39 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                 <form class="form-horizontal">
                     <!-- Button -->
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="singlebutton"></label>
-                        <div class="col-md-9">
+                        <label class="col-md-4 control-label" for="singlebutton"></label>
+                        <div class="col-md-8">
                             <button type="button" id="save_sign_up" title="登録" name="singlebutton"
-                                    class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i> 登録
+                                    class="btn btn-success btn-lg"><i class="fa fa-user-plus" aria-hidden="true"></i> 登録
                             </button>
                             <button type="button" id="close_sign_up" title="戻る" name="singlebutton"
-                                    class="btn btn-default "><i class="fa fa-user-close" aria-hidden="true"></i> 戻る
+                                    class="btn btn-danger btn-lg"><i class="fa fa-user-close" aria-hidden="true"></i> 戻る
                             </button>
                         </div>
                     </div>
                     <!-- Text Username/ Mobile-->
                     <div class="form-group <?= (form_error('sign_up_username') || isset($sign_up_username)) ? 'has-error' : ''; ?>">
-                        <label class="col-md-3 control-label" for="sign_up_username">携帯番号</label>
-                        <div class="col-md-9">
-                            <input id="sign_up_username" style="ime-mode:active" type="text" class="form-control"
+                        <label class="col-md-4 control-label" for="sign_up_username">携帯番号</label>
+                        <div class="col-md-8">
+                            <input id="sign_up_username" style="ime-mode:inactive" type="text" class="form-control"
                                    name="sign_up_username" required="required"
-                                   value="<?= set_value('sign_up_username') ?>" placeholder="携帯番号">
+                                   value="<?= set_value('sign_up_username') ?>" placeholder="４ケタ以上で入力してください">
 
+                        </div>
+                    </div>
+                    <!-- Email Address input-->
+                    <div class="form-group <?= (form_error('email') || isset($email)) ? 'has-error' : ''; ?>">
+                        <label style="text-align: center" class="col-md-4 control-label" for="email">メールアドレス</label>
+                        <div class="col-md-8">
+                            <input id="email" style="ime-mode:inactive" type="text" class="form-control"
+                                   name="email" required="required"
+                                   value="<?= set_value('email') ?>" placeholder="メールアドレス">
                         </div>
                     </div>
                     <!-- Name input-->
                     <div class="form-group <?= (form_error('sign_up_name') || isset($sign_up_name)) ? 'has-error' : ''; ?>">
-                        <label class="col-md-3 control-label" for="sign_up_name">個人名</label>
-                        <div class="col-md-9">
+                        <label class="col-md-4 control-label" for="sign_up_name">個人名</label>
+                        <div class="col-md-8">
                             <input id="sign_up_name" style="ime-mode:active" type="text" class="form-control"
                                    name="sign_up_name" required="required"
                                    value="<?= set_value('sign_up_name') ?>" placeholder="個人名">
@@ -209,21 +218,35 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                     </div>
                     <!-- Company Name input-->
                     <div class="form-group <?= (form_error('company_name') || isset($company_name)) ? 'has-error' : ''; ?>">
-                        <label class="col-md-3 control-label" for="company_name">会社名</label>
-                        <div class="col-md-9">
+                        <label class="col-md-4 control-label" for="company_name">会社名</label>
+                        <div class="col-md-8">
                             <input id="company_name" style="ime-mode:active" type="text" class="form-control"
                                    name="company_name" required="required"
                                    value="<?= set_value('company_name') ?>" placeholder="会社名">
                         </div>
                     </div>
-
+                    
                     <!-- Password input-->
                     <div class="form-group <?= (form_error('sign_up_password')) ? 'has-error' : ''; ?>">
-                        <label class="col-md-3 control-label" for="sign_up_password">パスワード</label>
-                        <div class="col-md-9">
+                        <label class="col-md-4 control-label" for="sign_up_password">パスワード</label>
+                        <div class="col-md-8">
                             <input id="sign_up_password" type="password" required="required" class="form-control"
                                    name="sign_up_password" onpaste="return false;" placeholder="パスワード（4桁以上）"
                                    value="<?= set_value('sign_up_password') ?>">
+
+                        </div>
+                    </div>
+
+                    <!-- Confirm Password input-->
+                    <div class="form-group <?= (form_error('sign_up_password')) ? 'has-error' : ''; ?>">
+                        <label style="text-align: center" class="col-md-4 control-label"
+                               for="sign_up_confirm_password">パスワード再入力</label>
+                        <!--                        確認用<br>ログインパスワード-->
+                        <div class="col-md-8">
+                            <input id="sign_up_confirm_password" type="password" required="required"
+                                   class="form-control"
+                                   name="sign_up_confirm_password" onpaste="return false;" placeholder="パスワード再入力"
+                                   value="<?= set_value('sign_up_confirm_password') ?>">
 
                         </div>
                     </div>
@@ -536,35 +559,55 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
 
         $("#save_sign_up").click(function (event) {
             var username = $("#sign_up_username").val();
+            var email = $("#email").val();
+            var confirm_password = $("#sign_up_confirm_password").val();
             var password = $("#sign_up_password").val();
             var sign_up_name = $("#sign_up_name").val();
             var company_name = $("#company_name").val();
             var user_type = $("#user_type").val();
 //            var login_menu_type = $("#login_menu_type").val();
-
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            
             if (username == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '個人名、会社名、携帯番号、パスワード、関連番号を入力して下さい。';
+                document.getElementById('error_message_text').innerText = '関連番号、メールアドレス、個人名、会社名、携帯番号、パスワード、パスワード再入力を入力して下さい。';
 //                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
                 return false;
             } else if (password == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '個人名、会社名、携帯番号、パスワード、関連番号を入力して下さい。';
+                document.getElementById('error_message_text').innerText = '関連番号、メールアドレス、個人名、会社名、携帯番号、パスワード、パスワード再入力を入力して下さい。';
+//                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
+                return false;
+            }else if (confirm_password == "") {
+                $("#user_change_pass_error_message").removeClass("hide").addClass("show");
+                document.getElementById('error_message_text').innerText = '関連番号、メールアドレス、個人名、会社名、携帯番号、パスワード、パスワード再入力を入力して下さい。';
 //                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
                 return false;
             } else if (sign_up_name == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '氏名、会社名、携帯番号、パスワード、関連番号を入力して下さい。';
+                document.getElementById('error_message_text').innerText = '関連番号、メールアドレス、個人名、会社名、携帯番号、パスワード、パスワード再入力を入力して下さい。';
 //                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
                 return false;
             } else if (company_name == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '氏名、会社名、携帯番号、パスワード、関連番号を入力して下さい。';
+                document.getElementById('error_message_text').innerText = '関連番号、メールアドレス、個人名、会社名、携帯番号、パスワード、パスワード再入力を入力して下さい。';
+//                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
+                return false;
+            }else if (password != confirm_password) {
+                $("#user_change_pass_error_message").removeClass("hide").addClass("show");
+                document.getElementById('error_message_text').innerText = 'パスワードがパスワード再入力と一致しません。';
+//                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
+                return false;
+            }else if(!email.match(mailformat)){
+                $("#user_change_pass_error_message").removeClass("hide").addClass("show");
+                document.getElementById('error_message_text').innerText = 'メールアドレス形式が不正です。';
 //                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
                 return false;
             }
             $.post('index.php/account/sign_up', {
                 sign_up_username: username,
+                email: email,
+                passconf: confirm_password,
                 sign_up_password: password,
                 sign_up_name: sign_up_name,
                 company_name: company_name,
