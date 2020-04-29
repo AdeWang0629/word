@@ -618,12 +618,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <button class="btn btn-success form-control print-preview-printout" disabled>印刷実行</button>
 
     </div>
-    <div class="print-preview-content">
+    <!-- <div class="print-preview-content">
         <iframe class="print-preview-pdfcontent" src="" style="display:none;"></iframe>
         <div class="print-pdf-loading">
             <span class="loading-text">Loading .... </span>
         </div>
-    </div>
+    </div> -->
 
 </div>
 

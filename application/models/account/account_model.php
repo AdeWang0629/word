@@ -244,6 +244,23 @@ class Account_model extends CI_Model
         $this->db->update('a3m_account', array('password' => $new_hashed_password), array('id' => $account_id));
     }
 
+    function update_password_by_token($token, $password_new) //,$account_id
+    {
+        $this->load->helper('account/phpass');
+        $hasher = new PasswordHash(PHPASS_HASH_STRENGTH, PHPASS_HASH_PORTABLE);
+        $new_hashed_password = $hasher->HashPassword($password_new);
+
+        $this->db->update('a3m_account', array('password' => $new_hashed_password), array('reset_password_token' => $token));
+//        $this->db->update('a3m_account', array('reset_password_token' => ''), array('id' => $account_id));
+    }
+
+    function update_token($account_id, $token)
+    {
+        $this->load->helper('account/phpass');
+
+        $this->db->update('a3m_account', array('reset_password_token' => $token), array('id' => $account_id));
+    }
+
     // --------------------------------------------------------------------
 
     /**

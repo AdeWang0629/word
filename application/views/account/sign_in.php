@@ -137,22 +137,22 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                 <!-- Button -->
                 <div class="form-group">
                     <label class="col-md-3 control-label" for="singlebutton"></label>
-                    <div class="col-md-12">
-                        <button style="margin-left: 32px;" type="submit" id="singlebutton"
+                    <div class="col-md-12 text-center">
+                        <button style="font-size: 16px;" type="submit" id="singlebutton"
                                 name="singlebutton"
-                                class="btn btn-success" title=" ログイン"><i class="fa fa-sign-in" aria-hidden="true"></i> ログイン
+                                class="btn btn-success btn-lg login_btn" title=" ログイン"><i class="fa fa-sign-in" aria-hidden="true"></i> ログイン
                         </button>
-                        <button type="button" id="sign_up" name="singlebutton"
-                                class="btn btn-default btn-sub" title="新規登録"><i class="fa fa-user-plus" aria-hidden="true"></i> 新規登録
+                        <button type="button" style="font-size: 16px;" id="sign_up" name="singlebutton"
+                                class="btn btn-default btn-lg login_btn" title="新規登録"><i class="fa fa-user-plus" aria-hidden="true"></i> 新規登録
                         </button>
                         <button type="button" id="change_pass" name="singlebutton"
-                                class="btn btn-default btn-sub"
-                                style="background: red; color: white; " title="パスワード変更"><i
+                                class="btn btn-default btn-lg login_btn"
+                                style="background: red; color: white; font-size: 16px; " title="パスワード変更"><i
                                     class="fa fa-lock" aria-hidden="true"></i> パスワード変更
                         </button>
                         <button type="button" id="forgot_password" name="singlebutton"
-                                class="btn btn-default btn-sub"
-                                style="background: blue; color: white; border-width:2px; border: 1px solid blue; border-radius: 5px; " title="パスワードを忘れた方">
+                                class="btn btn-primary btn-lg login_btn"
+                                style="background: blue;font-size: 16px; " title="パスワードを忘れた方">
                             <i class="fa fa-lock" aria-hidden="true"></i> パスワードを忘れた方
                         </button>
                     </div>
@@ -255,7 +255,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         </div>
 
     </div>
-    <div class="col-md-4 col-sm-4 col-xs-12 pull-right hide" id="sign_up_success"
+    <div class="col-md-3 col-sm-4 col-xs-12 pull-right hide" id="sign_up_success"
          style="position: fixed; right: 0px; bottom: 0px; padding: 4px;">
 
         <div class="panel panel-success" style="margin-bottom: 0">
@@ -265,7 +265,10 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                 <p>会社名 : <span id="company_name_show"></span></p>
                 <p>パスワード : <span id="sign_up_password_show"></span></p>
                 <p class="text-success">登録が完了しました。</p>
-                <button type="button" class="btn btn-default" id="success_close">戻る</button>
+                
+            </div>
+            <div class="panel-footer">
+                <button type="button" class="btn btn-danger btn-lg" id="success_close">戻る</button>
             </div>
         </div>
     </div>
@@ -334,11 +337,6 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                         id="user_phone_number" name="user_phone_number"
                         style="background-color:#CCFF99; border: 2px solid #446590; border-radius: 0.5em; padding: 7px; margin-bottom: 10px; margin-left: 7px; text-align: center;"
             >
-            <!--            <br>-->
-            <!--            再入力　-->
-            <!--            <input type="text" id="user_forgot_new_password" name="user_forgot_new_password"-->
-            <!--                   style="background-color: #FFCCFF; border: 2px solid #446590; border-radius: 0.5em; padding: 7px; margin-bottom: 10px; margin-left: 18px; text-align: center; ime-mode: inactive"-->
-            <!--                   placeholder="パスワード">-->
             <p style="text-align: center">
                 <span style="font-size: 16px;">携帯番号を入力して、送信ボタンを押してください。<br>
 　携帯へ新パスワードを送ります。</span><br>
@@ -558,7 +556,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         });
 
         $("#save_sign_up").click(function(event) {
-            var username = $("#sign_up_usclickername").val();
+            var username = $("#sign_up_username").val();
             var email = $("#email").val();
             var confirm_password = $("#sign_up_confirm_password").val();
             var password = $("#sign_up_password").val();
@@ -568,74 +566,129 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
 //            var login_menu_type = $("#login_menu_type").val();
             var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             
-            if (username == "") {
+            if (username != "" && email != "" && sign_up_name != "" && company_name != "" && password != "" && confirm_password != "") {
+                if (password != confirm_password) {
+                    $("#user_change_pass_error_message").removeClass("hide").addClass("show");
+                    $("#error_message_text").html('<p style="font-size:20px;" class="text-danger">パスワードがパスワード再入力と一致しません。</p>');
+                    return false;
+                }
+                if(!email.match(mailformat)){
+                    $("#user_change_pass_error_message").removeClass("hide").addClass("show");
+                    $("#error_message_text").html('<p style="font-size:20px;" class="text-danger">メールアドレスの形式が無効です。</p>');
+                    return false;
+                }
+                $.ajax({
+                    url: 'index.php/account/sign_up',
+                    type: 'POST',
+                    data: {
+                        username: username,
+                        email: email,
+                        passconf: confirm_password,
+                        sign_up_password: password,
+                        sign_up_name: sign_up_name,
+                        company_name: company_name,
+                        user_type: user_type,
+                        company_id: 0,
+                        user_id: 0
+                    },
+                })
+                .done(function(data) {
+                    var res_data = JSON.parse(data);
+                    if (res_data.message == "success") {
+                        $("#user_change_pass_error_message").removeClass("show").addClass("hide");
+                        $("#sign_in_username_email").val(username);
+                        $("#sign_in_password").val(password);
+                        document.getElementById('sign_up_phone_show').innerText = username;
+                        document.getElementById('sign_up_name_show').innerText = sign_up_name;
+                        document.getElementById('company_name_show').innerText = company_name;
+                        document.getElementById('sign_up_password_show').innerText = password;
+                        $("#sign_up_aria").removeClass("show").addClass("hide");
+                        $("#sign_up_success").removeClass("hide").addClass("show");
+                    }
+
+                    if (res_data.message == "usernameexist") {
+                        $("#user_change_pass_error_message").removeClass("hide").addClass("show");
+                        $("#error_message_text").html('<p style="font-size:20px;" class="text-danger">この携帯番号は既に登録しました。</p>');
+                    }
+                    if (res_data.message == "emailexist") {
+                        $("#user_change_pass_error_message").removeClass("hide").addClass("show");
+                        $("#error_message_text").html('<p style="font-size:20px;" class="text-danger">このメールアドレスは既に登録しました。</p>');
+                    }
+                })
+                .fail(function() {
+                    console.log("error");
+                })
+                .always(function() {
+                    console.log("complete");
+                });
+                
+                
+            }else{
+                var val_errors = [];
+                var val_errors = [];
+                if (username == '') {
+                    val_errors.push('携帯番号');                    
+                }
+                if (email == '') {
+                    val_errors.push('メールアドレス');
+                }
+                if (sign_up_name == '') {
+                    val_errors.push('個人名');
+                }
+                if (company_name == '') {
+                    val_errors.push('会社名');
+                }
+                if (password == '') {
+                    val_errors.push('パスワード');
+                }
+                if (confirm_password == '') {
+                    val_errors.push('パスワード再入力');
+                }
+                var string = "";
+                for (var i = 1; i <= val_errors.length; i++) {
+                    string += val_errors[i-1];
+                    if (i!=val_errors.length) {
+                        string += '、'
+                    }
+                }
+                console.log(val_errors);
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '携帯番号、メールアドレス、個人名、会社名、パスワード、パスワード再入力を入力して下さい。';
-//                alert("氏名、携帯番号、パスワード、携帯番号を入力して下さい。")
-                return false;
-            } else if (password == "") {
-                $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '携帯番号、メールアドレス、個人名、会社名、パスワード、パスワード再入力を入力して下さい。';
-//                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
-                return false;
-            }else if (confirm_password == "") {
-                $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '携帯番号、メールアドレス、個人名、会社名、パスワード、パスワード再入力を入力して下さい。';
-//                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
-                return false;
-            } else if (sign_up_name == "") {
-                $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '携帯番号、メールアドレス、個人名、会社名、パスワード、パスワード再入力を入力して下さい。';
-//                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
-                return false;
-            } else if (company_name == "") {
-                $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '携帯番号、メールアドレス、個人名、会社名、パスワード、パスワード再入力を入力して下さい。';
-//                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
-                return false;
-            }else if (password != confirm_password) {
-                $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = 'パスワードがパスワード再入力と一致しません。';
-//                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
-                return false;
-            }else if(!email.match(mailformat)){
-                $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = 'メールアドレス形式が不正です。';
-//                alert("氏名、携帯番号、パスワード、関連番号を入力して下さい。")
+                $("#error_message_text").html('<p style="font-size:20px;" class="text-danger">'+string+'を入力して下さい。</p>');
+                val_errors = [];
                 return false;
             }
-            $.post('index.php/account/sign_up', {
-                sign_up_username: username,
-                email: email,
-                passconf: confirm_password,
-                sign_up_password: password,
-                sign_up_name: sign_up_name,
-                company_name: company_name,
-                user_type: user_type,
-                company_id: 0,
-                user_id: 0
-            }, function (resposnse) {
-                console.log(resposnse);
-                var res_data = JSON.parse(resposnse);
-                if (res_data.message == "success") {
-                    $("#user_change_pass_error_message").removeClass("show").addClass("hide");
-                    $("#sign_in_username_email").val(username);
-                    $("#sign_in_password").val(password);
-                    document.getElementById('sign_up_phone_show').innerText = username;
-                    document.getElementById('sign_up_name_show').innerText = sign_up_name;
-                    document.getElementById('company_name_show').innerText = company_name;
-                    document.getElementById('sign_up_password_show').innerText = password;
-                    $("#sign_up_aria").removeClass("show").addClass("hide");
-                    $("#sign_up_success").removeClass("hide").addClass("show");
-                }
+//             $.post('index.php/account/sign_up', {
+//                 sign_up_username: username,
+//                 email: email,
+//                 passconf: confirm_password,
+//                 sign_up_password: password,
+//                 sign_up_name: sign_up_name,
+//                 company_name: company_name,
+//                 user_type: user_type,
+//                 company_id: 0,
+//                 user_id: 0
+//             }, function (resposnse) {
+//                 console.log(resposnse);
+//                 var res_data = JSON.parse(resposnse);
+//                 if (res_data.message == "success") {
+//                     $("#user_change_pass_error_message").removeClass("show").addClass("hide");
+//                     $("#sign_in_username_email").val(username);
+//                     $("#sign_in_password").val(password);
+//                     document.getElementById('sign_up_phone_show').innerText = username;
+//                     document.getElementById('sign_up_name_show').innerText = sign_up_name;
+//                     document.getElementById('company_name_show').innerText = company_name;
+//                     document.getElementById('sign_up_password_show').innerText = password;
+//                     $("#sign_up_aria").removeClass("show").addClass("hide");
+//                     $("#sign_up_success").removeClass("hide").addClass("show");
+//                 }
 
-                if (res_data.message == "exist") {
-                    $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                    document.getElementById('error_message_text').innerText = 'この携帯番号は既に登録しました。';
-//                    alert('この携帯番号は既に登録しました。');
-                    // $( "#sign_up_exist_aria" ).removeClass( "hide" ).addClass( "show" );
-                }
-            });
+//                 if (res_data.message == "exist") {
+//                     $("#user_change_pass_error_message").removeClass("hide").addClass("show");
+//                     document.getElementById('error_message_text').innerText = 'この携帯番号は既に登録しました。';
+// //                    alert('この携帯番号は既に登録しました。');
+//                     // $( "#sign_up_exist_aria" ).removeClass( "hide" ).addClass( "show" );
+//                 }
+//             });
         });
 
         $("#done_change_pass").click(function (event) {
@@ -682,42 +735,40 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         });
 
         $("#done_forgot_pass").click(function (event) {
+            event.preventDefault();
 //            var user_forgot_new_password = $("#user_forgot_new_password").val();
             var user_phone_number = $("#user_phone_number").val();
-//            alert(username);
 //            die();
             if (user_phone_number == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-                document.getElementById('error_message_text').innerText = '新パスワード を入力して下さい。';
-//                alert(" 新パスワード を入力して下さい。")
+                document.getElementById('error_message_text').innerText = '携帯番号を入力して下さい。';
                 return false;
             }
-//            else if (user_forgot_new_password == "") {
-//                $("#user_change_pass_error_message").removeClass("hide").addClass("show");
-//                document.getElementById('error_message_text').innerText = '新パスワード を入力して下さい。';
-//                return false;
-//            }
-            var new_pass = Math.floor(1000 + Math.random() * 9000);
-            $("#done_forgot_pass").attr('href', 'sms:' + user_phone_number + '?body=これはＰＬ会計のパスワードです ' + new_pass);
 
             $.post('index.php/account/account_password/user_forgot_password', {
-                user_forgot_new_password: new_pass,
+//                user_forgot_new_password: new_pass,
                 user_phone_number: user_phone_number
             }, function (response) {
+                // console.log(response);
+                // return false;
                 var result = response.trim();
-//                alert(result);
-//                die();
                 if (result == 1) {
                     $("#user_change_pass_error_message").removeClass("hide").addClass("show");
                     document.getElementById('error_message_text').innerText = '携帯番号が間違いです。再確認お願い致します。';
+                }
+                if (result == 3) {
+                    $("#user_change_pass_error_message").removeClass("hide").addClass("show");
+                    document.getElementById('error_message_text').innerText = 'メールアドレスがありません';
+                    //return false;
                 }
                 if (result == 2) {
                     $("#success_message").removeClass("hide").addClass("show");
                     $("#forgot_pass_form").removeClass("show").addClass("hide");
 //                    $("#change_pass_aria").removeClass("show").addClass("hide");
-                    document.getElementById('success_message_text').innerText = 'あなたのパスワードは ' + new_pass + ' です。';
-                    $("#sign_in_password").val(new_pass);
-                    $("#sign_in_username_email").val(user_phone_number);
+                    //document.getElementById('success_message_text').innerText = 'あなたのパスワードは ' + new_pass + ' です。';
+                    document.getElementById('success_message_text').innerText = '登録のメールアドレスにパスワードの再設定を送信しました。';
+                    //$("#sign_in_password").val(new_pass);
+                    //$("#sign_in_username_email").val(user_phone_number);
                 }
 
             });

@@ -37,23 +37,27 @@ class Sign_up extends CI_Controller
             // Redirect signed in users to homepage
             if ($this->authentication->is_signed_in()) redirect('');
 
-        $sign_up_username = mb_convert_kana($this->input->post('sign_up_username', TRUE), 'a', 'UTF-8');
-
+        $username = mb_convert_kana($this->input->post('username', TRUE), 'a', 'UTF-8');
+        
         // Setup form validation
         $this->form_validation->set_error_delimiters('<span class="field_error">', '</span>');
         $this->form_validation->set_rules(array(
             array(
-                'field' => 'sign_up_username', 
+                'field' => 'username', 
                 'label' => 'lang:sign_up_username', 
-                'rules' => 'trim|required|min_length[2]|max_length[24]'), 
+                'rules' => 'trim|required|min_length[2]|max_length[24]'),
+            array(
+                'field' => 'email', 
+                'label' => 'lang:sign_up_email', 
+                'rules' => 'trim|required|valid_email'), 
             array(
                 'field' => 'sign_up_name', 
                 'label' => 'lang:sign_up_name', 
                 'rules' => 'trim|required|min_length[1]|max_length[24]'), 
             array(
                 'field' => 'company_name', 
-                'label' => 'lang:company_name', 
-                'rules' => 'trim|required|min_length[1]|max_length[24]'), 
+                'label' => 'lang:company_name',
+                'rules' => 'trim|required|min_length[2]|max_length[24]'), 
             array(
                 'field' => 'sign_up_password', 
                 'label' => 'lang:sign_up_password', 
@@ -69,15 +73,17 @@ class Sign_up extends CI_Controller
         if (($this->form_validation->run() === TRUE)) {
             // Check if user name is taken
 
-            if ($this->username_check($sign_up_username, '', $user_account_id) === TRUE) {
-                $data['message'] = "exist";
+            if ($this->username_check($username, '', $user_account_id) === TRUE) {
+                $data['message'] = "usernameexist";
+            }elseif ($this->email_check($this->input->post('email', TRUE)) === TRUE) {
+                $data['message'] = "emailexist";
             } else {
                 if ($user_type == 1)
                     $company_id = 0;
                 else
                     $company_id = $_POST['company_id'];
                 // Create user
-                $user_id = $this->account_model->create($sign_up_username, $this->input->post('email', TRUE), $this->input->post('sign_up_password', TRUE), $this->input->post('sign_up_name', TRUE), $user_type, $company_id, $user_account_id, $this->input->post('company_name', TRUE));
+                $user_id = $this->account_model->create($username, $this->input->post('email', TRUE), $this->input->post('sign_up_password', TRUE), $this->input->post('sign_up_name', TRUE), $user_type, $company_id, $user_account_id, $this->input->post('company_name', TRUE));
 
 
                 // Add user details (auto detected country, language, timezone)
@@ -88,10 +94,7 @@ class Sign_up extends CI_Controller
                 }
             }
         } else {
-            // $data['message'] = "Form validation error";
-            $data['message'] = "Form validation error";
-            // echo json_encode($data);
-            // $this->load->view('account/sign_up');
+            $data['message'] = validation_errors();
         }
         echo json_encode($data);
     }

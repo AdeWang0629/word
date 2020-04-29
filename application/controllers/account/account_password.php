@@ -107,18 +107,88 @@ class Account_password extends CI_Controller
 
     function user_forgot_password()
     {
-        $user_forgot_new_password = $_POST['user_forgot_new_password'];
-        $user_phone_number = $_POST['user_phone_number'];
-
+        //$user_forgot_new_password = $_POST['user_forgot_new_password'];
+        $user_phone_number = $this->input->post('user_phone_number', TRUE);
         $sign_up_username = mb_convert_kana($this->input->post('user_phone_number', TRUE), 'a', 'UTF-8');
         if ($this->username_check($sign_up_username) === TRUE) {
 
             $account_id = $this->account_model->get_by_username($this->input->post('user_phone_number', TRUE));
-            $this->account_model->update_password($account_id->id, $this->input->post('user_forgot_new_password', TRUE));
-            echo 2; // successfully reset password
+            $user_email = $account_id->email;
+            $name = $account_id->name;
+            $user_id = base64_encode($account_id->id);
+            $base_url = base_url();
+            $token = random_string('alnum', 16);
+            if ($user_email == '') {
+                echo 3;
+            } else {
+                // Load email library
+                $config = array(
+                    'protocol' => 'smtp',
+                    'smtp_host' => 'smtp.jacos.co.jp',
+                    'smtp_port' => 587,
+                    'smtp_user' => 'no-reply@jacos.co.jp',
+                    'smtp_pass' => 'hm&wKy7q',
+                    'mailtype' => 'html',
+                    'charset' => 'UTF-8'
+                );
+                $this->load->library('email', $config);
+                $this->email->set_newline("\r\n");
+
+                $this->email->from("no-reply@jacos.co.jp", "株式会社ジャコス");
+                $this->email->to($user_email);
+                $this->email->subject('決裁のパスワード再設定');
+                $this->email->message($name.'様, <br> お世話になっております。<br> ジャコス事務所でございます。 <br> パスワードをリセットするリクエストを受け取りました。<br><br> ここを押してください。<br> <p style="font-size: 32px; margin: 0; color: black;"> ↓　　 ↓</p>' . anchor(base_url().'account/account_password/reset_password/' . $token, "パスワード再設定", 'title="押してください", style="display: inline-block;padding: 10px 12px 13px 12px; vertical-align: middle; background: #007bff; text-align: center;  border-radius: 5px; color: white; font-size:22px; font-weight:400; text-decoration:none;margin-top:10px;"').'<br><p><a target="_blank" href="https://kessai.development.dev.jacos.jp/index.php/account/sign_in"><img src="https://jafa.dev.jacos.jp/resource/img/jafa-logo2.png"></a></p><p>E-mail: <a href="mailto:info@jacos.co.jp">info@jacos.co.jp</p>');
+                //$this->email->message($mail_message);
+                if (!$this->email->send()) {
+                    $email_errors = $this->email->print_debugger();
+                    $data['email_errors'] = $email_errors;
+                } else {
+                    $data['email_errors'] = array();
+                }
+                $this->account_model->update_token($account_id->id, $token);
+                $this->session->set_userdata('last_timeout_pass', time());
+                // echo json_encode($data);
+                // exit();
+                echo 2; // successfully mail sent to reset password
+            }
         } else {
             echo 1; // user is not registered error msg
         }
+    }
+
+    function reset_password()
+    {
+        // Enable SSL?
+        maintain_ssl($this->config->item("ssl_enabled"));
+
+        $token = $this->uri->segment(4);
+
+        $data['reset_password_token'] = $token;
+
+
+        // Load  view
+
+        $this->load->view('account/reset_password_by_email', isset($data) ? $data : NULL);
+    }
+
+    function user_update_password()
+    {
+        $user_new_password = $_POST['user_new_password'];
+        $token = $_POST['token'];
+
+//        $account_id = $this->account_model->get_user_id_by_token($token);
+//
+//        if ($account_id == 0) {
+//            echo 0;
+//            //redirect('account/sign_out');
+//        }
+//        else {
+
+            $this->account_model->update_password_by_token($token, $user_new_password);//, $account_id
+            echo 2; // successfully reset password
+
+//        }
+
     }
 
 
