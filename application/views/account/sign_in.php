@@ -557,7 +557,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
             $("#success_message").removeClass("show").addClass("hide");
         });
 
-        $("#save_sign_up").(function (event) {
+        $("#save_sign_up").click(function(event) {
             var username = $("#sign_up_usclickername").val();
             var email = $("#email").val();
             var confirm_password = $("#sign_up_confirm_password").val();
