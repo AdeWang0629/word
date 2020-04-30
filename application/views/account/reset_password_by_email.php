@@ -73,7 +73,7 @@ $inactive_time=31536000; //1 yr
                      style="position: fixed; right: 0px; bottom: 10px; padding: 4px; border: 2px solid #446590; border-radius: 0.5em; background-color: #EBF1DE; text-align: center;">
                     <p style="text-align: center; padding: 10px;"><span id="success_message_text"
                                                                         style="font-size: 18px; font-weight: bold;"></span></p>
-                    <a href="<?= base_url() ?>account/sign_in"><strong>ログインページ</strong></a>
+                    <a href="<?= base_url() ?>index.php/account/sign_in"><strong>ログインページ</strong></a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ $inactive_time=31536000; //1 yr
 
 <?php $this->load->view('components/footer'); ?>
 <script type="text/javascript">
-    
+
 
     $("#submit_reset_password").click(function (event) {
         var user_new_password = $("#new_password").val();
