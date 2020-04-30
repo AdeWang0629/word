@@ -2129,6 +2129,6 @@ $this->load->view('components/income_modal')
     }else{
         $('[data-toggle="popover"]').popover({container: 'body'});
     }
-
+    $.mobile.loader.prototype.options.text = "";
 
 </script>
