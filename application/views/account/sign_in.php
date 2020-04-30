@@ -801,6 +801,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         }, 1500);
     }
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $(".login_btn").attr('data-placement', 'top');
         // $('.login_btn').click(function(event) {
         //     $('.login_btn').popover();
         // });
@@ -810,7 +811,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
             var btn_id = $(this).attr('id');
             $('#'+btn_id).popover('show');
             hideTooltip(btn_id);
-        }    
+        }  
     }else{
         $('.login_btn').popover();
     }
