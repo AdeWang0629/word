@@ -158,9 +158,6 @@ class Account_password extends CI_Controller
 
     function reset_password()
     {
-        // Enable SSL?
-        maintain_ssl($this->config->item("ssl_enabled"));
-
         $token = $this->uri->segment(4);
 
         $data['reset_password_token'] = $token;
@@ -176,18 +173,9 @@ class Account_password extends CI_Controller
         $user_new_password = $_POST['user_new_password'];
         $token = $_POST['token'];
 
-//        $account_id = $this->account_model->get_user_id_by_token($token);
-//
-//        if ($account_id == 0) {
-//            echo 0;
-//            //redirect('account/sign_out');
-//        }
-//        else {
-
-            $this->account_model->update_password_by_token($token, $user_new_password);//, $account_id
+            $this->account_model->update_password_by_token($token, $user_new_password);
+            // echo $this->db->last_query();
             echo 2; // successfully reset password
-
-//        }
 
     }
 
