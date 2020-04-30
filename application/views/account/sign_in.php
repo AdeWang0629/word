@@ -3,6 +3,9 @@
 <head>
     <?php $this->load->view('components/head'); ?>
     <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript">
+        $.mobile.loader.prototype.options.text = "";
+    </script>
 <!--    <script>-->
 <!--        jQuery(document).ready(function ($) {-->
 <!--            -->
@@ -433,70 +436,6 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                 });
         });
 
-//        $("#sign_in_username_email").val(localStorage['username']);
-//        $("#sign_in_password").val(localStorage['password']);
-//        var form = $("#login-form");
-//        form.submit(function (event) {
-//            event.preventDefault();
-//                var username = $("#sign_in_username_email").val();
-//                var password = $("#sign_in_password").val();
-////                var login_menu_type = $("#login_menu_type").val();
-////                if(login_menu_type==0){
-////                    $("#select_login_menu_message").show();
-////                }else{
-////                    $("#select_login_menu_message").show();
-//                localStorage.setItem("user_login_password", password);
-//
-//                var base_url = $("#base_url").val();
-//                var url = base_url + "index.php/account/sign_in/userAuthorization";
-//                $.ajax({
-//                    url: url,
-//                    type: 'POST',
-//                    beforeSend: function () {
-//                        $("#ajax_loading_aria").show();
-//                    },
-//                    data: {sign_in_username_email: username, sign_in_password: password},
-//                })
-//                    .done(function (data) {
-////                        alert(data);console.log(data);die();
-//                        var resposnse = JSON.parse(data);
-//                        if (resposnse.message == 'success') {
-//
-//                            localStorage['username'] = username;
-//                            localStorage['password'] = password;
-//                            window.location.href = base_url;//'https://google.com'
-////                            if (login_menu_type == 1)//'word_app'
-////                                window.location.href = base_url;//'https://google.com'
-////                            else if (login_menu_type == 2)//'settlement_page'
-////                                window.location.href = base_url + 'index.php/wordapp/view_settlement_form/';
-////                            else if (login_menu_type == 3)//'email_screen'
-////                                window.location.href = base_url + 'index.php/emailing/view_email_screen/';
-//                        } else {
-//                            if(resposnse.message == '電話番号登録がありません。'){
-//                                document.getElementById('error_display_message').innerText = resposnse.message;
-//                            }
-//                            if(resposnse.message == 'パスワードが正しくありません。'){
-//                                document.getElementById('error_display_message').innerText = resposnse.message;
-//                            }
-//                            $("#ajax_loading_aria").hide();
-//                            $("#error_display").show();
-//
-//                        }
-//                    })
-//                    .fail(function () {
-//                        console.log("error");
-//                    })
-//                    .always(function () {
-//                        $("#ajax_loading_aria").hide();
-//                        console.log("complete");
-//                    });
-//                }
-//        });
-
-//        $("#singlebutton").click(function (event) {
-////            alert('hi');
-//            $("#login_options_div").show();
-//        });
         $("#sign_up").click(function (event) {
 //            var login_menu_type = $("#login_menu_type").val();
 //            if(login_menu_type==0){
