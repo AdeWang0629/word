@@ -161,7 +161,7 @@ class Account_password extends CI_Controller
         $token = $this->uri->segment(4);
 
         $data['reset_password_token'] = $token;
-
+        $data['title'] = "パスワードを設定します";
 
         // Load  view
 
