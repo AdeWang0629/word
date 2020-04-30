@@ -2119,75 +2119,14 @@ $this->load->view('components/income_modal')
             $('#'+btn_id).popover('show');
             hideTooltip(btn_id);
         }
-
-        // $(".btn")click(function(event) {
-        //     var btn_id = $(this).attr('id');
-        //     $('#'+btn_id).popover('destroy');
-        //     // $('#id_nickname').popover('destroy');
-        // });
-        // var pressTimer;
-        // $('.btn').mouseup(function(){
-        //   clearTimeout(pressTimer);
-          
-        //   // alert(btn_id);
-        //   return false;
-        // }).mousedown(function(){
-        //   // Set timeout
-        //   var btn_id = $(this).attr('id');
-        //   pressTimer = window.setTimeout(function() { 
-        //     $('#'+btn_id).popover('show');
-        //     // $('#'+btn_id).focus();
-        //     hideTooltip(btn_id);
-        //   },1000);
-        //   return false; 
-        // });
-    // var pressTimer;
-    // var pressTimer;
-
-    // $('[data-toggle="popover"]').mouseup(function(){
-    //   clearTimeout(pressTimer);
-    //   // Clear timeout
-    //   return false;
-    //   alert("Okay");
-    // }).mousedown(function(){
-    //   // Set timeout
-    //   pressTimer = window.setTimeout(function() { 
-    //     alert("Okay");
-    //     $('[data-toggle="popover"]').popover({container: 'body'});
-    //   },1000);
-    //   return false; 
-    // });
-
-
-    // var pressTimer;
-    // $(".btn").mouseup(function(){
-    //   clearTimeout(pressTimer);
-    //   alert("Okay");
-    //   // Clear timeout
-    //   return false;
-    // }).mousedown(function(){
-    //   // Set timeout
-    //   pressTimer = window.setTimeout(function() {
-    //     alert("Okay");
-    //     $(".popover").css('display', 'none');
-    // },3000);
-    //   return false; 
-    // });
     
 
 
     $(".btn_keipro").attr('data-placement', 'auto bottom');
-    // $(".btn").click(function(event) {
-    //     $(".popover").css('display', 'none');
-    // });
-    $(".word_canvas").css({
-        width: '750',
-        height: '500'
-    });
+    
 
     
-    }
-    else{
+    }else{
         $('[data-toggle="popover"]').popover({container: 'body'});
     }
 

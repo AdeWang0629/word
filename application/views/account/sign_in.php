@@ -2,6 +2,7 @@
 <html lang="jp">
 <head>
     <?php $this->load->view('components/head'); ?>
+    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <!--    <script>-->
 <!--        jQuery(document).ready(function ($) {-->
 <!--            -->
@@ -140,19 +141,19 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                     <div class="col-md-12 text-center">
                         <button style="font-size: 16px;" type="submit" id="singlebutton"
                                 name="singlebutton"
-                                class="btn btn-success btn-lg login_btn" title=" ログイン"><i class="fa fa-sign-in" aria-hidden="true"></i> ログイン
+                                class="btn btn-success btn-lg login_btn" id="btn_id1" data-toggle="popover" data-container="body" data-html="true" title="" data-content="ログイン" data-placement="bottom" data-trigger="hover"><i class="fa fa-sign-in" aria-hidden="true"></i> ログイン
                         </button>
                         <button type="button" style="font-size: 16px;" id="sign_up" name="singlebutton"
-                                class="btn btn-default btn-lg login_btn" title="新規登録"><i class="fa fa-user-plus" aria-hidden="true"></i> 新規登録
+                                class="btn btn-default btn-lg login_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="新規登録" data-placement="bottom" data-trigger="hover"><i class="fa fa-user-plus" aria-hidden="true"></i> 新規登録
                         </button>
                         <button type="button" id="change_pass" name="singlebutton"
-                                class="btn btn-default btn-lg login_btn"
-                                style="background: red; color: white; font-size: 16px; " title="パスワード変更"><i
+                                class="btn btn-default btn-lg login_btn" id="btn_id3"
+                                style="background: red; color: white; font-size: 16px; " data-toggle="popover" data-container="body" data-html="true" title="" data-content="パスワード変更" data-placement="bottom" data-trigger="hover"><i
                                     class="fa fa-lock" aria-hidden="true"></i> パスワード変更
                         </button>
                         <button type="button" id="forgot_password" name="singlebutton"
-                                class="btn btn-primary btn-lg login_btn"
-                                style="background: blue;font-size: 16px; " title="パスワードを忘れた方">
+                                class="btn btn-primary btn-lg login_btn" id="btn_id4"
+                                style="background: blue;font-size: 16px; " data-toggle="popover" data-container="body" data-html="true" title="" data-content="パスワードを忘れた方" data-placement="bottom" data-trigger="hover">
                             <i class="fa fa-lock" aria-hidden="true"></i> パスワードを忘れた方
                         </button>
                     </div>
@@ -853,6 +854,26 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         } else {
             $("#user_phone_number").removeClass('ime_mode_active').addClass('ime_mode_inactive');
         }
+    }
+
+    function hideTooltip(btn_id) {
+        setTimeout(function () {
+            $('#'+btn_id).popover('hide');
+        }, 1500);
+    }
+    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // $('.login_btn').click(function(event) {
+        //     $('.login_btn').popover();
+        // });
+        $( ".login_btn" ).bind( "taphold", tapholdHandler );
+
+        function tapholdHandler( event ){
+            var btn_id = $(this).attr('id');
+            $('#'+btn_id).popover('show');
+            hideTooltip(btn_id);
+        }    
+    }else{
+        $('.login_btn').popover();
     }
 
 </script>
