@@ -1249,7 +1249,13 @@ function font_width() {
 }
 
 function print_word() {
-    tinymce.activeEditor.execCommand('mcePrint');
+    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        tinymce.activeEditor.execCommand('mcePrint');
+    }else{
+        $('[data-toggle="popover"]').popover('hide');
+        tinymce.activeEditor.execCommand('mcePrint');
+    }
+    
 
     // sel_content = tinymce.activeEditor.selection.getContent();
     // $('.print-preview-paper-size').val("A4");
