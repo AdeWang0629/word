@@ -3512,11 +3512,5 @@ jQuery(document).ready(function ($) {
         $("#new_partner_registration_form").hide();
     });
     
-    $(".mce-close").click(function(event) {
-        alert("Okay");
-    });
-    // tinymce.activeEditor.windowManager.onClose.add(function() {
-        
-    // })
 });
 
