@@ -193,3 +193,9 @@ and (orientation: portrait) {
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+    .mce-btn-has-text{
+        left: 10px;
+    }
+}
