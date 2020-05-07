@@ -3512,48 +3512,11 @@ jQuery(document).ready(function ($) {
         $("#new_partner_registration_form").hide();
     });
     
-
-    // if($('.popover:visible').length > 0)
-    // {
-    //     alert("Okay");
-    // }
-
-    // $('[data-toggle="popover"]').click(function () {
-
-    //     setTimeout(function () {
-    //         $('.popover').fadeOut('slow');
-    //     }, 5000);
-
-    // });
-
-
-    // $('[data-toggle="popover"]').popover().click(function () {
-
-    //     setTimeout(function () {
-    //         $('[data-toggle="popover"]').popover('hide');
-    //     }, 3000);
-    // });
-
-    // var pressTimer;
-
-    // $('.btn_keipro').mouseup(function(){
-
-    //   clearTimeout(pressTimer);
-    //   // Clear timeout
-    //   return false;
-    // }).mousedown(function(){
-    //   // Set timeout
-    //   $(this).popover('show');
-    //   pressTimer = window.setTimeout(function() { 
-    //     alert("Okay");
-    //     setTimeout(function () {
-    //         alert("Hide");
-    //         $(this).popover('hide');
-    //     }, 3000);
+    $(".mce-close").click(function(event) {
+        alert("Okay");
+    });
+    // tinymce.activeEditor.windowManager.onClose.add(function() {
         
-    //     // $('[data-toggle="popover"]').popover('hide');
-    //   },500);
-    //   return false; 
-    // });
+    // })
 });
 
