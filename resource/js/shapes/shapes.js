@@ -649,7 +649,7 @@ jQuery(document).ready(function ($) {
     });
 
 
-    $("#print_word").click(function (event) {
+    $("#print_word222222222").click(function (event) {
         var html_string = tinymce.activeEditor.getContent();
         var doc_content2_height = $(tinymce.editors['doc_content2'].getContainer()).height();
 

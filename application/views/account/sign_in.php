@@ -32,6 +32,10 @@
             ime-mode: active;
         }
 
+        .ime_mode_disabled {
+            ime-mode: disabled;
+        }
+
         .btn {
             font-size: 13px;
         }
@@ -114,8 +118,8 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                 <div class="form-group <?= (form_error('sign_in_username_email') || isset($sign_in_username_email_error)) ? 'has-error' : ''; ?>">
                     <label class="col-md-3 control-label" for="sign_in_username_email">携帯番号</label>
                     <div class="col-md-9">
-                        <input id="sign_in_username_email" type="text" class="form-control" autofocus="true"
-                               name="sign_in_username_email" style="ime-mode:active" required="required"
+                        <input id="sign_in_username_email" type="tel" class="form-control ime_mode_inactive" autofocus="true"
+                               name="sign_in_username_email" required="required"
                                value="<?= set_value('sign_in_username_email') != "" ? set_value('sign_in_username_email') : '' ?>"
                                placeholder="携帯番号">
 
@@ -127,7 +131,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                     <label class="col-md-3 control-label" for="sign_in_password">パスワード</label>
                     <div class="col-md-9">
                         <input id="sign_in_password" onpaste="return false;" type="password" required="required"
-                               class="form-control" name="sign_in_password" placeholder="パスワード"
+                               class="form-control ime_mode_disabled" name="sign_in_password" placeholder="パスワード"
                                value="<?= set_value('sign_in_password') != "" ? set_value('sign_in_password') : '' ?>">
 
                     </div>
@@ -194,7 +198,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                     <div class="form-group <?= (form_error('sign_up_username') || isset($sign_up_username)) ? 'has-error' : ''; ?>">
                         <label class="col-md-4 control-label" for="sign_up_username">携帯番号</label>
                         <div class="col-md-8">
-                            <input id="sign_up_username" style="ime-mode:inactive" type="text" class="form-control"
+                            <input id="sign_up_username" style="ime-mode:inactive" type="tel" class="form-control"
                                    name="sign_up_username" required="required"
                                    value="<?= set_value('sign_up_username') ?>" placeholder="４ケタ以上で入力してください">
 
@@ -204,7 +208,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                     <div class="form-group <?= (form_error('email') || isset($email)) ? 'has-error' : ''; ?>">
                         <label style="text-align: center" class="col-md-4 control-label" for="email">メールアドレス</label>
                         <div class="col-md-8">
-                            <input id="email" style="ime-mode:inactive" type="text" class="form-control"
+                            <input id="email" style="ime-mode:inactive" type="tel" class="form-control"
                                    name="email" required="required"
                                    value="<?= set_value('email') ?>" placeholder="メールアドレス">
                         </div>
@@ -277,58 +281,64 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         </div>
     </div>
 
-    <div class="col-md-4 col-sm-4 col-xs-12 pull-right hide" id="change_pass_aria"
+    <div class="col-md-3 col-sm-3 col-xs-12 pull-right hide" id="change_pass_aria"
          style="position: fixed; right: 0px; bottom: 0px; padding: 4px; border: 2px solid #446590; border-radius: 0.5em; background-color: #EBF1DE;">
         <div style="text-align: center">
             <p style="color: black; font-family: ms mincho, ｍｓ 明朝; font-size: 16.666667px; font-weight: bold;">
                 パスワードを変更しますか？　
             </p>
             <p>
-                <button type="button" id="show_change_pass_form" class="btn btn-light_green"
+                <button type="button" id="show_change_pass_form" class="btn btn-defauld btn-lg"
                         style="border: 2px solid #46658C; margin-right: 10px;"> はい
                 </button>
-                <button type="button" id="close_change_pass_aria" class="btn btn-light_blue"
+                <button type="button" id="close_change_pass_aria" class="btn btn-defauld btn-lg"
                         style="border: 2px solid #46658C; margin-right: 10px;"> いいえ
                 </button>
             </p>
         </div>
     </div>
 
-    <div class="col-md-4 col-sm-4 col-xs-12 pull-right hide" id="change_pass_form"
-         style="position: fixed; right: 0px; bottom: 0px; padding: 4px; border: 2px solid #446590; border-radius: 0.5em; background-color: #EBF1DE;">
-        <div style="width:auto; text-align: right">
-
-            <button type="button" class="btn btn-danger" id="change_pass_form_close"> 戻る
-            </button>
-
-        </div>
-        <div style="width:auto; text-align: left; font-family: ms mincho, ｍｓ 明朝; font-size: 18.666667px;">
-            変更　
-        </div>
-        <div class="clearfix"></div>
-        <div style="text-align: left; font-family: ms mincho, ｍｓ 明朝; font-size: 18.666667px;">
-            現在のパスワード <input onblur="check_if_num_or_char();" class="ime_mode_active" type="tel"
-                            id="user_current_password" name="user_current_password"
-                            style="background-color: #B7DEE8; border: 2px solid #446590; border-radius: 0.5em; padding: 7px; margin-bottom: 10px; text-align: center;"
-            ><br>
-            新パスワード　
-            <input type="text" id="user_new_password" name="user_new_password"
-                   style="background-color: #FFCCFF; border: 2px solid #446590; border-radius: 0.5em; padding: 7px; margin-bottom: 10px; margin-left: 18px; text-align: center; ime-mode: inactive"
-                   maxlength="4" placeholder="４ケタ">
-            <p style="text-align: center">
-                <button type="button" id="done_change_pass" class="btn btn-yellow" style="border: 2px solid #46658C;">
-                    変更
-                </button>
-            </p>
-        </div>
-    </div>
+    <div class="col-md-3 col-sm-3 col-xs-12 pull-right hide" id="change_pass_form"
+         style="position: fixed; right: 0px; bottom: 0px; padding: 0px; border: 2px solid #446590; border-radius: 0.5em; background-color: #EBF1DE;">
+         <div class="panel panel-default" id="change_pass_form" style="margin: 0; padding: 0;">
+            <div class="panel-heading">
+                <h4 class="pull-left">パスワード変更</h4>
+                <button type="button" class="btn btn-danger btn-lg pull-right" id="change_pass_form_close"> 戻る
+                    </button>
+                <div class="clearfix"></div>
+            </div>
+             <div class="panel-body">
+                 <form class="form-horizontal">
+                     <div class="form-group">
+                         <label class="col-md-12 control-label" style="font-size: 18px; text-align: left;">現在のパスワード</label>
+                         <div class="col-md-12">
+                             <input onblur="check_if_num_or_char();" class="form-control ime_mode_inactive" type="tel" style="background-color: #B7DEE8; border: 2px solid #446590; font-size: 18px; padding: 10px;  text-align: center;" id="user_current_password" name="user_current_password">
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label class="col-md-12 control-label" style="font-size: 18px; text-align: left;">新パスワード　</label>
+                         <div class="col-md-12">
+                            <input type="tel" id="user_new_password" class="form-control ime_mode_inactive" name="user_new_password"
+                                   style="background-color: #FFCCFF; border: 2px solid #446590; border-radius: 0.5em; padding: 7px; text-align: center; "
+                                   maxlength="4" placeholder="４ケタ">
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <center>
+                             <button type="button" id="done_change_pass" class="btn btn-defauld btn-lg" style="border: 2px solid #46658C;">変更</button>
+                         </center>
+                     </div>
+                 </form>
+             </div>
+         </div>
+    </div>   
 
     <!--    start forgot_pass_form-->
     <div class="col-md-4 col-sm-4 col-xs-12 pull-right hide" id="forgot_pass_form"
          style="position: fixed; right: 0px; bottom: 0px; padding: 4px; border: 2px solid #446590; border-radius: 0.5em; background-color: #EBF1DE;">
         <div style="width:auto; text-align: right">
 
-            <button type="button" class="btn btn-success" id="forgot_pass_form_close"> 戻る
+            <button type="button" class="btn btn-danger btn-lg" id="forgot_pass_form_close"> 戻る
             </button>
 
         </div>
@@ -337,7 +347,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         </div>
         <div class="clearfix"></div>
         <div style="text-align: left; font-family: ms mincho, ｍｓ 明朝; font-size: 18.666667px;">
-            携帯番号　<input onblur="check_if_num_or_char();" class="ime_mode_active" placeholder="携帯番号" type="tel"
+            携帯番号　<input onblur="check_if_num_or_char();" class="ime_mode_inactive" placeholder="携帯番号" type="tel"
                         id="user_phone_number" name="user_phone_number"
                         style="background-color:#CCFF99; border: 2px solid #446590; border-radius: 0.5em; padding: 7px; margin-bottom: 10px; margin-left: 7px; text-align: center;"
             >
@@ -356,7 +366,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
     </div>
     <!--    end forgot_pass_form-->
 
-    <div class="col-md-4 col-sm-4 col-xs-12 pull-right hide" id="user_change_pass_error_message"
+    <div class="col-md-3 col-sm-3 col-xs-12 pull-right hide" id="user_change_pass_error_message"
          style="position: fixed; right: 0px; bottom: 0px; padding: 4px; border: 2px solid #446590; border-radius: 0.5em; background-color: #EBF1DE; text-align: center;">
         <p style="text-align: center; padding: 10px;"><span id="error_message_text"></span></p>
         <button type="button" class="btn btn-default" id="message_close">確認

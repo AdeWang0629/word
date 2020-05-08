@@ -1410,19 +1410,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="col-md-12 panel-body">            
             <button class="btn btn-info popup_button" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="絵・図" data-placement="auto top" data-trigger="hover" id="btn-shapes-design">絵・図</button>
             <button class="btn btn-info popup_button" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="表" data-placement="auto top" data-trigger="hover" id="btn-shapes-table">表</button>
-            <button onclick="word_special_cherecter()" class="btn btn-info popup_button" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="記号" data-placement="auto top" data-trigger="hover">記号
+            <button id="eeeee" onclick="word_special_cherecter()" class="btn btn-info popup_button" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="記号" data-placement="auto top" data-trigger="hover">記号
             </button>
             <button class="btn btn-info popup_button" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="移動" data-placement="auto left" data-trigger="hover" onclick="word_cut()" id="btn-note-cut">移 動</button>
             <button class="btn btn-info popup_button" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="複写" data-placement="auto top" data-trigger="hover" onclick="word_copy()" id="btn-note-copy">複 写</button>
             <!-- <button id="" type="button" class="btn btn-info" title="辞書">辞書</button> -->
-            <button class="btn btn-info popup_button" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="文例" data-placement="auto right" data-trigger="hover">文例</button>
+            <button id="dddd" class="btn btn-info popup_button" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="文例" data-placement="auto top" data-trigger="hover">文例</button>
             <button class="btn btn-info popup_button" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="カラー" data-placement="auto top" data-trigger="hover" id="word_color">カラー </button>
             <button id="search_replace" class="btn btn-info popup_button" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="見出" data-placement="auto top" data-trigger="hover">見出</button>
             <!-- <button type="button" onclick="print_word()" id="print_word" class="btn btn-info popup_button" title="印刷">
                 印刷
             </button> -->
-            <button class="btn btn-info print_word popup_button" type="button"data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="印刷" data-placement="auto top" data-trigger="hover"
-                    onClick="javascript: print_word();">印刷
+            <button id="print_word" onclick="print_word()" class="btn btn-info print_word popup_button" type="button"data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="印刷" data-placement="auto top" data-trigger="hover">印刷
             </button>
             <!-- <button type="button" id="print_word" class="btn btn-info popup_button" title="印刷">
                 印刷
