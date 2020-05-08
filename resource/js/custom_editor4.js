@@ -1521,26 +1521,11 @@ function save_autometically() {
 
     delay(function () {
         var post_id = $("#post_id").val();
-
         // var content = tinymce.activeEditor.getContent();
         var content = '';
         var get_page_count = localStorage.getItem("page_count");
 
-        /*
-        if (get_page_count != null) {
-            var plus_num = 1;
-            var page_count = Number(get_page_count) + Number(plus_num);
-
-            for (var i = 1; i < page_count; i++) {
-                var content_array = tinymce.editors[i].getContent();
-                content += content_array;
-            }
-        } else {
-            var content = tinymce.activeEditor.getContent();
-        }
-        console.log(get_page_count + '==save::page_count==' + page_count);
-        // console.log(content);
-        */
+        
         content = tinymce.activeEditor.getContent();
         var temp_title = strip(content);
         temp_title = temp_title.replace(/&nbsp;/gi, '');
@@ -1557,8 +1542,7 @@ function save_autometically() {
             })
 
             .done(function (data, statusText, xhr) {
-                var post = JSON.parse(data);
-
+                var post = JSON.parse(data);                
                 $('#post_id').attr('value', post.post_id);
                 $('#current_open_file').attr('value', post.post_id);
                 $('.internet_connection_alert').slideUp(400);

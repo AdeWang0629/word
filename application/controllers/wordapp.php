@@ -75,13 +75,6 @@ class Wordapp extends CI_Controller
 
     public function save()
     {
-        // $sql = "INSERT INTO `post`(`post_title`, `post_details`, `created_by`, `created_at`, `updated_at`) VALUES ('".$this->input->post('post_title')."','".$this->input->post('post_details')."',24,'".date('Y-m-d H:i:s')."','".date('Y-m-d H:i:s')."')";
-        // echo $sql;
-        // exit();
-        // Enable SSL?
-
-        maintain_ssl($this->config->item("ssl_enabled"));
-
         // Redirect unauthenticated users to signin page
         if (!$this->authentication->is_signed_in()) {
             redirect('account/sign_in');
@@ -114,10 +107,9 @@ class Wordapp extends CI_Controller
             if ($post_id != "") {
                 $post_data = array(
                     'post_title' => $post_title,
-                    'post_details' => $this->input->post('post_details'),
+                    'post_details' => mb_convert_encoding($this->input->post('post_details'), 'UTF-8', 'UTF-8'),
                     'updated_at' => date('Y-m-d H:i:s')
                 );
-
                 $this->wordapp_model->_table_name = 'post';
                 $this->wordapp_model->_primary_key = 'post_id';
                 $post_id = $this->wordapp_model->save($post_data, $post_id);
@@ -129,17 +121,19 @@ class Wordapp extends CI_Controller
                     $data['message'] = "error3";
                 }
             } else {
+
                 $post_data = array(
                     'post_title' => $post_title,
-                    'post_details' => $this->input->post('post_details', TRUE),
+                    'post_details' => mb_convert_encoding($this->input->post('post_details'), 'UTF-8', 'UTF-8'),
                     'created_by' => $data['account']->id,
                     'created_at' => date('Y-m-d H:i:s'),
                     'updated_at' => date('Y-m-d H:i:s')
                 );
-
+                
                 $this->wordapp_model->_table_name = 'post';
                 $this->wordapp_model->_primary_key = 'post_id';
                 $post_id = $this->wordapp_model->save($post_data);
+                
                 if ($post_id) {
                     $data['post_id'] = $post_id;
                     $data['message'] = "success";
