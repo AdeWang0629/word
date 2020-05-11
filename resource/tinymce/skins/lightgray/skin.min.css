@@ -9,7 +9,7 @@
     }
     .table_res{
     	max-height: 450px;
-    	width: 290px;
+    	width: 300px;
     	overflow: scroll;
     }
 }
