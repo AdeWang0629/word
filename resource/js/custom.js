@@ -3510,6 +3510,17 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
         $("#new_partner_registration_form").hide();
     });
+
+    $("#print_word").click(function(event) {
+        event.preventDefault();
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $('[data-toggle="popover"]').popover('hide');
+            tinymce.activeEditor.execCommand('mcePrint');
+        }else{
+            $('[data-toggle="popover"]').popover('hide');
+            tinymce.activeEditor.execCommand('mcePrint');
+        }
+    });
     
 });
 

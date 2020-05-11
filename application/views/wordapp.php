@@ -1421,7 +1421,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- <button type="button" onclick="print_word()" id="print_word" class="btn btn-info popup_button" title="印刷">
                 印刷
             </button> -->
-            <button id="print_word" onclick="print_word()" class="btn btn-info print_word popup_button" type="button"data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="印刷" data-placement="auto top" data-trigger="hover">印刷
+            <button id="print_word" class="btn btn-info print_word popup_button" type="button"data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content="印刷" data-placement="auto top" data-trigger="hover">印刷
             </button>
             <!-- <button type="button" id="print_word" class="btn btn-info popup_button" title="印刷">
                 印刷

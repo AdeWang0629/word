@@ -1248,6 +1248,8 @@ function font_width() {
     tinymce.get('doc_content').execCommand('Bold', false, 'doc_content');
 }
 
+
+
 function print_word() {
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('[data-toggle="popover"]').popover('hide');
