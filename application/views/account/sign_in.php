@@ -2,6 +2,7 @@
 <html lang="jp">
 <head>
     <?php $this->load->view('components/head'); ?>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url().RES_DIR; ?>/css/sign-in.css?id=<?php echo rand(0,10000)?>">
     <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript">
         $.mobile.loader.prototype.options.text = "";

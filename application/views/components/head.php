@@ -18,8 +18,9 @@
 <link type="text/css" rel="stylesheet" href="<?php echo base_url('resource/css/custom.css'); ?>"/>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url().RES_DIR; ?>/css/custom.css?id=<?php echo rand(0,10000)?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url().RES_DIR; ?>/css/word_responsive.css?id=<?php echo rand(0,10000)?>">
+
 <link type="text/css" rel="stylesheet" href="<?php echo base_url('resource/css/email_modal.css'); ?>"/>
-<link type="text/css" rel="stylesheet" href="<?php echo base_url('resource/css/sign-in.css'); ?>"/>
+
 
 <link rel="stylesheet" href="resource/css/jquery-confirm.min.css">
 <script src="<?php echo base_url('resource/js/jquery.min.js'); ?>"></script>
