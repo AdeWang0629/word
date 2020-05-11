@@ -3513,7 +3513,6 @@ jQuery(document).ready(function ($) {
 
     $("#print_word").click(function(event) {
         event.preventDefault();
-
         if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $('[data-toggle="popover"]').popover('hide');
             tinymce.activeEditor.execCommand('mcePrint');
