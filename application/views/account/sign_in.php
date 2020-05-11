@@ -187,11 +187,13 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="singlebutton"></label>
                         <div class="col-md-8">
-                            <button type="button" id="save_sign_up" title="登録" name="singlebutton"
-                                    class="btn btn-success btn-lg"><i class="fa fa-user-plus" aria-hidden="true"></i> 登録
+                            <button type="button" id="save_sign_up" name="singlebutton"
+                                    class="btn btn-success btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="登録" data-placement="bottom" data-trigger="hover">
+                                    <i class="fa fa-user-plus" aria-hidden="true"></i> 登録
                             </button>
-                            <button type="button" id="close_sign_up" title="戻る" name="singlebutton"
-                                    class="btn btn-danger btn-lg"><i class="fa fa-user-close" aria-hidden="true"></i> 戻る
+                            <button type="button" id="close_sign_up" name="singlebutton"
+                                    class="btn btn-danger btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="戻る" data-placement="bottom" data-trigger="hover">
+                                    <i class="fa fa-user-close" aria-hidden="true"></i> 戻る
                             </button>
                         </div>
                     </div>
@@ -338,9 +340,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
     <div class="col-md-4 col-sm-4 col-xs-12 pull-right hide" id="forgot_pass_form"
          style="position: fixed; right: 0px; bottom: 0px; padding: 4px; border: 2px solid #446590; border-radius: 0.5em; background-color: #EBF1DE;">
         <div style="width:auto; text-align: right">
-
-            <button type="button" class="btn btn-danger btn-lg" id="forgot_pass_form_close"> 戻る
-            </button>
+            <button type="button" id="forgot_pass_form_close" name="singlebutton" class="btn btn-danger btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="戻る" data-placement="bottom" data-trigger="hover">戻る</button>
 
         </div>
         <div style="width:auto; text-align: left; font-family: ms mincho, ｍｓ 明朝; font-size: 18.666667px;">
@@ -359,8 +359,8 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                         style="border: 2px solid #46658C;display: none;">
                     送信
                 </button>
-                <a id="done_forgot_pass" style="border: 2px solid #46658C; color: black;" class="btn btn-yellow"
-                   href="#">送信</a>
+                <button type="button" id="done_forgot_pass" name="singlebutton"
+                                    class="btn btn-success btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="送信" data-placement="bottom" data-trigger="hover">送信</button>
 
             </p>
         </div>
@@ -370,7 +370,8 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
     <div class="col-md-3 col-sm-3 col-xs-12 pull-right hide" id="user_change_pass_error_message"
          style="position: fixed; right: 0px; bottom: 0px; padding: 4px; border: 2px solid #446590; border-radius: 0.5em; background-color: #EBF1DE; text-align: center;">
         <p style="text-align: center; padding: 10px;"><span id="error_message_text"></span></p>
-        <button type="button" class="btn btn-default" id="message_close">確認
+        <button type="button" id="message_close" name="singlebutton"
+                                    class="btn btn-default btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="確認" data-placement="bottom" data-trigger="hover">確認
         </button>
     </div>
 
@@ -378,7 +379,9 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
          style="position: fixed; right: 0px; bottom: 0px; padding: 4px; border: 2px solid #446590; border-radius: 0.5em; background-color: #EBF1DE; text-align: center;">
         <p style="text-align: center; padding: 10px;"><span id="success_message_text"
                                                             style="font-size: 18px; font-weight: bold;"></span></p>
-        <button type="button" class="btn btn-success" id="success_message_close" style="border: 2px solid blue;">確認
+        <button type="button" id="success_message_close" name="singlebutton"
+                                    class="btn btn-success btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="確認" data-placement="bottom" data-trigger="hover">
+                                    確認
         </button>
     </div>
 
@@ -404,6 +407,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         $("#sign_in_password").val(localStorage['password']);
         var form = $("#login-form");
         form.submit(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             event.preventDefault();
             var username = $("#sign_in_username_email").val();
             var password = $("#sign_in_password").val();
@@ -448,6 +452,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         });
 
         $("#sign_up").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
 //            var login_menu_type = $("#login_menu_type").val();
 //            if(login_menu_type==0){
 //                $("#select_login_menu_message").show();
@@ -465,22 +470,27 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
             /* Act on the event */
         });
         $("#close_sign_up").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             $("#sign_up_aria").removeClass("show").addClass("hide");
         });
         $("#success_close").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             $("#sign_up_success").removeClass("show").addClass("hide");
         });
 
         $("#change_pass").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             $("#change_pass_aria").removeClass("hide").addClass("show");
             $("#sign_up_aria").removeClass("show").addClass("hide");
             /* Act on the event */
         });
 
         $("#close_change_pass_aria").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             $("#change_pass_aria").removeClass("show").addClass("hide");
         });
         $("#show_change_pass_form").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             $("#change_pass_form").removeClass("hide").addClass("show");
             $("#sign_up_aria").removeClass("show").addClass("hide");
             $("#user_new_password").val('');
@@ -488,25 +498,31 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
             /* Act on the event */
         });
         $("#change_pass_form_close").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             $("#change_pass_form").removeClass("show").addClass("hide");
         });
 
         $("#forgot_password").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             $("#forgot_pass_form").removeClass("hide").addClass("show");
             $("#user_phone_number").val('');
             $("#user_forgot_new_password").val('');
         });
         $("#forgot_pass_form_close").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             $("#forgot_pass_form").removeClass("show").addClass("hide");
         });
         $("#message_close").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             $("#user_change_pass_error_message").removeClass("show").addClass("hide");
         });
         $("#success_message_close").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             $("#success_message").removeClass("show").addClass("hide");
         });
 
         $("#save_sign_up").click(function(event) {
+            $('[data-toggle="popover"]').popover('hide');
             var username = $("#sign_up_username").val();
             var email = $("#email").val();
             var confirm_password = $("#sign_up_confirm_password").val();
@@ -643,6 +659,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         });
 
         $("#done_change_pass").click(function (event) {
+            $('[data-toggle="popover"]').popover('hide');
             var user_new_password = $("#user_new_password").val();
             var user_current_password = $("#user_current_password").val();
             var username = $("#sign_in_username_email").val();
@@ -687,6 +704,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
 
         $("#done_forgot_pass").click(function (event) {
             event.preventDefault();
+            $('[data-toggle="popover"]').popover('hide');
 //            var user_forgot_new_password = $("#user_forgot_new_password").val();
             var user_phone_number = $("#user_phone_number").val();
 //            die();
@@ -812,11 +830,8 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         }, 1500);
     }
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        $(".login_btn").attr('data-placement', 'top');
-        // $('.login_btn').click(function(event) {
-        //     $('.login_btn').popover();
-        // });
-        $( ".login_btn" ).bind( "taphold", tapholdHandler );
+        $(".login_btn, .sign_up_btn").attr('data-placement', 'top');
+        $( ".login_btn, .sign_up_btn" ).bind( "taphold", tapholdHandler );
 
         function tapholdHandler( event ){
             var btn_id = $(this).attr('id');
@@ -824,7 +839,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
             hideTooltip(btn_id);
         }  
     }else{
-        $('.login_btn').popover();
+        $('.login_btn, .sign_up_btn').popover();
     }
 
 </script>

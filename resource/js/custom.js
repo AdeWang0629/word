@@ -8,7 +8,6 @@ jQuery(document).ready(function ($) {
     var open_file_id = $("#current_open_file").val();
     $("#show_table_of_content").click(function (event) {
         event.preventDefault();
-        // restore_post_ids = [];
         $("#table_of_contantes").removeClass("hide").addClass("show");
         var login_user_id = $("#login_user_id").val();
         var start_from = 0;
