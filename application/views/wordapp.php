@@ -2129,15 +2129,5 @@ $this->load->view('components/income_modal')
         $('[data-toggle="popover"]').popover({container: 'body'});
     }
     $.mobile.loader.prototype.options.text = "";
-
-
-    $.ajax({
-        url: "",
-        context: document.body,
-        success: function(s,x){
-
-            $('html[manifest=saveappoffline.appcache]').attr('content', '');
-                $(this).html(s);
-        }
-    }); 
+    
 </script>
