@@ -291,11 +291,13 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                 パスワードを変更しますか？　
             </p>
             <p>
-                <button type="button" id="show_change_pass_form" class="btn btn-defauld btn-lg"
-                        style="border: 2px solid #46658C; margin-right: 10px;"> はい
+                <button type="button" style="border: 2px solid #46658C; margin-right: 10px;" id="show_change_pass_form" name="singlebutton"
+                                    class="btn btn-defauld btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="はい" data-placement="top" data-trigger="hover">
+                はい
                 </button>
-                <button type="button" id="close_change_pass_aria" class="btn btn-defauld btn-lg"
-                        style="border: 2px solid #46658C; margin-right: 10px;"> いいえ
+                <button type="button" style="border: 2px solid #46658C; margin-right: 10px;" id="close_change_pass_aria" name="singlebutton"
+                                    class="btn btn-defauld btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="いいえ" data-placement="top" data-trigger="hover">
+                 いいえ
                 </button>
             </p>
         </div>
@@ -306,21 +308,23 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
          <div class="panel panel-default" id="change_pass_form" style="margin: 0; padding: 0;">
             <div class="panel-heading">
                 <h4 class="pull-left">パスワード変更</h4>
-                <button type="button" class="btn btn-danger btn-lg pull-right" id="change_pass_form_close"> 戻る
+                <button type="button" id="change_pass_form_close" name="singlebutton"
+                                    class="btn btn-danger btn-lg sign_up_btn pull-right" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="戻る" data-placement="bottom" data-trigger="hover">
+                 戻る
                     </button>
                 <div class="clearfix"></div>
             </div>
              <div class="panel-body">
                  <form class="form-horizontal">
-                     <div class="form-group">
-                         <label class="col-md-12 control-label" style="font-size: 18px; text-align: left;">現在のパスワード</label>
-                         <div class="col-md-12">
+                     <div class="form-group center">
+                         <label class="col-md-12 control-label" style="font-size: 18px; text-align: center;">現在のパスワード</label>
+                         <div class="col-md-8" style="margin-left: 65px;">
                              <input onblur="check_if_num_or_char();" class="form-control ime_mode_inactive" type="tel" style="background-color: #B7DEE8; border: 2px solid #446590; font-size: 18px; padding: 10px;  text-align: center;" id="user_current_password" name="user_current_password">
                          </div>
                      </div>
                      <div class="form-group">
-                         <label class="col-md-12 control-label" style="font-size: 18px; text-align: left;">新パスワード　</label>
-                         <div class="col-md-12">
+                         <label class="col-md-12 control-label" style="font-size: 18px; text-align: center;">新パスワード　</label>
+                         <div class="col-md-8" style="margin-left: 65px;">
                             <input type="tel" id="user_new_password" class="form-control ime_mode_inactive" name="user_new_password"
                                    style="background-color: #FFCCFF; border: 2px solid #446590; border-radius: 0.5em; padding: 7px; text-align: center; "
                                    maxlength="4" placeholder="４ケタ">
@@ -328,7 +332,9 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                      </div>
                      <div class="form-group">
                          <center>
-                             <button type="button" id="done_change_pass" class="btn btn-defauld btn-lg" style="border: 2px solid #46658C;">変更</button>
+                            <button type="button"  style="border: 2px solid #46658C;" id="done_change_pass" name="singlebutton"
+                                    class="btn btn-success btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="変更" data-placement="top" data-trigger="hover">
+                             変更</button>
                          </center>
                      </div>
                  </form>
@@ -360,7 +366,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                     送信
                 </button>
                 <button type="button" id="done_forgot_pass" name="singlebutton"
-                                    class="btn btn-success btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="送信" data-placement="bottom" data-trigger="hover">送信</button>
+                                    class="btn btn-success btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="送信" data-placement="top" data-trigger="hover">送信</button>
 
             </p>
         </div>
@@ -371,7 +377,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
          style="position: fixed; right: 0px; bottom: 0px; padding: 4px; border: 2px solid #446590; border-radius: 0.5em; background-color: #EBF1DE; text-align: center;">
         <p style="text-align: center; padding: 10px;"><span id="error_message_text"></span></p>
         <button type="button" id="message_close" name="singlebutton"
-                                    class="btn btn-default btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="確認" data-placement="bottom" data-trigger="hover">確認
+                                    class="btn btn-default btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="確認" data-placement="top" data-trigger="hover">確認
         </button>
     </div>
 
@@ -380,7 +386,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
         <p style="text-align: center; padding: 10px;"><span id="success_message_text"
                                                             style="font-size: 18px; font-weight: bold;"></span></p>
         <button type="button" id="success_message_close" name="singlebutton"
-                                    class="btn btn-success btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="確認" data-placement="bottom" data-trigger="hover">
+                                    class="btn btn-success btn-lg sign_up_btn" id="btn_id2" data-toggle="popover" data-container="body" data-html="true" title="" data-content="確認" data-placement="top" data-trigger="hover">
                                     確認
         </button>
     </div>
