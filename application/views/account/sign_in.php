@@ -317,14 +317,14 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
              <div class="panel-body">
                  <form class="form-horizontal">
                      <div class="form-group center">
-                         <label class="col-md-12 control-label" style="font-size: 18px; text-align: center;">現在のパスワード</label>
-                         <div class="col-md-8" style="margin-left: 65px;">
+                         <label class="col-md-12 col-xs-12 control-label" style="font-size: 18px; text-align: center;">現在のパスワード</label>
+                         <div class="col-md-8 col-xs-8" style="margin-left: 65px;">
                              <input onblur="check_if_num_or_char();" class="form-control ime_mode_inactive" type="tel" style="background-color: #B7DEE8; border: 2px solid #446590; font-size: 18px; padding: 10px;  text-align: center;" id="user_current_password" name="user_current_password">
                          </div>
                      </div>
                      <div class="form-group">
-                         <label class="col-md-12 control-label" style="font-size: 18px; text-align: center;">新パスワード　</label>
-                         <div class="col-md-8" style="margin-left: 65px;">
+                         <label class="col-md-12 col-xs-12 control-label" style="font-size: 18px; text-align: center;">新パスワード　</label>
+                         <div class="col-md-8 col-xs-8" style="margin-left: 65px;">
                             <input type="tel" id="user_new_password" class="form-control ime_mode_inactive" name="user_new_password"
                                    style="background-color: #FFCCFF; border: 2px solid #446590; border-radius: 0.5em; padding: 7px; text-align: center; "
                                    maxlength="4" placeholder="４ケタ">
