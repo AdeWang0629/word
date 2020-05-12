@@ -365,15 +365,13 @@ jQuery(document).ready(function ($) {
    $("#close_blanck_document_btn").on('click', function()
    {
         tinymce.get('doc_content').undoManager.clear();
-        // tinymce.execCommand('mceFocus',false,'doc_content');
-        tinymce.get('doc_content').focus();
-        
         var post_id = $("#post_id").val();
         // Get the HTML contents of the currently active editor
         // var content = tinyMCE.activeEditor.getContent();
+        tinymce.get('doc_content').focus();
         var content = '';
         var get_page_count = localStorage.getItem("page_count");
-        
+
         if (get_page_count != null) {
             var plus_num = 1;
             var page_count = Number(get_page_count) + Number(plus_num);
@@ -386,11 +384,12 @@ jQuery(document).ready(function ($) {
         } else {
             var content = tinyMCE.activeEditor.getContent();
         }
-        var temp_title = strip(content);
-        $("#close_blanck_document_btn").focus();
+        $("#create_new_doc").focus();
+        
+        var temp_title = strip(content);        
         temp_title = temp_title.replace(/&nbsp;/gi, '');
         temp_title = temp_title.replace(/\n|\r/g, "").trim();
-        $("#close_blanck_document_btn").focus();
+        
         var post_title = temp_title.substring(0, 15);
         if (post_title.length < 1) {
             tinymce.get('doc_content').focus();
