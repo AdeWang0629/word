@@ -366,7 +366,7 @@ jQuery(document).ready(function ($) {
    {
         tinymce.get('doc_content').undoManager.clear();
         // tinymce.execCommand('mceFocus',false,'doc_content');
-
+        tinymce.get('doc_content').focus();
         var post_id = $("#post_id").val();
         // Get the HTML contents of the currently active editor
         // var content = tinyMCE.activeEditor.getContent();
@@ -392,7 +392,7 @@ jQuery(document).ready(function ($) {
 
         var post_title = temp_title.substring(0, 15);
         if (post_title.length < 1) {
-            $("#tinymce").focus();
+            tinymce.get('doc_content').focus();
             $("#close_blanck_document_btn").focus();
             // $("#blanck_document_message").removeClass('hide').addClass('show');
 
@@ -419,7 +419,7 @@ jQuery(document).ready(function ($) {
                         }
                         location.reload();
 
-                        $("#tinymce").focus();
+                        tinymce.get('doc_content').focus();
                     }
                     // console.log("success");
                 })
