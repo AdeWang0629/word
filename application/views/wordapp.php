@@ -1244,7 +1244,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 hide pull-right font_size_aria" id="font_size_aria"
+<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 hide pull-right font_size_aria multiple_navi" id="font_size_aria"
      style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
     <div class="col-lg-12" style="padding: 0">
         <button type="button" style="margin-bottom: 10px; margin-right: 0;"
@@ -1333,7 +1333,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="clearfix"></div>
 
 
-<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 pull-right hide font_family_aria" id="font_family_aria" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
+<div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 pull-right hide font_family_aria multiple_navi" id="font_family_aria" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
     <div class="col-lg-12" style="padding: 0">
         <button type="button" style="margin-bottom: 10px; margin-right: 0;"
                 class="btn btn-warning pull-right btn_keipro" id="close_family_aria">戻る
@@ -1398,7 +1398,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--</div>-->
 <!--<div class="clearfix"></div>-->
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 pull-right hide word_function_aria" id="word_function_aria"
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 pull-right word_function_aria multiple_navi hide" id="word_function_aria"
      style="">
 
     <div class="panel panel-info" style="margin-bottom: 2px; border: 2px solid #eee;">
@@ -1433,7 +1433,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="clearfix"></div>
 </div>
 <!-- Font Color Aria -->
-<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 pull-right hide draggable_aria font_color_aria" id="font_color_aria" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
+<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 pull-right hide draggable_aria font_color_aria multiple_navi" id="font_color_aria" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
 
     <div class="row" style="">
         <div class="col-sm-12">
@@ -1495,7 +1495,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <!-- Image Selection message -->
-<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right hide draggable_aria word_image_selection_message" id="word_image_selection_message" style="">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right hide draggable_aria word_image_selection_message multiple_navi" id="word_image_selection_message" style="">
 
     <div class="panel panel-warning" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
         <div class="panel-body">
@@ -1531,7 +1531,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!-- Cursor Confermation -->
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 pull-right hide draggable_aria word_image_past_message" id="word_image_past_message" style="">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 pull-right hide draggable_aria word_image_past_message multiple_navi" id="word_image_past_message" style="">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1549,7 +1549,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!-- Image Past Confirmation -->
 
-<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 pull-right hide draggable_aria word_image_past_confirmation" id="word_image_past_confirmation"style="">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 pull-right hide draggable_aria word_image_past_confirmation multiple_navi" id="word_image_past_confirmation"style="">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1566,7 +1566,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <!-- Image Zoom -->
-<div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 hide draggable_aria word_image_zooming" id="word_image_zooming"
+<div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 hide draggable_aria word_image_zooming multiple_navi" id="word_image_zooming"
      style="">
 
     <div class="panel panel-warning"
@@ -1599,7 +1599,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 <!-- Image Upload Completed -->
-<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 pull-right hide draggable_aria close_aria word_image_upload_completed"
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 pull-right hide draggable_aria close_aria word_image_upload_completed multiple_navi"
      id="word_image_upload_completed" style="">
 
     <div class="panel panel-warning"
@@ -1622,7 +1622,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <!-- Canvase Art Aria -->
-<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 pull-right hide word_canvase_aria" id="word_canvase_aria">
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 pull-right hide word_canvase_aria multiple_navi" id="word_canvase_aria">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -1890,7 +1890,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria restore_select_document" id="restore_select_document" style="">
+<div class="col-md-3 col-sm-10 col-xs-10 pull-right hide draggable_aria close_aria restore_select_document " id="restore_select_document" style="">
 
     <div class="panel panel-warning"
          style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">

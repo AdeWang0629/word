@@ -862,14 +862,15 @@ jQuery(document).ready(function ($) {
 
 
     $("#font_size").click(function (event) {
-
+        $(".multiple_navi").removeClass('show').addClass('hide');
         $("#font_size_aria").removeClass('hide').addClass('show');
         $("#font_family_aria").removeClass('show').addClass('hide');
+        
         $("#close_font_size_aria").focus();
     });
 
     $("#shapes").click(function (event) {
-
+        $(".multiple_navi").removeClass('show').addClass('hide');
         $("#shapes_area").removeClass('hide').addClass('show');
         $("#close_shapes_area").focus();
     });
@@ -879,7 +880,7 @@ jQuery(document).ready(function ($) {
 
 
     $("#email_font_size").click(function (event) {
-
+        $(".multiple_navi").removeClass('show').addClass('hide');
         $("#email_font_size_aria").removeClass('hide').addClass('show');
     });
 
@@ -896,6 +897,7 @@ jQuery(document).ready(function ($) {
     });
 
     $("#font_family").click(function (event) {
+        $(".multiple_navi").removeClass('show').addClass('hide');
         $("#font_family_aria").removeClass('hide').addClass('show');
         $("#font_size_aria").removeClass('show').addClass('hide');
 
@@ -932,6 +934,7 @@ jQuery(document).ready(function ($) {
     });
 
     $("#word_function").click(function (event) {
+        $(".multiple_navi").removeClass('show').addClass('hide');
         $("#word_function_aria").removeClass('hide').addClass('show');
         $("#close_function_aria").focus();
     });
@@ -2673,7 +2676,7 @@ jQuery(document).ready(function ($) {
     // Word Picture Insertion
     $("#inserImage").on('click', function (event) {
         event.preventDefault();
-        // alert("Okay");
+        $(".multiple_navi").removeClass('show').addClass('hide');
         $("#word_image_selection_message").removeClass('hide').addClass('show');
         $("#font_family_aria").removeClass('show').addClass('hide');
         $("#font_size_aria").removeClass('show').addClass('hide');
