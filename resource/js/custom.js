@@ -444,6 +444,7 @@ jQuery(document).ready(function ($) {
             });
             return false;
         } else {
+            $(".btn_keipro").removeAttr("disabled");
             $.ajax({
                 url: "index.php/wordapp/get_post_by_id",
                 type: 'POST',
