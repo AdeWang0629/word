@@ -801,10 +801,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--" data-placement="auto left" data-trigger="hover">ペーパー<br>レス-->
 <!--                    </button>-->
 
-                    <a style="height: 33px; min-width: 80px; border-radius: 6px;" id="destroy_session" data-html="true"
+                    <button class="btn btn-success btn_keipro" id="destroy_session" data-html="true"
                        class="btn btn-success sign_out_btn btn_keipro" role="button" data-toggle="popover" data-container="body"
                        title="" data-content="終了<br>全てを終了します。自動保存で安心です。" data-placement="auto left"
-                       data-trigger="hover">終了</a>
+                       data-trigger="hover">終了</button>
 
 
                     <!--                    <span contenteditable="false" id="page_count1" style="width:5%;text-align: right; position: absolute; right:8px ;bottom: 15px; ">1/1</span>-->
@@ -1336,7 +1336,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="col-lg-2 col-md-4 col-sm-4 col-xs-8 pull-right hide font_family_aria multiple_navi" id="font_family_aria" style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2); padding: 5px;">
     <div class="col-lg-12" style="padding: 0">
         <button type="button" style="margin-bottom: 10px; margin-right: 0;"
-                class="btn btn-warning pull-right btn_keipro" id="close_family_aria">戻る
+                class="btn btn-warning btn-lg pull-right" id="close_family_aria">戻る
         </button>
     </div>
     <div class="clearfix"></div>
@@ -2118,8 +2118,14 @@ $this->load->view('components/income_modal')
             $('#'+btn_id).popover('show');
             hideTooltip(btn_id);
         }
-    
 
+        $("#doc_content").bind( "taphold", editorTapholdHandler );
+    
+        function editorTapholdHandler( event ){
+            $(".btn_keipro").removeAttr("disabled");
+            $(".close_aria, .font_color_aria, #word_function_aria, #word_image_selection_message, #font_size_aria, .font_family_aria").addClass('hide').removeClass('show');
+            $("#table_of_contantes").addClass('hide').removeClass('show');
+        }
 
     $(".btn_keipro").attr('data-placement', 'auto bottom');
     

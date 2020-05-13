@@ -933,12 +933,19 @@ jQuery(document).ready(function ($) {
         $("#email_font_family_aria").removeClass('show').addClass('hide');
     });
 
-    $("#word_function").click(function (event) {
+    $("#word_function").click(function (event) {        
         $(".multiple_navi").removeClass('show').addClass('hide');
         $("#word_function_aria").removeClass('hide').addClass('show');
         $("#close_function_aria").focus();
     });
 
+    $("#show_table_of_content, #create_new_doc, #font_family, #font_size, #inserImage, #word_function").click(function(event) {
+        $(".btn_keipro").attr('disabled', 'disabled');
+        $('[data-toggle="popover"]').popover('hide');
+    });
+    $(".btn-warning, .btn-danger").click(function(event) {
+        $(".btn_keipro").removeAttr("disabled");
+    });
     $("#email_function").click(function (event) {
         $("#email_function_aria").removeClass('hide').addClass('show');
     });
