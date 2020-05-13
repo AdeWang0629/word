@@ -1166,7 +1166,7 @@ tinymce.init({
             $(".close_aria, .font_color_aria, #word_function_aria, #word_image_selection_message, #font_size_aria, .font_family_aria").addClass('hide').removeClass('show');
             $("#table_of_contantes").addClass('hide').removeClass('show');
         });
-        editor.on('touchend', function (event) {
+        editor.on('touchstart', function (event) {
             $(".btn_keipro").removeAttr("disabled");
             $(".close_aria, .font_color_aria, #word_function_aria, #word_image_selection_message, #font_size_aria, .font_family_aria").addClass('hide').removeClass('show');
             $("#table_of_contantes").addClass('hide').removeClass('show');
