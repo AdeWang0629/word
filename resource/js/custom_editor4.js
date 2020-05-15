@@ -1480,6 +1480,7 @@ function change_font_size(font_size, font_size_number) {
     // if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $("#change_font_size").val(font_size);
         tinymce.get('doc_content').execCommand("fontSize", false, font_size);
+        $("#close_font_size_aria").focus();
     // }
     // tinymce.get('doc_content').execCommand("fontSize", false, font_size);
     // tinymce.get('doc_content2').execCommand("fontSize", false, font_size);
