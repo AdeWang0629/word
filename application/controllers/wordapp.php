@@ -34,7 +34,7 @@ class Wordapp extends CI_Controller
 
         // Redirect unauthenticated users to signin page
         if (!$this->authentication->is_signed_in()) {
-            redirect('account/sign_in');
+            redirect('index.php/account/sign_in');
         }
 //        $this->session->unset_userdata('account_id');
         // Retrieve sign in user
