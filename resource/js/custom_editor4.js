@@ -1000,7 +1000,6 @@ tinymce.init({
         editor.on('touchend', function(event) {
             var node = editor.selection.getContent({format : 'text'});
             if (node.length>0) {
-                alert(node.length)
                 $(".btn-warning, .btn-danger").focus();
             } else {
                 $(".btn_keipro").removeAttr("disabled");
