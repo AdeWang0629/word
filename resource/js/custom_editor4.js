@@ -977,7 +977,9 @@ tinymce.init({
                 tinymce.activeEditor.dom.setHTML(tinymce.activeEditor.dom.select('td#total_of_d_col6'), total_of_d_col6);
             }
             var node = editor.selection.getContent({format : 'text'});
+
             if (node.length>0) {
+                alert(node.length);
                 $(".btn-warning, .btn-danger").focus();
             } else {
                 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
