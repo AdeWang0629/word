@@ -976,21 +976,26 @@ tinymce.init({
                 tinymce.activeEditor.dom.setHTML(tinymce.activeEditor.dom.select('td#subtractionE_of_d_col6'), subtractionE_of_d_col6);
                 tinymce.activeEditor.dom.setHTML(tinymce.activeEditor.dom.select('td#total_of_d_col6'), total_of_d_col6);
             }
-
-            // if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            //     $(".btn_keipro").removeAttr("disabled");
-            //     $(".close_aria, .font_color_aria, #word_function_aria, #word_image_selection_message, #font_size_aria, .font_family_aria").addClass('hide').removeClass('show');
-            //     $("#table_of_contantes").addClass('hide').removeClass('show');
-            // }
+            var node = editor.selection.getContent({format : 'text'});
+            if (node.length>0) {
+                $(".btn-warning, .btn-danger").focus();
+            } else {
+                if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    $(".btn_keipro").removeAttr("disabled");
+                    $(".close_aria, .font_color_aria, #word_function_aria, #word_image_selection_message, #font_size_aria, .font_family_aria").addClass('hide').removeClass('show');
+                    $("#table_of_contantes").addClass('hide').removeClass('show');
+                }
+            }
+            
            
         });
-        editor.on('touchstart', function (event) {
-            // var node = editor.selection.getContent({format : 'text'});
-            // console.log(node);
-            $(".btn_keipro").removeAttr("disabled");
-            $(".close_aria, .font_color_aria, #word_function_aria, #word_image_selection_message, #font_size_aria, .font_family_aria").addClass('hide').removeClass('show');
-            $("#table_of_contantes").addClass('hide').removeClass('show');
-        });
+        // editor.on('touchstart', function (event) {
+        //     // var node = editor.selection.getContent({format : 'text'});
+        //     // console.log(node);
+        //     $(".btn_keipro").removeAttr("disabled");
+        //     $(".close_aria, .font_color_aria, #word_function_aria, #word_image_selection_message, #font_size_aria, .font_family_aria").addClass('hide').removeClass('show');
+        //     $("#table_of_contantes").addClass('hide').removeClass('show');
+        // });
         editor.on('touchend', function(event) {
             var node = editor.selection.getContent({format : 'text'});
             if (node.length>0) {
