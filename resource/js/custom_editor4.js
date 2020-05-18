@@ -992,6 +992,7 @@ tinymce.init({
         //     $("#table_of_contantes").addClass('hide').removeClass('show');
         // });
         editor.on('touchend', function(event) {
+            alert("touchend");
             var node = editor.selection.getContent({format : 'text'});
             if (node.length>0) {
                 $(".btn-warning, .btn-danger").focus();
