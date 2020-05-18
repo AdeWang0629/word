@@ -992,10 +992,8 @@ tinymce.init({
         //     $("#table_of_contantes").addClass('hide').removeClass('show');
         // });
         editor.on('touchend', function(event) {
-
             var node = editor.selection.getContent({format : 'text'});
             if (node.length>0) {
-                alert(node);
                 $(".btn-warning, .btn-danger").focus();
             } else {
                 $(".btn_keipro").removeAttr("disabled");
