@@ -125,6 +125,7 @@ jQuery(document).ready(function ($) {
                             }
                         }, DELAY);
                     } else {
+                        $(".btn_keipro").removeAttr("disabled");
                         clearTimeout(timer);    //prevent single-click action
                         clicks = 0;             //after action performed, reset
                         $.ajax({
