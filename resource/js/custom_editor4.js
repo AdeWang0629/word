@@ -977,8 +977,11 @@ tinymce.init({
                 tinymce.activeEditor.dom.setHTML(tinymce.activeEditor.dom.select('td#total_of_d_col6'), total_of_d_col6);
             }
             var node = editor.selection.getContent({format : 'text'});
+            var nodeEl = editor.selection.getContent();
+
 
             if (node.length>0) {
+                
                 $(".btn-warning, .btn-danger").focus();
             } else {
                 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -1000,6 +1003,11 @@ tinymce.init({
         editor.on('touchend', function(event) {
             var node = editor.selection.getContent({format : 'text'});
             if (node.length>0) {
+                editor.dom.addClass(editor.selection.getNode(), 'scrollTop');
+                $(tinymce.activeEditor.getBody()).find('.scrollTop').get(0).scrollIntoView();
+                
+                // Removes a class from all paragraphs in the active editor
+                editor.dom.removeClass(editor.dom.select('p, span'), 'scrollTop');
                 $(".btn-warning, .btn-danger").focus();
             } else {
                 $(".btn_keipro").removeAttr("disabled");
