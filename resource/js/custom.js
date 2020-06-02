@@ -3211,9 +3211,9 @@ jQuery(document).ready(function ($) {
         var table_of_contantes = $("#table_of_contantes");
 
         // if the target of the click isn't the container nor a descendant of the container
-        if (!table_of_contantes.is(e.target) && table_of_contantes.has(e.target).length === 0) {
-            table_of_contantes.removeClass('show').addClass('hide');
-        }
+        // if (!table_of_contantes.is(e.target) && table_of_contantes.has(e.target).length === 0) {
+        //     table_of_contantes.removeClass('show').addClass('hide');
+        // }
 
         // var font_family_aria = $("#font_family_aria");
         // if (!font_family_aria.is(e.target) && font_family_aria.has(e.target).length === 0) {

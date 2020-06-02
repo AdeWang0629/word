@@ -758,6 +758,22 @@ textarea.tinyMCE {
     height: 500px;
 }
 
+/*.top_header{
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+}
+.left_content_aria{
+    margin-top: 30px;
+}
+.content_maindiv{
+    margin-top: 30px;
+}
+.mobile_width{
+    margin-top: 30px;
+}*/
+
 @media only screen and (max-width: 768px) {
 
     .left_content_aria{
@@ -932,4 +948,10 @@ textarea.tinyMCE {
         width: 100%;
         overflow: scroll;
     }
+
+    /*.top_header{
+        width: 50%;
+        position: fixed;
+        z-index: 500;
+    }*/
 }

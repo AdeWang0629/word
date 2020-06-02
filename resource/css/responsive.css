@@ -772,3 +772,11 @@ font-size: 22px;
 
     
 }
+
+
+@media only screen and (max-width: 768px) 
+{
+    .word_btn_containers{
+        position: fixed;
+    }
+}

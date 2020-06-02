@@ -647,7 +647,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
-<div style="width: 100%; background-color: #5cb85c; margin-top: 0; margin-bottom: 7px;">
+<div class="top_header" style="width: 100%; background-color: #5cb85c; margin-top: 0; margin-bottom: 7px;">
     <!--    <div style="width: 90%; ">-->
     <div class="container" style="margin-top: 0">
         <?php

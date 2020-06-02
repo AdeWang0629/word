@@ -980,8 +980,7 @@ tinymce.init({
             var nodeEl = editor.selection.getContent();
 
 
-            if (node.length>0) {
-                
+            if (node.length>0) {                
                 $(".btn-warning, .btn-danger").focus();
             } else {
                 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -1004,7 +1003,7 @@ tinymce.init({
             var node = editor.selection.getContent({format : 'text'});
             if (node.length>0) {
                 editor.dom.addClass(editor.selection.getNode(), 'scrollTop');
-                $(tinymce.activeEditor.getBody()).find('.scrollTop').get(0).scrollIntoView();
+                // $(tinymce.activeEditor.getBody()).find('.scrollTop').get(0).scrollIntoView();
                 
                 // Removes a class from all paragraphs in the active editor
                 editor.dom.removeClass(editor.dom.select('p, span'), 'scrollTop');
@@ -1015,7 +1014,6 @@ tinymce.init({
                 $("#table_of_contantes").addClass('hide').removeClass('show');
             }
         });
-
     }
 });
 
