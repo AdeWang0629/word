@@ -718,7 +718,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="left_content_aria sidebar-nav-fixed affix">
                 <center><strong>見出し表示</strong></center>
                 <!-- <button type="button" id="account_setting-btn" class="btn btn-info btn-sm">Account Setting</button> -->
+                <input type="tel" style="ime-mode: active; width: 2%; border: 0;" class="form-control" autofocus name="">
             </div>
+
             <div class="clearfix"></div>
         </div>
 
