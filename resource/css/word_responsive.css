@@ -721,7 +721,7 @@ and open the template in the editor.
         width: 90%;
         float: left !important;
         overflow-x: scroll;
-        z-index: 1000;
+        z-index: 800;
     }
 
     /*.home_page_navi {
@@ -1019,7 +1019,7 @@ and open the template in the editor.
         /*width: 346px;*/
         width: 368px;
         overflow-y: scroll;
-        z-index: 1000;
+        z-index: 800;
     }
     .btn_keipro {
         border-radius: 6px;
@@ -1244,7 +1244,7 @@ and open the template in the editor.
         position: fixed;
         width: 98%;
         margin: 0 auto;
-        z-index: 1000;
+        z-index: 800;
     }
 
     .btn_keipro {
