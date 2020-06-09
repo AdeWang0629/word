@@ -990,4 +990,15 @@ textarea.tinyMCE {
     .content_maindiv{
         margin-top: 50px;
     }
+
+    .btn_keipro {
+        text-align: center;
+        font-size: 18px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        height: 50px;
+        font-weight: normal;
+    }
 }
