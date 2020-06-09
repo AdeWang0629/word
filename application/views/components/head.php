@@ -3,6 +3,7 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1"> -->
 <meta content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport'>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86"> -->
 <meta name="mobile-web-app-capable" content="yes">
 
 

@@ -864,6 +864,7 @@ jQuery(document).ready(function ($) {
 
 
     $("#font_size").click(function (event) {
+        event.preventDefault();
         $(".multiple_navi").removeClass('show').addClass('hide');
         $("#font_size_aria").removeClass('hide').addClass('show');
         $("#font_family_aria").removeClass('show').addClass('hide');
@@ -899,6 +900,7 @@ jQuery(document).ready(function ($) {
     });
 
     $("#font_family").click(function (event) {
+        event.preventDefault();
         $(".multiple_navi").removeClass('show').addClass('hide');
         $("#font_family_aria").removeClass('hide').addClass('show');
         $("#font_size_aria").removeClass('show').addClass('hide');
@@ -935,13 +937,15 @@ jQuery(document).ready(function ($) {
         $("#email_font_family_aria").removeClass('show').addClass('hide');
     });
 
-    $("#word_function").click(function (event) {        
+    $("#word_function").click(function (event) { 
+        event.preventDefault();       
         $(".multiple_navi").removeClass('show').addClass('hide');
         $("#word_function_aria").removeClass('hide').addClass('show');
         $("#close_function_aria").focus();
     });
 
     $("#show_table_of_content, #create_new_doc, #font_family, #font_size, #inserImage, #word_function").click(function(event) {
+        event.preventDefault();
         $(".btn_keipro").attr('disabled', 'disabled');
         $('[data-toggle="popover"]').popover('hide');
     });

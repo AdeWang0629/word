@@ -779,7 +779,7 @@ textarea.tinyMCE {
         display: none;
     }
     .font_size_aria{
-        position: absolute; 
+        position: fixed; 
         width: 98%;
         bottom: 0px; 
         padding: 4px; 
