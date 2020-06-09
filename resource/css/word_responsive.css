@@ -465,12 +465,12 @@ and open the template in the editor.
         align-items: flex-start;
     }
 
-    .word_btn_containers {
+    /*.word_btn_containers {
         width: 360px;
         padding: 0;
         margin: 0;
         overflow-y: scroll;
-    }
+    }*/
 
 
     .content_maindiv {
@@ -717,12 +717,12 @@ and open the template in the editor.
         padding-right: 4px;
     }
 
-    .word_btn_containers {
+    /*.word_btn_containers {
         width: 90%;
         float: left !important;
         overflow-x: scroll;
         z-index: 1500;
-    }
+    }*/
 
     /*.home_page_navi {
         position: fixed;
@@ -1015,12 +1015,7 @@ and open the template in the editor.
         flex-direction: row;
     }
 
-    .word_btn_containers {
-        /*width: 346px;*/
-        width: 368px;
-        overflow-y: scroll;
-        z-index: 1500;
-    }
+    
     .btn_keipro {
         border-radius: 6px;
         font-size: 16px;
@@ -1238,14 +1233,14 @@ and open the template in the editor.
         padding-right: 4px;
     }
 
-    .word_btn_containers {
+    /*.word_btn_containers {
         height: 100px;
         overflow: scroll;
         position: fixed;
         width: 98%;
         margin: 0 auto;
         z-index: 1500;
-    }
+    }*/
 
     .btn_keipro {
         font-size: 14px;

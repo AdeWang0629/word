@@ -86,7 +86,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         @media only screen and (max-width: 768px) {
 
             .resp {
-                position: absolute;
+                position: fixed;
                 left: 0px;
                 width: 100%;
                 bottom: 10px;

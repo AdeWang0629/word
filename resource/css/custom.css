@@ -797,7 +797,7 @@ textarea.tinyMCE {
     }
 
     .font_color_aria{
-        position: absolute; 
+        position: fixed; 
         right: 0px; 
         bottom: 0px; 
         padding: 4px;
@@ -806,7 +806,7 @@ textarea.tinyMCE {
     }
 
     .font_family_aria{
-        position: absolute; 
+        position: fixed; 
         width: 98%;
         bottom: 0px; 
         padding: 4px; 
@@ -815,25 +815,25 @@ textarea.tinyMCE {
     }
 
     .delete_confirm_alirt{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right:0px; 
-        bottom: 130px; 
+        bottom: 0px; 
         padding: 4px;
     }
 
     .restore_confirm_alirt{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right:0px; 
-        bottom: 20px; 
+        bottom: 0px; 
         padding: 4px;
     }
 
 
 
     .table_of_contantes {
-        position: absolute;
+        position: fixed;
         bottom: 0px;
         padding: 10px;
         border: 2px solid #ababab;
@@ -843,99 +843,99 @@ textarea.tinyMCE {
     }
 
     .restore_select_document{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right: 0px; 
-        bottom: 10px; 
+        bottom: 0px; 
         padding: 4px;
     }
     .select_document{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right: 0px; 
-        bottom: 135px; 
+        bottom: 0px; 
         padding: 4px;
     }
     .word_function_aria{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right: 0px; 
         bottom: 0px; 
         padding: 4px;
     }
 
     .word_image_selection_message{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right: 0px; 
         bottom: 0px; 
         padding: 4px;
     }
 
     .word_image_past_message{
-         position: absolute; 
-        width: 98%; 
+         position: fixed; 
+        width: 100%; 
         right: 0px; 
         bottom: 0px; 
         padding: 4px;
     }
 
     .word_image_past_confirmation{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right: 0px; 
         bottom: 0px; 
         padding: 4px;
     }
 
     .word_image_zooming{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right: 0px; 
         bottom: 0px; 
         padding: 4px;
     }
 
     .word_image_upload_completed{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right: 0px; 
         bottom: 0px; 
         padding: 4px;
     }
 
     .ajax_loading_aria{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right: 0px; 
         bottom: 0px; 
         padding: 4px;
     }
 
     .blanck_document_message{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right: 0px; 
         bottom: 0px; 
         padding: 4px;
     }
 
     .font_cut_copy_aria{
-        position: absolute; 
-        width: 98%; 
+        position: fixed; 
+        width: 100%; 
         right: 0px; 
         bottom: 0px; 
         padding: 4px;
     }
 
     .word_canvase_aria{
-        position: absolute; right: 0; bottom: 0; padding: 4px; 
+        position: fixed; right: 0; bottom: 0; padding: 4px; 
         height: 80%;
         overflow: scroll;
     }
 
     .word_canvase_aria1{
-        position: absolute; right: 0; bottom: 0; padding: 4px; 
+        position: fixed; right: 0; bottom: 0; padding: 4px; 
         height: 80%;
         overflow: scroll;
     }
@@ -954,4 +954,11 @@ textarea.tinyMCE {
         position: fixed;
         z-index: 500;
     }*/
+
+    .word_btn_containers {
+        /*width: 346px;*/
+        width: 100%;
+        overflow-y: scroll;
+        z-index: 1500;
+    }
 }
