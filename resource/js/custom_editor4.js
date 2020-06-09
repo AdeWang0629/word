@@ -1005,9 +1005,8 @@ tinymce.init({
             if (node.length>0) {
                 editor.dom.addClass(editor.selection.getNode(), 'scrollTop');
                 $(tinymce.activeEditor.getBody()).find('.scrollTop').get(0).scrollIntoView();
-                
                 // Removes a class from all paragraphs in the active editor
-                // editor.dom.removeClass(editor.dom.select('p, span'), 'scrollTop');
+                editor.dom.removeClass(editor.dom.select('p, span'), 'scrollTop');
                 $(".btn-warning, .btn-danger").focus();
             } else {
                 $(".btn_keipro").removeAttr("disabled");
