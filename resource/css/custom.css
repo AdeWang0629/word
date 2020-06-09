@@ -762,7 +762,7 @@ textarea.tinyMCE {
     top: 0px;
     width: 100%;
     position: fixed;
-    z-index: 1000;
+    z-index: 1600;
 }
 .left_content_aria{
     margin-top: 30px;
