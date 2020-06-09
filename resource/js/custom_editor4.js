@@ -1003,7 +1003,7 @@ tinymce.init({
             var node = editor.selection.getContent({format : 'text'});
             if (node.length>0) {
                 editor.dom.addClass(editor.selection.getNode(), 'scrollTop');
-                // $(tinymce.activeEditor.getBody()).find('.scrollTop').get(0).scrollIntoView();
+                $(tinymce.activeEditor.getBody()).find('.scrollTop').get(0).scrollIntoView();
                 
                 // Removes a class from all paragraphs in the active editor
                 editor.dom.removeClass(editor.dom.select('p, span'), 'scrollTop');
