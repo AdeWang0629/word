@@ -986,4 +986,8 @@ textarea.tinyMCE {
         -webkit-box-align: start;
         align-items: flex-start;
     }
+
+    .content_maindiv{
+        margin-top: 50px;
+    }
 }
