@@ -965,4 +965,25 @@ textarea.tinyMCE {
         overflow-x: scroll;
         z-index: 1500;
     }
+
+    .flex-container {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        height: 42px;
+        -ms-flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -ms-flex-line-pack: justify;
+        align-content: space-between;
+        -ms-flex-align: start;
+        -webkit-box-align: start;
+        align-items: flex-start;
+    }
 }

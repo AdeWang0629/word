@@ -445,7 +445,7 @@ and open the template in the editor.
         padding-left: 5px;
     }
 
-    .flex-container {
+    /*.flex-container {
         display: -ms-flexbox;
         display: -webkit-box;
         display: flex;
@@ -463,7 +463,7 @@ and open the template in the editor.
         -ms-flex-align: start;
         -webkit-box-align: start;
         align-items: flex-start;
-    }
+    }*/
 
     /*.word_btn_containers {
         width: 360px;
@@ -682,7 +682,7 @@ and open the template in the editor.
 
 @media screen and (device-width: 640px) and (device-height: 360px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
 
-    .flex-container {
+    /*.flex-container {
         display: -ms-flexbox;
         display: -webkit-box;
         display: flex;
@@ -700,7 +700,7 @@ and open the template in the editor.
         -ms-flex-align: start;
         -webkit-box-align: start;
         align-items: flex-start;
-    }
+    }*/
     .mobile_width {
         padding-left: 4px;
         padding-right: 4px;
@@ -1005,7 +1005,7 @@ and open the template in the editor.
     }
 
 
-    .flex-container {
+    /*.flex-container {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
@@ -1013,7 +1013,7 @@ and open the template in the editor.
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-    }
+    }*/
 
     
     .btn_keipro {
@@ -1522,7 +1522,7 @@ and open the template in the editor.
         padding-right: 6px;
     }
 
-    .flex-container {
+    /*.flex-container {
         display: -ms-flexbox;
         display: -webkit-box;
         display: flex;
@@ -1541,7 +1541,7 @@ and open the template in the editor.
         -ms-flex-align: start;
         -webkit-box-align: start;
         align-items: flex-start;
-    }
+    }*/
 
     /*#blanck_document_message {
         right: 50px !important;
@@ -1567,7 +1567,7 @@ and (max-device-width : 1024px)
 and (orientation : portrait) { 
 
     
-     .flex-container {
+     /*.flex-container {
         display: -ms-flexbox;
         display: -webkit-box;
         display: flex;
@@ -1584,7 +1584,7 @@ and (orientation : portrait) {
         -ms-flex-align: start;
         -webkit-box-align: start;
         align-items: flex-start;
-    }
+    }*/
 
 }
 
