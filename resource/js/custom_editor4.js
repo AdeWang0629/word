@@ -1003,12 +1003,12 @@ tinymce.init({
 
             var node = editor.selection.getContent({format : 'text'});
             if (node.length>0) {
-
                 // editor.dom.addClass(editor.selection.getNode(), 'scrollTop');
                 // $(tinymce.activeEditor.getBody()).find('.scrollTop').get(0).scrollIntoView();
                 // Removes a class from all paragraphs in the active editor
                 // editor.dom.removeClass(editor.dom.select('p, span'), 'scrollTop');
-                $(".btn-warning, .btn-danger, #font_family").focus();
+                // $(".btn-warning, .btn-danger, #font_family").focus();
+                $("#font_family").focus()
             } else {
                 $(".btn_keipro").removeAttr("disabled");
                 $(".close_aria, .font_color_aria, #word_function_aria, #word_image_selection_message, #font_size_aria, .font_family_aria").addClass('hide').removeClass('show');
