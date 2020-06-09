@@ -761,14 +761,14 @@ font-size: 22px;
 
 @media only screen and (min-device-width : 651px) and (max-device-width : 900px){
  
-    .word_table_content_scroll_prant{
+    /*.word_table_content_scroll_prant{
         height: 400px;
         position: fixed;
         overflow-x:hidden;
         padding: 0;
         width: 1024px;
         overflow: hidden;
-    }
+    }*/
 
     
 }
@@ -776,7 +776,7 @@ font-size: 22px;
 
 @media only screen and (max-width: 768px) 
 {
-    .word_btn_containers{
+    /*.word_btn_containers{
         position: fixed;
-    }
+    }*/
 }

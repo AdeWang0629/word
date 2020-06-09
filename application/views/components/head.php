@@ -1,7 +1,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+<meta content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport'>
 <meta name="mobile-web-app-capable" content="yes">
 
 
@@ -60,7 +61,6 @@
 	
 	// If there's a hash, or addEventListener is undefined, stop here
 	if(!win.navigator.standalone && !location.hash && win.addEventListener ){
-		
 		//scroll to 1
 		win.scrollTo( 0, 1 );
 		var scrollTop = 1,

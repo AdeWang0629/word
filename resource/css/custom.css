@@ -758,7 +758,7 @@ textarea.tinyMCE {
     height: 500px;
 }
 
-/*.top_header{
+.top_header{
     top: 0px;
     width: 100%;
     position: fixed;
@@ -772,7 +772,7 @@ textarea.tinyMCE {
 }
 .mobile_width{
     margin-top: 30px;
-}*/
+}
 
 @media only screen and (max-width: 768px) {
 

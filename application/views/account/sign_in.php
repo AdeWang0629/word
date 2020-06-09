@@ -669,8 +669,8 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
             var user_new_password = $("#user_new_password").val();
             var user_current_password = $("#user_current_password").val();
             var username = $("#sign_in_username_email").val();
-//            alert(username);
-//            die();
+           // alert(username);
+           // die();
             if (user_new_password == "") {
                 $("#user_change_pass_error_message").removeClass("hide").addClass("show");
                 document.getElementById('error_message_text').innerText = '新パスワード を入力して下さい。';

@@ -718,7 +718,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="left_content_aria sidebar-nav-fixed affix">
                 <center><strong>見出し表示</strong></center>
                 <!-- <button type="button" id="account_setting-btn" class="btn btn-info btn-sm">Account Setting</button> -->
-                <input type="tel" style="ime-mode: active; width: 2%; border: 0;" class="form-control" autofocus name="">
+                <input id="sign_up_namedafda" autofocus style="ime-mode:active; border:0; width: 20%" type="tel" class="form-control" name="sign_up_namedafda" required="required" >
             </div>
 
             <div class="clearfix"></div>
@@ -2020,7 +2020,6 @@ $this->load->view('components/income_modal')
 <script type="text/javascript" src="resource/color_picker/js/jquery.colorPicker.js"></script>
 <!-- color picker -->
 <script type="text/javascript" src="<?php echo base_url().RES_DIR; ?>/js/custom.js?id=<?php echo rand(0,10000)?>"></script>
-<!-- <script src="<?php echo base_url('resource/js/custom.js?id=<?php echo rand(0,10000)?>'); ?>"></script> -->
 
 
 </body>
