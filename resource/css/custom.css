@@ -112,7 +112,7 @@ body {
 .word_btn_containers{
   position:fixed;
   display:block;
-  z-index: 1500;  
+  /*z-index: 1500;  */
 }
 
 
