@@ -129,11 +129,9 @@ class Wordapp extends CI_Controller
                     'created_at' => date('Y-m-d H:i:s'),
                     'updated_at' => date('Y-m-d H:i:s')
                 );
-                
                 $this->wordapp_model->_table_name = 'post';
                 $this->wordapp_model->_primary_key = 'post_id';
                 $post_id = $this->wordapp_model->save($post_data);
-                
                 if ($post_id) {
                     $data['post_id'] = $post_id;
                     $data['message'] = "success";

@@ -15,10 +15,6 @@ jQuery(document).ready(function ($) {
 
     });
 
-    // $("#insert_row").click(function (event) {
-    //     tinymce.activeEditor.insertContent('<div style="width:90%;margin-left: 0;padding-left: 0">ff</div>');
-    // });
-
 
     $("#btn-shapes-table").click(function (event) {
         var table_content = '<table class="custom_table" id="custom_table" width="100%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#333" style="border:1px solid #333;">\n' +

@@ -8,10 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
     <?php $this->load->view('components/head'); ?>
 
-
     <?php
-
-
     if (preg_match('/(?i)msie [10]/', $_SERVER['HTTP_USER_AGENT'])) {
 
         ?>
@@ -1520,7 +1517,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <button class="btn btn-success btn-lg" id="word_upload_image"
                                 style="margin-left: 0; margin-right:20px !important; " title="写真・画像">写真・画像
                         </button>
-                        <button class="btn btn-success btn-lg " id="upload_pdf" title="エクセル">エクセル</button>
+                        <button onclick="return false" class="btn btn-success btn-lg " id="upload_pdf" title="画像コピー">画像コピー</button>
                     </form>
 
                     
