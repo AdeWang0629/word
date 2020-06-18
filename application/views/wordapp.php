@@ -13,6 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         ?>
         <!--  if IE = 10 -->
+        
         <script src="<?= base_url('resource/tiny_mce/tiny_mce.js?cachebuster=123') ?>"></script>
         <script src="<?= base_url('resource/js/custom_editor3.js') ?>"></script>
     <?php
