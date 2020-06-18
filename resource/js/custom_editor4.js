@@ -78,11 +78,10 @@ tinymce.init({
 
         xhr = new XMLHttpRequest();
         xhr.withCredentials = false;
-        xhr.open('POST', 'wordapp/tiny_image_upload');
+        xhr.open('POST', 'index.php/wordapp/tiny_image_upload');
         xhr.onload = function(data) {
           var json;
           console.log(xhr)
-          
           if (xhr.status != 200) {
             failure('HTTP Error: ' + xhr.status);
             return;

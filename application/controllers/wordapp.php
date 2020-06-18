@@ -1451,7 +1451,7 @@ class Wordapp extends CI_Controller
         /*********************************************
            * Change this line to set the upload folder *
            *********************************************/
-          $imageFolder = "./uploads/";
+          $imageFolder = "uploads/";
 
           reset ($_FILES);
           $temp = current($_FILES);
