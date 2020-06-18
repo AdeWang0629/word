@@ -1419,6 +1419,88 @@ class Wordapp extends CI_Controller
         );
     }
 
+    public function do_upload()
+    {
+            $config['upload_path']          = './uploads/test';
+            $config['allowed_types']        = 'gif|jpg|png';
+            $config['max_size']             = 100;
+            $config['max_width']            = 1024;
+            $config['max_height']           = 768;
+
+            $this->load->library('upload', $config);
+
+            if ( ! $this->upload->do_upload('userfile'))
+            {
+                $error = array('error' => $this->upload->display_errors());
+                echo json_encode($error);
+            }
+            else
+            {
+                $data = array('upload_data' => $this->upload->data());
+                echo json_encode($error);
+            }
+    }
+
+    public function tiny_image_upload()
+    {
+        // echo json_encode($_SERVER['HTTP_ORIGIN']);
+        // exit();
+        // $_FILES['file']['tmp_name']
+        // echo json_encode($_FILES);
+        // exit();
+        /*********************************************
+           * Change this line to set the upload folder *
+           *********************************************/
+          $imageFolder = "./uploads/";
+
+          reset ($_FILES);
+          $temp = current($_FILES);
+          if (is_uploaded_file($temp['tmp_name'])){
+            // if (isset($_SERVER['HTTP_ORIGIN'])) {
+            //   // same-origin requests won't set an origin. If the origin is set, it must be valid.
+            //   if (in_array($_SERVER['HTTP_ORIGIN'], $accepted_origins)) {
+            //     header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN']);
+            //   } else {
+            //     header("HTTP/1.1 403 Origin Denied");
+            //     return;
+            //   }
+            // }
+
+            /*
+              If your script needs to receive cookies, set images_upload_credentials : true in
+              the configuration and enable the following two headers.
+            */
+            // header('Access-Control-Allow-Credentials: true');
+            // header('P3P: CP="There is no P3P policy."');
+
+            // Sanitize input
+            if (preg_match("/([^\w\s\d\-_~,;:\[\]\(\).])|([\.]{2,})/", $temp['name'])) {
+                header("HTTP/1.1 400 Invalid file name.");
+                return;
+            }
+
+            // Verify extension
+            if (!in_array(strtolower(pathinfo($temp['name'], PATHINFO_EXTENSION)), array("gif", "jpg", "png"))) {
+                header("HTTP/1.1 400 Invalid extension.");
+                return;
+            }
+
+            // Accept upload if there was no origin, or if it is an accepted origin
+            $filetowrite = $imageFolder . $temp['name'];
+            move_uploaded_file($temp['tmp_name'], $filetowrite);
+
+            // Respond to the successful upload with JSON.
+            // Use a location key to specify the path to the saved image resource.
+            // { location : '/your/uploaded/image/file'}
+            // { location : '/uploaded/image/path/image.png' }
+            echo json_encode(array('location' => $filetowrite));
+            // echo json_encode(array('location' => "/uploads/AhasanYounusSir2.jpg"));
+          } else {
+            // Notify editor that the upload failed
+            header("HTTP/1.1 500 Server Error");
+          }
+    }
+
 }
 
 
