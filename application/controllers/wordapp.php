@@ -1485,8 +1485,20 @@ class Wordapp extends CI_Controller
                 return;
             }
 
+            
             // Accept upload if there was no origin, or if it is an accepted origin
-            $filetowrite = $imageFolder . $temp['name'];
+            // $filetowrite = $imageFolder . $temp['name'];
+
+            // Change File Name
+
+            $orinal_name = explode(".", $temp['name']);
+            $newfilename = round(microtime(true)) . '.' . end($orinal_name);
+            $filetowrite = $imageFolder . $newfilename;
+            // move_uploaded_file($temp["tmp_name"], "../img/imageDirectory/" . $newfilename);
+
+            // Upload the server
+
+
             move_uploaded_file($temp['tmp_name'], $filetowrite);
 
             // Respond to the successful upload with JSON.
