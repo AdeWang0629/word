@@ -81,11 +81,7 @@ tinymce.init({
         xhr.open('POST', 'wordapp/tiny_image_upload');
         xhr.onload = function(data) {
           var json;
-          // console.log(xhr.responseText);
-          // console.log("Data: ")
-          // console.log(xhr.responseText);
-          // return false;
-          // console.log(xhr.responseText);
+          console.log(xhr)
           if (xhr.status != 200) {
             failure('HTTP Error: ' + xhr.status);
             return;
