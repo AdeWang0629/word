@@ -221,7 +221,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                     <div class="form-group <?= (form_error('email') || isset($email)) ? 'has-error' : ''; ?>">
                         <label style="text-align: center" class="col-md-4 control-label" for="email">メールアドレス</label>
                         <div class="col-md-8">
-                            <input id="email" style="ime-mode:inactive" type="tel" class="form-control"
+                            <input id="email" style="ime-mode:inactive" type="text" class="form-control"
                                    name="email" required="required"
                                    value="<?= set_value('email') ?>" placeholder="メールアドレス">
                         </div>
