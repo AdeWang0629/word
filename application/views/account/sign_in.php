@@ -43,6 +43,16 @@
         .menu_button_selected {
             border:2px solid red;
         }
+
+        .sign_up_aria{
+            position: fixed; right: 0px; bottom: 0px; padding: 4px; height: 400px; overflow: auto;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .sign_up_aria{
+                position: fixed; right: 0px; bottom: 0px; padding: 4px; height: 90%; overflow: auto;
+            }
+        }
     </style>
 
 
@@ -178,8 +188,8 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
 
     </div> <!-- col-md-5 -->
     <div style="clear: both;"></div>
-    <div class="col-md-4 col-sm-4 col-xs-12 pull-right hide" id="sign_up_aria"
-         style="position: fixed; right: 0px; bottom: 0px; padding: 4px;">
+    <div class="col-md-4 col-sm-4 col-xs-12 pull-right hide sign_up_aria" id="sign_up_aria"
+         style="">
         <div class="panel panel-default" style="margin-bottom: 0;">
             <div class="panel-body">
                 <form class="form-horizontal">
@@ -201,7 +211,7 @@ if($_SERVER['SERVER_NAME'] === 'localhost'){
                     <div class="form-group <?= (form_error('sign_up_username') || isset($sign_up_username)) ? 'has-error' : ''; ?>">
                         <label class="col-md-4 control-label" for="sign_up_username">携帯番号</label>
                         <div class="col-md-8">
-                            <input id="sign_up_username" style="ime-mode:inactive" type="tel" class="form-control"
+                            <input id="sign_up_username" style="ime-mode:inactive" type="number" class="form-control"
                                    name="sign_up_username" required="required"
                                    value="<?= set_value('sign_up_username') ?>" placeholder="４ケタ以上で入力してください">
 

@@ -70,7 +70,7 @@ tinymce.init({
     language: 'ja',
     body_class: 'my_class',
     character_class: 'ahsan_class',
-    plugins: "print searchreplace charmap image imagetools pagebreak autoresize table noneditable paste", //visualblocks
+    plugins: "print searchreplace charmap image imagetools pagebreak autoresize table noneditable paste link", //visualblocks
     paste_data_images: true,
     automatic_uploads: true,
     images_upload_handler: function (blobInfo, success, failure) {
