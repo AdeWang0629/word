@@ -50,7 +50,7 @@
 
         @media only screen and (max-width: 768px) {
             .sign_up_aria{
-                position: fixed; right: 0px; bottom: 0px; padding: 4px; height: 90%; overflow: auto;
+                position: fixed; right: 0px; bottom: 0px; padding: 4px; height: 95%; overflow: auto;
             }
         }
     </style>
