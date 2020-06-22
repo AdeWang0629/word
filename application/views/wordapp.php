@@ -98,6 +98,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             width: 638px; 
             height: 384px;
         }
+        .screenSharingVideo{
+            width: 1000px;
+            height: 500px;
+            overflow: auto;
+        }
         /*.mce-content-body.my_class{*/
         /*padding-left: 50px;*/
         /*padding-right: 50px;*/
@@ -878,7 +883,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
+<div class="col-lg-10 col-md-10 draggable_aria videoSharingScreen hide"
+     id="videoSharingScreen">
+    
+    <div class="panel panel-default"
+         style="margin-bottom: 2px; border: solid 2px #4AB9DA; border-top: solid 7px #4AB9DA; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+         <div class="panel-heading">
+            <button type="button" class="btn btn-danger btn-lg pull-right" id="videoSharingScreen_close" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="戻る" data-placement="auto top"> 戻る</button>
 
+            <button type="button" class="btn btn-success btn-lg pull-right" id="videoImageInsert" data-toggle="popover" data-trigger="hover" data-container="body" title="" data-html="true" data-content="貼り付け" data-placement="auto top" style="margin-right: 5px;"> 貼り付け</button>
+            <div class="clearfix"></div>
+         </div>
+        <div class="panel-body" style="padding: 5px;">
+            <video class="screenSharingVideo" id="screenSharingVideo" autoplay></video>
+            <canvas class="screenSharingVideo hide" id="screenSharingCanvas"></canvas>
+            
+        </div>
+    </div>
+</div>
 
 <!-- start settlement/requisition/decision notification popup -->
 <input type="hidden" id="settlement_id_home" name="settlement_id_home"
@@ -1516,7 +1538,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <button class="btn btn-success btn-lg" id="word_upload_image"
                                 style="margin-left: 0; margin-right:20px !important; " title="写真・画像">写真・画像
                         </button>
-                        <button onclick="return false" class="btn btn-success btn-lg " id="upload_pdf" title="画像コピー">画像コピー</button>
+                        <button class="btn btn-success btn-lg " id="startCapture" title="画像コピー">画像コピー</button>
                     </form>
 
                     
@@ -2132,5 +2154,54 @@ $this->load->view('components/income_modal')
         $('[data-toggle="popover"]').popover({container: 'body'});
     }
     $.mobile.loader.prototype.options.text = "";
+
+    // 
+    const videoElem = document.getElementById("screenSharingVideo");
+    const startElem = document.getElementById("startCapture");
+    const stopElem = document.getElementById("videoSharingScreen_close");
+
+    // Options for getDisplayMedia()
+
+    var displayMediaOptions = {
+        video: {
+            cursor: ["motion", "always"]
+        },
+        audio: false,
+    };
+    // Set event listeners for the start and stop buttons
+    startElem.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        startCapture();
+    }, false);
+
+    stopElem.addEventListener("click", function(evt) {
+        stopCapture();
+    }, false);
+
+    async function startCapture() {
+        try {
+            videoElem.srcObject = await navigator.mediaDevices.getDisplayMedia(displayMediaOptions);
+            let tracks = videoElem.srcObject.getTracks();
+            if (tracks.length>0) {
+                $("#word_image_selection_message").removeClass("show").addClass("hide");
+                $("#videoSharingScreen").removeClass("hide").addClass("show");
+            }            
+        } catch(err) {
+            $("#videoSharingScreen").removeClass("show").addClass("hide");
+            $("#word_image_selection_message").removeClass("show").addClass("hide");
+            console.error("Error: " + err);
+        }
+    }
+
+    function stopCapture(evt) {
+        $("#videoSharingScreen").removeClass("show").addClass("hide");
+        $("#word_image_selection_message").removeClass("hide").addClass("show");
+        let tracks = videoElem.srcObject.getTracks();
+
+        tracks.forEach(track => track.stop());
+        videoElem.srcObject = null;        
+    }
+
+
     
 </script>

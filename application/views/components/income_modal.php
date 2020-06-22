@@ -1,4 +1,4 @@
-<div class="modal fade modal-fullscreen" id="incomeModal" tabindex="-1" role="dialog" aria-labelledby="incomeModal">
+<div class="modal fade modal-fullscreen incomeModal" id="incomeModal" tabindex="-1" role="dialog" aria-labelledby="incomeModal">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header" style="padding: 5px; border: 0">

@@ -3229,10 +3229,10 @@ jQuery(document).ready(function ($) {
         //     font_size_aria.removeClass('show').addClass('hide');
         // }
 
-        var word_image_selection_message = $("#word_image_selection_message");
-        if (!word_image_selection_message.is(e.target) && word_image_selection_message.has(e.target).length === 0) {
-            word_image_selection_message.removeClass('show').addClass('hide');
-        }
+        // var word_image_selection_message = $("#word_image_selection_message");
+        // if (!word_image_selection_message.is(e.target) && word_image_selection_message.has(e.target).length === 0) {
+        //     word_image_selection_message.removeClass('show').addClass('hide');
+        // }
 
         // var word_function_aria = $("#word_function_aria");
         // if (!word_function_aria.is(e.target) && word_function_aria.has(e.target).length === 0) {
@@ -3537,6 +3537,51 @@ jQuery(document).ready(function ($) {
             tinymce.activeEditor.execCommand('mcePrint');
         }
     });
+
+    $("#videoImageInsert").click(function(event) {
+        event.preventDefault();
+        capture()
+    });
+
+    function capture() {  
+        $("#screenSharingVideo").removeClass("show").addClass("hide");       
+        $("#screenSharingCanvas").removeClass("hide").addClass("show");       
+        var canvas = document.getElementById('screenSharingCanvas');     
+        var video = document.getElementById('screenSharingVideo');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        // canvas.getContext('2d').drawImage(video, 0, 0, video.videoWidth, video.videoHeight);  
+        canvas.getContext('2d').drawImage(video, 0, 0, video.videoWidth, video.videoHeight);  
+        canvas.toBlob(function(blob) {
+            var newImg = document.createElement('img');
+
+            var img    = canvas.toDataURL("image/png");
+
+            newImg.src = img;
+            tinymce.execCommand('mceInsertContent', false, '<img width="700" style="margin: 5px 10px; float:left; overflow: hidden !important;" align="middle" src="' + img + '">');
+            stopCapture();
+            $(".btn_keipro").removeAttr("disabled");
+            // document.body.appendChild(newImg);
+        });
+        function stopCapture(evt) {
+            $("#videoSharingScreen").removeClass("show").addClass("hide");
+            // $("#word_image_selection_message").removeClass("hide").addClass("show");
+            let tracks = videoElem.srcObject.getTracks();
+
+            tracks.forEach(track => track.stop());
+            videoElem.srcObject = null;        
+        }
+
+        // stopCapture();
+        // canvas.toBlob(function(blob) {
+        //     var newImg = document.createElement('img');
+
+        //     var img    = canvas.toDataURL("image/png");
+
+        //     newImg.src = img;
+        //     document.body.appendChild(newImg);
+        // });
+    }
     
 });
 
