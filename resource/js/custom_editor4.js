@@ -1428,8 +1428,6 @@ function save_autometically() {
             })
 
             .done(function (data, statusText, xhr) {
-                // console.log(data);
-                // return false;
                 var post = JSON.parse(data);                
                 $('#post_id').attr('value', post.post_id);
                 $('#current_open_file').attr('value', post.post_id);
