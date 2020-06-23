@@ -1421,33 +1421,63 @@ class Wordapp extends CI_Controller
 
     public function do_upload()
     {
-            $config['upload_path']          = './uploads/test';
-            $config['allowed_types']        = 'gif|jpg|png';
-            $config['max_size']             = 100;
-            $config['max_width']            = 1024;
-            $config['max_height']           = 768;
+        $config['upload_path'] = './uploads/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size'] = 1000;
+        $config['encrypt_name'] = TRUE;
+        // $config['max_width']            = 1024;
+        // $config['max_height']           = 768;
 
-            $this->load->library('upload', $config);
+        $this->load->library('upload', $config);
 
-            if ( ! $this->upload->do_upload('userfile'))
-            {
-                $error = array('error' => $this->upload->display_errors());
-                echo json_encode($error);
+        if ( ! $this->upload->do_upload('file'))
+        {
+            $error = array('error' => $this->upload->display_errors());
+            echo json_encode($error);
+        }
+        else
+        {
+            $picture = $this->upload->data();
+            if ($picture['image_width']>680) {
+                $orinal_name = explode(".", $picture['file_name']);
+                $newfilename = md5(time()) . '.' . end($orinal_name);
+                // Create picture thumbnail - http://codeigniter.com/user_guide/libraries/image_lib.html
+                $this->load->library('image_lib');
+                $config['image_library'] = 'gd2';
+                $config['source_image'] = FCPATH.'/uploads/'.$picture['file_name'];
+                $config['create_thumb'] = false;
+                $config['maintain_ratio'] = TRUE;
+                $config['height'] = "400";
+                $config['width'] = "670";
+                $config['new_image'] = FCPATH.'/uploads/'.$newfilename;
+                $this->image_lib->initialize($config);
+
+                // Try resizing the picture
+                if ( ! $this->image_lib->resize())
+                {
+                    $data['profile_picture_error'] = $this->image_lib->display_errors();
+                    $error = TRUE;
+                    echo json_encode($data);
+                }
+                else
+                {
+                    $data['location'] = 'uploads/'.$newfilename;
+                    // Delete original uploaded file
+                    unlink(FCPATH.'/uploads/'.$picture['file_name']);
+                    echo json_encode($data);
+                }
+
+                
+            }else{
+                $data['location'] = 'uploads/'.$picture['file_name'];
+                echo json_encode($data);
             }
-            else
-            {
-                $data = array('upload_data' => $this->upload->data());
-                echo json_encode($error);
-            }
+            
+        }
     }
 
     public function tiny_image_upload()
     {
-        // echo json_encode($_SERVER['HTTP_ORIGIN']);
-        // exit();
-        // $_FILES['file']['tmp_name']
-        // echo json_encode($_FILES);
-        // exit();
         /*********************************************
            * Change this line to set the upload folder *
            *********************************************/
@@ -1456,23 +1486,7 @@ class Wordapp extends CI_Controller
           reset ($_FILES);
           $temp = current($_FILES);
           if (is_uploaded_file($temp['tmp_name'])){
-            // if (isset($_SERVER['HTTP_ORIGIN'])) {
-            //   // same-origin requests won't set an origin. If the origin is set, it must be valid.
-            //   if (in_array($_SERVER['HTTP_ORIGIN'], $accepted_origins)) {
-            //     header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN']);
-            //   } else {
-            //     header("HTTP/1.1 403 Origin Denied");
-            //     return;
-            //   }
-            // }
-
-            /*
-              If your script needs to receive cookies, set images_upload_credentials : true in
-              the configuration and enable the following two headers.
-            */
-            // header('Access-Control-Allow-Credentials: true');
-            // header('P3P: CP="There is no P3P policy."');
-
+           
             // Sanitize input
             if (preg_match("/([^\w\s\d\-_~,;:\[\]\(\).])|([\.]{2,})/", $temp['name'])) {
                 header("HTTP/1.1 400 Invalid file name.");
@@ -1485,26 +1499,13 @@ class Wordapp extends CI_Controller
                 return;
             }
 
-            
-            // Accept upload if there was no origin, or if it is an accepted origin
-            // $filetowrite = $imageFolder . $temp['name'];
-
             // Change File Name
-
             $orinal_name = explode(".", $temp['name']);
             $newfilename = round(microtime(true)) . '.' . end($orinal_name);
             $filetowrite = $imageFolder . $newfilename;
-            // move_uploaded_file($temp["tmp_name"], "../img/imageDirectory/" . $newfilename);
 
             // Upload the server
-
-
             move_uploaded_file($temp['tmp_name'], $filetowrite);
-
-            // Respond to the successful upload with JSON.
-            // Use a location key to specify the path to the saved image resource.
-            // { location : '/your/uploaded/image/file'}
-            // { location : '/uploaded/image/path/image.png' }
             echo json_encode(array('location' => $filetowrite));
             // echo json_encode(array('location' => "/uploads/AhasanYounusSir2.jpg"));
           } else {

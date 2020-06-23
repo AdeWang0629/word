@@ -395,7 +395,7 @@ jQuery(document).ready(function ($) {
         if (post_title.length < 1) {
             tinymce.get('doc_content').focus();
             $("#close_blanck_document_btn").focus();
-            // $("#blanck_document_message").removeClass('hide').addClass('show');
+            $("#blanck_document_message").removeClass('show').addClass('hide');
 
             return false;
         } else {

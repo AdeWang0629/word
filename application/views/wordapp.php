@@ -1235,7 +1235,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="clearfix"></div>
 </div>
 
-<div class="col-lg-4 col-md-5 col-sm-4 col-xs-10 pull-right hide draggable_aria close_aria blanck_document_message" id="blanck_document_message"
+<div class="col-lg-4 col-md-5 col-sm-4 col-xs-10 pull-right hide blanck_document_message" id="blanck_document_message"
      style="">
 
     <div class="panel panel-warning"
