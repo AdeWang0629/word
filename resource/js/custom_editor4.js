@@ -86,7 +86,7 @@ tinymce.init({
           }
 
           json = JSON.parse(xhr.responseText);
-          // console.log(xhr.responseText);
+          console.log(json);
           // return false;
           
           if (!json || typeof json.location != 'string') {

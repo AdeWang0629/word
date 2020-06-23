@@ -1467,7 +1467,6 @@ class Wordapp extends CI_Controller
                     unlink(FCPATH.'/uploads/'.$picture['file_name']);
                     echo json_encode($data);
                 }
-
                 
             }else{
                 $data['location'] = 'uploads/'.$picture['file_name'];
