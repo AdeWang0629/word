@@ -3555,10 +3555,10 @@ jQuery(document).ready(function ($) {
         canvas.toBlob(function(blob) {
             var newImg = document.createElement('img');
 
-            var img    = canvas.toDataURL("image/png");
+            var img    = canvas.toDataURL("image/jpeg");
 
             newImg.src = img;
-            tinymce.execCommand('mceInsertContent', false, '<img width="670" style="margin: 5px 10px; float:left; overflow: hidden !important;" align="middle" src="' + img + '"> ');
+            tinymce.execCommand('mceInsertContent', false, '<img width="340" style="margin: 5px 10px; float:left; overflow: hidden !important;" align="middle" src="' + img + '"> ');
             stopCapture();
             $(".btn_keipro").removeAttr("disabled");
             $("#screenSharingVideo").removeClass("hide").addClass("show");       
