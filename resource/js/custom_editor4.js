@@ -87,8 +87,9 @@ tinymce.init({
 
           json = JSON.parse(xhr.responseText);
           console.log(json);
-          // return false;
           
+          // return false;
+
           if (!json || typeof json.location != 'string') {
             failure('Invalid JSON: ' + xhr.responseText);
             return;
