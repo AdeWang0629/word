@@ -1456,7 +1456,8 @@ class Wordapp extends CI_Controller
                 if ( ! $this->image_lib->resize())
                 {
                     $data['profile_picture_error'] = $this->image_lib->display_errors();
-                    $error = TRUE;
+                    $data['location'] = 'uploads/'.$picture['file_name'];
+                    // Delete original uploaded file
                     echo json_encode($data);
                 }
                 else
