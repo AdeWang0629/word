@@ -547,13 +547,6 @@ textarea.tinyMCE {
     font-size: 18px;
 }
 
-.videoSharingScreen {
-    position: fixed;
-    right: 240px;
-    bottom: 10px;
-    padding: 4px;
-    width: 70%;
-}
 .notification_aria {
     position: fixed;
     right: 250px;

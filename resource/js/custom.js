@@ -3621,6 +3621,8 @@ jQuery(document).ready(function ($) {
             videoElem.srcObject = null;        
         }
 
+
+
         // stopCapture();
         // canvas.toBlob(function(blob) {
         //     var newImg = document.createElement('img');
@@ -3630,6 +3632,10 @@ jQuery(document).ready(function ($) {
         //     newImg.src = img;
         //     document.body.appendChild(newImg);
         // });
+    }
+
+    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $("#startCapture").addClass('hide');
     }
     
 });
