@@ -1457,12 +1457,14 @@ class Wordapp extends CI_Controller
                 {
                     $data['profile_picture_error'] = $this->image_lib->display_errors();
                     $data['location'] = 'uploads/'.$picture['file_name'];
+                    $data['file_name'] = $picture['file_name'];
                     // Delete original uploaded file
                     echo json_encode($data);
                 }
                 else
                 {
                     $data['location'] = 'uploads/'.$newfilename;
+                    $data['file_name'] = $newfilename;
                     // Delete original uploaded file
                     unlink(FCPATH.'/uploads/'.$picture['file_name']);
                     echo json_encode($data);
@@ -1470,6 +1472,7 @@ class Wordapp extends CI_Controller
                 
             }else{
                 $data['location'] = 'uploads/'.$picture['file_name'];
+                $data['file_name'] = $picture['file_name'];
                 echo json_encode($data);
             }
             

@@ -724,6 +724,13 @@ textarea.tinyMCE {
     bottom: 5px;
     padding: 4px;
 }
+.screen_image_zooming{
+    position: fixed;
+    width: 450px;
+    right: 10px;
+    bottom: 5px;
+    padding: 4px;
+}
 .word_image_upload_completed{
     position: fixed;
     width: 350px;
@@ -906,6 +913,14 @@ textarea.tinyMCE {
     }
 
     .word_image_zooming{
+        position: fixed; 
+        width: 100%; 
+        right: 0px; 
+        bottom: 0px; 
+        padding: 4px;
+    }
+
+    .screen_image_zooming{
         position: fixed; 
         width: 100%; 
         right: 0px; 

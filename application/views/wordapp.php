@@ -1618,6 +1618,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
+
+<!-- Image Zoom -->
+<div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 hide draggable_aria screen_image_zooming multiple_navi" id="screen_image_zooming"
+     style="">
+
+    <div class="panel panel-warning"
+         style="margin-bottom: 2px; border: solid 2px #f1c40f; border-top: solid 7px #f1c40f; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+        <div class="panel-body">
+            <div class="col-md-12" style="padding: 0">
+                <h4 class="text-center" style="font-size: 26px;">
+                    サイズを選んで下さい。
+                </h4>
+                <!-- <button id="word_image_zooming_close" style="margin-left: 2px;" class="btn btn-warning btn-lg pull-right">戻る
+                </button> -->
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <center>
+                    <br>
+                    <button style="margin-right: 20px;" class="btn btn-success btn-lg" id="word_screen_image_zoom_btn" title="拡大"><i
+                                class="fa fa-search-plus"></i> 拡大
+                    </button>
+                    <button style="margin-right: 20px;" class="btn btn-success btn-lg" id="word_screen_image_small_btn" title="縮小"><i
+                                class="fa fa-search-minus"></i> 縮小
+                    </button>
+                    <button style="" class="btn btn-success btn-lg" id="word_screen_image_width_completed" title="完了">
+                        <i class="fa fa-check"></i> 完了
+                    </button>
+                </center>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
 <!-- Image Upload Completed -->
 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 pull-right hide draggable_aria close_aria word_image_upload_completed multiple_navi"
      id="word_image_upload_completed" style="">

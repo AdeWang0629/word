@@ -74,6 +74,7 @@ tinymce.init({
     paste_data_images: true,
     automatic_uploads: true,
     images_upload_handler: function (blobInfo, success, failure) {
+        console.log(blobInfo);
         var xhr, formData;
         xhr = new XMLHttpRequest();
         xhr.withCredentials = false;
@@ -87,14 +88,15 @@ tinymce.init({
 
           json = JSON.parse(xhr.responseText);
           console.log(json);
-          
-          // return false;
+          $("#word_uploaded_file_name").val(json.file_name);
+          $("#word_image_width").val('400');
+          $("#default_autosaving_message").removeClass('show').addClass('hide');
+          $("#screen_image_zooming").removeClass('hide').addClass('show');
 
           if (!json || typeof json.location != 'string') {
             failure('Invalid JSON: ' + xhr.responseText);
             return;
           }
-
           success(json.location);
         };
 
@@ -126,6 +128,7 @@ tinymce.init({
     // content_style: "p {line-height:100%}",
     // extended_valid_elements: "*[*]",
     setup: function (editor) {
+
         var DELAY = 400, clicks = 0, timer = null;
 
         var vjeObj = null;
@@ -207,7 +210,6 @@ tinymce.init({
         });*/
 
         editor.on('keyup', function (event) {
-
             if(event.keyCode == 13) {
                 var rng = tinymce.activeEditor.selection.getRng(true);
 				var txt = rng.startContainer.textContent;
@@ -436,7 +438,7 @@ tinymce.init({
                 $("#event_mapping").val(1);
             } 
             var event_mapping = $("#event_mapping").val();
-            console.log("Event Mapping No.: " + event_mapping);
+
 
             // var car = tinymce.activeEditor.getContent({format: 'text'});
             // tinymce.triggerSave();
@@ -1213,7 +1215,7 @@ function custom_print(size='a4',partial=0) {
     else
         var stringHtml = sel_content;
 
-    stringHtml = '<html lang="jp"><head><meta charset="utf-8"><style>@font-face {font-family: "ms mincho"; src: url("MSMINCHO.TTF") format("truetype"); font-weight: normal;}</style></head><body style="font-family : \'ms mincho\'">下左右中大aaa</body>';
+    stringHtml = '<html lang="jp"><head><meta charset="utf-8"><style>@font-face {font-family: "ms mincho"; src: url("MSMINCHO.TTF") format("truetype"); font-weight: normal;}</style></head><body style="font-family : \'ms mincho\'">下左右中大</body>';
 
 
 

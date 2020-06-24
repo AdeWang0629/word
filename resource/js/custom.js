@@ -2817,11 +2817,45 @@ jQuery(document).ready(function ($) {
         word_image_zooming(last_image_id[0]);
     })
 
+    $("#word_screen_image_zoom_btn").on("click", function (event) {
+        event.preventDefault();
+        var image_class = tinyMCE.activeEditor.dom.select('.last_uploaded_image');
+        // var current_image_width = $("#word_image_width").val();
+        var realWidth = $(image_class).attr('width');
+        $(image_class).removeAttr("height");
+        var replace_image_width = parseInt(realWidth) + 50;
+        
+        $("#word_image_small_btn").removeClass('disabled');
+        if (realWidth > 600) {
+            $("#word_image_zoom_btn").addClass('disabled');
+        }else{
+            $(image_class).attr('width', replace_image_width);
+            $("#word_image_width").val(replace_image_width);
+        }
+    })
+
     $("#word_image_small_btn").on("click", function (event) {
         event.preventDefault();
         var last_image_name = $("#word_uploaded_file_name").val();
         var last_image_id = last_image_name.split(".");
         word_image_smalling(last_image_id[0]);
+    })
+
+    $("#word_screen_image_small_btn").on("click", function (event) {
+        event.preventDefault();
+        var image_class = tinyMCE.activeEditor.dom.select('.last_uploaded_image');
+        $(image_class).removeAttr("height");
+        // var current_image_width = $("#word_image_width").val();
+        var realWidth = $(image_class).attr('width');
+        var replace_image_width = parseInt(realWidth) - 50;
+        $("#word_image_zoom_btn").removeClass('disabled');
+        // alert(replace_image_width);
+        if (realWidth<50) {
+            $("#word_image_small_btn").addClass('disabled');
+        } else {
+            $(image_class).attr('width', replace_image_width);
+            $("#word_image_width").val(replace_image_width);
+        }
     })
 
 
@@ -2862,6 +2896,16 @@ jQuery(document).ready(function ($) {
         $("#word_image_small_btn").removeClass('disabled');
         $("#word_image_upload_completed").removeClass('hide').addClass('show');
         $("#word_image_zooming").removeClass('show').addClass('hide');
+
+    });
+
+    $("#word_screen_image_width_completed").on('click', function (event) {
+        event.preventDefault();
+        $("#word_image_width").val('400');
+        $("#word_screen_image_zoom_btn").removeClass('disabled');
+        $("#word_screen_image_small_btn").removeClass('disabled');
+        // $("#word_image_upload_completed").removeClass('hide').addClass('show');
+        $("#screen_image_zooming").removeClass('show').addClass('hide');
 
     });
 
@@ -3558,7 +3602,8 @@ jQuery(document).ready(function ($) {
             var img    = canvas.toDataURL("image/jpeg");
 
             newImg.src = img;
-            tinymce.execCommand('mceInsertContent', false, '<img width="340" style="margin: 5px 10px; float:left; overflow: hidden !important;" align="middle" src="' + img + '"> ');
+            tinymce.get('doc_content').focus();
+            tinymce.execCommand('mceInsertContent', false, ' <img width="340" style="margin: 5px 10px; float:left; overflow: hidden !important;" data-attr-screen="screen_image" class="last_uploaded_image" align="middle" src="' + img + '"> ');
             stopCapture();
             $(".btn_keipro").removeAttr("disabled");
             $("#screenSharingVideo").removeClass("hide").addClass("show");       
