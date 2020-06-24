@@ -3584,12 +3584,62 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    // Screen Capture API
+    const videoElem = document.getElementById("screenSharingVideo");
+    const startElem = document.getElementById("startCapture");
+    const stopElem = document.getElementById("videoSharingScreen_close");
+
+    // Options for getDisplayMedia()
+
+    var displayMediaOptions = {
+        video: {
+            cursor: ["motion", "always"]
+        },
+        audio: false,
+    };
+    // Set event listeners for the start and stop buttons
+    startElem.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        startCapture();
+    }, false);
+
+    stopElem.addEventListener("click", function(evt) {
+        firstStopCapture();
+    }, false);
+
+    async function startCapture() {
+        $("#word_image_selection_message").removeClass("show").addClass("hide");
+        try {
+            videoElem.srcObject = await navigator.mediaDevices.getDisplayMedia(displayMediaOptions);
+            let tracks = videoElem.srcObject.getTracks();
+            if (tracks.length>0) {
+                $("#word_image_selection_message").removeClass("show").addClass("hide");
+                $("#videoSharingScreen").removeClass("hide").addClass("show");
+            }      
+        } catch(err) {
+            console.log(err);
+            $(".btn_keipro").removeAttr("disabled");
+            $("#videoSharingScreen").removeClass("show").addClass("hide");
+            $("#word_image_selection_message").removeClass("hide").addClass("show");
+            // console.error("Error: " + err);
+        }
+    }
+
+    function firstStopCapture(evt) {
+        $("#videoSharingScreen").removeClass("show").addClass("hide");
+        $("#word_image_selection_message").removeClass("hide").addClass("show");
+        let tracks = videoElem.srcObject.getTracks();
+
+        tracks.forEach(track => track.stop());
+        videoElem.srcObject = null;        
+    }
+
     $("#videoImageInsert").click(function(event) {
         event.preventDefault();
-        capture()
+        capture(event)
     });
 
-    function capture() {  
+    function capture(event) {  
         $("#screenSharingVideo").removeClass("show").addClass("hide");       
         $("#screenSharingCanvas").removeClass("hide").addClass("show");       
         var canvas = document.getElementById('screenSharingCanvas');     
@@ -3606,13 +3656,14 @@ jQuery(document).ready(function ($) {
             newImg.src = img;
             tinymce.get('doc_content').focus();
             tinymce.execCommand('mceInsertContent', false, ' <img width="340" style="margin: 5px 10px; float:left; overflow: hidden !important;" data-attr-screen="screen_image" class="last_uploaded_image" align="middle" src="' + img + '"> ');
-            stopCapture();
+            stopCapture(event);
             $(".btn_keipro").removeAttr("disabled");
             $("#screenSharingVideo").removeClass("hide").addClass("show");       
             $("#screenSharingCanvas").removeClass("show").addClass("hide");
             // document.body.appendChild(newImg);
         });
         function stopCapture(evt) {
+
             $("#videoSharingScreen").removeClass("show").addClass("hide");
             // $("#word_image_selection_message").removeClass("hide").addClass("show");
             let tracks = videoElem.srcObject.getTracks();
@@ -3620,18 +3671,6 @@ jQuery(document).ready(function ($) {
             tracks.forEach(track => track.stop());
             videoElem.srcObject = null;        
         }
-
-
-
-        // stopCapture();
-        // canvas.toBlob(function(blob) {
-        //     var newImg = document.createElement('img');
-
-        //     var img    = canvas.toDataURL("image/png");
-
-        //     newImg.src = img;
-        //     document.body.appendChild(newImg);
-        // });
     }
 
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {

@@ -2244,52 +2244,7 @@ $this->load->view('components/income_modal')
     }
     $.mobile.loader.prototype.options.text = "";
 
-    // 
-    const videoElem = document.getElementById("screenSharingVideo");
-    const startElem = document.getElementById("startCapture");
-    const stopElem = document.getElementById("videoSharingScreen_close");
-
-    // Options for getDisplayMedia()
-
-    var displayMediaOptions = {
-        video: {
-            cursor: ["motion", "always"]
-        },
-        audio: false,
-    };
-    // Set event listeners for the start and stop buttons
-    startElem.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        startCapture();
-    }, false);
-
-    stopElem.addEventListener("click", function(evt) {
-        stopCapture();
-    }, false);
-
-    async function startCapture() {
-        try {
-            videoElem.srcObject = await navigator.mediaDevices.getDisplayMedia(displayMediaOptions);
-            let tracks = videoElem.srcObject.getTracks();
-            if (tracks.length>0) {
-                $("#word_image_selection_message").removeClass("show").addClass("hide");
-                $("#videoSharingScreen").removeClass("hide").addClass("show");
-            }            
-        } catch(err) {
-            $("#videoSharingScreen").removeClass("show").addClass("hide");
-            $("#word_image_selection_message").removeClass("show").addClass("hide");
-            console.error("Error: " + err);
-        }
-    }
-
-    function stopCapture(evt) {
-        $("#videoSharingScreen").removeClass("show").addClass("hide");
-        $("#word_image_selection_message").removeClass("hide").addClass("show");
-        let tracks = videoElem.srcObject.getTracks();
-
-        tracks.forEach(track => track.stop());
-        videoElem.srcObject = null;        
-    }
+    
 
 
     
