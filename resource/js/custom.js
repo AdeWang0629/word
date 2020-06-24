@@ -2904,6 +2904,8 @@ jQuery(document).ready(function ($) {
         $("#word_image_width").val('400');
         $("#word_screen_image_zoom_btn").removeClass('disabled');
         $("#word_screen_image_small_btn").removeClass('disabled');
+        var image_att_select = tinyMCE.activeEditor.dom.select("img[data-attr-screen='screen_image']");
+        $(image_att_select).removeClass('last_uploaded_image');
         // $("#word_image_upload_completed").removeClass('hide').addClass('show');
         $("#screen_image_zooming").removeClass('show').addClass('hide');
 

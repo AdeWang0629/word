@@ -88,10 +88,13 @@ tinymce.init({
 
           json = JSON.parse(xhr.responseText);
           console.log(json);
-          $("#word_uploaded_file_name").val(json.file_name);
-          $("#word_image_width").val('400');
-          $("#default_autosaving_message").removeClass('show').addClass('hide');
-          $("#screen_image_zooming").removeClass('hide').addClass('show');
+          var image_att_select = tinyMCE.activeEditor.dom.select("img[data-attr-screen='screen_image']");
+          if($(image_att_select).hasClass("last_uploaded_image")){
+            $("#word_uploaded_file_name").val(json.file_name);
+            // $("#word_image_width").val('400');
+            $("#default_autosaving_message").removeClass('show').addClass('hide');
+            $("#screen_image_zooming").removeClass('hide').addClass('show');
+        }         
 
           if (!json || typeof json.location != 'string') {
             failure('Invalid JSON: ' + xhr.responseText);
