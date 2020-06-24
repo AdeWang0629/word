@@ -98,11 +98,66 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             width: 638px; 
             height: 384px;
         }
-        .screenSharingVideo{
-            width: 1000px;
-            height: 500px;
-            overflow: auto;
+        .videoSharingScreen {
+            position: fixed;
+            right: 240px;
+            bottom: 10px;
+            padding: 4px;
+            width: 70%;
         }
+        /* For 1024 Resolution */  
+        @media only screen   
+        and (min-device-width : 768px)   
+        and (max-device-width : 1024px)  
+        { 
+            .screenSharingVideo{
+                width: 800px;
+                height: 370px;
+                overflow: auto;
+            }
+
+            .videoSharingScreen {
+                position: fixed;
+                right: 240px;
+                bottom: 10px;
+                padding: 4px;
+                width: 60%;
+            }
+        } 
+
+        /* For 1366 Resolution */  
+        @media only screen   
+        and (min-width: 1030px)   
+        and (max-width: 1366px)  
+        {
+            .screenSharingVideo{
+                width: 800px;
+                height: 370px;
+                overflow: auto;
+            }
+
+            .videoSharingScreen {
+                position: fixed;
+                right: 240px;
+                bottom: 10px;
+                padding: 4px;
+                width: 65%;
+            }
+        }  
+
+        @media only screen   
+        and (min-width: 1370px)  
+        and (max-width: 1605px)  
+        { 
+            .screenSharingVideo{
+                width: 1000px;
+                height: 500px;
+                overflow: auto;
+            }
+
+
+        }   
+        
         /*.mce-content-body.my_class{*/
         /*padding-left: 50px;*/
         /*padding-right: 50px;*/
