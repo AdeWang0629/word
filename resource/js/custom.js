@@ -378,7 +378,8 @@ jQuery(document).ready(function ($) {
             var page_count = Number(get_page_count) + Number(plus_num);
 
             for (var i = 0; i < page_count; i++) {
-                var content_array = tinymce.editors[i].getContent();
+                // var content_array = tinymce.editors[i].getContent();
+                var content_array = tinyMCE.activeEditor.getContent();
                 content += content_array;
             }
             console.log(content);
@@ -2904,6 +2905,7 @@ jQuery(document).ready(function ($) {
         $("#word_image_width").val('400');
         $("#word_screen_image_zoom_btn").removeClass('disabled');
         $("#word_screen_image_small_btn").removeClass('disabled');
+        $(".btn_keipro").removeAttr("disabled");
         var image_att_select = tinyMCE.activeEditor.dom.select("img[data-attr-screen='screen_image']");
         $(image_att_select).removeClass('last_uploaded_image');
         // $("#word_image_upload_completed").removeClass('hide').addClass('show');
@@ -3657,7 +3659,7 @@ jQuery(document).ready(function ($) {
             tinymce.get('doc_content').focus();
             tinymce.execCommand('mceInsertContent', false, ' <img width="340" style="margin: 5px 10px; float:left; overflow: hidden !important;" data-attr-screen="screen_image" class="last_uploaded_image" align="middle" src="' + img + '"> ');
             stopCapture(event);
-            $(".btn_keipro").removeAttr("disabled");
+
             $("#screenSharingVideo").removeClass("hide").addClass("show");       
             $("#screenSharingCanvas").removeClass("show").addClass("hide");
             // document.body.appendChild(newImg);
