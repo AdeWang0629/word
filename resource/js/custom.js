@@ -414,7 +414,8 @@ jQuery(document).ready(function ($) {
 
                         if (get_page_count != null) {
                             for (var i = 1; i < page_count; i++) {
-                                tinymce.editors[i].setContent('');
+                                // tinymce.editors[i].setContent('');
+                                tinymce.activeEditor.setContent('');
                             }
                         } else {
                             tinymce.activeEditor.setContent('');
@@ -423,7 +424,6 @@ jQuery(document).ready(function ($) {
 
                         tinymce.get('doc_content').focus();
                     }
-                    // console.log("success");
                 })
                 .fail(function (response) {
                     console.log("error");
