@@ -378,8 +378,7 @@ jQuery(document).ready(function ($) {
             var page_count = Number(get_page_count) + Number(plus_num);
 
             for (var i = 0; i < page_count; i++) {
-                // var content_array = tinymce.editors[i].getContent();
-                var content_array = tinyMCE.activeEditor.getContent();
+                var content_array = tinymce.editors[i].getContent();
                 content += content_array;
             }
             console.log(content);
@@ -414,8 +413,7 @@ jQuery(document).ready(function ($) {
 
                         if (get_page_count != null) {
                             for (var i = 1; i < page_count; i++) {
-                                // tinymce.editors[i].setContent('');
-                                tinymce.activeEditor.setContent('');
+                                tinymce.editors[i].setContent('');
                             }
                         } else {
                             tinymce.activeEditor.setContent('');
@@ -424,6 +422,7 @@ jQuery(document).ready(function ($) {
 
                         tinymce.get('doc_content').focus();
                     }
+                    // console.log("success");
                 })
                 .fail(function (response) {
                     console.log("error");
