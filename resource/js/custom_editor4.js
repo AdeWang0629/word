@@ -1307,6 +1307,13 @@ function word_font_color(color_code) {
     $("#word_font_color").val(color_code);
     // if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $("#font_color_code_mapping").val(color_code);
+        // Alerts the currently selected elements node name
+        
+        if (tinymce.activeEditor.selection.getNode().nodeName.toLowerCase() === "font"){
+            var Node      = tinyMCE.activeEditor.selection.getNode();    
+            $(Node).attr('color', '');
+            // tinyMCE.activeEditor.selection.getNode().attr('color', ''); 
+        }
         tinymce.get('doc_content').execCommand('ForeColor', false, color_code);
         $("#close_font_color_aria").focus();
     // }
