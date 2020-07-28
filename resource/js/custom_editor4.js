@@ -1308,11 +1308,23 @@ function word_font_color(color_code) {
     // if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $("#font_color_code_mapping").val(color_code);
         // Alerts the currently selected elements node name
+        var nodTag = tinyMCE.activeEditor.selection.getNode();   
         
-        if (tinymce.activeEditor.selection.getNode().nodeName.toLowerCase() === "font"){
-            var Node      = tinyMCE.activeEditor.selection.getNode();    
-            $(Node).attr('color', '');
-            // tinyMCE.activeEditor.selection.getNode().attr('color', ''); 
+        
+        if (nodTag.nodeName.toLowerCase() === "span" || nodTag.nodeName.toLowerCase() === "font"){ 
+            $(nodTag).attr('color', "");
+            var style = $(nodTag).attr('style');
+            if (typeof style !== 'undefined'){
+                var style_list = style.split(';');
+                var newStyle = "";
+                for (var i = 0; i <style_list.length; i++) {
+                    if (style_list[i] != 'color') {
+                        newStyle += style_list[i]+";";
+                    }                
+                }
+                $(nodTag).attr('style', newStyle)
+            }
+            
         }
         tinymce.get('doc_content').execCommand('ForeColor', false, color_code);
         $("#close_font_color_aria").focus();
