@@ -15,7 +15,7 @@
 |
 */
 //$config['base_url'] = 'https://keipro.dhaka10.dev.jacos.jp/dev/';
-$config['base_url'] = 'http://localhost/keipro2/';
+$config['base_url'] = 'http://localhost:8088/word/';
 // $config['base_url'] = 'https://keipro.dhaka10.dev.jacos.jp/';
 
 /*
