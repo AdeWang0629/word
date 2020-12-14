@@ -16,7 +16,7 @@
 */
 
 if($_SERVER['SERVER_NAME'] === 'localhost'){
-    $config['base_url'] = 'http://localhost:8088/word/';
+    $config['base_url'] = 'http://localhost/word/';
 }elseif($_SERVER['SERVER_NAME'] === '192.168.100.120'){
     $config['base_url'] = 'http://192.168.100.120:8080/word/';
 }elseif($_SERVER['SERVER_NAME'] === '127.0.0.1'){
