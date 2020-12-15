@@ -833,6 +833,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     " data-placement="auto left" data-trigger="hover">機能
                     </button>
 
+                    <button class="btn btn-success btn_keipro" role="button"
+                            title="" data-content="ペーパーレス" data-placement="auto left" data-trigger="hover" href="/">
+                         <a href="/mail" target="_blank" style="color: white;text-decoration: none">ペーパーレス</a>
+                    </button>
+
+                    <button class="btn btn-success btn_keipro" role="button"                                                                                                                                                                                                              `
+                            title="" data-content="ペーパーレス" data-placement="auto left" data-trigger="hover" href="/">
+                        <a href="/kessai" target="_blank" style="color: white;text-decoration: none">メール</a>
+                    </button>
+
+
                     <!--                            <button class="btn btn-success btn_keipro" id="shapes" data-html="true" role="button" data-toggle="popover" data-container="body" title="" data-content=" 絵・図 " data-placement="bottom" data-trigger="hover"> 絵・図</button>-->
 
 
