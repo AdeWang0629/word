@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f8600646-3b69-4ebf-be50-e0dc6664fdeb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/development/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/development/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/js/custom_editor4.js" beforeDir="false" afterPath="$PROJECT_DIR$/resource/js/custom_editor4.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,85 +12,6 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true">
     <execution />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>$this-&gt;load-&gt;library('upload', $config);</find>
-      <find>check_password</find>
-      <find>hidde</find>
-      <find>singlebutton</find>
-      <find>login-form</find>
-      <find>login_menu_type</find>
-      <find>add</find>
-      <find>display_sharer_list</find>
-      <find>create</find>
-      <find>emailing_aria_button</find>
-      <find>userAuthorization</find>
-      <find>sign_up</find>
-      <find>$login_menu_type</find>
-      <find>hidden</find>
-      <find>select_login_menu_message</find>
-      <find>login_options_div</find>
-      <find>error_display</find>
-      <find>error_display_message</find>
-      <find>'login_menu_type'</find>
-      <find>get_by_username</find>
-      <find>save_sign_up</find>
-      <find>get_username_by_id</find>
-      <find>get_by_username_email</find>
-      <find>print_word</find>
-      <find>save_autometically</find>
-      <find>create_new_doc</find>
-      <find>getContent</find>
-      <find>print</find>
-      <find>doc_content_maindiv</find>
-      <find>ajax</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>name=&quot;amount_a_col1&quot; onblur=&quot;totalAdd(this.name);&quot;</replace>
-      <replace>align=&quot;right&quot;&gt;&lt;/td&gt;</replace>
-      <replace>bgcolor=&quot;#99FF99&quot;</replace>
-      <replace>$total_data</replace>
-      <replace>user_settlement_data</replace>
-      <replace>settlement_title</replace>
-      <replace>seal_image_type</replace>
-      <replace>180</replace>
-      <replace>settlement_id</replace>
-      <replace>width=&quot;25%&quot;</replace>
-      <replace>btn-light_blue</replace>
-      <replace>black</replace>
-      <replace>onkeypress=&quot;validate_settlement_form();&quot;</replace>
-      <replace>onblur=&quot;validate_settlement_form();&quot;</replace>
-      <replace>wo</replace>
-      <replace>word_app.</replace>
-      <replace>maxlength=&quot;300&quot;</replace>
-      <replace>edit_partner_yes</replace>
-      <replace>limitTextarea(this,8,300)</replace>
-      <replace>ここに入力してください</replace>
-      <replace>携帯番号</replace>
-      <replace>usersname</replace>
-      <replace>id</replace>
-      <replace>user_id</replace>
-      <replace>$user_name</replace>
-      <replace>placeholder=&quot;氏名&quot;</replace>
-      <replace>==126</replace>
-      <replace>created_by</replace>
-      <replace>login_menu_type</replace>
-      <replace>_self</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>font_size</dir>
-      <dir>C:\xampp\htdocs\keipro\application\config</dir>
-      <dir>C:\xampp\htdocs\keipro\resource</dir>
-      <dir>C:\xampp\htdocs\keipro\application\models</dir>
-      <dir>C:\xampp\htdocs\keipro\application\views\components</dir>
-      <dir>C:\xampp\htdocs\keipro\resource\js</dir>
-      <dir>C:\xampp\htdocs\keipro\application\views</dir>
-      <dir>C:\xampp\htdocs\keipro\resource\css</dir>
-      <dir>C:\xampp\htdocs\keipro\application</dir>
-      <dir>C:\xampp\htdocs\keipro</dir>
-      <dir>C:\xampp\htdocs\keipro\application\controllers</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -104,11 +25,6 @@
   <component name="NamedScopeManager">
     <scope name="Git Scope" pattern="" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="285" />
-    <option name="width" value="1085" />
-    <option name="height" value="730" />
-  </component>
   <component name="ProjectId" id="1lUhHD8S9YdEohgjf9gd5zxe2TV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -119,6 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -178,6 +95,8 @@
       <workItem from="1561348436539" duration="16551000" />
       <workItem from="1561436180166" duration="3831000" />
       <workItem from="1607657496416" duration="375000" />
+      <workItem from="1608001338995" duration="147000" />
+      <workItem from="1608001837271" duration="3028000" />
     </task>
     <servers />
   </component>

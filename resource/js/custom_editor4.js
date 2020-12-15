@@ -171,12 +171,14 @@ tinymce.init({
                     //var p = $(tinymce.activeEditor.dom.select('p')[i]);
                     //page_height += p.height();
                     page_height += p_tag_arr[i].offsetHeight;
-                    if(page_height > 1112) {
+                    if(page_height > 1000) {
+                        // console.log(page_height)
                         //var new_paragraph = tinymce.activeEditor.dom.add(tinymce.activeEditor.dom.select('p')[i], 'p', {class: 'mceNonEditable', style: style}, 'ページ ' + page_number + ' / ' + page_count);
                         sep_arr.push($('<p class="mceNonEditable page_separator" contentEditable="false">ページ '+page_number+' / '+'</p>').insertAfter(p_tag_arr[i]));
                         page_number++;
                         page_count++;
                         page_height = 0;
+
                         //tinymce.activeEditor.insertContent('<!-- pagebreak -->');
                     }
                 }
@@ -185,14 +187,15 @@ tinymce.init({
                 }
                 localStorage.setItem("page_count", page_count);
             
-                //var tinymce_height = $(tinymce.activeEditor.getContainer()).height();
-                //alert(tinymce_height);
+                // var tinymce_height = $(tinymce.activeEditor.getContainer()).height();
+                // alert(tinymce_height);
                 //var val = autoPageBreak(add_font_size, 306);//previous value 413
             }
-            console.log('setPageBreak:page_count='+page_count);
+            // console.log('setPageBreak:page_count='+page_count);
         }
 
         editor.on('keyup paste redo undo', function (event) {
+            setPageBreak();
             if(event.keyCode == 8 || event.keyCode == 46) { //backspace, delete
                 setPageBreak();
             }
@@ -200,19 +203,17 @@ tinymce.init({
                 //selNode = tinymce.activeEditor.selection.getRng(true).startContainer;
                 setPageBreak();
             }
-            
         });
         editor.on('paste redo undo', function (event) {
             setPageBreak();
         });
 
-        /*editor.on('keypress', function (event) {
-            if( JS_IM_Common.Browser.Gecko ){ // Gecko
-                $(vjeObj.imeBox).trigger(event);
-            }
-        });*/
+        // editor.on('keypress', function (event) {
+        //     setPageBreak();
+        // });
 
         editor.on('keyup', function (event) {
+            setPageBreak();
             if(event.keyCode == 13) {
                 var rng = tinymce.activeEditor.selection.getRng(true);
 				var txt = rng.startContainer.textContent;
@@ -237,11 +238,12 @@ tinymce.init({
                     //$(curNode).find('span[data-mce-style]').css({'font-weight':'normal', 'font-size':'18.6667px', 'color': '#000', 'font-family': 'ms mincho, ｍｓ 明朝'}).attr('data-mce-style',"font-family: 'ms mincho', 'ｍｓ 明朝'; font-size: 18.6667px; color: #000;");
                     $(curNode).html('<span style="font-size: 18.6667px; color: rgb(0, 0, 0); font-weight: normal; font-family: &quot;ms mincho&quot;, &quot;ｍｓ 明朝&quot;;" data-mce-style="font-family: \'ms mincho\', \'ｍｓ 明朝\'; font-size: 18.6667px; color: #000;"><br data-mce-bogus="1"></span>');
                 }
+
             }
         });
 
         editor.on('keydown', function (event) {
-
+            setPageBreak();
             var selNode = tinymce.activeEditor.selection.getNode();
             // if(!vjeObj) {
             //     vjeObj = new JS_IM( selNode, jsim_vje ); //tinymce.activeEditor.getBody()
@@ -268,7 +270,6 @@ tinymce.init({
                 var rng = tinymce.activeEditor.selection.getRng(true);
                 var txt = rng.startContainer.textContent;
                 var endNode = tinymce.activeEditor.selection.getEnd();
-                
                 if (  txt.substring(rng.startOffset, rng.startOffset + 1).length != '' 
                     || ($(endNode).parent()[0].nodeName != "BODY" && ($(endNode).next().text() != '')/* || $(endNode).next('#text').length > 0  */)
                 ) {
@@ -306,13 +307,13 @@ tinymce.init({
                 }
                 
                 // alert(test);
-                console.log('clicks='+clicks);
-                console.log('currentContent='+test);
+                // console.log('clicks='+clicks);
+                // console.log('currentContent='+test);
                 // console.log('apply_style='+apply_style);
 
                 if ((clicks == 1)) { // && (apply_style == 1)
                     // alert("Ahsan Ullah");
-                     event.preventDefault();
+                    //  event.preventDefault();
                      event.stopPropagation();
                     // alert(apply_style+"======"+clicks);
                     // return false;
@@ -430,13 +431,12 @@ tinymce.init({
                 }
             }
             
-            console.log('Editor was keypressed');
-            console.log(event.keyCode);
+            // console.log('Editor was keypressed');
+            // console.log(event.keyCode);
         });
 
         // editor.execCommand("fontName", false, "ms mincho, ｍｓ 明朝");
         editor.on('change keyup paste redo undo', function (event) {
-            // alert(event.type)
             if (event.type == 'paste') {
                 $("#event_mapping").val(1);
             } 
@@ -562,6 +562,8 @@ tinymce.init({
 
                 save_autometically();
             }
+
+            setPageBreak();
         });
 
         editor.on('click', function (event) {
@@ -585,7 +587,7 @@ tinymce.init({
             get_parent_font_size=parseInt(get_parent_font_size);
             get_parent2_font_size=parseInt(get_parent2_font_size);
             get_single_node_font_size=parseInt(get_single_node_font_size);
-            console.log(get_parent2_font_size);
+            // console.log(get_parent2_font_size);
             // if (get_font_size == '10.666667px' || get_font_size == '10.6667px') {
             if (get_font_size == 10 || get_parent_font_size==10 || get_parent2_font_size==10 || get_single_node_font_size==10) {
                 $(".font_size").removeClass('checked');
@@ -1193,7 +1195,7 @@ function html2pdf(size = 'A4', partial=0){
             $(".print-pdf-loading").show();
         },
         success: function (resp) {
-            console.log(resp);
+            // console.log(resp);
             $(".print-preview-pdfcontent").show();
             $(".print-pdf-loading").hide();
 
@@ -1428,7 +1430,6 @@ function email_change_font_size(font_size, font_size_number) {
 }
 
 function save_autometically() {
-
     delay(function () {
         var post_id = $("#post_id").val();
         // var content = tinymce.activeEditor.getContent();
@@ -1456,19 +1457,19 @@ function save_autometically() {
                 $('#post_id').attr('value', post.post_id);
                 $('#current_open_file').attr('value', post.post_id);
                 $('.internet_connection_alert').slideUp(400);
-                console.log('success');
+                console.log('save success');
             })
             .fail(function (data, statusText, xhr) {
                 $('.internet_connection_alert').show().delay(750).slideDown(400);
-                console.log(xhr.status);
-                console.log(statusText);
+                // console.log(xhr.status);
+                // console.log(statusText);
                 $("#event_mapping").val(1);
             })
             .always(function (data, statusText, xhr) {
                 $("#event_mapping").val(1);
-                console.log(xhr.status);
-                console.log(statusText);
-                console.log("complete");
+                // console.log(xhr.status);
+                // console.log(statusText);
+                // console.log("complete");
             });
         } else {
             $.ajax({
@@ -1481,15 +1482,15 @@ function save_autometically() {
                         $("#post_id").val("");
                     }
                     $('.internet_connection_alert').slideUp(400);
-                    console.log('success');
+                    // console.log('success');
                 })
                 .fail(function (data, statusText, xhr) {
                     $('.internet_connection_alert').show().delay(750).slideDown(400);
-                    console.log('fail');
+                    // console.log('fail');
                     $("#event_mapping").val(1);
                 })
                 .always(function () {
-                    console.log("complete");
+                    // console.log("complete");
                     $("#event_mapping").val(1);
                 });
         }
@@ -1645,7 +1646,7 @@ function appendToLastPage(word) {
     }
 }
 function paginatedTextOnPaste(id, page_count, text_content, text_content_length, k, i, containsJapanese, text_content_length1) {
-    // alert('hi');
+    alert('hi');
     var value = '';
     var final_text = '';
     var k = 0 + k;
