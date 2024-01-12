@@ -24,27 +24,28 @@
 	define('PRODUCTION','production');
 	define('PRODUCTION_STR','jacos-cloud');
 
-	$hostname = explode('.',$_SERVER['SERVER_NAME']);
-     // var_dump($_SERVER['SERVER_NAME']);
-     // exit();
-	if($hostname[0] === 'localhost'  || $hostname[0] === '192' || $hostname[0] === '127' || $hostname[0] === '120') $hostname[1] = 'development';
-
-	if(!isset($hostname[1])){
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'The application environment is not set correctly.';
-		exit(1); // EXIT_ERROR
-	}
-	if($hostname[1] === DEVELOP){
-		define('ENVIRONMENT', DEVELOP);
-	}else if($hostname[1] === TESTING){
-		define('ENVIRONMENT', TESTING);
-	}else if($hostname[1] === PRODUCTION_STR){
-		define('ENVIRONMENT', PRODUCTION);
-	}else{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'The application environment is not set correctly.';
-		exit(1); // EXIT_ERROR
-	}
+	// $hostname = explode('.',$_SERVER['SERVER_NAME']);
+    //  // var_dump($_SERVER['SERVER_NAME']);
+    //  // exit();
+	// if($hostname[0] === 'localhost'  || $hostname[0] === '192' || $hostname[0] === '127' || $hostname[0] === '120') $hostname[1] = 'development';
+	// var_export($hostname);die;
+	// if(!isset($hostname[1])){
+	// 	header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+	// 	echo 'The application environment is not set correctly.';
+	// 	exit(1); // EXIT_ERROR
+	// }
+	// if($hostname[1] === DEVELOP){
+	// 	define('ENVIRONMENT', DEVELOP);
+	// }else if($hostname[1] === TESTING){
+	// 	define('ENVIRONMENT', TESTING);
+	// }else if($hostname[1] === PRODUCTION_STR){
+	// 	define('ENVIRONMENT', PRODUCTION);
+	// }else{
+	// 	header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+	// 	echo 'The application environment is not set correctly.';
+	// 	exit(1); // EXIT_ERROR
+	// }
+	define('ENVIRONMENT', DEVELOP);
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING

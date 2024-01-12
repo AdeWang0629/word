@@ -45,80 +45,21 @@ $active_record = TRUE;
 // $db['default']['username'] = 'editor';
 // $db['default']['password'] = 'bcfyV25vtIAJgTID';
 // $db['default']['database'] = 'editor';
-if($_SERVER['SERVER_NAME'] === 'localhost' || $_SERVER['SERVER_NAME'] === '127.0.0.1'){
-    // local pc 
-    $db['default']['hostname'] = 'localhost';
-    $db['default']['username'] = 'root';
-    $db['default']['password'] = '';
-    $db['default']['database'] = 'word_app';
-    $db['default']['dbdriver'] = 'mysqli';
-    $db['default']['dbprefix'] = '';
-    $db['default']['pconnect'] = FALSE;
-    $db['default']['db_debug'] = TRUE;
-    $db['default']['cache_on'] = FALSE;
-    $db['default']['cachedir'] = '';
-    $db['default']['char_set'] = 'utf8';
-    $db['default']['dbcollat'] = 'utf8_general_ci';
-    $db['default']['swap_pre'] = '';
-    $db['default']['autoinit'] = TRUE;
-    $db['default']['stricton'] = FALSE;
-}elseif ($_SERVER['SERVER_NAME'] === '120') {
-    // Dhaka Jacos Server
-    $db['default']['hostname'] = 'localhost';
-    $db['default']['username'] = 'root';
-    $db['default']['password'] = 'admin';
-    $db['default']['database'] = 'keipro';
-    $db['default']['dbdriver'] = 'mysqli';
-    $db['default']['dbprefix'] = '';
-    $db['default']['pconnect'] = FALSE;
-    $db['default']['db_debug'] = TRUE;
-    $db['default']['cache_on'] = FALSE;
-    $db['default']['cachedir'] = '';
-    $db['default']['char_set'] = 'utf8';
-    $db['default']['dbcollat'] = 'utf8_general_ci';
-    $db['default']['swap_pre'] = '';
-    $db['default']['autoinit'] = TRUE;
-    $db['default']['stricton'] = FALSE;
-}elseif ($_SERVER['SERVER_NAME'] === '192.168.100.120') {   
-    // Rajib pc 
-    $db['default']['hostname'] = 'localhost';
-    $db['default']['username'] = 'root';
-    $db['default']['password'] = '';
-    $db['default']['database'] = 'keipro';
-    $db['default']['dbdriver'] = 'mysqli';
-    $db['default']['dbprefix'] = '';
-    $db['default']['pconnect'] = FALSE;
-    $db['default']['db_debug'] = TRUE;
-    $db['default']['cache_on'] = FALSE;
-    $db['default']['cachedir'] = '';
-    $db['default']['char_set'] = 'utf8';
-    $db['default']['dbcollat'] = 'utf8_general_ci';
-    $db['default']['swap_pre'] = '';
-    $db['default']['autoinit'] = TRUE;
-    $db['default']['stricton'] = FALSE;
-}else{
-    // Development Server
-     $db['default']['hostname'] = '10.128.10.10';
-     $db['default']['username'] = 'word';
-     $db['default']['password'] = 'l7Il8hdMDCM7CtSE';
-     $db['default']['database'] = 'word';
-    // Development Server
-//    $db['default']['hostname'] = '10.128.21.10';
-//    $db['default']['username'] = 'keipro';
-//    $db['default']['password'] = 'EUVGzcnn84GlCIAg';
-//    $db['default']['database'] = 'keipro';
-    $db['default']['dbdriver'] = 'mysqli';
-    $db['default']['dbprefix'] = '';
-    $db['default']['pconnect'] = FALSE;
-    $db['default']['db_debug'] = TRUE;
-    $db['default']['cache_on'] = FALSE;
-    $db['default']['cachedir'] = '';
-    $db['default']['char_set'] = 'utf8';
-    $db['default']['dbcollat'] = 'utf8_general_ci';
-    $db['default']['swap_pre'] = '';
-    $db['default']['autoinit'] = TRUE;
-    $db['default']['stricton'] = FALSE;
-}
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
+$db['default']['database'] = 'word_app';
+$db['default']['dbdriver'] = 'mysqli';
+$db['default']['dbprefix'] = '';
+$db['default']['pconnect'] = FALSE;
+$db['default']['db_debug'] = TRUE;
+$db['default']['cache_on'] = FALSE;
+$db['default']['cachedir'] = '';
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci';
+$db['default']['swap_pre'] = '';
+$db['default']['autoinit'] = TRUE;
+$db['default']['stricton'] = FALSE;
 
 
 /* End of file database.php */
