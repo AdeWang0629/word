@@ -15,7 +15,7 @@
 |
 */
 //$config['base_url'] = 'https://keipro.dhaka10.dev.jacos.jp/dev/';
-$config['base_url'] = 'https://0fa9-45-159-251-137.ngrok-free.app/word/';
+$config['base_url'] = 'https://boc-keiba.mints.ne.jp/word/';
 // $config['base_url'] = 'https://keipro.dhaka10.dev.jacos.jp/';
 
 /*
